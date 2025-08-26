@@ -1,0 +1,5012 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #ffffff;;
+            margin: 0px;
+            padding: 10px;
+            height: 100%;
+            font-size: 1em;
+        }
+
+        p, li {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            margin: 0 0 5px 0;
+            font-weight: normal;
+        }
+
+        td {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        tr {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        table.colstu td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #fff5e6;
+        }
+
+        table.colsd td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #efefef;
+        }
+
+        table.colsn td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #e6ffe6;
+        }
+
+        table.colse td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #e6e6e6;
+        }
+
+        table.colsi td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #ffffe6;
+        }
+
+        table.list td {
+            border-top: 1px silver solid;
+            border-spacing: 0;
+        }
+
+        table.bare td {
+            border-spacing: 0;
+        }
+
+        ul.dict li {
+            font-size: 11px;
+            line-height: 1.2em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+        }
+
+        table.dict td {
+            padding: 3px 7px 2px 7px;
+            font-size: 11px;
+            line-height: 1.2em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.dict p {
+            font-size: 11px;
+        }
+
+        table {
+            margin-bottom: 10px;
+            border-collapse: collapse;
+        }
+
+        table.codes td {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.grid {
+            margin-bottom: 10px;
+            border: 1px black solid;
+            margin-right: auto;
+
+        }
+
+        table.grid th {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: bold;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.grid td {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        ul, ol {
+            margin: 10px 0;
+            padding: 0 0 0 25px;
+        }
+
+        .dense li {
+            margin: 0 0 0 0;
+        }
+
+        li {
+            margin: 0 0 5px 0;
+        }
+
+        h1 {
+            font-size: 16px;
+            margin: 0 0 4px 0;
+            font-family: verdana;
+            border-bottom: 1px solid #7e7e7e;
+            padding-bottom: 2px;
+        }
+
+        h2 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 14px;
+            margin: 0 0 3px 0;
+            margin-top: 15px;
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 2px;
+        }
+
+        h3 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 12px;
+            margin: 0 0 3px 0;
+            margin-top: 10px;
+        }
+
+        h4 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 11px;
+            margin: 0 0 3px 0;
+            margin-top: 10px;
+        }
+
+        div.sidebar h2 {
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 2px;
+            padding-top: 0px;
+            margin-top: 0px;
+            font-weight: normal;
+            margin-left: 8px;
+            margin-bottom: 0px;
+            font-size: 12px;
+        }
+
+        div.sidebar p {
+            padding-bottom: 0px;
+            padding-top: 10px;
+            font-weight: normal;
+            margin-left: 8px;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        div.sidebar ul {
+            list-style: none;
+            padding: 0px;
+            margin-left: 6px;
+            font-size: 11px;
+            line-height: 2.125em;
+        }
+
+        div.sidebar li {
+            margin: 0px 0px 0px 6px;
+            padding: 0px;
+            font-size: 11px;
+            line-height: 2.125em;
+        }
+
+        a {
+            color: #428bca;
+            text-decoration: none;
+        }
+
+        a.xmltag :visited {
+            color: Navy;
+        }
+
+        a.xmltag :hover {
+            color: Blue;
+        }
+
+        pre {
+            display: block;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+
+        pre a {
+            color: darkgreen;
+            text-decoration: none;
+            border: 0;
+
+        }
+
+        /* PrismJS 1.21.0
+        https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apl+applescript+aql+arduino+arff+asciidoc+aspnet+asm6502+autohotkey+autoit+bash+basic+batch+bbcode+birb+bison+bnf+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cil+clojure+cmake+coffeescript+concurnas+csp+crystal+css-extras+cypher+d+dart+dax+dhall+diff+django+dns-zone-file+docker+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+firestore-security-rules+flow+fortran+ftl+gml+gcode+gdscript+gedcom+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+http+hpkp+hsts+ichigojam+icon+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keyman+kotlin+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+lolcode+lua+makefile+markdown+markup-templating+matlab+mel+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nginx+nim+nix+nsis+objectivec+ocaml+opencl+oz+parigp+parser+pascal+pascaligo+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plsql+powerquery+powershell+processing+prolog+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+q+qml+qore+r+racket+jsx+tsx+reason+regex+renpy+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+stan+iecst+stylus+swift+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+turtle+twig+typescript+typoscript+unrealscript+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+wiki+xeora+xml-doc+xojo+xquery+yaml+yang+zig&plugins=keep-markup */
+        /**
+         * prism.js default theme for JavaScript, CSS and HTML
+         * Based on dabblet (http://dabblet.com)
+         * @author Lea Verou
+         */
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            color: black;
+            background: none;
+            text-shadow: 0 1px white;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 0.95em;
+            text-align: left;
+            white-space: pre;
+            word-spacing: normal;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 1.5;
+
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+        }
+
+        pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+        code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+        code[class*="language-"]::selection, code[class*="language-"] ::selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        @media print {
+            code[class*="language-"],
+            pre[class*="language-"] {
+                text-shadow: none;
+            }
+        }
+
+        /* Code blocks */
+        pre[class*="language-"] {
+            padding: 1em;
+            margin: .5em 0;
+            overflow: auto;
+        }
+
+        :not(pre) > code[class*="language-"],
+        pre[class*="language-"] {
+            background: #f5f2f0;
+        }
+
+        /* Inline code */
+        :not(pre) > code[class*="language-"] {
+            padding: .1em;
+            border-radius: .3em;
+            white-space: normal;
+        }
+        /*
+  ===============================
+  Liquid Narrative Styling Start
+  ===============================
+  */
+
+        .narrative-table {
+            border: 1pt inset rgb(0, 0, 0);
+            line-height: 10pt;
+            border-collapse: separate;
+            -webkit-border-horizontal-spacing: 2px;
+            -webkit-border-vertical-spacing: 2px;
+        }
+
+
+        .narrative-table ul,
+        .content-container ul {
+            list-style: disc;
+            padding-left: 25px;
+            margin-top: 5px;
+        }
+
+        .narrative-table ol,
+        .content-container ol {
+            list-style: decimal;
+            padding: 0 0 0 25px;
+            margin-top: 5px;
+        }
+
+        .narrative-table strong,
+        .content-container strong {
+            font-weight: 700;
+        }
+
+        .narrative-table>tbody {
+            display: table-row-group;
+            vertical-align: middle;
+        }
+
+        .narrative-table>tbody>tr {
+            display: table-row;
+            background-color: lightgray;
+            vertical-align: inherit;
+        }
+
+        .narrative-table>tbody>tr>th {
+            padding: 5px;
+        }
+
+        .section-header {
+            background-color: #656565;
+            color: whitesmoke;
+            vertical-align: inherit;
+        }
+
+        .row-header {
+            background-color: #656565;
+            color: whitesmoke;
+            vertical-align: inherit;
+        }
+
+        .tab-one {
+            padding-left: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .row-header {
+                min-width: 138px;
+                max-width: 138px;
+            }
+
+            .content-container {
+                max-width: 576px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .row-header {
+                min-width: 181px;
+                max-width: 181px;
+            }
+
+            .content-container {
+                max-width: 745px;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            .row-header {
+                min-width: 213px;
+                max-width: 213px;
+            }
+
+            .content-container {
+                max-width: 873px;
+            }
+        }
+
+        /*
+        ===============================
+        Liquid Narrative Styling End
+        ===============================
+        */
+
+        /*
+        ===============================
+        Rich text editor styling
+        ===============================
+        */
+
+        table.rich-text-table th,td {
+            border: 1px solid #9c9c9c;
+            box-sizing: border-box;
+            min-width: 1em;
+            padding: 6px 8px;
+            position: relative;
+            vertical-align: top;
+        }
+        table.rich-text-table th {
+            background-color: #3d25140d;
+        }
+    </style>
+</head>
+<body>
+<div xmlns="http://www.w3.org/1999/xhtml" class="col-12">
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Metadata</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">NHSN Glycemic Control Hypoglycemia Initial Population</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+<td class="content-container">0.0.003</td>
+</tr>
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Short Name</th>
+
+
+<td class="content-container">NHSNHypoglycemia</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">GUID (Version Independent)</th>
+
+
+<td class="content-container">urn:uuid:0d555fb6-f654-418c-a2b3-2dd0c3f0e7b4</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">GUID (Version Specific)</th>
+
+
+<td class="content-container">urn:uuid:dc9459ed-48ca-45f3-923e-3352d9547461</td>
+</tr>
+
+
+
+
+
+
+  
+    
+    
+<tr>
+
+
+<th scope="row" class="row-header">Effective Period</th>
+
+
+<td class="content-container">2026-01-01 through 2026-12-31</td>
+</tr>
+
+  
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Use Context</th>
+
+
+<td class="content-container">org.hl7.fhir.r5.model.UsageContext@b756dae</td>
+</tr>
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+<td class="content-container">Centers for Disease Control and Prevention (CDC)</td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Developer</th>
+
+
+<td class="content-container">Lantana Consulting Group</td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container"><p>All inpatient encounters (including ED/Observation visits that end within 1 hour of the start of the inpatient encounter) for patients of all ages where at least one diabetes medication was ordered or administered during the encounter that is during the measurement period.</p></td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Purpose</th>
+
+
+<td class="content-container"><p>The primary objective of the NHSN Glycemic Control module is to measure and benchmark medication-related hypoglycemia and hyperglycemia events within a facility. NHSN uses line-level data on medications and blood glucose reported by facilities to provide analytic reports to inform quality-improvement efforts for glycemic control and track patient safety events. As NHSN collects additional data, an additional objective will be to allow inter-facility benchmarking and evaluate national-level trends of medication-related hypoglycemia over time.</p></td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Copyright</th>
+
+
+<td class="content-container"><p>Limited proprietary coding is contained in the Measure specifications for user convenience. Users of proprietary code sets should obtain all necessary licenses from the owners of the code sets.</p></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Disclaimer</th>
+
+
+<td class="content-container"><p>Disclaimer This performance measure is not a clinical guideline, does not establish a standard of medical care and has not been tested for all potential applications.</p>
+<p>THE MEASURES AND SPECIFICATIONS ARE PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND.</p>
+<p>This measure and specifications are subject to further revisions.</p></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Rationale</th>
+
+
+<td class="content-container"><p>The NHSN Glycemic Control module supports an electronic health record (EHR)- and vendor-neutral standard for reporting patient-level, linked medication and blood glucose data for inpatients. These data support calculation of inpatient medication-related hypoglycemia events by the NHSN application, which are then returned as reports to the facility.</p></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Clinical Recommendation Statement</th>
+
+
+<td class="content-container"><p>Inpatient hypoglycemia can be severe and life-threatening and is associated with longer hospital stays and increased medical costs (Wexler et al., 2007; Curkendall et al., 2009; Cook et al., 2009; Turchin et al., 2009; Egi et al., 2010). The prevalence of inpatient hypoglycemia varies with patient, hospital unit, timing of episodes, and glycemic threshold. Severe hypoglycemia (&lt;40 mg/dL) occurs in 2%–5% of hospitalized patients with diabetes mellitus (DM), while hypoglycemia &lt;70 mg/dL has been reported in up to 10% of all patients in the intensive care unit (Finfer et al., 2012). Patients with DM comprise more than 25% of all U.S. inpatient stays and medication-related hypoglycemia events are common causes of adverse drug events (ADEs) that occur in inpatient settings (Bates et al., 2023; Spector et al., 2017). Rates of severe hypoglycemia vary across hospitals, suggesting opportunities for improvement in glycemic-control quality of care (Hulkower et al., 2014; ADA, 2013; Cook et al., 2009).</p>
+<p>Inpatient hyperglycemia can increase morbidity, prolong hospital stays, and increase the risk of mortality (Maynard et al., 2014; SHM, n.d.; Umpierrez et al., 2002; Kyi et al., 2019; Pratiwi et al., 2021). The prevalence of inpatient hyperglycemia varies depending upon glycemic threshold and setting, but blood glucose &gt;140 mg/dL likely occurs in approximately one-eighth to one-quarter of hospitalized patients (Pratiwi et al., 2021; Seisa et al., 2022; Barmanray et al., 2024). Tracking patient blood-glucose levels and implementing appropriate interventions may reduce complications associated with both hyperglycemia and hypoglycemia (ADA, 2013; Cook et al., 2009; Korytkowski et al., 2022; Moghissi et al., 2009).</p></td>
+</tr>
+
+
+
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>American Diabetes Association. Economic costs of diabetes in the U.S. in 2012. Diabetes Care 2013;36:1033–46.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Bates, D. W., Levine, D. M., Salmasian, H., et al. (2023). The safety of inpatient health care. New England Journal of Medicine, 388(12), 142–153.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Classen, D. C., Resar, R., Griffin, F., et al. (2011). 'Global trigger tool' shows that adverse events in hospitals may be ten times greater than previously measured. Health Affairs, 30(4), 581–589.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Cook, C. B., Kongable, G. L., Potter, D. J., et al. (2009). Inpatient glucose control: A glycemic survey of 126 U.S. hospitals. Journal of Hospital Medicine, 4(E7), E7–E14.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Curkendall, S. M., Natoli, J. L., Alexander, C. M., et al. (2009). Economic and clinical impact of inpatient diabetic hypoglycemia. Endocrine Practice, 15(3), 302–312.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Egi, M., Bellomo, R., Stachowski, E., et al. (2010). Hypoglycemia and outcome in critically ill patients. Mayo Clinic Proceedings, 85(3), 217–224.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Finfer, S., Liu, B., Chittock, D. R., et al. (2012). Hypoglycemia and risk of death in critically ill patients. New England Journal of Medicine, 367, 1108–1118.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Gates, P. J., Meyerson, S. A., Baysari, M. T., et al. (2018). Preventable adverse drug events among inpatients: A systematic review. Pediatrics, 142, e20180805.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Hulkower RD, Pollack RM, Zonszein J. Understanding hypoglycemia in hospitalized patients. Diabetes Manag (Lond) 2014;4:165-76.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Maynard, G., et al. (2014). How sweet is it? The use of benchmarking to optimize inpatient glycemic control. Diabetes Spectrum, 27, 212–217.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Moghissi ES, Korytkowski MT, DiNardo M. American Association of Clinical Endocrinologists and American Diabetes Association consensus statement on inpatient glycemic control. Endocr Pract 2009;15:353-69.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Society of Hospital Medicine. Glycemic Control for Hospitalists. Optimizing Care, Preventing Hypoglycemia. Available at: https://www.hospitalmedicine.org/clinical-topics/glycemic-control.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Spector, W. D., Limcangco, R., Furukawa, M. F., Encinosa, W. E. (2017). The marginal costs of adverse drug events associated with exposures to anticoagulants and hypoglycemic agents during hospitalization. Medical Care, 55(8), 856–863.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Turchin, A., Matheny, M. E., Shubina, M., et al. (2009). Hypoglycemia and clinical outcomes in patients with diabetes hospitalized in the general ward. Diabetes Care, 32(7), 1153–1157.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Umpierrez, G. E., Isaacs, S. D., Bazargan, N., et al. (2002). Hyperglycemia: An independent marker of in-hospital mortality in patients with undiagnosed diabetes. Journal of Clinical Endocrinology &amp; Metabolism, 87(3), 978–982.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Wexler, D. J., et al. (2007). Prevalence of hyper- and hypoglycemia among inpatients with diabetes: A national survey of 44 U.S. hospitals. Diabetes Care, 30(2), 367–369.</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container">Blood glucose: <p>Blood-glucose data refers to data from random, periprandial, or fasting tests; from capillary, serum, plasma, interstitial fluid, or whole-blood sources; using central laboratory device (CLD) or point-of-care (POC) testing. Data from continuous glucose monitoring (CGM) systems can only be captured if they are integrated into the EHR and exposed in the corresponding FHIR resources. Post-glucose administration tests are excluded. Events are based on the day/time the laboratory test was collected (drawn). If day/time collected is not available, the day/time the lab was ordered is used.</p></td>
+</tr>
+
+
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container">Emergency department (ED)/Observation (Obs) encounter: <p>Any patient visit to an ED or observation location. One (1) patient visit equals one (1) encounter. ED/Observation encounters are considered outpatient locations.</p></td>
+</tr>
+
+
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container">Hypoglycemic medication: <p>All currently and previously commercially available oral or injectable hypoglycemic medications in the United States.</p></td>
+</tr>
+
+
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container">Inpatient encounter: <p>Includes all encounters in inpatient locations.</p></td>
+</tr>
+
+
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container">Mild hypoglycemia event: <p>Blood glucose 54.0 mg/dL to 69.9 mg/dL as identified on CLD or prescription POC device with no subsequent repeat test for blood glucose with a result &gt; 80 mg/dL within 5 minutes of the start of the initial low blood glucose test.</p></td>
+</tr>
+
+
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container">Moderate hypoglycemia event: <p>Blood glucose 40.0 mg/dL to 53.9 mg/dL as identified on CLD or prescription POC device with no subsequent repeat test for blood glucose with a result &gt; 80 mg/dL within 5 minutes of the start of the initial low blood glucose test.</p></td>
+</tr>
+
+
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container">Severe hypoglycemia event: <p>Blood glucose &lt; 40.0 mg/dL as identified on CLD or prescription POC device with no subsequent repeat test for blood glucose with a result &gt; 80 mg/dL within 5 minutes of the start of the initial low blood glucose test.</p></td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Guidance (Usage)</th>
+
+
+<td class="content-container"><p>All participating inpatient facilities reporting data to the NHSN Glycemic Control module must be able to report data electronically in adherence to HL7 FHIR US Core FHIR R4.0.1 data standards and specifications and NHSN instructions for reporting dQMs, including the HL7 NHSN dQM Reporting Implementation Guide (https://build.fhir.org/ig/HL7/nhsn-dqm/).</p></td>
+</tr>
+
+
+
+  
+    
+    <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Group (Rate) (ID: Group_1)</th>
+
+
+</tr>
+  
+  
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Basis</th>
+
+
+<td class="content-container">Encounter</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Scoring</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-scoring#cohort: 'Cohort']</td>
+</tr>
+
+
+
+
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#process: 'Process']</td>
+</tr>
+
+
+
+
+
+  
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Initial Population</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: InitialPopulation_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p>All inpatient encounters, as well as ED and OBS encounters that end within 1 hour of the start of the inpatient encounter, for patients of all ages where at least one diabetes medication was ordered or administered during the encounter that is during the measurement period.</p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-nhsnglycemiccontrolhypoglycemiainitialpopulation-initial-population">Initial Population</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+
+
+  
+    
+<tr>
+
+
+<th scope="row" class="row-header">Supplemental Data Guidance</th>
+
+
+<td class="content-container"><p>Supplemental Data</p></td>
+</tr>
+
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Supplemental Data Elements</th>
+
+
+</tr>
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-encounter-locations
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Encounter Locations
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-encounter-locations">SDE Encounter Locations</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-location
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Location
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-location">SDE Location</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-medication
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Medication
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-medication">SDE Medication</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-blood-glucose-observation
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Blood Glucose Observation
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-blood-glucose-observation">SDE Blood Glucose Observation</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-chief-complaint
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Chief Complaint
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-chief-complaint">SDE Chief Complaint</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-condition
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Condition
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-condition">SDE Condition</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-coverage
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Coverage
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-coverage">SDE Coverage</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-initial-population-encounters
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Initial Population Encounters
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-initial-population-encounters">SDE Initial Population Encounters</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-medication-administration
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Medication Administration
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-medication-administration">SDE Medication Administration</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-medication-request
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Medication Request
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-medication-request">SDE Medication Request</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-minimal-patient
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Minimal Patient
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-minimal-patient">SDE Minimal Patient</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-service-request
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Service Request
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-service-request">SDE Service Request</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-ethnicity
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Ethnicity
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-ethnicity">SDE Ethnicity</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-payer
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Payer
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-payer">SDE Payer</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-race
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Race
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-race">SDE Race</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-sex
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Sex
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-sex">SDE Sex</a> 
+      
+    
+  </td>
+</tr>
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Logic</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Primary Library</th>
+
+
+<td class="content-container">https://madie.cms.gov/Library/NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+</tr>
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Contents</th>
+  <td class="content-container">
+    <em><a href="#population-criteria">Population Criteria</a></em>
+    <br/>
+    <em><a href="#definitions">Logic Definitions</a></em>
+    <br/>
+    <em><a href="#terminology">Terminology</a></em>
+    <br/>
+    <em><a href="#dependencies">Dependencies</a></em>
+    <br/>
+    <em><a href="#data-requirements">Data Requirements</a></em>
+    <br/>
+  </td>
+</tr>
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="population-criteria"> </a>Population Criteria</th>
+
+
+</tr>
+  
+  
+  
+  
+    
+    <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Group (Rate) (ID: Group_1)</th>
+
+
+</tr>
+  
+  
+  
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-nhsnglycemiccontrolhypoglycemiainitialpopulation-initial-population"> </a>
+    
+    
+    Initial Population
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// Initial Population
+
+
+define &quot;Initial Population&quot;:
+  ( &quot;Inpatient Encounters During Measurement Period&quot;
+    union &quot;Encounters with Patient Hospital Locations&quot; ) InpatientEncounters
+    with &quot;Antidiabetic Drugs Administered or Ordered&quot; ADD
+      such that Coalesce(start of ADD.effective.toInterval(), ADD.authoredOn) during InpatientEncounters.&quot;hospitalizationWithObservation&quot; ( )
+    where ( InpatientEncounters.status = 'finished'
+        or InpatientEncounters.status = 'in-progress'
+        or InpatientEncounters.status = 'triaged'
+        or InpatientEncounters.status = 'onleave'
+        or InpatientEncounters.status = 'entered-in-error'
+    )</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="definitions"> </a>Logic Definitions</th>
+
+
+</tr>
+  
+  
+          
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-race"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Race&quot;:
+  Patient.race R
+    return Tuple {
+      codes: R.ombCategory union R.detailed,
+      display: R.text
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-sex"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Sex&quot;:
+  case
+    when Patient.sex = '248153007' then &quot;Male (finding)&quot;
+    when Patient.sex = '248152002' then &quot;Female (finding)&quot;
+    else null
+  end</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-payer"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Payer&quot;:
+  [Coverage: type in &quot;Payer Type&quot;] Payer
+    return {
+      code: Payer.type,
+      period: Payer.period
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-ethnicity"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Ethnicity&quot;:
+  Patient.ethnicity E
+    return Tuple {
+      codes: { E.ombCategory } union E.detailed,
+      display: E.text
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cqmcommon-getlocation"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CQMCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Returns the Location resource specified by the given reference.
+*/
+define fluent function getLocation(reference Reference):
+  singleton from (
+    [Location] L where reference.references(L)
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cqmcommon-getmedicationcode"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CQMCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Returns the medication code for the given MedicationRequest
+*/
+define fluent function getMedicationCode(request MedicationRequest):
+  if request.medication is Concept then
+  	  request.medication as Concept
+  	else
+  	  (singleton from ([Medication] M where request.medication.references(M))).code</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cqmcommon-hospitalizationwithobservation"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CQMCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Hospitalization with Observation returns the total interval from the start of any immediately prior emergency department visit through the observation visit to the discharge of the given encounter
+*/
+define fluent function hospitalizationWithObservation(TheEncounter Encounter ):
+  TheEncounter Visit
+  		let ObsVisit: Last([Encounter: &quot;Observation Services&quot;] LastObs
+  				where LastObs.status = 'finished'
+            and LastObs.period ends 1 hour or less on or before start of Visit.period
+  				sort by end of period
+  			),
+  			VisitStart: Coalesce(start of ObsVisit.period, start of Visit.period),
+  			EDVisit: Last([Encounter: &quot;Emergency Department Visit&quot;] LastED
+  				where LastED.status = 'finished'
+            and LastED.period ends 1 hour or less on or before VisitStart
+  				sort by end of period
+  			)
+  		return Interval[Coalesce(start of EDVisit.period, VisitStart), end of Visit.period]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tointerval"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)
+value to a CQL DateTime Interval
+@comment: If the start value of the given period is unspecified, the starting
+boundary of the resulting interval will be open (meaning the start of the interval
+is unknown, as opposed to interpreted as the beginning of time).
+*/
+define function ToInterval(period FHIR.Period):
+    if period is null then
+        null
+    else
+        if period.&quot;start&quot; is null then
+            Interval(period.&quot;start&quot;.value, period.&quot;end&quot;.value]
+        else
+            Interval[period.&quot;start&quot;.value, period.&quot;end&quot;.value]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-toconcept"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given FHIR [CodeableConcept](https://hl7.org/fhir/datatypes.html#CodeableConcept) value to a CQL Concept.
+*/
+define function ToConcept(concept FHIR.CodeableConcept):
+    if concept is null then
+        null
+    else
+        System.Concept {
+            codes: concept.coding C return ToCode(C),
+            display: concept.text.value
+        }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tocode"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.
+*/
+define function ToCode(coding FHIR.Coding):
+    if coding is null then
+        null
+    else
+        System.Code {
+          code: coding.code.value,
+          system: coding.system.value,
+          version: coding.version.value,
+          display: coding.display.value
+        }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tostring"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ToString(value uri): value.value</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-inpatient-encounters-during-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Inpatient Encounters During Measurement Period&quot;:
+  [Encounter: &quot;Encounter Inpatient&quot;] InpatientEncounters
+    where InpatientEncounters.period ends during day of &quot;Measurement Period&quot;
+      and ( InpatientEncounters.class ~ QICoreCommon.&quot;inpatient non-acute&quot;
+          or InpatientEncounters.class ~ QICoreCommon.&quot;inpatient non-acute&quot;
+          or InpatientEncounters.class ~ QICoreCommon.&quot;short stay&quot;
+          or InpatientEncounters.class ~ QICoreCommon.&quot;inpatient acute&quot;
+          or InpatientEncounters.class ~ QICoreCommon.&quot;inpatient encounter&quot;
+      )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-encounters-with-patient-hospital-locations"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Encounters with Patient Hospital Locations&quot;:
+  &quot;Inpatient Encounters During Measurement Period&quot; InpatientEncounter
+    where exists ( InpatientEncounter.location HospitalLocation
+        where HospitalLocation.location.getLocation ( ).type in &quot;Inpatient, Emergency, and Observation Locations&quot;
+          and HospitalLocation.period during day of InpatientEncounter.period
+    )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-medicationrequests"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;MedicationRequests&quot;:
+  [MedicationRequest]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-medicationadministrations"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;MedicationAdministrations&quot;:
+  [MedicationAdministration]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-antidiabetic-drugs-administered-or-ordered"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Antidiabetic Drugs Administered or Ordered&quot;:
+  ( &quot;MedicationRequests&quot;
+    union &quot;MedicationAdministrations&quot; ) MedReqOrAdmin
+    where Coalesce(MedReqOrAdmin.getMedicationCode(), MedReqOrAdmin.getMedicationAdministrationCode()) in &quot;Diabetes Medications&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-initial-population"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">// Initial Population
+
+
+define &quot;Initial Population&quot;:
+  ( &quot;Inpatient Encounters During Measurement Period&quot;
+    union &quot;Encounters with Patient Hospital Locations&quot; ) InpatientEncounters
+    with &quot;Antidiabetic Drugs Administered or Ordered&quot; ADD
+      such that Coalesce(start of ADD.effective.toInterval(), ADD.authoredOn) during InpatientEncounters.&quot;hospitalizationWithObservation&quot; ( )
+    where ( InpatientEncounters.status = 'finished'
+        or InpatientEncounters.status = 'in-progress'
+        or InpatientEncounters.status = 'triaged'
+        or InpatientEncounters.status = 'onleave'
+        or InpatientEncounters.status = 'entered-in-error'
+    )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-coverage"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Coverage&quot;:
+  [Coverage] Coverages
+    where exists ( &quot;Initial Population&quot; IP
+        where Coverages.period starts before or on day of IP.period
+          and end of Coverages.period on or after day of end of IP.period
+    )
+    return { Coverages.id, Coverages.meta, Coverages.status, Coverages.type, Coverages.policyHolder, Coverages.subscriber, Coverages.subscriberId, Coverages.beneficiary, Coverages.dependent, Coverages.relationship, Coverages.period, Coverages.payor, Coverages.class, Coverages.order, Coverages.network, Coverages.subrogation, Coverages.contract }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-medication-request"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Medication Request&quot;:
+  &quot;MedicationRequests&quot; MedRequests
+    where exists ( &quot;Initial Population&quot; InitialPopulation
+        where MedRequests.authoredOn during InitialPopulation.&quot;hospitalizationWithObservation&quot; ( )
+    )
+    return { MedRequests.id, MedRequests.meta, MedRequests.status, MedRequests.statusReason, MedRequests.intent, MedRequests.category, MedRequests.priority, MedRequests.doNotPerform, MedRequests.reported, MedRequests.medication, MedRequests.subject, MedRequests.encounter, MedRequests.authoredOn, MedRequests.requester, MedRequests.recorder, MedRequests.reasonCode, MedRequests.reasonReference, MedRequests.instantiatesCanonical, MedRequests.instantiatesUri, MedRequests.courseOfTherapyType, MedRequests.dosageInstruction }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-encounter-locations"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Encounter Locations&quot;:
+  &quot;Initial Population&quot; IP
+    where exists ( IP.location InitialPopulationLocation
+        let types: ( InitialPopulationLocation.location ).getLocation ( ).type
+        where exists ( types type
+            where type in &quot;Inpatient, Emergency, and Observation Locations&quot;
+        )
+          and InitialPopulationLocation.period during IP.period
+    )
+    return { IP.id, IP.meta, IP.identifier, IP.status, IP.statusHistory, IP.class, IP.classHistory, IP.type, IP.serviceType, IP.priority, IP.subject, IP.period, IP.length, IP.reasonCode, IP.reasonReference, IP.diagnosis, IP.account, IP.hospitalization, IP.location, IP.partOf }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-race"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Race&quot;:
+  SDE.&quot;SDE Race&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-medication-administration"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Medication Administration&quot;:
+  &quot;MedicationAdministrations&quot; MedAdministrations
+    where exists ( &quot;Initial Population&quot; InitialPopulation
+        where MedAdministrations.effective.toInterval ( ) overlaps InitialPopulation.&quot;hospitalizationWithObservation&quot; ( )
+    )
+    return { MedAdministrations.id, MedAdministrations.meta, MedAdministrations.instantiates, MedAdministrations.partOf, MedAdministrations.status, MedAdministrations.statusReason, MedAdministrations.category, MedAdministrations.medication, MedAdministrations.subject, MedAdministrations.context, MedAdministrations.supportingInformation, MedAdministrations.effective, MedAdministrations.performer, MedAdministrations.reasonCode, MedAdministrations.reasonReference, MedAdministrations.request, MedAdministrations.device, MedAdministrations.note, MedAdministrations.dosage }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-sex"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Sex&quot;:
+  SDE.&quot;SDE Sex&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-initial-population-encounters"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Initial Population Encounters&quot;:
+  &quot;Initial Population&quot; IP
+    return { IP.id, IP.meta, IP.identifier, IP.status, IP.statusHistory, IP.class, IP.classHistory, IP.type, IP.serviceType, IP.priority, IP.subject, IP.period, IP.length, IP.reasonCode, IP.reasonReference, IP.diagnosis, IP.account, IP.hospitalization, IP.location, IP.partOf }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-blood-glucose-observation"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//Supplemental Data Elements
+
+
+define &quot;SDE Blood Glucose Observation&quot;:
+  ( [&quot;LaboratoryResultObservation&quot;: &quot;Blood Glucose Laboratory and Point of Care Tests&quot;] GlucoseTest
+      where exists ( &quot;Initial Population&quot; InitialPopulation
+          where start of GlucoseTest.effective.toInterval ( ) during day of InitialPopulation.period
+            or GlucoseTest.issued during day of InitialPopulation.period
+      )
+      return { GlucoseTest.id, GlucoseTest.extension, GlucoseTest.text, GlucoseTest.referenceRange, GlucoseTest.component, GlucoseTest.basedOn, GlucoseTest.partOf, GlucoseTest.category, GlucoseTest.status, GlucoseTest.subject, GlucoseTest.focus, GlucoseTest.encounter, GlucoseTest.effective, GlucoseTest.issued, GlucoseTest.performer, GlucoseTest.value, GlucoseTest.dataAbsentReason, GlucoseTest.interpretation, GlucoseTest.note, GlucoseTest.bodySite, GlucoseTest.method, GlucoseTest.specimen, GlucoseTest.device, GlucoseTest.hasMember, GlucoseTest.derivedFrom }
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-condition"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Condition&quot;:
+  [&quot;ConditionProblemsHealthConcerns&quot;] Diagnosis
+    where exists ( &quot;Initial Population&quot; IP
+        where Diagnosis.prevalenceInterval ( ) overlaps day of IP.period
+    )
+    return { Diagnosis.id, Diagnosis.meta, Diagnosis.clinicalStatus, Diagnosis.verificationStatus, Diagnosis.category, Diagnosis.severity, Diagnosis.code, Diagnosis.bodySite, Diagnosis.subject, Diagnosis.encounter.reference.getId ( ), Diagnosis.onset, Diagnosis.stage, Diagnosis.evidence, Diagnosis.note }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-payer"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Payer&quot;:
+  SDE.&quot;SDE Payer&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-ethnicity"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Ethnicity&quot;:
+  SDE.&quot;SDE Ethnicity&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-get-locations-from-initial-population"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Get Locations from Initial Population&quot;:
+  flatten ( &quot;Initial Population&quot; IP
+      let locationElements: IP.location
+      return locationElements LE
+        let locationReference: LE.location
+        return ( locationReference.getLocation ( ) )
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-location"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Location&quot;:
+  &quot;Get Locations from Initial Population&quot; Locations
+    where exists &quot;Initial Population&quot;
+      and Locations is not null
+    return { Locations.id, Locations.meta, Locations.extension, Locations.status, Locations.operationalStatus, Locations.name, Locations.alias, Locations.description, Locations.mode, Locations.type, Locations.telecom, Locations.address, Locations.physicalType, Locations.position, Locations.managingOrganization, Locations.partOf, Locations.hoursOfOperation, Locations.availabilityExceptions, Locations.endpoint }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-service-request"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Service Request&quot;:
+  [ServiceRequest] ServiceRequests
+    where exists ( &quot;Initial Population&quot; InitialPopulation
+        where ServiceRequests.authoredOn during InitialPopulation.period
+    )
+    return { ServiceRequests.id, ServiceRequests.meta, ServiceRequests.instantiatesCanonical, ServiceRequests.instantiatesUri, ServiceRequests.basedOn, ServiceRequests.replaces, ServiceRequests.requisition, ServiceRequests.status, ServiceRequests.intent, ServiceRequests.category, ServiceRequests.priority, ServiceRequests.doNotPerform, ServiceRequests.code, ServiceRequests.orderDetail, ServiceRequests.quantity, ServiceRequests.subject, ServiceRequests.encounter, ServiceRequests.occurrence, ServiceRequests.asNeeded, ServiceRequests.authoredOn, ServiceRequests.requester, ServiceRequests.performerType, ServiceRequests.performer, ServiceRequests.locationCode, ServiceRequests.reasonCode, ServiceRequests.reasonReference, ServiceRequests.insurance, ServiceRequests.bodySite, ServiceRequests.note, ServiceRequests.patientInstruction }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-minimal-patient"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Minimal Patient&quot;:
+  [Patient] MinPt
+    where exists &quot;Initial Population&quot;
+    return { MinPt.id, MinPt.meta, MinPt.extension, MinPt.identifier, MinPt.active, MinPt.name, MinPt.telecom, MinPt.gender, MinPt.birthDate, MinPt.deceased, MinPt.address, MinPt.maritalStatus, MinPt.multipleBirth, MinPt.photo, MinPt.contact, MinPt.communication, MinPt.generalPractitioner, MinPt.managingOrganization, MinPt.link }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-medication"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Medication&quot;:
+  ( &quot;MedicationRequests&quot;
+    union &quot;MedicationAdministrations&quot; ) MedReqOrAdmin
+    let medication: GetMedication(MedReqOrAdmin.medication as Reference)
+    where medication is not null
+      and exists ( &quot;Initial Population&quot; IP
+          where Coalesce(MedReqOrAdmin.effective.toInterval(), MedReqOrAdmin.authoredOn.toInterval()) overlaps IP.&quot;hospitalizationWithObservation&quot; ( )
+      )
+    return { medication.id, medication.meta, medication.code, medication.status, medication.manufacturer, medication.form, medication.amount, medication.ingredient, medication.batch }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-sde-chief-complaint"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Chief Complaint&quot;:
+  &quot;Initial Population&quot; IP
+    where exists ( IP.diagnosis InitialPopulationDiagnosis
+        where InitialPopulationDiagnosis.use ~ QICoreCommon.&quot;CC&quot;
+    )
+    return { IP.id, IP.meta, IP.identifier, IP.status, IP.statusHistory, IP.class, IP.classHistory, IP.type, IP.serviceType, IP.priority, IP.subject, IP.period, IP.length, IP.reasonCode, IP.reasonReference, IP.diagnosis, IP.account, IP.hospitalization, IP.location, IP.partOf }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-getmedicationadministrationcode"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define fluent function getMedicationAdministrationCode(admin MedicationAdministration):
+  if admin.medication is Concept then admin.medication as Concept 
+    else ( singleton from ( [Medication] M
+        where admin.medication.references ( M )
+    )
+  ).code</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="nhsnglycemiccontrolhypoglycemiainitialpopulation-getmedication"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> NHSNGlycemicControlHypoglycemiaInitialPopulation</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function &quot;GetMedication&quot;(reference Reference):
+  singleton from ( [Medication] Medication
+      where reference.references ( Medication )
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="qicorecommon-references"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> QICoreCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Returns true if the given reference is to the given resource
+@comment: Returns true if the `id` element of the given resource exactly equals the tail of the given reference.
+NOTE: This function assumes resources from the same source server.
+*/
+define fluent function references(reference Reference, resource Resource):
+  resource.id = Last(Split(reference.reference, '/'))</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="qicorecommon-prevalenceinterval"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> QICoreCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Returns an interval representing the normalized prevalence period of a given Condition.
+@comment: Uses the ToInterval and ToAbatementInterval functions to determine the widest potential interval from
+onset to abatement as specified in the given Condition. If the condition is active, or has an abatement date the resulting 
+interval will have a closed ending boundary. Otherwise, the resulting interval will have an open ending boundary.
+*/
+define fluent function prevalenceInterval(condition Choice&lt;&quot;ConditionEncounterDiagnosis&quot;, &quot;ConditionProblemsHealthConcerns&quot;&gt;):
+if condition.clinicalStatus ~ &quot;active&quot;
+  or condition.clinicalStatus ~ &quot;recurrence&quot;
+  or condition.clinicalStatus ~ &quot;relapse&quot; then
+  Interval[start of condition.onset.toInterval(), end of condition.abatementInterval()]
+else
+    (end of condition.abatementInterval()) abatementDate
+    return if abatementDate is null then
+      Interval[start of condition.onset.toInterval(), abatementDate)
+    else
+      Interval[start of condition.onset.toInterval(), abatementDate]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="qicorecommon-abatementinterval"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> QICoreCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Returns an interval representing the normalized abatement of a given Condition.
+@comment: If the abatement element of the Condition is represented as a DateTime, the result
+is an interval beginning and ending on that DateTime.
+If the abatement is represented as a Quantity, the quantity is expected to be a calendar-duration and is interpreted as the age of the patient. The
+result is an interval from the date the patient turned that age to immediately before one year later.
+If the abatement is represented as a Quantity Interval, the quantities are expected to be calendar-durations and are interpreted as an age range during
+which the abatement occurred. The result is an interval from the date the patient turned the starting age of the quantity interval, and ending immediately
+before one year later than the date the patient turned the ending age of the quantity interval.
+*/
+define fluent function abatementInterval(condition Choice&lt;&quot;ConditionEncounterDiagnosis&quot;, &quot;ConditionProblemsHealthConcerns&quot;&gt;):
+	if condition.abatement is DateTime then
+	  Interval[condition.abatement as DateTime, condition.abatement as DateTime]
+	else if condition.abatement is Quantity then
+		Interval[Patient.birthDate + (condition.abatement as Quantity),
+			Patient.birthDate + (condition.abatement as Quantity) + 1 year)
+	else if condition.abatement is Interval&lt;Quantity&gt; then
+	  Interval[Patient.birthDate + (condition.abatement.low as Quantity),
+		  Patient.birthDate + (condition.abatement.high as Quantity) + 1 year)
+	else if condition.abatement is Interval&lt;DateTime&gt; then
+	  Interval[condition.abatement.low, condition.abatement.high)
+	else null as Interval&lt;DateTime&gt;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="qicorecommon-getid"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> QICoreCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Returns the tail of the given uri (i.e. everything after the last slash in the URI).
+@comment: This function can be used to determine the logical id of a given resource. It can be used in
+a single-server environment to trace references. However, this function does not attempt to resolve
+or distinguish the base of the given url, and so cannot be used safely in multi-server environments.
+*/
+define fluent function getId(uri String):
+  Last(Split(uri, '/'))</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="qicorecommon-tointerval"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> QICoreCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Normalizes a value that is a choice of timing-valued types to an equivalent interval
+@comment: Normalizes a choice type of DateTime, Quanitty, Interval&lt;DateTime&gt;, or Interval&lt;Quantity&gt; types
+to an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible
+representations for timing-valued elements in QICore, allowing this function to be used across any resource.
+The input can be provided as a DateTime, Quantity, Interval&lt;DateTime&gt; or Interval&lt;Quantity&gt;.
+The intent of this function is to provide a clear and concise mechanism to treat single
+elements that have multiple possible representations as intervals so that logic doesn't have to account
+for the variability. More complex calculations (such as medication request period or dispense period
+calculation) need specific guidance and consideration. That guidance may make use of this function, but
+the focus of this function is on single element calculations where the semantics are unambiguous.
+If the input is a DateTime, the result a DateTime Interval beginning and ending on that DateTime.
+If the input is a Quantity, the quantity is expected to be a calendar-duration interpreted as an Age,
+and the result is a DateTime Interval beginning on the Date the patient turned that age and ending immediately before one year later.
+If the input is a DateTime Interval, the result is the input.
+If the input is a Quantity Interval, the quantities are expected to be calendar-durations interpreted as an Age, and the result
+is a DateTime Interval beginning on the date the patient turned the age given as the start of the quantity interval, and ending
+immediately before one year later than the date the patient turned the age given as the end of the quantity interval.
+If the input is a Timing, an error will be thrown indicating that Timing calculations are not implemented. Any other input will reslt in a null DateTime Interval
+*/
+define fluent function toInterval(choice Choice&lt;DateTime, Quantity, Interval&lt;DateTime&gt;, Interval&lt;Quantity&gt;, Timing&gt;):
+  case
+	  when choice is DateTime then
+    	Interval[choice as DateTime, choice as DateTime]
+		when choice is Interval&lt;DateTime&gt; then
+  		choice as Interval&lt;DateTime&gt;
+		when choice is Quantity then
+		  Interval[Patient.birthDate + (choice as Quantity),
+			  Patient.birthDate + (choice as Quantity) + 1 year)
+		when choice is Interval&lt;Quantity&gt; then
+		  Interval[Patient.birthDate + (choice.low as Quantity),
+			  Patient.birthDate + (choice.high as Quantity) + 1 year)
+		when choice is Timing then
+      Message(null, true, 'NOT_IMPLEMENTED', 'Error', 'Calculation of an interval from a Timing value is not supported') as Interval&lt;DateTime&gt;
+		else
+			null as Interval&lt;DateTime&gt;
+	end</code></pre>
+  </td>
+
+</tr>
+
+
+
+
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="terminology"> </a>Terminology</th>
+
+
+</tr>
+  
+  
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system ActCode
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://terminology.hl7.org/CodeSystem/v3-ActCode
+    <br/>
+    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system SNOMEDCT
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://snomed.info/sct
+    <br/>
+    <em>Canonical URL</em>: <tt>http://snomed.info/sct</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system ConditionClinicalStatusCodes
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://terminology.hl7.org/CodeSystem/condition-clinical
+    <br/>
+    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-clinical</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system Diagnosis Role
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://terminology.hl7.org/CodeSystem/diagnosis-role
+    <br/>
+    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/diagnosis-role</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Encounter Inpatient
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Inpatient, Emergency, and Observation Locations
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.265
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1046.265</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Diabetes Medications
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.58
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.58</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Observation Services
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Emergency Department Visit
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Blood Glucose Laboratory and Point of Care Tests
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.38
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.38</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Payer Type
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591</tt>
+    
+  </td>
+</tr>
+ 
+
+
+  
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: inpatient non-acute
+        <br/>
+      
+      <em>Code</em>: NONAC
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: short stay
+        <br/>
+      
+      <em>Code</em>: SS
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: inpatient acute
+        <br/>
+      
+      <em>Code</em>: ACUTE
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: inpatient encounter
+        <br/>
+      
+      <em>Code</em>: IMP
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Male (finding)
+        <br/>
+      
+      <em>Code</em>: 248153007
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Female (finding)
+        <br/>
+      
+      <em>Code</em>: 248152002
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Active
+        <br/>
+      
+      <em>Code</em>: active
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-clinical</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Recurrence
+        <br/>
+      
+      <em>Code</em>: recurrence
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-clinical</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Relapse
+        <br/>
+      
+      <em>Code</em>: relapse
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-clinical</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Chief complaint
+        <br/>
+      
+      <em>Code</em>: CC
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/diagnosis-role</tt>
+    </td>
+  </tr>
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="dependencies"> </a>Dependencies</th>
+
+
+</tr>
+  
+  
+  
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: QICore model information
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://hl7.org/fhir/Library/QICore-ModelInfo
+    <br/>
+    <em>Canonical URL</em>: <tt>http://hl7.org/fhir/Library/QICore-ModelInfo</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library FHIRHelpers
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/FHIRHelpers|4.4.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/FHIRHelpers|4.4.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library QICoreCommon
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/QICoreCommon|4.0.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/QICoreCommon|4.0.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library CQMCommon
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/CQMCommon|4.1.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/CQMCommon|4.1.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library SDE
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/SupplementalDataElements|5.1.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/SupplementalDataElements|5.1.000</tt>
+    
+  </td>
+</tr>
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="data-requirements"> </a>Data Requirements</th>
+
+
+</tr>
+  
+  
+  
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, status, status.value, period, location, id, id.value, meta, identifier, statusHistory, class, classHistory, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, partOf
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1111.143
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, status, status.value, period, location, id, id.value, meta, identifier, statusHistory, class, classHistory, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, partOf
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.117.1.7.1.292
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period, class, status, status.value, location, id, id.value, meta, identifier, statusHistory, classHistory, serviceType, priority, subject, length, reasonCode, reasonReference, diagnosis, account, hospitalization, partOf
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Resource
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/StructureDefinition/Resource
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, id.value
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Location
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-location
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, id.value, meta, extension, status, status.value, operationalStatus, name, name.value, alias, description, description.value, mode, mode.value, type, telecom, address, physicalType, position, managingOrganization, partOf, hoursOfOperation, availabilityExceptions, availabilityExceptions.value, endpoint
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: MedicationRequest
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medicationrequest
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: medication, authoredOn, authoredOn.value, id, id.value, meta, status, status.value, statusReason, intent, intent.value, category, priority, priority.value, doNotPerform, doNotPerform.value, reported, subject, encounter, requester, recorder, reasonCode, reasonReference, instantiatesCanonical, instantiatesUri, courseOfTherapyType, dosageInstruction
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: MedicationAdministration
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medicationadministration
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: medication, effective, id, id.value, meta, instantiates, partOf, status, status.value, statusReason, category, subject, context, supportingInformation, performer, reasonCode, reasonReference, request, device, note, dosage
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Medication
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medication
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Coverage
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: period, id, id.value, meta, status, status.value, type, policyHolder, subscriber, subscriberId, subscriberId.value, beneficiary, dependent, dependent.value, relationship, payor, class, order, order.value, network, network.value, subrogation, subrogation.value, contract
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Coverage
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Patient
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: url, extension, birthDate, birthDate.value, id, id.value, meta, identifier, active, active.value, name, telecom, gender, gender.value, deceased, address, maritalStatus, multipleBirth, photo, contact, communication, generalPractitioner, managingOrganization, link
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, issued, issued.value, id, id.value, extension, text, referenceRange, component, basedOn, partOf, category, status, status.value, subject, focus, encounter, performer, value, dataAbsentReason, interpretation, note, bodySite, method, specimen, device, hasMember, derivedFrom
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1190.38
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: id, id.value, meta, clinicalStatus, verificationStatus, category, severity, code, bodySite, subject, encounter, encounter.reference, encounter.reference.value, onset, stage, evidence, note
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: ServiceRequest
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: authoredOn, authoredOn.value, id, id.value, meta, instantiatesCanonical, instantiatesUri, basedOn, replaces, requisition, status, status.value, intent, intent.value, category, priority, priority.value, doNotPerform, doNotPerform.value, code, orderDetail, quantity, subject, encounter, occurrence, asNeeded, requester, performerType, performer, locationCode, reasonCode, reasonReference, insurance, bodySite, note, patientInstruction, patientInstruction.value
+    <br/>
+   
+   
+  </td>
+</tr>
+
+  
+  
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.8 of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
