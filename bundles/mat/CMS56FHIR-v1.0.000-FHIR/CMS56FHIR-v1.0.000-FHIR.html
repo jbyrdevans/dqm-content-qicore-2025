@@ -1,0 +1,6915 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #ffffff;;
+            margin: 0px;
+            padding: 10px;
+            height: 100%;
+            font-size: 1em;
+        }
+
+        p, li {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            margin: 0 0 5px 0;
+            font-weight: normal;
+        }
+
+        td {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        tr {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        table.colstu td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #fff5e6;
+        }
+
+        table.colsd td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #efefef;
+        }
+
+        table.colsn td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #e6ffe6;
+        }
+
+        table.colse td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #e6e6e6;
+        }
+
+        table.colsi td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #ffffe6;
+        }
+
+        table.list td {
+            border-top: 1px silver solid;
+            border-spacing: 0;
+        }
+
+        table.bare td {
+            border-spacing: 0;
+        }
+
+        ul.dict li {
+            font-size: 11px;
+            line-height: 1.2em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+        }
+
+        table.dict td {
+            padding: 3px 7px 2px 7px;
+            font-size: 11px;
+            line-height: 1.2em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.dict p {
+            font-size: 11px;
+        }
+
+        table {
+            margin-bottom: 10px;
+            border-collapse: collapse;
+        }
+
+        table.codes td {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.grid {
+            margin-bottom: 10px;
+            border: 1px black solid;
+            margin-right: auto;
+
+        }
+
+        table.grid th {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: bold;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.grid td {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        ul, ol {
+            margin: 10px 0;
+            padding: 0 0 0 25px;
+        }
+
+        .dense li {
+            margin: 0 0 0 0;
+        }
+
+        li {
+            margin: 0 0 5px 0;
+        }
+
+        h1 {
+            font-size: 16px;
+            margin: 0 0 4px 0;
+            font-family: verdana;
+            border-bottom: 1px solid #7e7e7e;
+            padding-bottom: 2px;
+        }
+
+        h2 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 14px;
+            margin: 0 0 3px 0;
+            margin-top: 15px;
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 2px;
+        }
+
+        h3 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 12px;
+            margin: 0 0 3px 0;
+            margin-top: 10px;
+        }
+
+        h4 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 11px;
+            margin: 0 0 3px 0;
+            margin-top: 10px;
+        }
+
+        div.sidebar h2 {
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 2px;
+            padding-top: 0px;
+            margin-top: 0px;
+            font-weight: normal;
+            margin-left: 8px;
+            margin-bottom: 0px;
+            font-size: 12px;
+        }
+
+        div.sidebar p {
+            padding-bottom: 0px;
+            padding-top: 10px;
+            font-weight: normal;
+            margin-left: 8px;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        div.sidebar ul {
+            list-style: none;
+            padding: 0px;
+            margin-left: 6px;
+            font-size: 11px;
+            line-height: 2.125em;
+        }
+
+        div.sidebar li {
+            margin: 0px 0px 0px 6px;
+            padding: 0px;
+            font-size: 11px;
+            line-height: 2.125em;
+        }
+
+        a {
+            color: #428bca;
+            text-decoration: none;
+        }
+
+        a.xmltag :visited {
+            color: Navy;
+        }
+
+        a.xmltag :hover {
+            color: Blue;
+        }
+
+        pre {
+            display: block;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+
+        pre a {
+            color: darkgreen;
+            text-decoration: none;
+            border: 0;
+
+        }
+
+        /* PrismJS 1.21.0
+        https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apl+applescript+aql+arduino+arff+asciidoc+aspnet+asm6502+autohotkey+autoit+bash+basic+batch+bbcode+birb+bison+bnf+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cil+clojure+cmake+coffeescript+concurnas+csp+crystal+css-extras+cypher+d+dart+dax+dhall+diff+django+dns-zone-file+docker+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+firestore-security-rules+flow+fortran+ftl+gml+gcode+gdscript+gedcom+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+http+hpkp+hsts+ichigojam+icon+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keyman+kotlin+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+lolcode+lua+makefile+markdown+markup-templating+matlab+mel+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nginx+nim+nix+nsis+objectivec+ocaml+opencl+oz+parigp+parser+pascal+pascaligo+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plsql+powerquery+powershell+processing+prolog+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+q+qml+qore+r+racket+jsx+tsx+reason+regex+renpy+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+stan+iecst+stylus+swift+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+turtle+twig+typescript+typoscript+unrealscript+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+wiki+xeora+xml-doc+xojo+xquery+yaml+yang+zig&plugins=keep-markup */
+        /**
+         * prism.js default theme for JavaScript, CSS and HTML
+         * Based on dabblet (http://dabblet.com)
+         * @author Lea Verou
+         */
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            color: black;
+            background: none;
+            text-shadow: 0 1px white;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 0.95em;
+            text-align: left;
+            white-space: pre;
+            word-spacing: normal;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 1.5;
+
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+        }
+
+        pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+        code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+        code[class*="language-"]::selection, code[class*="language-"] ::selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        @media print {
+            code[class*="language-"],
+            pre[class*="language-"] {
+                text-shadow: none;
+            }
+        }
+
+        /* Code blocks */
+        pre[class*="language-"] {
+            padding: 1em;
+            margin: .5em 0;
+            overflow: auto;
+        }
+
+        :not(pre) > code[class*="language-"],
+        pre[class*="language-"] {
+            background: #f5f2f0;
+        }
+
+        /* Inline code */
+        :not(pre) > code[class*="language-"] {
+            padding: .1em;
+            border-radius: .3em;
+            white-space: normal;
+        }
+        /*
+  ===============================
+  Liquid Narrative Styling Start
+  ===============================
+  */
+
+        .narrative-table {
+            border: 1pt inset rgb(0, 0, 0);
+            line-height: 10pt;
+            border-collapse: separate;
+            -webkit-border-horizontal-spacing: 2px;
+            -webkit-border-vertical-spacing: 2px;
+        }
+
+
+        .narrative-table ul,
+        .content-container ul {
+            list-style: disc;
+            padding-left: 25px;
+            margin-top: 5px;
+        }
+
+        .narrative-table ol,
+        .content-container ol {
+            list-style: decimal;
+            padding: 0 0 0 25px;
+            margin-top: 5px;
+        }
+
+        .narrative-table strong,
+        .content-container strong {
+            font-weight: 700;
+        }
+
+        .narrative-table>tbody {
+            display: table-row-group;
+            vertical-align: middle;
+        }
+
+        .narrative-table>tbody>tr {
+            display: table-row;
+            background-color: lightgray;
+            vertical-align: inherit;
+        }
+
+        .narrative-table>tbody>tr>th {
+            padding: 5px;
+        }
+
+        .section-header {
+            background-color: #656565;
+            color: whitesmoke;
+            vertical-align: inherit;
+        }
+
+        .row-header {
+            background-color: #656565;
+            color: whitesmoke;
+            vertical-align: inherit;
+        }
+
+        .tab-one {
+            padding-left: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .row-header {
+                min-width: 138px;
+                max-width: 138px;
+            }
+
+            .content-container {
+                max-width: 576px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .row-header {
+                min-width: 181px;
+                max-width: 181px;
+            }
+
+            .content-container {
+                max-width: 745px;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            .row-header {
+                min-width: 213px;
+                max-width: 213px;
+            }
+
+            .content-container {
+                max-width: 873px;
+            }
+        }
+
+        /*
+        ===============================
+        Liquid Narrative Styling End
+        ===============================
+        */
+
+        /*
+        ===============================
+        Rich text editor styling
+        ===============================
+        */
+
+        table.rich-text-table th,td {
+            border: 1px solid #9c9c9c;
+            box-sizing: border-box;
+            min-width: 1em;
+            padding: 6px 8px;
+            position: relative;
+            vertical-align: top;
+        }
+        table.rich-text-table th {
+            background-color: #3d25140d;
+        }
+    </style>
+</head>
+<body>
+<div xmlns="http://www.w3.org/1999/xhtml" class="col-12">
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Metadata</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Functional Status Assessment for Total Hip ReplacementFHIR</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+<td class="content-container">1.0.000</td>
+</tr>
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Short Name</th>
+
+
+<td class="content-container">CMS56FHIR</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">GUID (Version Independent)</th>
+
+
+<td class="content-container">urn:uuid:959c21c9-35c7-4967-aaec-3dab54850811</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">GUID (Version Specific)</th>
+
+
+<td class="content-container">urn:uuid:b26c2d58-4fe7-454a-aa5b-2f8254cd2ddf</td>
+</tr>
+
+
+
+  
+    
+    
+<tr>
+
+
+<th scope="row" class="row-header">CMS Identifier</th>
+
+
+<td class="content-container">56FHIR</td>
+</tr>
+
+  
+
+
+
+
+  
+    
+    
+<tr>
+
+
+<th scope="row" class="row-header">Effective Period</th>
+
+
+<td class="content-container">2026-01-01 through 2026-12-31</td>
+</tr>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+<td class="content-container">Centers for Medicare &amp; Medicaid Services (CMS)</td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Developer</th>
+
+
+<td class="content-container">American Institutes for Research (AIR)</td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container"><p>Percentage of patients 19 years of age and older who received an elective primary total hip arthroplasty (THA) and completed a functional status assessment within 90 days prior to the surgery and in the 300 - 425 days after the surgery</p></td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Copyright</th>
+
+
+<td class="content-container"><p>This electronic clinical quality measure (Measure) and related data specifications are owned and stewarded by the Centers for Medicare &amp; Medicaid Services (CMS). CMS contracted (Contract # 75FCMC18D0027/ Task Order #: 75FCMC24F0144) with the American Institutes for Research (AIR) to develop this electronic measure. AIR is not responsible for any use of the Measure. AIR makes no representations, warranties, or endorsement about the quality of any organization or physician that uses or reports performance measures and AIR has no liability to anyone who relies on such measures or specifications. Limited proprietary coding is contained in the Measure specifications for user convenience. Users of proprietary code sets should obtain all necessary licenses from the owners of the code sets. AIR disclaims all liability for use or accuracy of any third-party codes contained in the specifications. CPT(R) codes, descriptions and other data are copyright 2024. American Medical Association. All rights reserved. CPT is a trademark of the American Medical Association. Fee schedules, relative value units, conversion factors and/or related components are not assigned by the AMA, are not part of CPT, and the AMA is not recommending their use. The AMA does not directly or indirectly practice medicine or dispense medical services. The AMA assumes no liability for data contained or not contained herein. Applicable FARS/DFARS restrictions apply to government use. The measure specifications contain coding from LOINC(R) (http://loinc.org). The LOINC table, LOINC codes, LOINC panels and form file, LOINC linguistic variants file, LOINC/RSNA Radiology Playbook, and LOINC/IEEE Medical Device Code Mapping Table are copyright 2004-2024 Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee, and are available at no cost under the license at http://loinc.org/terms-of-use. This material contains SNOMED Clinical Terms(R) (SNOMED CT[R]) copyright 2004-2024 International Health Terminology Standards Development Organisation. ICD-10 copyright 2024 World Health Organization. All Rights Reserved. “HL7” is the registered trademark of Health Level Seven International.</p></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Disclaimer</th>
+
+
+<td class="content-container">The performance Measure is not a clinical guideline and does not establish a standard of medical care, and has not been tested for all potential applications. THE MEASURE AND SPECIFICATIONS ARE PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. Due to technical limitations, registered trademarks are indicated by (R) or [R] and unregistered trademarks are indicated by (TM) or [TM].</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Rationale</th>
+
+
+<td class="content-container"><p>THAs are common surgical procedures that address hip pain and functional impairment, primarily caused by osteoarthritis. Although THA is an effective procedure for addressing osteoarthritis for many patients, some people, particularly those with more severe preoperative pain and impairment, do not experience the improvements in pain, function, and quality of life expected from the procedure (Beswick et al., 2012; Fortin et al., 1999; Tilbury et al., 2016). In 2010, providers performed 326,100 THAs, with 95 percent of them in patients age 45 and older (Wolford, Palso, &amp; Bercovitz, 2015). Although THAs were introduced as a procedure for older adults, the percentage of patients age 55 to 64 (29 percent) who had a THA in 2010 exceeded the percentage of patients age 75 and older (26 percent) who had a THA (Wolford, Palso, &amp; Bercovitz, 2015). Kurtz et al. (2009) projected that patients younger than 65 would account for 52 percent of THAs by 2030. This growth in hip surgeries for patients younger than 65 is significant because these patients often require more expensive joint arthroplasties that will better withstand the wear caused by physical activity (Bozic et al., 2006). This measure evaluates whether patients complete a patient-reported functional status assessment (FSA) before and after a THA. Measuring functional status for patients undergoing THA permits longitudinal assessment - from the patient's perspective - of the impact of surgical intervention on pain, physical function, as well as health-related quality of life (Rothrock et al., 2010).</p></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Clinical Recommendation Statement</th>
+
+
+<td class="content-container">While there is no clinical guideline recommending that clinicians assess patients who are undergoing total hip replacements using patient-reported outcomes of function and pain, several clinical specialty societies support the use of a general health questionnaire and a disease-specific questionnaire for these patients. In particular, they recommend the Veterans RAND 12-item health survey (VR-12) or the Patient-Reported Outcomes Measurement Information System [PROMIS]-10-Global as the general health questionnaire and the Hip Disability and Osteoarthritis Outcome Score [HOOS], Jr. as the disease-specific questionnaire (American Association of Orthopaedic Surgeons, the American Joint Replacement Registry, The Hip Society, The Knee Society, &amp; the American Association of Hip and Knee Surgeons, 2015). Peer-reviewed and grey literature support additional exclusions for patients undergoing total hip replacements. Staged procedures, concurrent procedures, partial procedures, resurfacing procedures, revision procedures, and removal of implant devices or prosthesis were linked to significant morbidity; complications (such as dislocation, infection, and reinfection); and high failure rates (Ludwick et al., 2021). In addition, mechanical complications, such as instability and dislocation, are also linked to complications and are associated with primary and revision THA/Total Knee Arthroplasty (TKA) (Gkiatas et al., 2021). Malignant neoplasms (such as osteonecrosis of the femoral head) are associated with substantial pain and functional disabilities before THA/TKA (Bernhard et al., 2021). Additionally, peer-reviewed and grey literature support various postoperative time frames, including follow-up within 10 to 14 months (Franklin et al., 2021) (Holte et al., 2021).</td>
+</tr>
+
+
+
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    American Association of Orthopaedic Surgeons, the American Joint Replacement Registry, The Hip Society, The Knee Society, &amp; the American Association of Hip and Knee Surgeons. (2015). Patient-reported outcomes summit for total joint arthroplasty report. http://www.aahks.org/wp-content/uploads/2018/08/comment-letter-pro-summit-09082015.pdf
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Bernhard, M. E., Barnes, C. L., DeFeo, B. M., Kaste, S. C., Wang, X., Lu, Z., &amp; Neel, M. D. (2021). Total hip arthroplasty in adolescents and young adults for management of advanced corticosteroid-induced osteonecrosis secondary to treatment for hematologic malignancies. The Journal of Arthroplasty, 36(4), 1352-1360
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Bernhard, M. E., Barnes, C. L., DeFeo, B. M., Kaste, S. C., Wang, X., Lu, Z., &amp; Neel, M. D. (2021). Total hip arthroplasty in adolescents and young adults for management of advanced corticosteroid-induced osteonecrosis secondary to treatment for hematologic malignancies. The Journal of Arthroplasty, 36(4), 1352-1360
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Bernhard, M. E., Barnes, C. L., DeFeo, B. M., Kaste, S. C., Wang, X., Lu, Z., &amp; Neel, M. D. (2021). Total hip arthroplasty in adolescents and young adults for management of advanced corticosteroid-induced osteonecrosis secondary to treatment for hematologic malignancies. The Journal of Arthroplasty, 36(4), 1352-1360
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Beswick, A. D., Wylde, V., Gooberman-Hill, R., et al. (2012). What proportion of patients report long-term pain after total hip or knee replacement for osteoarthritis? A systematic review of prospective studies in unselected patients. British Medical Journal Open, 2(1), 1-12.
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Bozic, K. J., Morsehed, S., Silverstein, M. D., et al. (2006). Use of cost-effectiveness analysis to evaluate new technologies in orthopaedics: The case of alternative bearing surfaces in total hip arthroplasty. Journal of Bone and Joint Surgery, American Volume, 88(4), 706-714.
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Fortin, P. R., Clarke, A. E., Joseph, L., et al. (1999). Outcomes of total hip and knee replacement preoperative functional status predicts outcomes at six months after surgery. American College of Rheumatology, 42(8), 1722-1728.
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Franklin, P.D., Bond, C.P., Rothrock, N.E., Cella, D. (2021). Strategies for effective implementation of patient-reported outcome measures in arthroplasty practice. J Bone Joint Surg Am.;103(24):e97. doi:10.2106/JBJS.20.02072
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Gkiatas, I., Sharma, A. K., Driscoll, D. A., McLawhorn, A. S., Chalmers, B. P., &amp; Sculco, P. K. (2021). Nonconcentric and irregular dislocations of total hip arthroplasties: Radiographic analysis and review of the literature. The Journal of Emergency Medicine, 60(4), 451–459. https://doi.org/10.1016/j.jemermed.2020.11.023
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Holte, A.J., Molloy, I.B., Werth, P.M., Jevsevar, D.S. Do patient engagement platforms in total joint arthroplasty improve patient-reported outcomes? (2021). J Arthroplasty. 36(12):3850-3858. doi: 10.1016/j.arth.2021.08.003. PMID: 34481693
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Kurtz, S. M., Lau, E., Ong, K., et al. (2009). Future young patient demand for primary and revision joint arthroplasty: National projections from 2010 to 2030. Clinical Orthopaedics and Related Research, 467(10), 2606-2612.
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Ludwick, L., Chisari, E., Wang, J., Clarkson, S., Collins, L., &amp; Parvizi, J. (2021). Emergence of antibiotic resistance across two-stage revision for periprosthetic joint infection. The Journal of Arthroplasty, 36(8), 2946–2950. https://doi.org/10.1016/j.arth.2021.04.007
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Rothrock, N. E., Hays, R. D., Spritzer, K., et al. (2010). Relative to the general U.S. population, chronic diseases are associated with poorer health-related quality of life as measured by the Patient-Reported Outcomes Measurement Information System (PROMIS). Journal of Clinical Epidemiology, 63(11), 1195-1204.
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Tilbury, C., Haanstra, T. M., Leichtenberg, C. S., et al. (2016). Unfulfilled expectations after total hip and knee arthroplasty surgery: There is a need for better preoperative patient information and education. Journal of Arthroplasty, 31(10), 2136-2145.
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Wolford, M. L., Palso, K., &amp; Bercovitz, A. (2015). Hospitalization for total hip replacement among inpatients aged 45 and over: United States, 2000-2010. NCHS Data Brief No. 186. Hyattsville, MD: National Center for Health Statistics.
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Guidance (Usage)</th>
+
+
+<td class="content-container"><p>The same FSA instrument must be used for the initial and follow-up assessment. This eCQM is a patient-based measure. This FHIR-based measure is derived from the QDM-based measure CMS56v14. Please refer to the HL7 QI-Core Implementation Guide (https://hl7.org/fhir/us/qicore/STU6/) for more information on QI-Core and mapping recommendations from QDM to QI-Core STU 6.0.0</p></td>
+</tr>
+
+
+
+  
+    
+    <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Group (Rate) (ID: Group_1)</th>
+
+
+</tr>
+  
+  
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Basis</th>
+
+
+<td class="content-container">boolean</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Scoring</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-scoring#proportion: 'Proportion']</td>
+</tr>
+
+
+
+
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#process: 'Process']</td>
+</tr>
+
+
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Improvement Notation</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase: 'Increased score indicates improvement']</td>
+</tr>
+
+
+  
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Initial Population</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: InitialPopulation_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p>Patients 19 years of age and older who had a primary THA between November two years prior to the measurement period and October of the year prior to measurement period; and who had an outpatient encounter between August of the year prior to the measurement period and the end of the measurement period</p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-cms56fhirfuncstathipreplacement-initial-population">Initial Population</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Denominator</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: Denominator_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p>Equals Initial Population</p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-cms56fhirfuncstathipreplacement-denominator">Denominator</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Denominator Exclusion</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: DenominatorExclusion_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><ul>
+ <li><p>Exclude patients who are in hospice care or have a hospice care order documented during any part of the measurement period.</p></li>
+ <li><p>Exclude patients with severe cognitive impairment that starts before or in any part of the measurement period.</p></li>
+ <li><p>Exclude patients with one or more specific lower body fractures indicating trauma in the 48 hours before or at the start of the total hip arthroplasty.</p></li>
+ <li><p>Exclude patients with a partial hip arthroplasty procedure on the day of the total hip arthroplasty.</p></li>
+ <li><p>Exclude patients with a revision hip arthroplasty procedure, an implanted device/prosthesis removal procedure or a resurfacing/supplement procedure on the day of the total hip arthroplasty.</p></li>
+ <li><p>Exclude patients with a malignant neoplasm of the pelvis, sacrum, coccyx, lower limbs, or bone/bone marrow or a disseminated malignant neoplasm on the day of the total hip arthroplasty.</p></li>
+ <li><p>Exclude patients with a mechanical complication on the day of the total hip arthroplasty.</p></li>
+ <li><p>Exclude patients with a second total hip arthroplasty procedure 1 year before or after the original total hip arthroplasty procedure.</p></li>
+ <li><p>Exclude patients who die on the day of the total hip arthroplasty procedure or in the 300 days after.</p></li>
+</ul></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-cms56fhirfuncstathipreplacement-denominator-exclusions">Denominator Exclusions</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Numerator</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: Numerator_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p>Patients with patient-reported functional status assessment results (i.e., Veterans RAND 12-item health survey [VR-12], Patient-Reported Outcomes Measurement Information System [PROMIS]-10-Global Health, Hip Disability and Osteoarthritis Outcome Score [HOOS], HOOS Jr.) in the 90 days prior to or on the day of the primary THA procedure, and in the 300 - 425 days after the THA procedure</p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-cms56fhirfuncstathipreplacement-numerator">Numerator</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+
+
+  
+    
+<tr>
+
+
+<th scope="row" class="row-header">Supplemental Data Guidance</th>
+
+
+<td class="content-container">For every patient evaluated by this measure also identify payer, race, ethnicity and sex</td>
+</tr>
+
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Supplemental Data Elements</th>
+
+
+</tr>
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-ethnicity
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Ethnicity
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#cms56fhirfuncstathipreplacement-sde-ethnicity">SDE Ethnicity</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-race
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Race
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#cms56fhirfuncstathipreplacement-sde-race">SDE Race</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-sex
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Sex
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#cms56fhirfuncstathipreplacement-sde-sex">SDE Sex</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-payer
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Payer
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#cms56fhirfuncstathipreplacement-sde-payer">SDE Payer</a> 
+      
+    
+  </td>
+</tr>
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Logic</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Primary Library</th>
+
+
+<td class="content-container">https://madie.cms.gov/Library/CMS56FHIRFuncStatHipReplacement</td>
+</tr>
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Contents</th>
+  <td class="content-container">
+    <em><a href="#population-criteria">Population Criteria</a></em>
+    <br/>
+    <em><a href="#definitions">Logic Definitions</a></em>
+    <br/>
+    <em><a href="#terminology">Terminology</a></em>
+    <br/>
+    <em><a href="#dependencies">Dependencies</a></em>
+    <br/>
+    <em><a href="#data-requirements">Data Requirements</a></em>
+    <br/>
+  </td>
+</tr>
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="population-criteria"> </a>Population Criteria</th>
+
+
+</tr>
+  
+  
+  
+  
+    
+    <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Group (Rate) (ID: Group_1)</th>
+
+
+</tr>
+  
+  
+  
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-cms56fhirfuncstathipreplacement-initial-population"> </a>
+    
+    
+    Initial Population
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
+  &quot;Has Qualifying Encounter&quot;
+    and exists ( &quot;Total Hip Arthroplasty Procedure&quot; )
+    and AgeInYearsAt(date from start of &quot;Measurement Period&quot;) &gt;= 19</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-cms56fhirfuncstathipreplacement-denominator"> </a>
+    
+    
+    Denominator
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Denominator&quot;:
+  &quot;Initial Population&quot;</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-cms56fhirfuncstathipreplacement-denominator-exclusions"> </a>
+    
+    
+    Denominator Exclusion
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Denominator Exclusions&quot;:
+  Hospice.&quot;Has Hospice Services&quot;
+    or &quot;Has Severe Cognitive Impairment&quot;
+    or &quot;Has Total Hip Arthroplasty with 1 or More Lower Body Fractures&quot;
+    or &quot;Has Partial Hip Arthroplasty Procedure&quot;
+    or &quot;Has Revision Hip Arthroplasty Procedure or Implanted Device or Prosthesis Removal Procedure&quot;
+    or &quot;Has Malignant Neoplasm of Lower and Unspecified Limbs&quot;
+    or &quot;Has Mechanical Complication&quot;
+    or &quot;Has More Than One Elective Primary Total Hip Arthroplasty Performed&quot;
+    or &quot;Death Within 300 Days of the THA Procedure&quot;</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-cms56fhirfuncstathipreplacement-numerator"> </a>
+    
+    
+    Numerator
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Numerator&quot;:
+  ( &quot;Has THA with Initial and Follow Up HOOS Assessments&quot; )
+    or ( &quot;Has THA with Initial and Follow Up HOOSJr Assessments&quot; )
+    or ( &quot;Has THA with Initial and Follow Up PROMIS10 Assessments&quot; )
+    or ( &quot;Has THA with Initial and Follow Up VR12 Oblique Assessments&quot; )
+    or ( &quot;Has THA with Initial and Follow Up VR12 Orthogonal Assessments&quot; )</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="definitions"> </a>Logic Definitions</th>
+
+
+</tr>
+  
+  
+          
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="hospice-has-hospice-services"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> Hospice</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Hospice Services&quot;:
+  exists ((([Encounter: &quot;Encounter Inpatient&quot;]).isEncounterPerformed()) InpatientEncounter
+      where (InpatientEncounter.hospitalization.dischargeDisposition ~ &quot;Discharge to home for hospice care (procedure)&quot;
+          or InpatientEncounter.hospitalization.dischargeDisposition ~ &quot;Discharge to healthcare facility for hospice care (procedure)&quot;
+      )
+        and InpatientEncounter.period ends during day of &quot;Measurement Period&quot;
+  )
+    or exists ((([Encounter: &quot;Hospice Encounter&quot;]).isEncounterPerformed()) HospiceEncounter
+        where HospiceEncounter.period overlaps day of &quot;Measurement Period&quot;
+    )
+    or exists ((([ObservationScreeningAssessment: &quot;Hospice care [Minimum Data Set]&quot;]).isAssessmentPerformed()) HospiceAssessment
+        where HospiceAssessment.value ~ &quot;Yes (qualifier value)&quot;
+          and HospiceAssessment.effective.toInterval() overlaps day of &quot;Measurement Period&quot;
+    )
+    or exists ((([ServiceRequest: &quot;Hospice Care Ambulatory&quot;]).isInterventionOrder()) HospiceOrder
+        where HospiceOrder.authoredOn during day of &quot;Measurement Period&quot;
+    )
+    or exists ((([Procedure: &quot;Hospice Care Ambulatory&quot;]).isInterventionPerformed()) HospicePerformed
+        where HospicePerformed.performed.toInterval() overlaps day of &quot;Measurement Period&quot;
+    )
+    or exists ((([ConditionProblemsHealthConcerns: &quot;Hospice Diagnosis&quot;]
+        union [ConditionEncounterDiagnosis: &quot;Hospice Diagnosis&quot;]).verified()) HospiceCareDiagnosis
+        where HospiceCareDiagnosis.prevalenceInterval() overlaps day of &quot;Measurement Period&quot;
+    )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-sex"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Sex&quot;:
+  case
+    when Patient.sex = '248153007' then &quot;Male (finding)&quot;
+    when Patient.sex = '248152002' then &quot;Female (finding)&quot;
+    else null
+  end</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-payer"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Payer&quot;:
+  [Coverage: type in &quot;Payer Type&quot;] Payer
+    return {
+      code: Payer.type,
+      period: Payer.period
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-ethnicity"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Ethnicity&quot;:
+  Patient.ethnicity E
+    return Tuple {
+      codes: { E.ombCategory } union E.detailed,
+      display: E.text
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-race"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Race&quot;:
+  Patient.race R
+    return Tuple {
+      codes: R.ombCategory union R.detailed,
+      display: R.text
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-sde-sex"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Sex&quot;:
+  SDE.&quot;SDE Sex&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-november-1-two-years-prior-to-the-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;November 1 Two Years Prior to the Measurement Period&quot;:
+  DateTime((year from start of &quot;Measurement Period&quot; - 2), 11, 1, 0, 0, 0, 0, 0)</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-october-31-year-prior-to-the-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;October 31 Year Prior to the Measurement Period&quot;:
+  DateTime((year from start of &quot;Measurement Period&quot; - 1), 10, 31, 23, 59, 59, 999, 0)</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-total-hip-arthroplasty-procedure"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Total Hip Arthroplasty Procedure&quot;:
+  ( ( [Procedure: &quot;Primary THA Procedure&quot;] ).isProcedurePerformed ( ) ) THAProcedure
+    where THAProcedure.performed.toInterval ( ) starts during day of Interval[&quot;November 1 Two Years Prior to the Measurement Period&quot;, &quot;October 31 Year Prior to the Measurement Period&quot;]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-date-hoos-total-assessment-completed"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Date HOOS Total Assessment Completed&quot;:
+  from
+    ( ( [ObservationScreeningAssessment: &quot;Quality of life score [HOOS]&quot;] ).isAssessmentPerformed ( ) ) HOOSLifeQuality,
+    ( ( [ObservationScreeningAssessment: &quot;Sport-recreation score [HOOS]&quot;] ).isAssessmentPerformed ( ) ) HOOSSport,
+    ( ( [ObservationScreeningAssessment: &quot;Activities of daily living score [HOOS]&quot;] ).isAssessmentPerformed ( ) ) HOOSActivityScore,
+    ( ( [ObservationScreeningAssessment: &quot;Symptoms score [HOOS]&quot;] ).isAssessmentPerformed ( ) ) HOOSSymptoms,
+    ( ( [ObservationScreeningAssessment: &quot;Pain score [HOOS]&quot;] ).isAssessmentPerformed ( ) ) HOOSPain
+    let HOOSLifeQualityDate: date from start of HOOSLifeQuality.effective.toInterval ( ),
+    HOOSSportDate: date from start of HOOSSport.effective.toInterval ( ),
+    HOOSActivityScoreDate: date from start of HOOSActivityScore.effective.toInterval ( ),
+    HOOSSymptomsDate: date from start of HOOSSymptoms.effective.toInterval ( ),
+    HOOSPainDate: date from start of HOOSPain.effective.toInterval ( )
+    where HOOSLifeQualityDate same day as HOOSSportDate
+      and ( HOOSSport as ObservationScreeningAssessment ).value is not null
+      and HOOSLifeQualityDate same day as HOOSActivityScoreDate
+      and ( HOOSActivityScore as ObservationScreeningAssessment ).value is not null
+      and HOOSLifeQualityDate same day as HOOSSymptomsDate
+      and ( HOOSSymptoms as ObservationScreeningAssessment ).value is not null
+      and HOOSLifeQualityDate same day as HOOSPainDate
+      and ( HOOSPain as ObservationScreeningAssessment ).value is not null
+      and ( HOOSLifeQuality as ObservationScreeningAssessment ).value is not null
+    return Max({ HOOSLifeQualityDate, HOOSSportDate, HOOSActivityScoreDate, HOOSSymptomsDate, HOOSPainDate })</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-has-tha-with-initial-and-follow-up-hoos-assessments"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has THA with Initial and Follow Up HOOS Assessments&quot;:
+  exists ( ( &quot;Total Hip Arthroplasty Procedure&quot; THAProcedure
+      return THAProcedure.performed.toInterval ( ) ) TotalHip
+      with &quot;Date HOOS Total Assessment Completed&quot; InitialHipAssessmentHOOS
+        such that TotalHip starts 90 days or less on or after day of InitialHipAssessmentHOOS
+      with &quot;Date HOOS Total Assessment Completed&quot; FollowUpHipAssessmentHOOS
+        such that date from FollowUpHipAssessmentHOOS during day of Interval[date from end of TotalHip + 300 days, date from end of TotalHip + 425 days]
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-date-hoosjr-total-assessment-completed"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Date HOOSJr Total Assessment Completed&quot;:
+  ( ( ( [ObservationScreeningAssessment: &quot;Total interval score [HOOSJR]&quot;] ).isAssessmentPerformed ( ) ) HOOSJr
+    where ( HOOSJr as ObservationScreeningAssessment ).value is not null ) DocumentedHOOSJr
+    return date from start of DocumentedHOOSJr.effective.toInterval ( )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-has-tha-with-initial-and-follow-up-hoosjr-assessments"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has THA with Initial and Follow Up HOOSJr Assessments&quot;:
+  exists ( ( &quot;Total Hip Arthroplasty Procedure&quot; THAProcedure
+      return THAProcedure.performed.toInterval ( ) ) TotalHip
+      with &quot;Date HOOSJr Total Assessment Completed&quot; InitialHipAssessment
+        such that TotalHip starts 90 days or less on or after day of InitialHipAssessment
+      with &quot;Date HOOSJr Total Assessment Completed&quot; FollowUpHipAssessment
+        such that date from FollowUpHipAssessment during day of Interval[date from end of TotalHip + 300 days, date from end of TotalHip + 425 days]
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-date-promis10-total-assessment-completed"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Date PROMIS10 Total Assessment Completed&quot;:
+  from
+    ( ( [ObservationScreeningAssessment: &quot;PROMIS-10 Global Mental Health (GMH) score T-score&quot;] ).isAssessmentPerformed ( ) ) PROMIS10MentalScore,
+    ( ( [ObservationScreeningAssessment: &quot;PROMIS-10 Global Physical Health (GPH) score T-score&quot;] ).isAssessmentPerformed ( ) ) PROMIS10PhysicalScore
+    let PROMIS10MentalScoreDate: date from start of PROMIS10MentalScore.effective.toInterval ( ),
+    PROMIS10PhysicalScoreDate: date from start of PROMIS10PhysicalScore.effective.toInterval ( )
+    where PROMIS10MentalScoreDate same day as PROMIS10PhysicalScoreDate
+      and ( PROMIS10PhysicalScore as ObservationScreeningAssessment ).value is not null
+      and ( PROMIS10MentalScore as ObservationScreeningAssessment ).value is not null
+    return Max({ PROMIS10MentalScoreDate, PROMIS10PhysicalScoreDate })</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-has-tha-with-initial-and-follow-up-promis10-assessments"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has THA with Initial and Follow Up PROMIS10 Assessments&quot;:
+  exists ( ( &quot;Total Hip Arthroplasty Procedure&quot; THAProcedure
+      return THAProcedure.performed.toInterval ( ) ) TotalHip
+      with &quot;Date PROMIS10 Total Assessment Completed&quot; InitialHipAssessmentPROMIS10
+        such that TotalHip starts 90 days or less on or after day of InitialHipAssessmentPROMIS10
+      with &quot;Date PROMIS10 Total Assessment Completed&quot; FollowUpHipAssessmentPROMIS10
+        such that date from FollowUpHipAssessmentPROMIS10 during day of Interval[date from end of TotalHip + 300 days, date from end of TotalHip + 425 days]
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-date-vr12-oblique-total-assessment-completed"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Date VR12 Oblique Total Assessment Completed&quot;:
+  from
+    ( ( [ObservationScreeningAssessment: &quot;VR-12 Mental component summary (MCS) score - oblique method T-score&quot;] ).isAssessmentPerformed ( ) ) VR12MentalAssessment,
+    ( ( [ObservationScreeningAssessment: &quot;VR-12 Physical component summary (PCS) score - oblique method T-score&quot;] ).isAssessmentPerformed ( ) ) VR12PhysicalAssessment
+    let VR12MentalAssessmentDate: date from start of VR12MentalAssessment.effective.toInterval ( ),
+    VR12PhysicalAssessmentDate: date from start of VR12PhysicalAssessment.effective.toInterval ( )
+    where VR12MentalAssessmentDate same day as VR12PhysicalAssessmentDate
+      and ( VR12MentalAssessment as ObservationScreeningAssessment ).value is not null
+      and ( VR12PhysicalAssessment as ObservationScreeningAssessment ).value is not null
+    return Max({ VR12MentalAssessmentDate, VR12PhysicalAssessmentDate })</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-has-tha-with-initial-and-follow-up-vr12-oblique-assessments"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has THA with Initial and Follow Up VR12 Oblique Assessments&quot;:
+  exists ( ( &quot;Total Hip Arthroplasty Procedure&quot; THAProcedure
+      return THAProcedure.performed.toInterval ( ) ) TotalHip
+      with &quot;Date VR12 Oblique Total Assessment Completed&quot; InitialHipAssessmentOblique
+        such that TotalHip starts 90 days or less on or after day of InitialHipAssessmentOblique
+      with &quot;Date VR12 Oblique Total Assessment Completed&quot; FollowUpHipAssessmentOblique
+        such that date from FollowUpHipAssessmentOblique during day of Interval[date from end of TotalHip + 300 days, date from end of TotalHip + 425 days]
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-date-vr12-orthogonal-total-assessment-completed"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Date VR12 Orthogonal Total Assessment Completed&quot;:
+  from
+    ( ( [ObservationScreeningAssessment: &quot;VR-12 Mental component summary (MCS) score - orthogonal method T-score&quot;] ).isAssessmentPerformed ( ) ) VR12MentalAssessment,
+    ( ( [ObservationScreeningAssessment: &quot;VR-12 Physical component summary (PCS) score - orthogonal method T-score&quot;] ).isAssessmentPerformed ( ) ) VR12PhysicalAssessment
+    let VR12MentalAssessmentDate: date from start of VR12MentalAssessment.effective.toInterval ( ),
+    VR12PhysicalAssessmentDate: date from start of VR12PhysicalAssessment.effective.toInterval ( )
+    where VR12MentalAssessmentDate same day as VR12PhysicalAssessmentDate
+      and ( VR12MentalAssessment as ObservationScreeningAssessment ).value is not null
+      and ( VR12PhysicalAssessment as ObservationScreeningAssessment ).value is not null
+    return Max({ VR12MentalAssessmentDate, VR12PhysicalAssessmentDate })</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-has-tha-with-initial-and-follow-up-vr12-orthogonal-assessments"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has THA with Initial and Follow Up VR12 Orthogonal Assessments&quot;:
+  exists ( ( &quot;Total Hip Arthroplasty Procedure&quot; THAProcedure
+      return THAProcedure.performed.toInterval ( ) ) TotalHip
+      with &quot;Date VR12 Orthogonal Total Assessment Completed&quot; InitialHipAssessmentOrthogonal
+        such that TotalHip starts 90 days or less on or after day of InitialHipAssessmentOrthogonal
+      with &quot;Date VR12 Orthogonal Total Assessment Completed&quot; FollowUpHipAssessmentOrthogonal
+        such that date from FollowUpHipAssessmentOrthogonal during day of Interval[date from end of TotalHip + 300 days, date from end of TotalHip + 425 days]
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-numerator"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Numerator&quot;:
+  ( &quot;Has THA with Initial and Follow Up HOOS Assessments&quot; )
+    or ( &quot;Has THA with Initial and Follow Up HOOSJr Assessments&quot; )
+    or ( &quot;Has THA with Initial and Follow Up PROMIS10 Assessments&quot; )
+    or ( &quot;Has THA with Initial and Follow Up VR12 Oblique Assessments&quot; )
+    or ( &quot;Has THA with Initial and Follow Up VR12 Orthogonal Assessments&quot; )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-august-1-year-prior-to-the-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;August 1 Year Prior to the Measurement Period&quot;:
+  DateTime((year from start of &quot;Measurement Period&quot; - 1), 8, 1, 0, 0, 0, 0, 0)</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-has-qualifying-encounter"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Qualifying Encounter&quot;:
+  exists ( ( ( [Encounter: &quot;Outpatient Consultation&quot;]
+        union [Encounter: &quot;Office Visit&quot;]
+        union ( [Encounter] E
+            where exists ( ( E.type ) T
+                where T ~ &quot;Postoperative follow-up visit, normally included in the surgical package, to indicate that an evaluation and management service was performed during a postoperative period for a reason(s) related to the original procedure&quot;
+            )
+        )
+        union [Encounter: &quot;Telephone Visits&quot;]
+        union [Encounter: &quot;Virtual Encounter&quot;]
+    ).isEncounterPerformed ( ) ) ValidEncounters
+      where ValidEncounters.period during day of Interval[&quot;August 1 Year Prior to the Measurement Period&quot;, end of &quot;Measurement Period&quot;]
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-initial-population"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
+  &quot;Has Qualifying Encounter&quot;
+    and exists ( &quot;Total Hip Arthroplasty Procedure&quot; )
+    and AgeInYearsAt(date from start of &quot;Measurement Period&quot;) &gt;= 19</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-denominator"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Denominator&quot;:
+  &quot;Initial Population&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-sde-payer"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Payer&quot;:
+  SDE.&quot;SDE Payer&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-sde-ethnicity"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Ethnicity&quot;:
+  SDE.&quot;SDE Ethnicity&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-has-severe-cognitive-impairment"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Severe Cognitive Impairment&quot;:
+  exists ( [ConditionProblemsHealthConcerns: &quot;Severe cognitive impairment (finding)&quot;]
+    union [ConditionEncounterDiagnosis: &quot;Severe cognitive impairment (finding)&quot;] ) Dementia
+    where Dementia.prevalenceInterval ( ) overlaps day of &quot;Measurement Period&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-has-total-hip-arthroplasty-with-1-or-more-lower-body-fractures"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Total Hip Arthroplasty with 1 or More Lower Body Fractures&quot;:
+  exists ( &quot;Total Hip Arthroplasty Procedure&quot; THAProcedure
+      with ( [ConditionEncounterDiagnosis: &quot;Lower Body Fractures Excluding Ankle and Foot&quot;]
+        union [ConditionProblemsHealthConcerns: &quot;Lower Body Fractures Excluding Ankle and Foot&quot;] ) LowerBodyFracture
+        such that LowerBodyFracture.prevalenceInterval ( ) starts 48 hours or less on or before start of THAProcedure.performed.toInterval ( )
+          and LowerBodyFracture.isVerified ( )
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-has-partial-hip-arthroplasty-procedure"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Partial Hip Arthroplasty Procedure&quot;:
+  exists ( ( ( [Procedure: &quot;Partial Arthroplasty of Hip&quot;] ).isProcedurePerformed ( ) ) PartialTHAProcedure
+      with &quot;Total Hip Arthroplasty Procedure&quot; THAProcedure
+        such that PartialTHAProcedure.performed.toInterval ( ) during day of THAProcedure.performed.toInterval ( )
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-has-revision-hip-arthroplasty-procedure-or-implanted-device-or-prosthesis-removal-procedure"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Revision Hip Arthroplasty Procedure or Implanted Device or Prosthesis Removal Procedure&quot;:
+  exists ( &quot;Total Hip Arthroplasty Procedure&quot; THAProcedure
+      with ( ( [Procedure: &quot;Removal, Revision and Supplement Procedures of the Lower Body and Spine&quot;] ).isProcedurePerformed ( ) ) RevisionTHAProcedure
+        such that RevisionTHAProcedure.performed.toInterval ( ) during day of THAProcedure.performed.toInterval ( )
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-has-malignant-neoplasm-of-lower-and-unspecified-limbs"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Malignant Neoplasm of Lower and Unspecified Limbs&quot;:
+  exists ( ( [ConditionProblemsHealthConcerns: &quot;Malignant Neoplasms of Lower and Unspecified Limbs&quot;]
+      union [ConditionEncounterDiagnosis: &quot;Malignant Neoplasms of Lower and Unspecified Limbs&quot;] ) MalignantNeoplasm
+      with &quot;Total Hip Arthroplasty Procedure&quot; THAProcedure
+        such that MalignantNeoplasm.prevalenceInterval ( ) overlaps day of THAProcedure.performed.toInterval ( )
+          and MalignantNeoplasm.isVerified ( )
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-has-mechanical-complication"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Mechanical Complication&quot;:
+  exists ( ( [ConditionEncounterDiagnosis: &quot;Mechanical Complications Excluding Upper Body&quot;]
+      union [ConditionProblemsHealthConcerns: &quot;Mechanical Complications Excluding Upper Body&quot;] ) MechanicalComplications
+      with &quot;Total Hip Arthroplasty Procedure&quot; THAProcedure
+        such that MechanicalComplications.prevalenceInterval ( ) overlaps day of THAProcedure.performed.toInterval ( )
+          and MechanicalComplications.isVerified ( )
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-has-more-than-one-elective-primary-total-hip-arthroplasty-performed"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has More Than One Elective Primary Total Hip Arthroplasty Performed&quot;:
+  exists ( &quot;Total Hip Arthroplasty Procedure&quot; THAProcedure
+      with ( ( [Procedure: &quot;Primary THA Procedure&quot;] ).isProcedurePerformed ( ) ) ElectiveTHAProcedure
+        such that THAProcedure.id !~ ElectiveTHAProcedure.id
+          and start of ElectiveTHAProcedure.performed.toInterval ( ) during day of Interval[( start of THAProcedure.performed.toInterval ( ) ) - 1 year, ( start of THAProcedure.performed.toInterval ( ) ) + 1 year]
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-death-within-300-days-of-the-tha-procedure"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Death Within 300 Days of the THA Procedure&quot;:
+  exists &quot;Total Hip Arthroplasty Procedure&quot; THAProcedure
+    where date from Patient.deceased during day of Interval[date from start of THAProcedure.performed.toInterval ( ), date from start of THAProcedure.performed.toInterval ( ) + 300 days]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-denominator-exclusions"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Denominator Exclusions&quot;:
+  Hospice.&quot;Has Hospice Services&quot;
+    or &quot;Has Severe Cognitive Impairment&quot;
+    or &quot;Has Total Hip Arthroplasty with 1 or More Lower Body Fractures&quot;
+    or &quot;Has Partial Hip Arthroplasty Procedure&quot;
+    or &quot;Has Revision Hip Arthroplasty Procedure or Implanted Device or Prosthesis Removal Procedure&quot;
+    or &quot;Has Malignant Neoplasm of Lower and Unspecified Limbs&quot;
+    or &quot;Has Mechanical Complication&quot;
+    or &quot;Has More Than One Elective Primary Total Hip Arthroplasty Performed&quot;
+    or &quot;Death Within 300 Days of the THA Procedure&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms56fhirfuncstathipreplacement-sde-race"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS56FHIRFuncStatHipReplacement</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Race&quot;:
+  SDE.&quot;SDE Race&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="qicorecommon-tointerval"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> QICoreCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Normalizes a value that is a choice of timing-valued types to an equivalent interval
+@comment: Normalizes a choice type of DateTime, Quanitty, Interval&lt;DateTime&gt;, or Interval&lt;Quantity&gt; types
+to an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible
+representations for timing-valued elements in QICore, allowing this function to be used across any resource.
+The input can be provided as a DateTime, Quantity, Interval&lt;DateTime&gt; or Interval&lt;Quantity&gt;.
+The intent of this function is to provide a clear and concise mechanism to treat single
+elements that have multiple possible representations as intervals so that logic doesn't have to account
+for the variability. More complex calculations (such as medication request period or dispense period
+calculation) need specific guidance and consideration. That guidance may make use of this function, but
+the focus of this function is on single element calculations where the semantics are unambiguous.
+If the input is a DateTime, the result a DateTime Interval beginning and ending on that DateTime.
+If the input is a Quantity, the quantity is expected to be a calendar-duration interpreted as an Age,
+and the result is a DateTime Interval beginning on the Date the patient turned that age and ending immediately before one year later.
+If the input is a DateTime Interval, the result is the input.
+If the input is a Quantity Interval, the quantities are expected to be calendar-durations interpreted as an Age, and the result
+is a DateTime Interval beginning on the date the patient turned the age given as the start of the quantity interval, and ending
+immediately before one year later than the date the patient turned the age given as the end of the quantity interval.
+If the input is a Timing, an error will be thrown indicating that Timing calculations are not implemented. Any other input will reslt in a null DateTime Interval
+*/
+define fluent function toInterval(choice Choice&lt;DateTime, Quantity, Interval&lt;DateTime&gt;, Interval&lt;Quantity&gt;, Timing&gt;):
+  case
+	  when choice is DateTime then
+    	Interval[choice as DateTime, choice as DateTime]
+		when choice is Interval&lt;DateTime&gt; then
+  		choice as Interval&lt;DateTime&gt;
+		when choice is Quantity then
+		  Interval[Patient.birthDate + (choice as Quantity),
+			  Patient.birthDate + (choice as Quantity) + 1 year)
+		when choice is Interval&lt;Quantity&gt; then
+		  Interval[Patient.birthDate + (choice.low as Quantity),
+			  Patient.birthDate + (choice.high as Quantity) + 1 year)
+		when choice is Timing then
+      Message(null, true, 'NOT_IMPLEMENTED', 'Error', 'Calculation of an interval from a Timing value is not supported') as Interval&lt;DateTime&gt;
+		else
+			null as Interval&lt;DateTime&gt;
+	end</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tostring"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ToString(value uri): value.value</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-toconcept"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given FHIR [CodeableConcept](https://hl7.org/fhir/datatypes.html#CodeableConcept) value to a CQL Concept.
+*/
+define function ToConcept(concept FHIR.CodeableConcept):
+    if concept is null then
+        null
+    else
+        System.Concept {
+            codes: concept.coding C return ToCode(C),
+            display: concept.text.value
+        }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tocode"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.
+*/
+define function ToCode(coding FHIR.Coding):
+    if coding is null then
+        null
+    else
+        System.Code {
+          code: coding.code.value,
+          system: coding.system.value,
+          version: coding.version.value,
+          display: coding.display.value
+        }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tointerval"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)
+value to a CQL DateTime Interval
+@comment: If the start value of the given period is unspecified, the starting
+boundary of the resulting interval will be open (meaning the start of the interval
+is unknown, as opposed to interpreted as the beginning of time).
+*/
+define function ToInterval(period FHIR.Period):
+    if period is null then
+        null
+    else
+        if period.&quot;start&quot; is null then
+            Interval(period.&quot;start&quot;.value, period.&quot;end&quot;.value]
+        else
+            Interval[period.&quot;start&quot;.value, period.&quot;end&quot;.value]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="status-isprocedureperformed"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> Status</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//Procedure, Performed
+define fluent function isProcedurePerformed(Proc List&lt;Procedure&gt;):
+  Proc P
+    where P.status ~ 'completed'</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="status-isassessmentperformed"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> Status</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//Assessment, Performed
+define fluent function isAssessmentPerformed(Obs List&lt;ObservationScreeningAssessment&gt;):
+  Obs O
+    where O.status in { 'final', 'amended', 'corrected' }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="status-isencounterperformed"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> Status</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//Encounter, Performed
+//General usage unless required otherwise by measure intent (e.g., follow-up encounters)
+define fluent function isEncounterPerformed(Enc List&lt;Encounter&gt;):
+  Enc E
+    where E.status = 'finished'</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="status-isinterventionorder"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> Status</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//Intervention, Order
+define fluent function isInterventionOrder(ServiceRequest List&lt;ServiceRequest&gt;):
+  ServiceRequest S
+    where S.status in { 'active', 'completed' }
+      and S.intent in {'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order'}</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="status-isinterventionperformed"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> Status</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//Intervention, Performed
+define fluent function isInterventionPerformed(Proc List&lt;Procedure&gt;):
+  Proc P
+    where P.status ~ 'completed'</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="status-verified"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> Status</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//This library contains functions used to constrain FHIR resource elements for measures authored by NCQA, based on QICore 6.0.0 resources including IG and authoring patterns. The functions may appear similar to some QICoreCommon functions but differ in that they have constraints that are relevant for measures authored by NCQA.
+
+//Condition
+//Returns conditions in the given list that either have no verification status or have a verification status of confirmed, unconfirmed, provisional, or differential
+define fluent function verified(conditions List&lt;Choice&lt;ConditionProblemsHealthConcerns, ConditionEncounterDiagnosis&gt;&gt;):
+  conditions C
+    where C.verificationStatus is not null implies
+      (C.verificationStatus ~ &quot;confirmed&quot;
+        or C.verificationStatus ~ &quot;unconfirmed&quot;
+        or C.verificationStatus ~ &quot;provisional&quot;
+        or C.verificationStatus ~ &quot;differential&quot;
+      )</code></pre>
+  </td>
+
+</tr>
+
+
+
+
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="terminology"> </a>Terminology</th>
+
+
+</tr>
+  
+  
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system SNOMEDCT
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://snomed.info/sct
+    <br/>
+    <em>Canonical URL</em>: <tt>http://snomed.info/sct</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system LOINC
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://loinc.org
+    <br/>
+    <em>Canonical URL</em>: <tt>http://loinc.org</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system CPT
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://www.ama-assn.org/go/cpt
+    <br/>
+    <em>Canonical URL</em>: <tt>http://www.ama-assn.org/go/cpt</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system ConditionVerificationStatusCodes
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://terminology.hl7.org/CodeSystem/condition-ver-status
+    <br/>
+    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Primary THA Procedure
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1006
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1006</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Outpatient Consultation
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Office Visit
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Telephone Visits
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Virtual Encounter
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1089
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1089</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Payer Type
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Encounter Inpatient
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Hospice Encounter
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1003
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1003</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Hospice Care Ambulatory
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Hospice Diagnosis
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Lower Body Fractures Excluding Ankle and Foot
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1178
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1178</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Partial Arthroplasty of Hip
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1184
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1184</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Removal, Revision and Supplement Procedures of the Lower Body and Spine
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1189
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1189</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Malignant Neoplasms of Lower and Unspecified Limbs
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1180
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1180</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Mechanical Complications Excluding Upper Body
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1182
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1182</tt>
+    
+  </td>
+</tr>
+ 
+
+
+  
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Male (finding)
+        <br/>
+      
+      <em>Code</em>: 248153007
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Female (finding)
+        <br/>
+      
+      <em>Code</em>: 248152002
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Quality of life score [HOOS]
+        <br/>
+      
+      <em>Code</em>: 72093-8
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Sport-recreation score [HOOS]
+        <br/>
+      
+      <em>Code</em>: 72094-6
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Activities of daily living score [HOOS]
+        <br/>
+      
+      <em>Code</em>: 72095-3
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Symptoms score [HOOS]
+        <br/>
+      
+      <em>Code</em>: 72096-1
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Pain score [HOOS]
+        <br/>
+      
+      <em>Code</em>: 72097-9
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Total interval score [HOOSJR]
+        <br/>
+      
+      <em>Code</em>: 82323-7
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: PROMIS-10 Global Mental Health (GMH) score T-score
+        <br/>
+      
+      <em>Code</em>: 71969-0
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: PROMIS-10 Global Physical Health (GPH) score T-score
+        <br/>
+      
+      <em>Code</em>: 71971-6
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: VR-12 Mental component summary (MCS) score - oblique method T-score
+        <br/>
+      
+      <em>Code</em>: 72026-8
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: VR-12 Physical component summary (PCS) score - oblique method T-score
+        <br/>
+      
+      <em>Code</em>: 72025-0
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: VR-12 Mental component summary (MCS) score - orthogonal method T-score
+        <br/>
+      
+      <em>Code</em>: 72028-4
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: VR-12 Physical component summary (PCS) score - orthogonal method T-score
+        <br/>
+      
+      <em>Code</em>: 72027-6
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Postoperative follow-up visit, normally included in the surgical package, to indicate that an evaluation and management service was performed during a postoperative period for a reason(s) related to the original procedure
+        <br/>
+      
+      <em>Code</em>: 99024
+      <br/>
+      <em>System</em>: <tt>http://www.ama-assn.org/go/cpt</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Discharge to home for hospice care (procedure)
+        <br/>
+      
+      <em>Code</em>: 428361000124107
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Discharge to healthcare facility for hospice care (procedure)
+        <br/>
+      
+      <em>Code</em>: 428371000124100
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Hospice care [Minimum Data Set]
+        <br/>
+      
+      <em>Code</em>: 45755-6
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Yes (qualifier value)
+        <br/>
+      
+      <em>Code</em>: 373066001
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: confirmed
+        <br/>
+      
+      <em>Code</em>: confirmed
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: unconfirmed
+        <br/>
+      
+      <em>Code</em>: unconfirmed
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: provisional
+        <br/>
+      
+      <em>Code</em>: provisional
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: differential
+        <br/>
+      
+      <em>Code</em>: differential
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Severe cognitive impairment (finding)
+        <br/>
+      
+      <em>Code</em>: 702956004
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="dependencies"> </a>Dependencies</th>
+
+
+</tr>
+  
+  
+  
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: QICore model information
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://hl7.org/fhir/Library/QICore-ModelInfo
+    <br/>
+    <em>Canonical URL</em>: <tt>http://hl7.org/fhir/Library/QICore-ModelInfo</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library SDE
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/SupplementalDataElements|5.1.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/SupplementalDataElements|5.1.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library FHIRHelpers
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/FHIRHelpers|4.4.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/FHIRHelpers|4.4.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library Status
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/Status|1.15.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/Status|1.15.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library QICoreCommon
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/QICoreCommon|4.0.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/QICoreCommon|4.0.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library Hospice
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/Hospice|6.18.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/Hospice|6.18.000</tt>
+    
+  </td>
+</tr>
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="data-requirements"> </a>Data Requirements</th>
+
+
+</tr>
+  
+  
+  
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Patient
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: extension, birthDate, birthDate.value, url, deceased
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Procedure
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, performed, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Procedure
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, performed, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1184
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Procedure
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, performed, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1189
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Procedure
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, performed, status, status.value, id, id.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1006
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#72093-8: 'Quality of life score [HOOS]'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#72094-6: 'Sport-recreation score [HOOS]'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#72095-3: 'Activities of daily living score [HOOS]'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#72096-1: 'Symptoms score [HOOS]'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#72097-9: 'Pain score [HOOS]'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, status.value, effective
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#82323-7: 'Total interval score [HOOSJR]'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#71969-0: 'PROMIS-10 Global Mental Health (GMH) score T-score'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#71971-6: 'PROMIS-10 Global Physical Health (GPH) score T-score'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#72026-8: 'VR-12 Mental component summary (MCS) score - oblique method T-score'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#72025-0: 'VR-12 Physical component summary (PCS) score - oblique method T-score'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#72028-4: 'VR-12 Mental component summary (MCS) score - orthogonal method T-score'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#72027-6: 'VR-12 Physical component summary (PCS) score - orthogonal method T-score'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: value, status, status.value
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, value, effective, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#45755-6: 'Hospice care [Minimum Data Set]'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, status, status.value, period
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, status, status.value, period
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, status, status.value, period
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, status, status.value, period
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, status, status.value, period
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1089
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, hospitalization, hospitalization.dischargeDisposition, period, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1003
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Coverage
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: ServiceRequest
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, authoredOn, authoredOn.value, status, status.value, intent, intent.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://snomed.info/sct#702956004: 'Severe cognitive impairment (finding)'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1178
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1180
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1182
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://snomed.info/sct#702956004: 'Severe cognitive impairment (finding)'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1178
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1180
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1182
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+  
+  
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.8 of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
