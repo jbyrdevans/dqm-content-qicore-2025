@@ -11,14 +11,14 @@ tooling=$input_cache_path/$tooling_jar
 
 
 if test -f "$tooling"; then
-	echo running: JAVA -jar $tooling -BundleToResources -p=$mat_bundle -v=r4 -op=$mat_bundle
-	java -jar $tooling -BundleToResources -p=$mat_bundle -v=r4 -op=$mat_bundle
+	echo running: JAVA -jar $tooling -BundleToResources -p=$mat_bundle -v=r4 -op=$mat_bundle -db=true
+	java -jar $tooling -BundleToResources -p=$mat_bundle -v=r4 -op=$mat_bundle -db=true
 else
 	tooling=../$tooling_jar
 	echo $tooling
 	if test -f "$tooling"; then
-		echo running: JAVA -jar $tooling -BundleToResources -p=$mat_bundle -v=r4 -op=$mat_bundle
-		java -jar $tooling -BundleToResources -p=$mat_bundle -v=r4 -op=$mat_bundle
+		echo running: JAVA -jar $tooling -BundleToResources -p=$mat_bundle -v=r4 -op=$mat_bundle -db=true
+		java -jar $tooling -BundleToResources -p=$mat_bundle -v=r4 -op=$mat_bundle -db=true
 	else
 		echo Tooling JAR NOT FOUND in input-cache or parent folder.  Please run _updateCQFTooling.  Aborting...
 	fi
