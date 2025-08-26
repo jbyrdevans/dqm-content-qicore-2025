@@ -1,0 +1,919 @@
+{
+  "resourceType": "Measure",
+  "id": "CMS149FHIRDementiaCognitiveAssess",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/executable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/elm-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm" ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"col-12\">\n  <table class=\"narrative-table\">\n    <tbody>\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Metadata</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Title</th>\n\n\n<td class=\"content-container\">Dementia: Cognitive AssessmentFHIR</td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Version</th>\n\n\n<td class=\"content-container\">1.0.000</td>\n</tr>\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Short Name</th>\n\n\n<td class=\"content-container\">CMS149FHIR</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">GUID (Version Independent)</th>\n\n\n<td class=\"content-container\">urn:uuid:5dd075c9-2ce3-49be-a219-055e2444cfea</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">GUID (Version Specific)</th>\n\n\n<td class=\"content-container\">urn:uuid:5b384921-04ad-4593-aba3-cfad4b270a4c</td>\n</tr>\n\n\n\n  \n    \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">CMS Identifier</th>\n\n\n<td class=\"content-container\">149FHIR</td>\n</tr>\n\n  \n\n\n  \n    \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">CMS Consensus Based Entity Identifier</th>\n\n\n<td class=\"content-container\">2872e</td>\n</tr>\n\n  \n\n\n\n  \n    \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Effective Period</th>\n\n\n<td class=\"content-container\">2026-01-01 through 2026-12-31</td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Steward (Publisher)</th>\n\n\n<td class=\"content-container\">American Academy of Neurology</td>\n</tr>\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Developer</th>\n\n\n<td class=\"content-container\">American Academy of Neurology</td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Developer</th>\n\n\n<td class=\"content-container\">American Medical Association (AMA)</td>\n</tr>\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Description</th>\n\n\n<td class=\"content-container\"><p>Percentage of patients, regardless of age, with a diagnosis of dementia for whom an assessment of cognition is performed and the results reviewed at least once within the 12 months preceding a dementia encounter during the measurement period</p></td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Copyright</th>\n\n\n<td class=\"content-container\"><p>Attribution: The American Psychiatric Association’s (APA), PCPI’s, and American Medical Association’s (AMA) significant past efforts and contributions to the development and updating of the Measure are acknowledged.</p>\n<p>Copyright: (C)2025 American Academy of Neurology Institute (AANI). All rights reserved.</p></td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Disclaimer</th>\n\n\n<td class=\"content-container\"><p>Limited proprietary coding may be contained in the Measure specifications for convenience. A license agreement must be entered prior to a third party’s use of Current Procedural Terminology (CPT[R]) or other proprietary code set contained in the Measure. Any other use of CPT or other coding by the third party is strictly prohibited. AANI, APA, AMA, and the former members of the PCPI disclaim all liability for use or accuracy of any CPT or other coding contained in the specifications.</p>\n<p>CPT(R) contained in the Measure specifications is copyright 2004-2024 American Medical Association. LOINC(R) is copyright 2004-2024 Regenstrief Institute, Inc. This material contains SNOMED Clinical Terms(R) (SNOMED CT[R]) copyright 2004-2024 International Health Terminology Standards Development Organisation. ICD-10 is copyright 2024 World Health Organization. All Rights Reserved.</p></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Rationale</th>\n\n\n<td class=\"content-container\"><p>An estimated 5.8 million adults in the US were living with dementia in 2019. Dementia is often characterized by the gradual onset and continuing cognitive decline in one or more domains including memory, communication and language, ability to focus or pay attention, reasoning and judgment and visual perception (Alzheimer’s Association, 2019). Cognitive deterioration represents a major source of morbidity and mortality and poses a significant burden on affected individuals and their caregivers (van den Kieboom, Snaphaan, &amp; Bongers, 2020; Lanctôt et al., 2024). Although cognitive deterioration follows a different course depending on the type of dementia, significant rates of decline have been reported. For example, one study found that the annual rate of decline for Alzheimer's disease patients was more than four times that of older adults with no cognitive impairment (Wilson et al., 2010). Nevertheless, measurable cognitive abilities remain throughout the course of dementia (APA Work Group on Alzheimer’s Disease and other Dementias, 2007). Initial and ongoing assessments of cognition are fundamental to the proper management of patients with dementia. These assessments serve as the basis for identifying treatment goals, developing a treatment plan, monitoring the effects of treatment, and modifying treatment as appropriate.</p></td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Clinical Recommendation Statement</th>\n\n\n<td class=\"content-container\"><p>Ongoing assessment includes periodic monitoring of the development and evolution of cognitive and noncognitive psychiatric symptoms and their response to intervention (Category I). Both cognitive and noncognitive neuropsychiatric and behavioral symptoms of dementia tend to evolve over time, so regular monitoring allows detection of new symptoms and adaptation of treatment strategies to current needs... Cognitive symptoms that almost always require assessment include impairments in memory, executive function, language, judgment, and spatial abilities. It is often helpful to track cognitive status with a structured simple examination (APA Work Group on Alzheimer’s Disease and other Dementias, 2007).</p>\n<p>The American Psychiatric Association recommends that patients with dementia be assessed for the type, frequency, severity, pattern, and timing of symptoms (Category 1C). Quantitative measures provide a structured replicable way to document the patient's baseline symptoms and determine which symptoms (if any) should be the target of intervention based on factors such as frequency of occurrence, magnitude, potential for associated harm to the patient or others, and associated distress to the patient. The exact frequency at which measures are warranted will depend on clinical circumstances. However, use of quantitative measures as treatment proceeds allows more precise tracking of whether nonpharmacological and pharmacological treatments are having their intended effect or whether a shift in the treatment plan is needed (American Psychiatric Association, 2016).</p>\n<p>Conduct and document an assessment and monitor changes in cognitive status using a reliable and valid instrument, e.g., Montreal Cognitive Assessment (MoCA), Ascertain Dementia 8 (AD8) or other tool. Cognitive status should be reassessed periodically to identify sudden changes, as well as to monitor the potential beneficial or harmful effects of environmental changes (including safety, care needs, and abuse and/or neglect), specific medications (both prescription and non-prescription, for appropriate use and contraindications), or other interventions. Proper assessment requires the use of a standardized, objective instrument that is relatively easy to use, reliable (with less variability between different assessors), and valid (results that would be similar to gold-standard evaluations) (California Department of Public Health, 2017).</p>\n<p>Recommendation: Perform regular, comprehensive person-centered assessments and timely interim assessments. Assessments, conducted at least every 6 months, should prioritize issues that help the person with dementia to live fully. These include assessments of the individual and care partner’s relationships and subjective experience and assessment of cognition, behavior, and function, using reliable and valid tools. Assessment is ongoing and dynamic, combining nomothetic (norm based) and idiographic (individualized) approaches (Fazio, Pace, Maslow, Zimmerman, &amp; Kallmyer, 2018).</p>\n<p>Recommendation: Assess cognitive status, functional abilities, behavioral and psychological symptoms of dementia, medical status, living environment, and safety. Reassess regularly and when there is a significant change in condition (Wiener, Gould, Shuman, Kaur, &amp; Ignaczak, 2016).</p></td>\n</tr>\n\n\n\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>Alzheimer’s Association. (2019). 2019 Alzheimer’s Disease Facts and Figures. Alzheimer’s &amp; Dementia, 15(3), 321-387. Retrieved from https://alz.org/media/Documents/alzheimers-facts-and-figures-2019-r.pdf</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>American Psychiatric Association (Ed.). (2016). The American Psychiatric Association practice guideline on the use of antipsychotics to treat agitation or psychosis in patients with dementia (First edition). American Psychiatric Association.</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>APA Work Group on Alzheimer’s Disease and other Dementias, Rabins, P.V., Blacker, D., Rovner, B.W., Rummans, T., Schneider, L.S., … Fochtmann, L.J. (2007). American Psychiatric Association practice guideline for the treatment of patients with Alzheimer’s disease and other dementias. Second edition. The American Journal of Psychiatry, 164(12 Suppl), 5–56.</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>California Department of Public Health. (2017). California guidelines for Alzheimer’s disease management, 2017. Retrieved from https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/CDPH%20Document%20Library/Alzheimers'%20Disease%20Program/ALZ-CareGuidelines.pdf</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>Fazio, S., Pace, D., Maslow, K., Zimmerman, S., &amp; Kallmyer, B. (2018). Alzheimer’s Association Dementia Care Practice Recommendations. The Gerontologist, 58(S1), S1-S9. [Supplemental material]. Retrieved from the Alzheimer’s Association website: https://academic.oup.com/gerontologist/article/58/suppl_1/S1/4816759</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>Lanctôt, K.L., Hahn-Pedersen, J.H., Eichinger, C.S., Freeman, C., Clark, A., Tarazona, L.R.S., &amp; Cummings, J. (2024). Burden of illness in people with Alzheimer’s disease: A systematic review of epidemiology, comorbidities and mortality. The Journal of Prevention of Alzheimer’s Disease, 11(1), 97–107. https://doi.org/10.14283/jpad.2023.61</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>van den Kieboom, R., Snaphaan, L., Mark, R., &amp; Bongers, I. (2020). The trajectory of caregiver burden and risk factors in dementia progression: A systematic review. Journal of Alzheimer’s Disease, 77(3), 1107–1115. https://doi.org/10.3233/JAD-200647</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>Wiener, J. M., Gould, E., Shuman, S. B., Kaur, R., &amp; Ignaczak, M. (2016). Examining models of dementia care. (ASPE Final Report No. 0212704.017.000.001). Washington, D.C.: RTI International. Retrieved from https://aspe.hhs.gov/sites/default/files/private/pdf/257216/ExamDCMod.pdf</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>Wilson, R. S., Aggarwal, N. T., Barnes, L. L., Mendes de Leon, C.F., Herbert, L.E., &amp; Evans, D.A. (2010). Cognitive decline in incident Alzheimer disease in a community population. Neurology, 74(12), 951-955.</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n\n\n\n\n\n  \n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Definition</th>\n\n\n<td class=\"content-container\">Cognition: <p>Cognition can be assessed by the clinician during the patient's clinical history. Cognition can also be assessed by direct examination of the patient using one of a number of instruments, including several originally developed and validated for screening purposes. This can also include, where appropriate, administration to a knowledgeable informant. Examples include, but are not limited to:</p>\n<ul>\n <li><p>Blessed Orientation-Memory-Concentration Test (BOMC)</p></li>\n <li><p>Montreal Cognitive Assessment (MoCA)</p></li>\n <li><p>St. Louis University Mental Status Examination (SLUMS)</p></li>\n <li><p>Mini-Mental State Examination (MMSE) [Note: The MMSE has not been well validated for non-Alzheimer's dementias]</p></li>\n <li><p>Short Informant Questionnaire on Cognitive Decline in the Elderly (IQCODE)</p></li>\n <li><p>Ascertain Dementia 8 (AD8) Questionnaire</p></li>\n <li><p>Minimum Data Set (MDS) Brief Interview of Mental Status (BIMS) [Note: Validated for use with nursing home patients only]</p></li>\n <li><p>Formal neuropsychological evaluation</p></li>\n <li><p>Mini-Cog</p></li>\n</ul></td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Guidance (Usage)</th>\n\n\n<td class=\"content-container\"><p>The measure requires a diagnosis of dementia be present before the routine assessment of cognition is performed once during the measurement period or the 12 months prior.</p>\n<p>Use of a standardized tool or instrument to assess cognition other than those listed will meet numerator performance if mapped to the concept &quot;Intervention, Performed&quot;: &quot;Cognitive Assessment&quot; included in the numerator logic below.</p>\n<p>The requirement of two or more visits is to establish that the eligible clinician has an existing relationship with the patient.</p>\n<p>In recognition of the growing use of integrated and team-based care, the diagnosis of dementia and the assessment of cognitive function need not be performed by the same provider or clinician.</p>\n<p>The Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition DMS-5 has replaced the term dementia with major neurocognitive disorder and mild neurocognitive disorder. For the purposes of this measure, the terms are equivalent.</p>\n<p>This eCQM is a patient-based measure.</p>\n<p>This FHIR-based measure has been derived from the QDM-based measure CMS149v14. Please refer to the HL7 QI-Core Implementation Guide (https://hl7.org/fhir/us/qicore/STU6/) for more information on QI-Core and mapping recommendations from QDM to QI-Core STU 6 (https://hl7.org/fhir/us/qicore/STU6/qdm-to-qicore.html).</p></td>\n</tr>\n\n\n\n  \n    \n    <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Group (Rate) (ID: Group_1)</th>\n\n\n</tr>\n  \n  \n  \n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Basis</th>\n\n\n<td class=\"content-container\">boolean</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Scoring</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-scoring#proportion: 'Proportion']</td>\n</tr>\n\n\n\n\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Type</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-type#process: 'Process']</td>\n</tr>\n\n\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Improvement Notation</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase: 'Increased score indicates improvement']</td>\n</tr>\n\n\n  \n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: InitialPopulation_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>All patients, regardless of age, with a diagnosis of dementia who have two or more visits during the measurement period</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms149fhirdementiacognitiveassess-initial-population\">Initial Population</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Denominator</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: Denominator_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>Equals Initial Population</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms149fhirdementiacognitiveassess-denominator\">Denominator</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Numerator</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: Numerator_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>Patients for whom an assessment of cognition is performed and the results reviewed at least once within the 12 months preceding a dementia encounter during the measurement period</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms149fhirdementiacognitiveassess-numerator\">Numerator</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Denominator Exception</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: DenominatorException_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>Documentation of patient reason(s) for not assessing cognition</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms149fhirdementiacognitiveassess-denominator-exceptions\">Denominator Exceptions</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n\n\n  \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Guidance</th>\n\n\n<td class=\"content-container\"><p>For every patient evaluated by this measure also identify payer, race, ethnicity and sex</p></td>\n</tr>\n\n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Supplemental Data Elements</th>\n\n\n</tr>\n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-ethnicity\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Ethnicity\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms149fhirdementiacognitiveassess-sde-ethnicity\">SDE Ethnicity</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-payer\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Payer\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms149fhirdementiacognitiveassess-sde-payer\">SDE Payer</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-race\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Race\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms149fhirdementiacognitiveassess-sde-race\">SDE Race</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-sex\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Sex\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms149fhirdementiacognitiveassess-sde-sex\">SDE Sex</a> \n      \n    \n  </td>\n</tr>\n\n\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Logic</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Primary Library</th>\n\n\n<td class=\"content-container\">https://madie.cms.gov/Library/CMS149FHIRDementiaCognitiveAssess</td>\n</tr>\n\n\n\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Contents</th>\n  <td class=\"content-container\">\n    <em><a href=\"#population-criteria\">Population Criteria</a></em>\n    <br/>\n    <em><a href=\"#definitions\">Logic Definitions</a></em>\n    <br/>\n    <em><a href=\"#terminology\">Terminology</a></em>\n    <br/>\n    <em><a href=\"#dependencies\">Dependencies</a></em>\n    <br/>\n    <em><a href=\"#data-requirements\">Data Requirements</a></em>\n    <br/>\n  </td>\n</tr>\n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"population-criteria\"> </a>Population Criteria</th>\n\n\n</tr>\n  \n  \n  \n  \n    \n    <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Group (Rate) (ID: Group_1)</th>\n\n\n</tr>\n  \n  \n  \n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms149fhirdementiacognitiveassess-initial-population\"> </a>\n    \n    \n    Initial Population\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/***Population Criteria***/\n\n\ndefine &quot;Initial Population&quot;:\n  exists &quot;Dementia Encounter During Measurement Period&quot;\n    and ( Count(&quot;Qualifying Encounter During Measurement Period&quot;) &gt;= 2 )</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms149fhirdementiacognitiveassess-denominator\"> </a>\n    \n    \n    Denominator\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator&quot;:\n  &quot;Initial Population&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms149fhirdementiacognitiveassess-numerator\"> </a>\n    \n    \n    Numerator\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Numerator&quot;:\n  exists &quot;Assessment of Cognition Using Standardized Tools or Alternate Methods&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms149fhirdementiacognitiveassess-denominator-exceptions\"> </a>\n    \n    \n    Denominator Exception\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator Exceptions&quot;:\n  exists &quot;Patient Reason for Not Performing Assessment of Cognition Using Standardized Tools or Alternate Methods&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n  \n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"definitions\"> </a>Logic Definitions</th>\n\n\n</tr>\n  \n  \n          \n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-sex\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Sex&quot;:\n  case\n    when Patient.sex = '248153007' then &quot;Male (finding)&quot;\n    when Patient.sex = '248152002' then &quot;Female (finding)&quot;\n    else null\n  end</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-payer\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Payer&quot;:\n  [Coverage: type in &quot;Payer Type&quot;] Payer\n    return {\n      code: Payer.type,\n      period: Payer.period\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-ethnicity\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Ethnicity&quot;:\n  Patient.ethnicity E\n    return Tuple {\n      codes: { E.ombCategory } union E.detailed,\n      display: E.text\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-race\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Race&quot;:\n  Patient.race R\n    return Tuple {\n      codes: R.ombCategory union R.detailed,\n      display: R.text\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n\n        \n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms149fhirdementiacognitiveassess-sde-sex\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS149FHIRDementiaCognitiveAssess</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Sex&quot;:\n  SDE.&quot;SDE Sex&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms149fhirdementiacognitiveassess-encounter-to-assess-cognition\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS149FHIRDementiaCognitiveAssess</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Encounter to Assess Cognition&quot;:\n  ( [&quot;Encounter&quot;: &quot;Psych Visit Diagnostic Evaluation&quot;]\n    union [&quot;Encounter&quot;: &quot;Nursing Facility Visit&quot;]\n    union [&quot;Encounter&quot;: &quot;Care Services in Long Term Residential Facility&quot;]\n    union [&quot;Encounter&quot;: &quot;Home Healthcare Services&quot;]\n    union [&quot;Encounter&quot;: &quot;Psych Visit Psychotherapy&quot;]\n    union [&quot;Encounter&quot;: &quot;Behavioral or Neuropsych Assessment&quot;]\n    union [&quot;Encounter&quot;: &quot;Occupational Therapy Evaluation&quot;]\n    union [&quot;Encounter&quot;: &quot;Office Visit&quot;]\n    union [&quot;Encounter&quot;: &quot;Outpatient Consultation&quot;] ) EncounterAssessCognition\n    where EncounterAssessCognition.period during day of &quot;Measurement Period&quot;\n      and EncounterAssessCognition.status ~ 'finished'</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms149fhirdementiacognitiveassess-dementia-encounter-during-measurement-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS149FHIRDementiaCognitiveAssess</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Dementia Encounter During Measurement Period&quot;:\n  &quot;Encounter to Assess Cognition&quot; EncounterAssessCognition\n    with ( [ConditionProblemsHealthConcerns: &quot;Dementia &amp; Mental Degenerations&quot;]\n      union [ConditionEncounterDiagnosis: &quot;Dementia &amp; Mental Degenerations&quot;] ) Dementia\n      such that EncounterAssessCognition.period during day of &quot;Measurement Period&quot;\n        and Dementia.prevalenceInterval ( ) overlaps day of EncounterAssessCognition.period\n        and ( Dementia.abatement is null\n            or end of Dementia.abatement.toInterval ( ) after day of end of &quot;Measurement Period&quot;\n        )\n        and Dementia.isVerified ( )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms149fhirdementiacognitiveassess-assessment-of-cognition-using-standardized-tools-or-alternate-methods\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS149FHIRDementiaCognitiveAssess</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/***Definitions***/\n\n\ndefine &quot;Assessment of Cognition Using Standardized Tools or Alternate Methods&quot;:\n  ( [&quot;ObservationScreeningAssessment&quot;: &quot;Standardized Tools for Assessment of Cognition&quot;]\n    union [&quot;ObservationScreeningAssessment&quot;: &quot;Cognitive Assessment&quot;] ) CognitiveAssessment\n    with &quot;Dementia Encounter During Measurement Period&quot; EncounterDementia\n      such that CognitiveAssessment.effective.toInterval ( ) starts 12 months or less on or before day of end of EncounterDementia.period\n    where CognitiveAssessment.value is not null\n      and CognitiveAssessment.status in { 'final', 'amended', 'corrected' }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms149fhirdementiacognitiveassess-numerator\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS149FHIRDementiaCognitiveAssess</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Numerator&quot;:\n  exists &quot;Assessment of Cognition Using Standardized Tools or Alternate Methods&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms149fhirdementiacognitiveassess-qualifying-encounter-during-measurement-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS149FHIRDementiaCognitiveAssess</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Qualifying Encounter During Measurement Period&quot;:\n  ( &quot;Encounter to Assess Cognition&quot;\n    union [&quot;Encounter&quot;: &quot;Patient Provider Interaction&quot;] ) ValidEncounter\n    where ValidEncounter.period during day of &quot;Measurement Period&quot;\n      and ValidEncounter.status = 'finished'</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms149fhirdementiacognitiveassess-initial-population\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS149FHIRDementiaCognitiveAssess</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/***Population Criteria***/\n\n\ndefine &quot;Initial Population&quot;:\n  exists &quot;Dementia Encounter During Measurement Period&quot;\n    and ( Count(&quot;Qualifying Encounter During Measurement Period&quot;) &gt;= 2 )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms149fhirdementiacognitiveassess-denominator\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS149FHIRDementiaCognitiveAssess</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator&quot;:\n  &quot;Initial Population&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms149fhirdementiacognitiveassess-sde-payer\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS149FHIRDementiaCognitiveAssess</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Payer&quot;:\n  SDE.&quot;SDE Payer&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms149fhirdementiacognitiveassess-sde-ethnicity\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS149FHIRDementiaCognitiveAssess</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Ethnicity&quot;:\n  SDE.&quot;SDE Ethnicity&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms149fhirdementiacognitiveassess-sde-race\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS149FHIRDementiaCognitiveAssess</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Race&quot;:\n  SDE.&quot;SDE Race&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms149fhirdementiacognitiveassess-patient-reason-for-not-performing-assessment-of-cognition-using-standardized-tools-or-alternate-methods\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS149FHIRDementiaCognitiveAssess</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Patient Reason for Not Performing Assessment of Cognition Using Standardized Tools or Alternate Methods&quot;:\n  ( [ObservationCancelled: code in &quot;Standardized Tools for Assessment of Cognition&quot;]\n    union [ObservationCancelled: code in &quot;Cognitive Assessment&quot;] ) NoCognitiveAssessment\n    with &quot;Dementia Encounter During Measurement Period&quot; EncounterDementia\n      such that NoCognitiveAssessment.issued during day of EncounterDementia.period\n    where NoCognitiveAssessment.notDoneReason in &quot;Patient Reason&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms149fhirdementiacognitiveassess-denominator-exceptions\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS149FHIRDementiaCognitiveAssess</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator Exceptions&quot;:\n  exists &quot;Patient Reason for Not Performing Assessment of Cognition Using Standardized Tools or Alternate Methods&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n\n        \n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tostring\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define function ToString(value uri): value.value</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tointerval\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/*\n@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)\nvalue to a CQL DateTime Interval\n@comment: If the start value of the given period is unspecified, the starting\nboundary of the resulting interval will be open (meaning the start of the interval\nis unknown, as opposed to interpreted as the beginning of time).\n*/\ndefine function ToInterval(period FHIR.Period):\n    if period is null then\n        null\n    else\n        if period.&quot;start&quot; is null then\n            Interval(period.&quot;start&quot;.value, period.&quot;end&quot;.value]\n        else\n            Interval[period.&quot;start&quot;.value, period.&quot;end&quot;.value]</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tocode\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/*\n@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.\n*/\ndefine function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }</code></pre>\n  </td>\n\n</tr>\n\n\n\n\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"terminology\"> </a>Terminology</th>\n\n\n</tr>\n  \n  \n  \n\n \n\n \n\n \n\n \n\n\n<tr>\n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Code System</th>\n\n\n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Code system SNOMEDCT\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://snomed.info/sct\n    <br/>\n    <em>Canonical URL</em>: <tt>http://snomed.info/sct</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Standardized Tools for Assessment of Cognition\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1006\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1006</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Cognitive Assessment\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1332\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1332</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Psych Visit Diagnostic Evaluation\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1492\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1492</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Nursing Facility Visit\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1012\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1012</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Care Services in Long Term Residential Facility\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1014\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1014</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Home Healthcare Services\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Psych Visit Psychotherapy\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1496\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1496</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Behavioral or Neuropsych Assessment\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1023\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1023</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Occupational Therapy Evaluation\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1011\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1011</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Office Visit\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Outpatient Consultation\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Dementia &amp; Mental Degenerations\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1005\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1005</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Patient Provider Interaction\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1012\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1012</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Payer Type\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Patient Reason\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1008\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1008</tt>\n    \n  </td>\n</tr>\n \n\n\n  \n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Male (finding)\n        <br/>\n      \n      <em>Code</em>: 248153007\n      <br/>\n      <em>System</em>: <tt>http://snomed.info/sct</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Female (finding)\n        <br/>\n      \n      <em>Code</em>: 248152002\n      <br/>\n      <em>System</em>: <tt>http://snomed.info/sct</tt>\n    </td>\n  </tr>\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"dependencies\"> </a>Dependencies</th>\n\n\n</tr>\n  \n  \n  \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: QICore model information\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://hl7.org/fhir/Library/QICore-ModelInfo\n    <br/>\n    <em>Canonical URL</em>: <tt>http://hl7.org/fhir/Library/QICore-ModelInfo</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library SDE\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/SupplementalDataElements|5.1.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/SupplementalDataElements|5.1.000</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library FHIRHelpers\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/FHIRHelpers|4.4.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/FHIRHelpers|4.4.000</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library QICoreCommon\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/QICoreCommon|4.0.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/QICoreCommon|4.0.000</tt>\n    \n  </td>\n</tr>\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"data-requirements\"> </a>Data Requirements</th>\n\n\n</tr>\n  \n  \n  \n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Patient\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: extension, url\n    <br/>\n   \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1492\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1012\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1014\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1496\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1023\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1011\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1012\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1005\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1005\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, effective, value, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1006\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, effective, value, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1332\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Coverage\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observationcancelled\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, issued, issued.value, extension\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1006\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observationcancelled\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, issued, issued.value, extension\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1332\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n  \n  \n\n<tr>\n  <th colspan=\"2\" scope=\"row\" class=\"row-header\">Generated using version 0.4.8 of the sample-content-ig Liquid templates</th>\n</tr>\n\n    </tbody>\n  </table>\n</div>"
+  },
+  "contained": [ {
+    "resourceType": "Library",
+    "id": "effective-data-requirements",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "248153007",
+        "display": "Male (finding)"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "248152002",
+        "display": "Female (finding)"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElements"
+      }, {
+        "url": "name",
+        "valueString": "SDE Sex"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Sex\":\n  case\n    when Patient.sex = '248153007' then \"Male (finding)\"\n    when Patient.sex = '248152002' then \"Female (finding)\"\n    else null\n  end"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 0
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS149FHIRDementiaCognitiveAssess"
+      }, {
+        "url": "name",
+        "valueString": "SDE Sex"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Sex\":\n  SDE.\"SDE Sex\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 1
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS149FHIRDementiaCognitiveAssess"
+      }, {
+        "url": "name",
+        "valueString": "Encounter to Assess Cognition"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Encounter to Assess Cognition\":\n  ( [\"Encounter\": \"Psych Visit Diagnostic Evaluation\"]\n    union [\"Encounter\": \"Nursing Facility Visit\"]\n    union [\"Encounter\": \"Care Services in Long Term Residential Facility\"]\n    union [\"Encounter\": \"Home Healthcare Services\"]\n    union [\"Encounter\": \"Psych Visit Psychotherapy\"]\n    union [\"Encounter\": \"Behavioral or Neuropsych Assessment\"]\n    union [\"Encounter\": \"Occupational Therapy Evaluation\"]\n    union [\"Encounter\": \"Office Visit\"]\n    union [\"Encounter\": \"Outpatient Consultation\"] ) EncounterAssessCognition\n    where EncounterAssessCognition.period during day of \"Measurement Period\"\n      and EncounterAssessCognition.status ~ 'finished'"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 2
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS149FHIRDementiaCognitiveAssess"
+      }, {
+        "url": "name",
+        "valueString": "Dementia Encounter During Measurement Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Dementia Encounter During Measurement Period\":\n  \"Encounter to Assess Cognition\" EncounterAssessCognition\n    with ( [ConditionProblemsHealthConcerns: \"Dementia & Mental Degenerations\"]\n      union [ConditionEncounterDiagnosis: \"Dementia & Mental Degenerations\"] ) Dementia\n      such that EncounterAssessCognition.period during day of \"Measurement Period\"\n        and Dementia.prevalenceInterval ( ) overlaps day of EncounterAssessCognition.period\n        and ( Dementia.abatement is null\n            or end of Dementia.abatement.toInterval ( ) after day of end of \"Measurement Period\"\n        )\n        and Dementia.isVerified ( )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 3
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS149FHIRDementiaCognitiveAssess"
+      }, {
+        "url": "name",
+        "valueString": "Assessment of Cognition Using Standardized Tools or Alternate Methods"
+      }, {
+        "url": "statement",
+        "valueString": "/***Definitions***/\n\n\ndefine \"Assessment of Cognition Using Standardized Tools or Alternate Methods\":\n  ( [\"ObservationScreeningAssessment\": \"Standardized Tools for Assessment of Cognition\"]\n    union [\"ObservationScreeningAssessment\": \"Cognitive Assessment\"] ) CognitiveAssessment\n    with \"Dementia Encounter During Measurement Period\" EncounterDementia\n      such that CognitiveAssessment.effective.toInterval ( ) starts 12 months or less on or before day of end of EncounterDementia.period\n    where CognitiveAssessment.value is not null\n      and CognitiveAssessment.status in { 'final', 'amended', 'corrected' }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 4
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS149FHIRDementiaCognitiveAssess"
+      }, {
+        "url": "name",
+        "valueString": "Numerator"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Numerator\":\n  exists \"Assessment of Cognition Using Standardized Tools or Alternate Methods\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 5
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS149FHIRDementiaCognitiveAssess"
+      }, {
+        "url": "name",
+        "valueString": "Qualifying Encounter During Measurement Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Qualifying Encounter During Measurement Period\":\n  ( \"Encounter to Assess Cognition\"\n    union [\"Encounter\": \"Patient Provider Interaction\"] ) ValidEncounter\n    where ValidEncounter.period during day of \"Measurement Period\"\n      and ValidEncounter.status = 'finished'"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 6
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS149FHIRDementiaCognitiveAssess"
+      }, {
+        "url": "name",
+        "valueString": "Initial Population"
+      }, {
+        "url": "statement",
+        "valueString": "/***Population Criteria***/\n\n\ndefine \"Initial Population\":\n  exists \"Dementia Encounter During Measurement Period\"\n    and ( Count(\"Qualifying Encounter During Measurement Period\") >= 2 )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 7
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS149FHIRDementiaCognitiveAssess"
+      }, {
+        "url": "name",
+        "valueString": "Denominator"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Denominator\":\n  \"Initial Population\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 8
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElements"
+      }, {
+        "url": "name",
+        "valueString": "SDE Payer"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Payer\":\n  [Coverage: type in \"Payer Type\"] Payer\n    return {\n      code: Payer.type,\n      period: Payer.period\n    }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 9
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS149FHIRDementiaCognitiveAssess"
+      }, {
+        "url": "name",
+        "valueString": "SDE Payer"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Payer\":\n  SDE.\"SDE Payer\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 10
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElements"
+      }, {
+        "url": "name",
+        "valueString": "SDE Ethnicity"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Ethnicity\":\n  Patient.ethnicity E\n    return Tuple {\n      codes: { E.ombCategory } union E.detailed,\n      display: E.text\n    }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 11
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS149FHIRDementiaCognitiveAssess"
+      }, {
+        "url": "name",
+        "valueString": "SDE Ethnicity"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Ethnicity\":\n  SDE.\"SDE Ethnicity\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 12
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElements"
+      }, {
+        "url": "name",
+        "valueString": "SDE Race"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Race\":\n  Patient.race R\n    return Tuple {\n      codes: R.ombCategory union R.detailed,\n      display: R.text\n    }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 13
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS149FHIRDementiaCognitiveAssess"
+      }, {
+        "url": "name",
+        "valueString": "SDE Race"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Race\":\n  SDE.\"SDE Race\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 14
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS149FHIRDementiaCognitiveAssess"
+      }, {
+        "url": "name",
+        "valueString": "Patient Reason for Not Performing Assessment of Cognition Using Standardized Tools or Alternate Methods"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Patient Reason for Not Performing Assessment of Cognition Using Standardized Tools or Alternate Methods\":\n  ( [ObservationCancelled: code in \"Standardized Tools for Assessment of Cognition\"]\n    union [ObservationCancelled: code in \"Cognitive Assessment\"] ) NoCognitiveAssessment\n    with \"Dementia Encounter During Measurement Period\" EncounterDementia\n      such that NoCognitiveAssessment.issued during day of EncounterDementia.period\n    where NoCognitiveAssessment.notDoneReason in \"Patient Reason\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 15
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS149FHIRDementiaCognitiveAssess"
+      }, {
+        "url": "name",
+        "valueString": "Denominator Exceptions"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Denominator Exceptions\":\n  exists \"Patient Reason for Not Performing Assessment of Cognition Using Standardized Tools or Alternate Methods\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 16
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToString"
+      }, {
+        "url": "statement",
+        "valueString": "define function ToString(value uri): value.value"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 17
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToInterval"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)\nvalue to a CQL DateTime Interval\n@comment: If the start value of the given period is unspecified, the starting\nboundary of the resulting interval will be open (meaning the start of the interval\nis unknown, as opposed to interpreted as the beginning of time).\n*/\ndefine function ToInterval(period FHIR.Period):\n    if period is null then\n        null\n    else\n        if period.\"start\" is null then\n            Interval(period.\"start\".value, period.\"end\".value]\n        else\n            Interval[period.\"start\".value, period.\"end\".value]"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 18
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToCode"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.\n*/\ndefine function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 19
+      } ]
+    } ],
+    "name": "EffectiveDataRequirements",
+    "status": "active",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "module-definition"
+      } ]
+    },
+    "relatedArtifact": [ {
+      "type": "depends-on",
+      "display": "QICore model information",
+      "resource": "http://hl7.org/fhir/Library/QICore-ModelInfo"
+    }, {
+      "type": "depends-on",
+      "display": "Library SDE",
+      "resource": "https://madie.cms.gov/Library/SupplementalDataElements|5.1.000"
+    }, {
+      "type": "depends-on",
+      "display": "Library FHIRHelpers",
+      "resource": "https://madie.cms.gov/Library/FHIRHelpers|4.4.000"
+    }, {
+      "type": "depends-on",
+      "display": "Library QICoreCommon",
+      "resource": "https://madie.cms.gov/Library/QICoreCommon|4.0.000"
+    }, {
+      "type": "depends-on",
+      "display": "Code system SNOMEDCT",
+      "resource": "http://snomed.info/sct"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Standardized Tools for Assessment of Cognition",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1006"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Cognitive Assessment",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1332"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Psych Visit Diagnostic Evaluation",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1492"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Nursing Facility Visit",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1012"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Care Services in Long Term Residential Facility",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1014"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Home Healthcare Services",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Psych Visit Psychotherapy",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1496"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Behavioral or Neuropsych Assessment",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1023"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Occupational Therapy Evaluation",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1011"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Office Visit",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Outpatient Consultation",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Dementia & Mental Degenerations",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1005"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Patient Provider Interaction",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1012"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Payer Type",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Patient Reason",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1008"
+    } ],
+    "parameter": [ {
+      "name": "Measurement Period",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "Period"
+    }, {
+      "name": "Numerator",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Denominator",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Initial Population",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Denominator Exceptions",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "SDE Sex",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Coding"
+    }, {
+      "name": "SDE Payer",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Resource"
+    }, {
+      "name": "SDE Ethnicity",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Resource"
+    }, {
+      "name": "SDE Race",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Resource"
+    } ],
+    "dataRequirement": [ {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "extension", "url" ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1492"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1012"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1014"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1496"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1023"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1011"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1012"
+      } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1005"
+      } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1005"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment" ],
+      "mustSupport": [ "code", "effective", "value", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1006"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment" ],
+      "mustSupport": [ "code", "effective", "value", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1332"
+      } ]
+    }, {
+      "type": "Coverage",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage" ],
+      "mustSupport": [ "type", "period" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observationcancelled" ],
+      "mustSupport": [ "code", "issued", "issued.value", "extension" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1006"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observationcancelled" ],
+      "mustSupport": [ "code", "issued", "issued.value", "extension" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1332"
+      } ]
+    } ]
+  } ],
+  "extension": [ {
+    "id": "supplementalDataGuidance",
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance",
+    "extension": [ {
+      "url": "guidance",
+      "valueString": "<p>For every patient evaluated by this measure also identify payer, race, ethnicity and sex</p>"
+    }, {
+      "url": "usage",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+          "code": "supplemental-data",
+          "display": "Supplemental Data"
+        } ],
+        "text": "Supplemental Data Guidance"
+      }
+    } ]
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/cqf-definitionTerm",
+    "extension": [ {
+      "url": "term",
+      "valueString": "Cognition"
+    }, {
+      "url": "definition",
+      "valueMarkdown": "Cognition can be assessed by the clinician during the patient's clinical history. Cognition can also be assessed by direct examination of the patient using one of a number of instruments, including several originally developed and validated for screening purposes. This can also include, where appropriate, administration to a knowledgeable informant. Examples include, but are not limited to:\n\n* Blessed Orientation-Memory-Concentration Test (BOMC)\n\n* Montreal Cognitive Assessment (MoCA)\n\n* St. Louis University Mental Status Examination (SLUMS)\n\n* Mini-Mental State Examination (MMSE) \\[Note: The MMSE has not been well validated for non-Alzheimer's dementias\\]\n\n* Short Informant Questionnaire on Cognitive Decline in the Elderly (IQCODE)\n\n* Ascertain Dementia 8 (AD8) Questionnaire\n\n* Minimum Data Set (MDS) Brief Interview of Mental Status (BIMS) \\[Note: Validated for use with nursing home patients only\\]\n\n* Formal neuropsychological evaluation\n\n* Mini-Cog\n\n"
+    } ]
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueReference": {
+      "reference": "#effective-data-requirements"
+    }
+  } ],
+  "url": "https://madie.cms.gov/Measure/CMS149FHIRDementiaCognitiveAssess",
+  "identifier": [ {
+    "use": "usual",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "short-name",
+        "display": "Short Name"
+      } ]
+    },
+    "system": "https://madie.cms.gov/measure/shortName",
+    "value": "CMS149FHIR"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "version-independent",
+        "display": "Version Independent"
+      } ]
+    },
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:5dd075c9-2ce3-49be-a219-055e2444cfea"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "version-specific",
+        "display": "Version Specific"
+      } ]
+    },
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:5b384921-04ad-4593-aba3-cfad4b270a4c"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "endorser",
+        "display": "Endorser"
+      } ]
+    },
+    "system": "https://madie.cms.gov/measure/cbeId",
+    "value": "2872e",
+    "assigner": {
+      "display": "CMS Consensus Based Entity"
+    }
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "publisher",
+        "display": "Publisher"
+      } ]
+    },
+    "system": "https://madie.cms.gov/measure/cmsId",
+    "value": "149FHIR",
+    "assigner": {
+      "display": "CMS"
+    }
+  } ],
+  "version": "1.0.000",
+  "name": "CMS149FHIRDementiaCognitiveAssess",
+  "title": "Dementia: Cognitive AssessmentFHIR\n",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-22T17:59:11+00:00",
+  "publisher": "American Academy of Neurology",
+  "contact": [ {
+    "telecom": [ {
+      "system": "url",
+      "value": "www.aan.com"
+    } ]
+  } ],
+  "description": "Percentage of patients, regardless of age, with a diagnosis of dementia for whom an assessment of cognition is performed and the results reviewed at least once within the 12 months preceding a dementia encounter during the measurement period\n",
+  "usage": "The measure requires a diagnosis of dementia be present before the routine assessment of cognition is performed once during the measurement period or the 12 months prior.\n\nUse of a standardized tool or instrument to assess cognition other than those listed will meet numerator performance if mapped to the concept \"Intervention, Performed\": \"Cognitive Assessment\" included in the numerator logic below.\n\nThe requirement of two or more visits is to establish that the eligible clinician has an existing relationship with the patient.\n\nIn recognition of the growing use of integrated and team-based care, the diagnosis of dementia and the assessment of cognitive function need not be performed by the same provider or clinician.\n\nThe Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition DMS-5 has replaced the term dementia with major neurocognitive disorder and mild neurocognitive disorder. For the purposes of this measure, the terms are equivalent.\n\nThis eCQM is a patient-based measure.\n\nThis FHIR-based measure has been derived from the QDM-based measure CMS149v14. Please refer to the HL7 QI-Core Implementation Guide (https://hl7.org/fhir/us/qicore/STU6/) for more information on QI-Core and mapping recommendations from QDM to QI-Core STU 6 (https://hl7.org/fhir/us/qicore/STU6/qdm-to-qicore.html).\n",
+  "copyright": "Attribution: The American Psychiatric Association's (APA), PCPI's, and American Medical Association's (AMA) significant past efforts and contributions to the development and updating of the Measure are acknowledged.\n\nCopyright: (C)2025 American Academy of Neurology Institute (AANI). All rights reserved.\n",
+  "effectivePeriod": {
+    "start": "2026-01-01",
+    "end": "2026-12-31"
+  },
+  "author": [ {
+    "name": "American Academy of Neurology",
+    "telecom": [ {
+      "system": "url",
+      "value": "www.aan.com"
+    } ]
+  }, {
+    "name": "American Medical Association (AMA)",
+    "telecom": [ {
+      "system": "url",
+      "value": "https://www.ama-assn.org/"
+    } ]
+  } ],
+  "relatedArtifact": [ {
+    "type": "citation",
+    "citation": "Alzheimer's Association. (2019). 2019 Alzheimer's Disease Facts and Figures. Alzheimer's \\& Dementia, 15(3), 321-387. Retrieved from https://alz.org/media/Documents/alzheimers-facts-and-figures-2019-r.pdf\n"
+  }, {
+    "type": "citation",
+    "citation": "American Psychiatric Association (Ed.). (2016). The American Psychiatric Association practice guideline on the use of antipsychotics to treat agitation or psychosis in patients with dementia (First edition). American Psychiatric Association.\n"
+  }, {
+    "type": "citation",
+    "citation": "APA Work Group on Alzheimer's Disease and other Dementias, Rabins, P.V., Blacker, D., Rovner, B.W., Rummans, T., Schneider, L.S., ... Fochtmann, L.J. (2007). American Psychiatric Association practice guideline for the treatment of patients with Alzheimer's disease and other dementias. Second edition. The American Journal of Psychiatry, 164(12 Suppl), 5--56.\n"
+  }, {
+    "type": "citation",
+    "citation": "California Department of Public Health. (2017). California guidelines for Alzheimer's disease management, 2017. Retrieved from https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/CDCB/CDPH%20Document%20Library/Alzheimers'%20Disease%20Program/ALZ-CareGuidelines.pdf\n"
+  }, {
+    "type": "citation",
+    "citation": "Fazio, S., Pace, D., Maslow, K., Zimmerman, S., \\& Kallmyer, B. (2018). Alzheimer's Association Dementia Care Practice Recommendations. The Gerontologist, 58(S1), S1-S9. \\[Supplemental material\\]. Retrieved from the Alzheimer's Association website: https://academic.oup.com/gerontologist/article/58/suppl_1/S1/4816759\n"
+  }, {
+    "type": "citation",
+    "citation": "Lanctôt, K.L., Hahn-Pedersen, J.H., Eichinger, C.S., Freeman, C., Clark, A., Tarazona, L.R.S., \\& Cummings, J. (2024). Burden of illness in people with Alzheimer's disease: A systematic review of epidemiology, comorbidities and mortality. The Journal of Prevention of Alzheimer's Disease, 11(1), 97--107. https://doi.org/10.14283/jpad.2023.61\n"
+  }, {
+    "type": "citation",
+    "citation": "van den Kieboom, R., Snaphaan, L., Mark, R., \\& Bongers, I. (2020). The trajectory of caregiver burden and risk factors in dementia progression: A systematic review. Journal of Alzheimer's Disease, 77(3), 1107--1115. https://doi.org/10.3233/JAD-200647\n"
+  }, {
+    "type": "citation",
+    "citation": "Wiener, J. M., Gould, E., Shuman, S. B., Kaur, R., \\& Ignaczak, M. (2016). Examining models of dementia care. (ASPE Final Report No. 0212704.017.000.001). Washington, D.C.: RTI International. Retrieved from https://aspe.hhs.gov/sites/default/files/private/pdf/257216/ExamDCMod.pdf\n"
+  }, {
+    "type": "citation",
+    "citation": "Wilson, R. S., Aggarwal, N. T., Barnes, L. L., Mendes de Leon, C.F., Herbert, L.E., \\& Evans, D.A. (2010). Cognitive decline in incident Alzheimer disease in a community population. Neurology, 74(12), 951-955.\n"
+  } ],
+  "library": [ "https://madie.cms.gov/Library/CMS149FHIRDementiaCognitiveAssess" ],
+  "disclaimer": "Limited proprietary coding may be contained in the Measure specifications for convenience. A license agreement must be entered prior to a third party's use of Current Procedural Terminology (CPT\\[R\\]) or other proprietary code set contained in the Measure. Any other use of CPT or other coding by the third party is strictly prohibited. AANI, APA, AMA, and the former members of the PCPI disclaim all liability for use or accuracy of any CPT or other coding contained in the specifications.\n\nCPT(R) contained in the Measure specifications is copyright 2004-2024 American Medical Association. LOINC(R) is copyright 2004-2024 Regenstrief Institute, Inc. This material contains SNOMED Clinical Terms(R) (SNOMED CT\\[R\\]) copyright 2004-2024 International Health Terminology Standards Development Organisation. ICD-10 is copyright 2024 World Health Organization. All Rights Reserved.\n",
+  "rationale": "An estimated 5.8 million adults in the US were living with dementia in 2019. Dementia is often characterized by the gradual onset and continuing cognitive decline in one or more domains including memory, communication and language, ability to focus or pay attention, reasoning and judgment and visual perception (Alzheimer's Association, 2019). Cognitive deterioration represents a major source of morbidity and mortality and poses a significant burden on affected individuals and their caregivers (van den Kieboom, Snaphaan, \\& Bongers, 2020; Lanctôt et al., 2024). Although cognitive deterioration follows a different course depending on the type of dementia, significant rates of decline have been reported. For example, one study found that the annual rate of decline for Alzheimer's disease patients was more than four times that of older adults with no cognitive impairment (Wilson et al., 2010). Nevertheless, measurable cognitive abilities remain throughout the course of dementia (APA Work Group on Alzheimer's Disease and other Dementias, 2007). Initial and ongoing assessments of cognition are fundamental to the proper management of patients with dementia. These assessments serve as the basis for identifying treatment goals, developing a treatment plan, monitoring the effects of treatment, and modifying treatment as appropriate.\n",
+  "clinicalRecommendationStatement": "Ongoing assessment includes periodic monitoring of the development and evolution of cognitive and noncognitive psychiatric symptoms and their response to intervention (Category I). Both cognitive and noncognitive neuropsychiatric and behavioral symptoms of dementia tend to evolve over time, so regular monitoring allows detection of new symptoms and adaptation of treatment strategies to current needs... Cognitive symptoms that almost always require assessment include impairments in memory, executive function, language, judgment, and spatial abilities. It is often helpful to track cognitive status with a structured simple examination (APA Work Group on Alzheimer's Disease and other Dementias, 2007).\n\nThe American Psychiatric Association recommends that patients with dementia be assessed for the type, frequency, severity, pattern, and timing of symptoms (Category 1C). Quantitative measures provide a structured replicable way to document the patient's baseline symptoms and determine which symptoms (if any) should be the target of intervention based on factors such as frequency of occurrence, magnitude, potential for associated harm to the patient or others, and associated distress to the patient. The exact frequency at which measures are warranted will depend on clinical circumstances. However, use of quantitative measures as treatment proceeds allows more precise tracking of whether nonpharmacological and pharmacological treatments are having their intended effect or whether a shift in the treatment plan is needed (American Psychiatric Association, 2016).\n\nConduct and document an assessment and monitor changes in cognitive status using a reliable and valid instrument, e.g., Montreal Cognitive Assessment (MoCA), Ascertain Dementia 8 (AD8) or other tool. Cognitive status should be reassessed periodically to identify sudden changes, as well as to monitor the potential beneficial or harmful effects of environmental changes (including safety, care needs, and abuse and/or neglect), specific medications (both prescription and non-prescription, for appropriate use and contraindications), or other interventions. Proper assessment requires the use of a standardized, objective instrument that is relatively easy to use, reliable (with less variability between different assessors), and valid (results that would be similar to gold-standard evaluations) (California Department of Public Health, 2017).\n\nRecommendation: Perform regular, comprehensive person-centered assessments and timely interim assessments. Assessments, conducted at least every 6 months, should prioritize issues that help the person with dementia to live fully. These include assessments of the individual and care partner's relationships and subjective experience and assessment of cognition, behavior, and function, using reliable and valid tools. Assessment is ongoing and dynamic, combining nomothetic (norm based) and idiographic (individualized) approaches (Fazio, Pace, Maslow, Zimmerman, \\& Kallmyer, 2018).\n\nRecommendation: Assess cognitive status, functional abilities, behavioral and psychological symptoms of dementia, medical status, living environment, and safety. Reassess regularly and when there is a significant change in condition (Wiener, Gould, Shuman, Kaur, \\& Ignaczak, 2016).\n",
+  "group": [ {
+    "id": "Group_1",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+          "code": "proportion",
+          "display": "Proportion"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
+      "valueCode": "boolean"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-type",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+          "code": "process",
+          "display": "Process"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-improvementNotation",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+          "code": "increase",
+          "display": "Increased score indicates improvement"
+        } ]
+      }
+    } ],
+    "population": [ {
+      "id": "InitialPopulation_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "initial-population",
+          "display": "Initial Population"
+        } ]
+      },
+      "description": "All patients, regardless of age, with a diagnosis of dementia who have two or more visits during the measurement period\n",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Initial Population"
+      }
+    }, {
+      "id": "Denominator_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "denominator",
+          "display": "Denominator"
+        } ]
+      },
+      "description": "Equals Initial Population\n",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Denominator"
+      }
+    }, {
+      "id": "Numerator_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "numerator",
+          "display": "Numerator"
+        } ]
+      },
+      "description": "Patients for whom an assessment of cognition is performed and the results reviewed at least once within the 12 months preceding a dementia encounter during the measurement period\n",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Numerator"
+      }
+    }, {
+      "id": "DenominatorException_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "denominator-exception",
+          "display": "Denominator Exception"
+        } ]
+      },
+      "description": "Documentation of patient reason(s) for not assessing cognition\n",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Denominator Exceptions"
+      }
+    } ]
+  } ],
+  "supplementalData": [ {
+    "id": "sde-ethnicity",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Ethnicity\n",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Ethnicity"
+    }
+  }, {
+    "id": "sde-payer",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Payer\n",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Payer"
+    }
+  }, {
+    "id": "sde-race",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Race\n",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Race"
+    }
+  }, {
+    "id": "sde-sex",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Sex\n",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Sex"
+    }
+  } ]
+}
