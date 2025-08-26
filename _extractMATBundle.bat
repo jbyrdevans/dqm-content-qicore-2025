@@ -1,7 +1,7 @@
 @ECHO OFF
 SET tooling_jar=tooling-cli-3.9.1.jar
 SET input_cache_path=%~dp0input-cache
-SET mat_bundle=bundles\mat\CMS506FHIR-v1.0.000-FHIR\CMS506FHIR-v1.0.000-FHIR.json
+SET mat_bundle=bundles\mat\CMS529FHIR-v0.5.001-FHIR\CMS529FHIR-v0.5.001-FHIR.json
 
 SET JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 
