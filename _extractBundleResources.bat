@@ -1,5 +1,5 @@
 @ECHO OFF
-SET tooling_jar=tooling-cli-3.8.0.jar
+SET tooling_jar=tooling-cli-3.9.1.jar
 SET input_cache_path=%~dp0input-cache
 SET mat_bundle=input\tests\measure\CMS2FHIRPCSDepressionScreenAndFollowUp
 
