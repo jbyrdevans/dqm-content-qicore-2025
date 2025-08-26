@@ -1,0 +1,5962 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #ffffff;;
+            margin: 0px;
+            padding: 10px;
+            height: 100%;
+            font-size: 1em;
+        }
+
+        p, li {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            margin: 0 0 5px 0;
+            font-weight: normal;
+        }
+
+        td {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        tr {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        table.colstu td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #fff5e6;
+        }
+
+        table.colsd td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #efefef;
+        }
+
+        table.colsn td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #e6ffe6;
+        }
+
+        table.colse td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #e6e6e6;
+        }
+
+        table.colsi td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #ffffe6;
+        }
+
+        table.list td {
+            border-top: 1px silver solid;
+            border-spacing: 0;
+        }
+
+        table.bare td {
+            border-spacing: 0;
+        }
+
+        ul.dict li {
+            font-size: 11px;
+            line-height: 1.2em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+        }
+
+        table.dict td {
+            padding: 3px 7px 2px 7px;
+            font-size: 11px;
+            line-height: 1.2em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.dict p {
+            font-size: 11px;
+        }
+
+        table {
+            margin-bottom: 10px;
+            border-collapse: collapse;
+        }
+
+        table.codes td {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.grid {
+            margin-bottom: 10px;
+            border: 1px black solid;
+            margin-right: auto;
+
+        }
+
+        table.grid th {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: bold;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.grid td {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        ul, ol {
+            margin: 10px 0;
+            padding: 0 0 0 25px;
+        }
+
+        .dense li {
+            margin: 0 0 0 0;
+        }
+
+        li {
+            margin: 0 0 5px 0;
+        }
+
+        h1 {
+            font-size: 16px;
+            margin: 0 0 4px 0;
+            font-family: verdana;
+            border-bottom: 1px solid #7e7e7e;
+            padding-bottom: 2px;
+        }
+
+        h2 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 14px;
+            margin: 0 0 3px 0;
+            margin-top: 15px;
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 2px;
+        }
+
+        h3 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 12px;
+            margin: 0 0 3px 0;
+            margin-top: 10px;
+        }
+
+        h4 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 11px;
+            margin: 0 0 3px 0;
+            margin-top: 10px;
+        }
+
+        div.sidebar h2 {
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 2px;
+            padding-top: 0px;
+            margin-top: 0px;
+            font-weight: normal;
+            margin-left: 8px;
+            margin-bottom: 0px;
+            font-size: 12px;
+        }
+
+        div.sidebar p {
+            padding-bottom: 0px;
+            padding-top: 10px;
+            font-weight: normal;
+            margin-left: 8px;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        div.sidebar ul {
+            list-style: none;
+            padding: 0px;
+            margin-left: 6px;
+            font-size: 11px;
+            line-height: 2.125em;
+        }
+
+        div.sidebar li {
+            margin: 0px 0px 0px 6px;
+            padding: 0px;
+            font-size: 11px;
+            line-height: 2.125em;
+        }
+
+        a {
+            color: #428bca;
+            text-decoration: none;
+        }
+
+        a.xmltag :visited {
+            color: Navy;
+        }
+
+        a.xmltag :hover {
+            color: Blue;
+        }
+
+        pre {
+            display: block;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+
+        pre a {
+            color: darkgreen;
+            text-decoration: none;
+            border: 0;
+
+        }
+
+        /* PrismJS 1.21.0
+        https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apl+applescript+aql+arduino+arff+asciidoc+aspnet+asm6502+autohotkey+autoit+bash+basic+batch+bbcode+birb+bison+bnf+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cil+clojure+cmake+coffeescript+concurnas+csp+crystal+css-extras+cypher+d+dart+dax+dhall+diff+django+dns-zone-file+docker+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+firestore-security-rules+flow+fortran+ftl+gml+gcode+gdscript+gedcom+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+http+hpkp+hsts+ichigojam+icon+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keyman+kotlin+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+lolcode+lua+makefile+markdown+markup-templating+matlab+mel+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nginx+nim+nix+nsis+objectivec+ocaml+opencl+oz+parigp+parser+pascal+pascaligo+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plsql+powerquery+powershell+processing+prolog+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+q+qml+qore+r+racket+jsx+tsx+reason+regex+renpy+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+stan+iecst+stylus+swift+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+turtle+twig+typescript+typoscript+unrealscript+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+wiki+xeora+xml-doc+xojo+xquery+yaml+yang+zig&plugins=keep-markup */
+        /**
+         * prism.js default theme for JavaScript, CSS and HTML
+         * Based on dabblet (http://dabblet.com)
+         * @author Lea Verou
+         */
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            color: black;
+            background: none;
+            text-shadow: 0 1px white;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 0.95em;
+            text-align: left;
+            white-space: pre;
+            word-spacing: normal;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 1.5;
+
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+        }
+
+        pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+        code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+        code[class*="language-"]::selection, code[class*="language-"] ::selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        @media print {
+            code[class*="language-"],
+            pre[class*="language-"] {
+                text-shadow: none;
+            }
+        }
+
+        /* Code blocks */
+        pre[class*="language-"] {
+            padding: 1em;
+            margin: .5em 0;
+            overflow: auto;
+        }
+
+        :not(pre) > code[class*="language-"],
+        pre[class*="language-"] {
+            background: #f5f2f0;
+        }
+
+        /* Inline code */
+        :not(pre) > code[class*="language-"] {
+            padding: .1em;
+            border-radius: .3em;
+            white-space: normal;
+        }
+        /*
+  ===============================
+  Liquid Narrative Styling Start
+  ===============================
+  */
+
+        .narrative-table {
+            border: 1pt inset rgb(0, 0, 0);
+            line-height: 10pt;
+            border-collapse: separate;
+            -webkit-border-horizontal-spacing: 2px;
+            -webkit-border-vertical-spacing: 2px;
+        }
+
+
+        .narrative-table ul,
+        .content-container ul {
+            list-style: disc;
+            padding-left: 25px;
+            margin-top: 5px;
+        }
+
+        .narrative-table ol,
+        .content-container ol {
+            list-style: decimal;
+            padding: 0 0 0 25px;
+            margin-top: 5px;
+        }
+
+        .narrative-table strong,
+        .content-container strong {
+            font-weight: 700;
+        }
+
+        .narrative-table>tbody {
+            display: table-row-group;
+            vertical-align: middle;
+        }
+
+        .narrative-table>tbody>tr {
+            display: table-row;
+            background-color: lightgray;
+            vertical-align: inherit;
+        }
+
+        .narrative-table>tbody>tr>th {
+            padding: 5px;
+        }
+
+        .section-header {
+            background-color: #656565;
+            color: whitesmoke;
+            vertical-align: inherit;
+        }
+
+        .row-header {
+            background-color: #656565;
+            color: whitesmoke;
+            vertical-align: inherit;
+        }
+
+        .tab-one {
+            padding-left: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .row-header {
+                min-width: 138px;
+                max-width: 138px;
+            }
+
+            .content-container {
+                max-width: 576px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .row-header {
+                min-width: 181px;
+                max-width: 181px;
+            }
+
+            .content-container {
+                max-width: 745px;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            .row-header {
+                min-width: 213px;
+                max-width: 213px;
+            }
+
+            .content-container {
+                max-width: 873px;
+            }
+        }
+
+        /*
+        ===============================
+        Liquid Narrative Styling End
+        ===============================
+        */
+
+        /*
+        ===============================
+        Rich text editor styling
+        ===============================
+        */
+
+        table.rich-text-table th,td {
+            border: 1px solid #9c9c9c;
+            box-sizing: border-box;
+            min-width: 1em;
+            padding: 6px 8px;
+            position: relative;
+            vertical-align: top;
+        }
+        table.rich-text-table th {
+            background-color: #3d25140d;
+        }
+    </style>
+</head>
+<body>
+<div xmlns="http://www.w3.org/1999/xhtml" class="col-12">
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Metadata</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Kidney Health EvaluationFHIR</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+<td class="content-container">1.0.000</td>
+</tr>
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Short Name</th>
+
+
+<td class="content-container">CMS951FHIR</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">GUID (Version Independent)</th>
+
+
+<td class="content-container">urn:uuid:e66e345d-d892-4fe2-84a7-748433b6e0a6</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">GUID (Version Specific)</th>
+
+
+<td class="content-container">urn:uuid:fc073788-dfa7-4163-a352-68d0fbdd99c8</td>
+</tr>
+
+
+
+  
+    
+    
+<tr>
+
+
+<th scope="row" class="row-header">CMS Identifier</th>
+
+
+<td class="content-container">951FHIR</td>
+</tr>
+
+  
+
+
+
+
+  
+    
+    
+<tr>
+
+
+<th scope="row" class="row-header">Effective Period</th>
+
+
+<td class="content-container">2026-01-01 through 2026-12-31</td>
+</tr>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+<td class="content-container">National Kidney Foundation</td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Developer</th>
+
+
+<td class="content-container">National Kidney Foundation</td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container"><p>Percentage of patients aged 18-85 years with a diagnosis of diabetes who received a kidney health evaluation defined by an Estimated Glomerular Filtration Rate (eGFR) AND Urine Albumin-Creatinine Ratio (uACR) within the measurement period</p></td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Copyright</th>
+
+
+<td class="content-container"><p>Copyright 2025 National Kidney Foundation. All Rights Reserved.</p></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Disclaimer</th>
+
+
+<td class="content-container"><p>Physician Performance Measures (Measures) and related data specifications developed by the National Kidney Foundation (NKF) are intended to facilitate quality improvement activities by health care professionals.</p>
+<p>These Measures are intended to assist health care professionals in enhancing quality of care. These Measures are not clinical guidelines and do not establish a standard of medical care and have not been tested for all potential applications. NKF encourages testing and evaluation of its Measures.</p>
+<p>Measures are subject to review and may be revised or rescinded at any time by NKF. The measures may not be altered without prior written approval from NKF. The measures, while copyrighted, can be reproduced and distributed, without modification, for noncommercial purposes. Commercial use is defined as the sale, license, or distribution of the measures for commercial gain, or incorporation of the measures into a product or service that is sold, licensed, or distributed for commercial gain. Commercial uses of the measures require a license agreement between the user and NKF. Neither NKF nor its members shall be responsible for any use of the measures.</p>
+<p>THESE MEASURES AND SPECIFICATIONS ARE PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND.</p>
+<p>Limited proprietary coding is contained in the Measure specifications for convenience. Users of the proprietary code sets should obtain all necessary licenses from the owners of these code sets.</p>
+<p>CPT(R) contained in the Measure specifications is copyright 2004-2024 American Medical Association. LOINC(R) is copyright 2004-2024 Regenstrief Institute, Inc. This material contains SNOMED Clinical Terms(R) (SNOMED CT[R]) copyright 2004-2024 International Health Terminology Standards Development Organisation. ICD-10 is copyright 2024 World Health Organization. All Rights Reserved.</p>
+<p>The PCPI's and AMA's significant past efforts and contributions to the development and updating of the measure are acknowledged.</p>
+<p>Due to technical limitations, registered trademarks are indicated by (R) or [R].</p></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Rationale</th>
+
+
+<td class="content-container"><p>Chronic Kidney Disease (CKD) is a major driver of morbidity, mortality and high healthcare costs in the United States. Currently, 37 million American adults have CKD and millions of others are at increased risk (National Kidney Foundation [NKF], 2022), with an estimated population prevalence growing to nearly 17% among Americans aged 30 years and older by the year 2030 (Saran et al., 2019; Hoerger et al., 2015). Total Medicare spending in 2016 on both CKD and End-Stage Renal Disease (ESRD) was over $114 billion, comprising 23% of total Medicare fee-for-service spending overall with costs increasing exponentially with advancing CKD (Saran et al., 2019; Nichols et al., 2020). In the US from 2002-2016, the burden of CKD, defined as years of life lost, years living with disability, disability-adjusted life years, and deaths, outpaced changes in the burden of disease for other conditions (Bowe et al., 2018). Patients with CKD are readmitted to the hospital more frequently than those without diagnosed CKD (Saran et al., 2019). CKD is the 9th leading cause of death in the US and is the fastest growing non-communicable disease in terms of in burden largely due to death (Hoerger et al., 2015; Bowe et al., 2018). This public health issue is driven largely by the impact of diabetes—the most common comorbid risk factor for CKD (Saran et al., 2019; Bowe et al., 2018).</p>
+<p>The intent of this process measure is to improve rates of guideline-concordant kidney health evaluation in patients with diabetes to more consistently identify and potentially treat or delay progression of CKD in this high-risk population. Annual kidney health evaluation in patients with diabetes to determine risk of CKD using eGFR and uACR is recommended by clinical practice guidelines (American Diabetes Association, 2022; de Boer, 2022; NKF, 2007; NKF, 2012) and has been a focus of various local and national health care quality improvement initiatives, including Healthy People 2030 (Healthy People 2030, 2023). However, performance of these tests in patients with diabetes remains low, with rates that vary across Medicare (41.8%) and private insurers (49.0%) (Saran et al., 2019; Alfego et al., 2021; Stempneiwicz et al., 2021). Low rates of detection of CKD in a population of patients with diabetes have been demonstrated to be associated with low patient awareness of their own kidney health status (Szczech et al., 2014). Indeed, 90% of individuals with CKD are unaware of their condition due to under-recognition and under-diagnosis (Saran, et al., 2019; Centers for Disease Control and Prevention, 2023). Currently, an individual’s lifetime probability of developing CKD is relatively high, reaching 54% for someone currently aged 30-49 years (Hoerger et al., 2015). Regular kidney health evaluations, utilizing both eGFR and uACR, provide an opportunity to improve identification and potential reversal of worsening kidney function, particularly in high risk populations, such as those with diabetes.</p></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Clinical Recommendation Statement</th>
+
+
+<td class="content-container"><p>The following evidence statements are quoted verbatim from the referenced clinical guidelines and other sources, where applicable:</p>
+<p>At least annually, urinary albumin (e.g., spot urinary albumin-to-creatinine ratio) and estimated glomerular filtration rate should be assessed in people with type 1 diabetes with duration of ≥5 years and in all people with type 2 diabetes regardless of treatment. B (American Diabetes Association Professional Practice Committee, 2023)</p>
+<p>Patients with diabetes should be screened annually for Diabetic Kidney Disease (DKD). Initial screening should commence:</p>
+<ul>
+ <li><p>5 years after the diagnosis of type 1 diabetes; (A) or</p></li>
+ <li><p>From diagnosis of type 2 diabetes. (B)</p><p/></li>
+</ul>
+<p>Screening should include:</p>
+<ul>
+ <li><p>Measurements of urinary albumin-creatinine ratio (ACR) in a spot urine sample; (B)</p></li>
+ <li><p>Measurement of serum creatinine and estimation of GFR. (B)</p></li>
+</ul>
+<p>(NKF, 2007; NKF, 2012)</p></td>
+</tr>
+
+
+
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Alfego, D., Ennis, J., Gillespie, B., Lewis, M.J., Montgomery, E., Ferre, S., ... Letovsky, S. (2021). Chronic kidney disease testing among at-risk adults in the U.S. remains low: Real-world evidence from a National Laboratory database. Diabetes Care, 44(9), 2025-2032. https://doi.org/10.2337/dc21-0723</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>American Diabetes Association Professional Practice Committee. (2023). Chronic kidney disease and risk management: Standards of medical care in diabetes-2023. Diabetes Care, 46(Supplement_1), S191-S202. https://doi.org/10.2337/dc23-S011</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Nichols, G.A, Ustyugova, A., Deruaz-Luyet, A., O'Keeffe-Rosetti, M., &amp; Brodovicz, K.G. (2020). Health care costs by type of expenditure across eGFR stages among patients with and without diabetes, cardiovascular disease, and heart failure. JASN, 31(7), 1594-1601. https://doi.org/10.1681/asn.2019121308</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Saran R. B., Abbott K. C., ..., Zhang, X. (2019). US renal data system 2018 annual data report: Epidemiology of kidney disease in the United States. American Journal of Kidney Diseases, 73(3), Svii-Sxxii. https://doi.org/10.1053/j.ajkd.2019.01.001</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Stempneiwicz, N., Vassalotti, J.A., Cuddeback, J.K., Ciemins, E., Storfer-Isser, A., Sang, Y., ... Coresh, J. (2021). Chronic kidney disease testing among primary care patients with type 2 diabetes across 24 U.S. health care organizations. Diabetes Care, 44(9), 2000-2009. https://doi.org/10.2337/dc20-2715</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Szczech, L. A., Stewart, R. C., Su, H., Deloskey, R. J., Astor, B. C., Fox, C. H., ... Vassalotti, J. A. (2014). Primary care detection of chronic kidney disease in adults with type-2 diabetes: The ADD-CKD study (Awareness, detection and drug therapy in type 2 diabetes and chronic kidney disease). PLoS ONE, 9(11), e110535. https://doi.org/10.1371/journal.pone.0110535</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Bowe, B., Xie, Y., Li, T., Mokdad, A. H., Xian, H., Yan, Y.,... Al-Aly, Z. (2018). Changes in the US burden of chronic kidney disease from 2002 to 2016. JAMA Network Open, 1(7). doi: 10.1001/jamanetworkopen.2018.4412
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Centers for Disease Control and Prevention. Chronic Kidney Disease in the United States. (2023). Retrieved from: https://www.cdc.gov/kidney-disease/php/data-research/?CDC_AAref_Val=https://www.cdc.gov/kidneydisease/publications-resources/ckd-national-facts.html
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    de Boer, I.H., Khunti, K., Sadusky, T., Tuttle, K.R., Neumiller, J.J., Rhee, Bakris, G. (2022). Diabetes management in chronic kidney disease: a consensus report by the American Diabetes Association (ADA) and Kidney Disease: Improving Global Outcomes (KDIGO). Kidney International, 102(5):974-989. doi: 10.1016/j.kint.2022.08.012
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Healthy People 2030. Retrieved from: https://health.gov/healthypeople/objectives-and-data/browse-objectives/chronic-kidney-disease
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Hoerger, T. J., Simpson, S. A., Yarnoff, B. O., Pavkov, M. E., Burrows, N. R., Saydah, S. H., . . . Zhuo, X. (2015). The future burden of CKD in the United States: A simulation model for the CDC CKD Initiative. American Journal of Kidney Diseases, 65(3), 403-411. doi:10.1053/j.ajkd.2014.09.023
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int. 2024;105(4S): S117–S314.
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    National Kidney Foundation. (2007). KDOQI Clinical practice guidelines and clinical practice recommendations for diabetes and chronic kidney disease. Retrieved from: https://www.kidney.org/sites/default/files/docs/diabetes_ajkd_febsuppl_07.pdf
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    National Kidney Foundation. (2022). About chronic kidney disease. Retrieved from: https://www.kidney.org/atoz/content/about-chronic-kidney-disease
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Guidance (Usage)</th>
+
+
+<td class="content-container"><p>This measure assesses the performance of a comprehensive kidney evaluation in adults aged 18-85. This measure does not preclude or discourage regular laboratory testing for CKD in patients outside of the age range (patients under 18 years and those over 85 years of age).</p>
+<p>The Urine Albumin-Creatinine Ratio (uACR) requirement can be met with a documented Urine Albumin and Urine Creatine conducted on the same urine sample AND reported less than or equal to four days apart. A calculation of uACR is not required to meet this measure, but it is intended to for the uACR to be calculated for the purposes of kidney health evaluation. If the Urine Albumin and Urine Creatine tests have different units of measure, they should be converted to the same unit of measure for the purposes of calculating uACR.</p>
+<p>The Urine Albumin Creatinine Ratio Test requirement can be met if the lab result is received as a quantitative value or as an undetectable result. Undetectable results can be coded using values in the &quot;Undetectable Lab Result Value&quot; value set.</p>
+<p>This dQM is a patient-based measure. This FHIR-based measure has been derived from the QDM-based measure: CMS951v4.</p>
+<p>Please refer to the HL7 QI-Core Implementation Guide (https://hl7.org/fhir/us/qicore/STU6/) for more information on QI-Core and mapping recommendations from QDM to QI-Core STU 6 (https://hl7.org/fhir/us/qicore/STU6/qdm-to-qicore.html).</p></td>
+</tr>
+
+
+
+  
+    
+    <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Group (Rate) (ID: Group_1)</th>
+
+
+</tr>
+  
+  
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Basis</th>
+
+
+<td class="content-container">boolean</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Scoring</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-scoring#proportion: 'Proportion']</td>
+</tr>
+
+
+
+
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#process: 'Process']</td>
+</tr>
+
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Rate Aggregation</th>
+
+
+<td class="content-container"><p>None</p></td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Improvement Notation</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase: 'Increased score indicates improvement']</td>
+</tr>
+
+
+  
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Initial Population</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: InitialPopulation_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p>All patients aged 18-85 years with a diagnosis of diabetes at the start of the measurement period with a visit during the measurement period</p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-cms951fhirkidneyhealtheval-initial-population">Initial Population</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Denominator</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: Denominator_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p>Equals Initial Population</p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-cms951fhirkidneyhealtheval-denominator">Denominator</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Denominator Exclusion</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: DenominatorExclusion_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p>Patients with a diagnosis of ESRD active during the measurement period;<br/>
+ Patients with a diagnosis of CKD Stage 5 active during the measurement period;<br/>
+ Patients who have an order for or are receiving hospice or palliative care.</p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-cms951fhirkidneyhealtheval-denominator-exclusions">Denominator Exclusions</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Numerator</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: Numerator_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p>Patients who received a kidney health evaluation during the measurement period. Kidney health evaluation is defined by an eGFR AND uACR within the measurement period OR an eGFR and a Urine Albumin and Urine Creatine result documented less than or equal to four days apart</p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-cms951fhirkidneyhealtheval-numerator">Numerator</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+
+
+  
+    
+<tr>
+
+
+<th scope="row" class="row-header">Supplemental Data Guidance</th>
+
+
+<td class="content-container">For every patient evaluated by this measure also identify payer, race, ethnicity and sex</td>
+</tr>
+
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Supplemental Data Elements</th>
+
+
+</tr>
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-ethnicity
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Ethnicity
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#cms951fhirkidneyhealtheval-sde-ethnicity">SDE Ethnicity</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-payer
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Payer
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#cms951fhirkidneyhealtheval-sde-payer">SDE Payer</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-race
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Race
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#cms951fhirkidneyhealtheval-sde-race">SDE Race</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-sex
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Sex
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#cms951fhirkidneyhealtheval-sde-sex">SDE Sex</a> 
+      
+    
+  </td>
+</tr>
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Logic</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Primary Library</th>
+
+
+<td class="content-container">https://madie.cms.gov/Library/CMS951FHIRKidneyHealthEval</td>
+</tr>
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Contents</th>
+  <td class="content-container">
+    <em><a href="#population-criteria">Population Criteria</a></em>
+    <br/>
+    <em><a href="#definitions">Logic Definitions</a></em>
+    <br/>
+    <em><a href="#terminology">Terminology</a></em>
+    <br/>
+    <em><a href="#dependencies">Dependencies</a></em>
+    <br/>
+    <em><a href="#data-requirements">Data Requirements</a></em>
+    <br/>
+  </td>
+</tr>
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="population-criteria"> </a>Population Criteria</th>
+
+
+</tr>
+  
+  
+  
+  
+    
+    <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Group (Rate) (ID: Group_1)</th>
+
+
+</tr>
+  
+  
+  
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-cms951fhirkidneyhealtheval-initial-population"> </a>
+    
+    
+    Initial Population
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
+  AgeInYearsAt(date from start of &quot;Measurement Period&quot;) in Interval[18, 85]
+    and &quot;Has Active Diabetes Overlaps Start Of Measurement Period&quot;
+    and &quot;Has Outpatient Visit During Measurement Period&quot;</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-cms951fhirkidneyhealtheval-denominator"> </a>
+    
+    
+    Denominator
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Denominator&quot;:
+  &quot;Initial Population&quot;</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-cms951fhirkidneyhealtheval-denominator-exclusions"> </a>
+    
+    
+    Denominator Exclusion
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Denominator Exclusions&quot;:
+  &quot;Has CKD Stage 5 Or ESRD Diagnosis Overlaps Measurement Period&quot;
+    or Hospice.&quot;Has Hospice Services&quot;
+    or PalliativeCare.&quot;Has Palliative Care in the Measurement Period&quot;</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-cms951fhirkidneyhealtheval-numerator"> </a>
+    
+    
+    Numerator
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Numerator&quot;:
+  &quot;Kidney Panel Performed During Measurement Period&quot;</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="definitions"> </a>Logic Definitions</th>
+
+
+</tr>
+  
+  
+          
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="hospice-has-hospice-services"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> Hospice</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Hospice Services&quot;:
+  exists ((([Encounter: &quot;Encounter Inpatient&quot;]).isEncounterPerformed()) InpatientEncounter
+      where (InpatientEncounter.hospitalization.dischargeDisposition ~ &quot;Discharge to home for hospice care (procedure)&quot;
+          or InpatientEncounter.hospitalization.dischargeDisposition ~ &quot;Discharge to healthcare facility for hospice care (procedure)&quot;
+      )
+        and InpatientEncounter.period ends during day of &quot;Measurement Period&quot;
+  )
+    or exists ((([Encounter: &quot;Hospice Encounter&quot;]).isEncounterPerformed()) HospiceEncounter
+        where HospiceEncounter.period overlaps day of &quot;Measurement Period&quot;
+    )
+    or exists ((([ObservationScreeningAssessment: &quot;Hospice care [Minimum Data Set]&quot;]).isAssessmentPerformed()) HospiceAssessment
+        where HospiceAssessment.value ~ &quot;Yes (qualifier value)&quot;
+          and HospiceAssessment.effective.toInterval() overlaps day of &quot;Measurement Period&quot;
+    )
+    or exists ((([ServiceRequest: &quot;Hospice Care Ambulatory&quot;]).isInterventionOrder()) HospiceOrder
+        where HospiceOrder.authoredOn during day of &quot;Measurement Period&quot;
+    )
+    or exists ((([Procedure: &quot;Hospice Care Ambulatory&quot;]).isInterventionPerformed()) HospicePerformed
+        where HospicePerformed.performed.toInterval() overlaps day of &quot;Measurement Period&quot;
+    )
+    or exists ((([ConditionProblemsHealthConcerns: &quot;Hospice Diagnosis&quot;]
+        union [ConditionEncounterDiagnosis: &quot;Hospice Diagnosis&quot;]).verified()) HospiceCareDiagnosis
+        where HospiceCareDiagnosis.prevalenceInterval() overlaps day of &quot;Measurement Period&quot;
+    )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="palliativecare-has-palliative-care-in-the-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> PalliativeCare</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Palliative Care in the Measurement Period&quot;:
+  exists ((([ObservationScreeningAssessment: &quot;Functional Assessment of Chronic Illness Therapy - Palliative Care Questionnaire (FACIT-Pal)&quot;]).isAssessmentPerformed()) PalliativeAssessment
+      where PalliativeAssessment.effective.toInterval() overlaps day of &quot;Measurement Period&quot;
+  )
+    or exists ((([ConditionProblemsHealthConcerns: &quot;Palliative Care Diagnosis&quot;]
+    union [ConditionEncounterDiagnosis: &quot;Palliative Care Diagnosis&quot;]).verified()) PalliativeDiagnosis
+        where PalliativeDiagnosis.prevalenceInterval() overlaps day of &quot;Measurement Period&quot;
+    )
+    or exists ((([Encounter: &quot;Palliative Care Encounter&quot;]).isEncounterPerformed()) PalliativeEncounter
+        where PalliativeEncounter.period overlaps day of &quot;Measurement Period&quot;
+    )
+    or exists ((([Procedure: &quot;Palliative Care Intervention&quot;]).isInterventionPerformed()) PalliativeIntervention
+        where PalliativeIntervention.performed.toInterval() overlaps day of &quot;Measurement Period&quot;
+    )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-sex"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Sex&quot;:
+  case
+    when Patient.sex = '248153007' then &quot;Male (finding)&quot;
+    when Patient.sex = '248152002' then &quot;Female (finding)&quot;
+    else null
+  end</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-payer"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Payer&quot;:
+  [Coverage: type in &quot;Payer Type&quot;] Payer
+    return {
+      code: Payer.type,
+      period: Payer.period
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-ethnicity"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Ethnicity&quot;:
+  Patient.ethnicity E
+    return Tuple {
+      codes: { E.ombCategory } union E.detailed,
+      display: E.text
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-race"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Race&quot;:
+  Patient.race R
+    return Tuple {
+      codes: R.ombCategory union R.detailed,
+      display: R.text
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-sde-sex"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Sex&quot;:
+  SDE.&quot;SDE Sex&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-has-estimated-glomerular-filtration-rate-performed-during-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Estimated Glomerular Filtration Rate Performed During Measurement Period&quot;:
+  exists ( [&quot;LaboratoryResultObservation&quot;: &quot;Estimated Glomerular Filtration Rate&quot;] eGFRTest
+      where eGFRTest.effective.toInterval ( ) during day of &quot;Measurement Period&quot;
+        and eGFRTest.value is not null
+        and eGFRTest.status in { 'final', 'amended', 'corrected' }
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-has-urine-albumin-creatinine-ratio-test-performed-during-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Urine Albumin Creatinine Ratio Test Performed During Measurement Period&quot;:
+  exists ( [&quot;LaboratoryResultObservation&quot;: &quot;Urine Albumin Creatinine Ratio&quot;] uACRTest
+      where uACRTest.effective.toInterval ( ) during day of &quot;Measurement Period&quot;
+        and uACRTest.status in { 'final', 'amended', 'corrected' }
+        and ( ( uACRTest.value is Quantity )
+            or ( uACRTest.value as Concept in &quot;Undetectable Lab Result Value&quot; )
+        )
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-urine-albumin-test-performed-during-the-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Urine Albumin Test Performed During The Measurement Period&quot;:
+  [&quot;LaboratoryResultObservation&quot;: &quot;Urine Albumin&quot;] AlbuminTest
+    where AlbuminTest.effective.toInterval ( ) during day of &quot;Measurement Period&quot;
+      and AlbuminTest.value is not null
+      and AlbuminTest.status in { 'final', 'amended', 'corrected' }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-urine-creatinine-test-performed-during-the-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Urine Creatinine Test Performed During The Measurement Period&quot;:
+  [&quot;LaboratoryResultObservation&quot;: &quot;Urine Creatinine&quot;] CreatinineTest
+    where CreatinineTest.effective.toInterval ( ) during day of &quot;Measurement Period&quot;
+      and CreatinineTest.value is not null
+      and CreatinineTest.status in { 'final', 'amended', 'corrected' }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-has-urine-albumin-test-and-urine-creatine-test-less-than-or-equal-to-four-days-apart"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Urine Albumin Test And Urine Creatine Test Less Than Or Equal To Four Days Apart&quot;:
+  exists ( from
+      &quot;Urine Albumin Test Performed During The Measurement Period&quot; UrineAlbuminTest,
+      &quot;Urine Creatinine Test Performed During The Measurement Period&quot; UrineCreatinineTest
+      let UrineAlbuminDocumentedTime: UrineAlbuminTest.effective.toInterval ( ),
+      UrineCreatinineDocumentedTime: UrineCreatinineTest.effective.toInterval ( )
+      where UrineAlbuminDocumentedTime during Interval[start of UrineCreatinineDocumentedTime - 4 days, end of UrineCreatinineDocumentedTime + 4 days]
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-kidney-panel-performed-during-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Kidney Panel Performed During Measurement Period&quot;:
+  &quot;Has Estimated Glomerular Filtration Rate Performed During Measurement Period&quot;
+    and ( &quot;Has Urine Albumin Creatinine Ratio Test Performed During Measurement Period&quot;
+        or &quot;Has Urine Albumin Test And Urine Creatine Test Less Than Or Equal To Four Days Apart&quot;
+    )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-numerator"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Numerator&quot;:
+  &quot;Kidney Panel Performed During Measurement Period&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-has-active-diabetes-overlaps-start-of-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Active Diabetes Overlaps Start Of Measurement Period&quot;:
+  exists ( [&quot;ConditionProblemsHealthConcerns&quot;: &quot;Diabetes&quot;]
+    union [&quot;ConditionEncounterDiagnosis&quot;: &quot;Diabetes&quot;] ) DiabetesDiagnosis
+    where DiabetesDiagnosis.prevalenceInterval ( ) overlaps before day of &quot;Measurement Period&quot;
+      and ( DiabetesDiagnosis.verificationStatus is not null implies ( DiabetesDiagnosis.verificationStatus !~ QICoreCommon.&quot;refuted&quot;
+            and DiabetesDiagnosis.verificationStatus !~ QICoreCommon.&quot;entered-in-error&quot;
+        )
+      )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-has-outpatient-visit-during-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Outpatient Visit During Measurement Period&quot;:
+  exists ( ( [&quot;Encounter&quot;: &quot;Annual Wellness Visit&quot;]
+      union [&quot;Encounter&quot;: &quot;Home Healthcare Services&quot;]
+      union [&quot;Encounter&quot;: &quot;Office Visit&quot;]
+      union [&quot;Encounter&quot;: &quot;Outpatient Consultation&quot;]
+      union [&quot;Encounter&quot;: &quot;Preventive Care Services Established Office Visit, 18 and Up&quot;]
+      union [&quot;Encounter&quot;: &quot;Preventive Care Services Initial Office Visit, 18 and Up&quot;]
+      union [&quot;Encounter&quot;: &quot;Telephone Visits&quot;] ) ValidEncounter
+      where ValidEncounter.period during day of &quot;Measurement Period&quot;
+        and ValidEncounter.status = 'finished'
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-initial-population"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
+  AgeInYearsAt(date from start of &quot;Measurement Period&quot;) in Interval[18, 85]
+    and &quot;Has Active Diabetes Overlaps Start Of Measurement Period&quot;
+    and &quot;Has Outpatient Visit During Measurement Period&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-denominator"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Denominator&quot;:
+  &quot;Initial Population&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-sde-payer"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Payer&quot;:
+  SDE.&quot;SDE Payer&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-sde-ethnicity"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Ethnicity&quot;:
+  SDE.&quot;SDE Ethnicity&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-has-ckd-stage-5-or-esrd-diagnosis-overlaps-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has CKD Stage 5 Or ESRD Diagnosis Overlaps Measurement Period&quot;:
+  exists ( ( [&quot;ConditionProblemsHealthConcerns&quot;: &quot;Chronic Kidney Disease, Stage 5&quot;]
+      union [&quot;ConditionEncounterDiagnosis&quot;: &quot;Chronic Kidney Disease, Stage 5&quot;]
+  )
+    union ( [&quot;ConditionProblemsHealthConcerns&quot;: &quot;End Stage Renal Disease&quot;]
+        union [&quot;ConditionEncounterDiagnosis&quot;: &quot;End Stage Renal Disease&quot;]
+    ) ) CKDOrESRD
+    where CKDOrESRD.prevalenceInterval ( ) overlaps day of &quot;Measurement Period&quot;
+      and ( CKDOrESRD.verificationStatus is not null implies ( CKDOrESRD.verificationStatus !~ QICoreCommon.&quot;refuted&quot;
+            and CKDOrESRD.verificationStatus !~ QICoreCommon.&quot;entered-in-error&quot;
+        )
+      )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-denominator-exclusions"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Denominator Exclusions&quot;:
+  &quot;Has CKD Stage 5 Or ESRD Diagnosis Overlaps Measurement Period&quot;
+    or Hospice.&quot;Has Hospice Services&quot;
+    or PalliativeCare.&quot;Has Palliative Care in the Measurement Period&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms951fhirkidneyhealtheval-sde-race"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS951FHIRKidneyHealthEval</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Race&quot;:
+  SDE.&quot;SDE Race&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tostring"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ToString(value uri): value.value</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tointerval"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)
+value to a CQL DateTime Interval
+@comment: If the start value of the given period is unspecified, the starting
+boundary of the resulting interval will be open (meaning the start of the interval
+is unknown, as opposed to interpreted as the beginning of time).
+*/
+define function ToInterval(period FHIR.Period):
+    if period is null then
+        null
+    else
+        if period.&quot;start&quot; is null then
+            Interval(period.&quot;start&quot;.value, period.&quot;end&quot;.value]
+        else
+            Interval[period.&quot;start&quot;.value, period.&quot;end&quot;.value]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tocode"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.
+*/
+define function ToCode(coding FHIR.Coding):
+    if coding is null then
+        null
+    else
+        System.Code {
+          code: coding.code.value,
+          system: coding.system.value,
+          version: coding.version.value,
+          display: coding.display.value
+        }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="qicorecommon-tointerval"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> QICoreCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Normalizes a value that is a choice of timing-valued types to an equivalent interval
+@comment: Normalizes a choice type of DateTime, Quanitty, Interval&lt;DateTime&gt;, or Interval&lt;Quantity&gt; types
+to an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible
+representations for timing-valued elements in QICore, allowing this function to be used across any resource.
+The input can be provided as a DateTime, Quantity, Interval&lt;DateTime&gt; or Interval&lt;Quantity&gt;.
+The intent of this function is to provide a clear and concise mechanism to treat single
+elements that have multiple possible representations as intervals so that logic doesn't have to account
+for the variability. More complex calculations (such as medication request period or dispense period
+calculation) need specific guidance and consideration. That guidance may make use of this function, but
+the focus of this function is on single element calculations where the semantics are unambiguous.
+If the input is a DateTime, the result a DateTime Interval beginning and ending on that DateTime.
+If the input is a Quantity, the quantity is expected to be a calendar-duration interpreted as an Age,
+and the result is a DateTime Interval beginning on the Date the patient turned that age and ending immediately before one year later.
+If the input is a DateTime Interval, the result is the input.
+If the input is a Quantity Interval, the quantities are expected to be calendar-durations interpreted as an Age, and the result
+is a DateTime Interval beginning on the date the patient turned the age given as the start of the quantity interval, and ending
+immediately before one year later than the date the patient turned the age given as the end of the quantity interval.
+If the input is a Timing, an error will be thrown indicating that Timing calculations are not implemented. Any other input will reslt in a null DateTime Interval
+*/
+define fluent function toInterval(choice Choice&lt;DateTime, Quantity, Interval&lt;DateTime&gt;, Interval&lt;Quantity&gt;, Timing&gt;):
+  case
+	  when choice is DateTime then
+    	Interval[choice as DateTime, choice as DateTime]
+		when choice is Interval&lt;DateTime&gt; then
+  		choice as Interval&lt;DateTime&gt;
+		when choice is Quantity then
+		  Interval[Patient.birthDate + (choice as Quantity),
+			  Patient.birthDate + (choice as Quantity) + 1 year)
+		when choice is Interval&lt;Quantity&gt; then
+		  Interval[Patient.birthDate + (choice.low as Quantity),
+			  Patient.birthDate + (choice.high as Quantity) + 1 year)
+		when choice is Timing then
+      Message(null, true, 'NOT_IMPLEMENTED', 'Error', 'Calculation of an interval from a Timing value is not supported') as Interval&lt;DateTime&gt;
+		else
+			null as Interval&lt;DateTime&gt;
+	end</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="status-isencounterperformed"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> Status</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//Encounter, Performed
+//General usage unless required otherwise by measure intent (e.g., follow-up encounters)
+define fluent function isEncounterPerformed(Enc List&lt;Encounter&gt;):
+  Enc E
+    where E.status = 'finished'</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="status-isassessmentperformed"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> Status</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//Assessment, Performed
+define fluent function isAssessmentPerformed(Obs List&lt;ObservationScreeningAssessment&gt;):
+  Obs O
+    where O.status in { 'final', 'amended', 'corrected' }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="status-isinterventionorder"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> Status</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//Intervention, Order
+define fluent function isInterventionOrder(ServiceRequest List&lt;ServiceRequest&gt;):
+  ServiceRequest S
+    where S.status in { 'active', 'completed' }
+      and S.intent in {'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order'}</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="status-isinterventionperformed"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> Status</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//Intervention, Performed
+define fluent function isInterventionPerformed(Proc List&lt;Procedure&gt;):
+  Proc P
+    where P.status ~ 'completed'</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="status-verified"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> Status</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">//This library contains functions used to constrain FHIR resource elements for measures authored by NCQA, based on QICore 6.0.0 resources including IG and authoring patterns. The functions may appear similar to some QICoreCommon functions but differ in that they have constraints that are relevant for measures authored by NCQA.
+
+//Condition
+//Returns conditions in the given list that either have no verification status or have a verification status of confirmed, unconfirmed, provisional, or differential
+define fluent function verified(conditions List&lt;Choice&lt;ConditionProblemsHealthConcerns, ConditionEncounterDiagnosis&gt;&gt;):
+  conditions C
+    where C.verificationStatus is not null implies
+      (C.verificationStatus ~ &quot;confirmed&quot;
+        or C.verificationStatus ~ &quot;unconfirmed&quot;
+        or C.verificationStatus ~ &quot;provisional&quot;
+        or C.verificationStatus ~ &quot;differential&quot;
+      )</code></pre>
+  </td>
+
+</tr>
+
+
+
+
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="terminology"> </a>Terminology</th>
+
+
+</tr>
+  
+  
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system SNOMEDCT
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://snomed.info/sct
+    <br/>
+    <em>Canonical URL</em>: <tt>http://snomed.info/sct</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system ConditionVerificationStatusCodes
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://terminology.hl7.org/CodeSystem/condition-ver-status
+    <br/>
+    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system LOINC
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://loinc.org
+    <br/>
+    <em>Canonical URL</em>: <tt>http://loinc.org</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Estimated Glomerular Filtration Rate
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.6929.3.1000
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.6929.3.1000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Urine Albumin Creatinine Ratio
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.6929.3.1007
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.6929.3.1007</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Undetectable Lab Result Value
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.272
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.272</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Urine Albumin
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1178.88
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1178.88</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Urine Creatinine
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1178.87
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1178.87</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Diabetes
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.103.12.1001
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.103.12.1001</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Annual Wellness Visit
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1240
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1240</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Home Healthcare Services
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Office Visit
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Outpatient Consultation
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Preventive Care Services Established Office Visit, 18 and Up
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Preventive Care Services Initial Office Visit, 18 and Up
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1023
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1023</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Telephone Visits
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Payer Type
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Chronic Kidney Disease, Stage 5
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1002
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1002</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set End Stage Renal Disease
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.353
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.353</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Encounter Inpatient
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Hospice Encounter
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1003
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1003</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Hospice Care Ambulatory
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Hospice Diagnosis
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Palliative Care Diagnosis
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1167
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1167</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Palliative Care Encounter
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1090
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1090</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Palliative Care Intervention
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1135
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1135</tt>
+    
+  </td>
+</tr>
+ 
+
+
+  
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Male (finding)
+        <br/>
+      
+      <em>Code</em>: 248153007
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Female (finding)
+        <br/>
+      
+      <em>Code</em>: 248152002
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Refuted
+        <br/>
+      
+      <em>Code</em>: refuted
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Entered in Error
+        <br/>
+      
+      <em>Code</em>: entered-in-error
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Discharge to home for hospice care (procedure)
+        <br/>
+      
+      <em>Code</em>: 428361000124107
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Discharge to healthcare facility for hospice care (procedure)
+        <br/>
+      
+      <em>Code</em>: 428371000124100
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Hospice care [Minimum Data Set]
+        <br/>
+      
+      <em>Code</em>: 45755-6
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Yes (qualifier value)
+        <br/>
+      
+      <em>Code</em>: 373066001
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: confirmed
+        <br/>
+      
+      <em>Code</em>: confirmed
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: unconfirmed
+        <br/>
+      
+      <em>Code</em>: unconfirmed
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: provisional
+        <br/>
+      
+      <em>Code</em>: provisional
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: differential
+        <br/>
+      
+      <em>Code</em>: differential
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Functional Assessment of Chronic Illness Therapy - Palliative Care Questionnaire (FACIT-Pal)
+        <br/>
+      
+      <em>Code</em>: 71007-9
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="dependencies"> </a>Dependencies</th>
+
+
+</tr>
+  
+  
+  
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: QICore model information
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://hl7.org/fhir/Library/QICore-ModelInfo
+    <br/>
+    <em>Canonical URL</em>: <tt>http://hl7.org/fhir/Library/QICore-ModelInfo</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library SDE
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/SupplementalDataElements|5.1.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/SupplementalDataElements|5.1.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library FHIRHelpers
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/FHIRHelpers|4.4.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/FHIRHelpers|4.4.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library QICoreCommon
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/QICoreCommon|4.0.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/QICoreCommon|4.0.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library Hospice
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/Hospice|6.18.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/Hospice|6.18.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library Status
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/Status|1.15.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/Status|1.15.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library PalliativeCare
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/PalliativeCare|1.18.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/PalliativeCare|1.18.000</tt>
+    
+  </td>
+</tr>
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="data-requirements"> </a>Data Requirements</th>
+
+
+</tr>
+  
+  
+  
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Patient
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: extension, url, birthDate, birthDate.value
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, value, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.6929.3.1000
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value, value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.6929.3.1007
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, value, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1178.88
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, value, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1178.87
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.103.12.1001
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1002
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.353
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1167
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.103.12.1001
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1002
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.353
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1167
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1240
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1023
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, hospitalization, hospitalization.dischargeDisposition, period, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1003
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1090
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Coverage
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, value, effective, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#45755-6: 'Hospice care [Minimum Data Set]'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#71007-9: 'Functional Assessment of Chronic Illness Therapy - Palliative Care Questionnaire (FACIT-Pal)'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: ServiceRequest
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, authoredOn, authoredOn.value, status, status.value, intent, intent.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Procedure
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, performed, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Procedure
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, performed, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.198.12.1135
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+  
+  
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.8 of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
