@@ -1,0 +1,930 @@
+{
+  "resourceType": "Measure",
+  "id": "CMS1188FHIRHIVSTITesting",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/executable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/elm-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm" ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"col-12\">\n  <table class=\"narrative-table\">\n    <tbody>\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Metadata</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Title</th>\n\n\n<td class=\"content-container\">Sexually Transmitted Infection (STI) Testing for People with HIVFHIR</td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Version</th>\n\n\n<td class=\"content-container\">1.0.000</td>\n</tr>\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Short Name</th>\n\n\n<td class=\"content-container\">CMS1188FHIR</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">GUID (Version Independent)</th>\n\n\n<td class=\"content-container\">urn:uuid:6f66ca77-1a2c-489c-b0d8-730da6e5a763</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">GUID (Version Specific)</th>\n\n\n<td class=\"content-container\">urn:uuid:d64f90d4-91eb-4695-9b90-adc204023466</td>\n</tr>\n\n\n\n  \n    \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">CMS Identifier</th>\n\n\n<td class=\"content-container\">1188FHIR</td>\n</tr>\n\n  \n\n\n\n\n  \n    \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Effective Period</th>\n\n\n<td class=\"content-container\">2026-01-01 through 2026-12-31</td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Steward (Publisher)</th>\n\n\n<td class=\"content-container\">Health Resources &amp; Services Administration</td>\n</tr>\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Developer</th>\n\n\n<td class=\"content-container\">Health Resources &amp; Services Administration</td>\n</tr>\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Description</th>\n\n\n<td class=\"content-container\"><p>Percentage of patients 13 years of age and older with a diagnosis of Human Immunodeficiency Virus (HIV) who had tests for syphilis, gonorrhea, and chlamydia performed within the measurement period</p></td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Copyright</th>\n\n\n<td class=\"content-container\"><p>This measure was developed by the Health Resources &amp; Services Administration (HRSA) of the U.S. Department of Health &amp; Human Services (HHS). It is in the public domain.</p>\n<p>Citation of HRSA as the source of the original measure is appreciated. Any modified versions may not be represented as approved, endorsed, or authorized by HRSA or HHS. 42 U.S.C. Section 1320b-10. Users of modified versions should clearly explain how they deviate from HRSA's original measure.</p>\n<p>Limited proprietary coding is contained in the Measure specifications for user convenience. Users of proprietary code sets should obtain all necessary licenses from the owners of the code sets.</p>\n<p>CPT(R) contained in the Measure specifications is copyright 2004-2024 American Medical Association. LOINC(R) is copyright 2004-2024 Regenstrief Institute, Inc. This material contains SNOMED Clinical Terms(R) (SNOMED CT[R]) copyright 2004-2024 International Health Terminology Standards Development Organisation. ICD-10 is copyright 2024 World Health Organization. All Rights Reserved.</p>\n<p>Due to technical limitations, registered trademarks are indicated by (R) or [R] and unregistered trademarks are indicated by (TM) or [TM].</p></td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Disclaimer</th>\n\n\n<td class=\"content-container\"><p>These performance measures are not clinical guidelines and do not establish a standard of medical care, and have not been tested for all potential applications.</p>\n<p>THE MEASURES AND SPECIFICATIONS ARE PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND.</p>\n<p>Due to technical limitations, registered trademarks are indicated by (R) or [R] and unregistered trademarks are indicated by (TM) or [TM].</p></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Rationale</th>\n\n\n<td class=\"content-container\"><p>The rates of syphilis, gonorrhea, and chlamydia cases per 100,000 in the United States have steadily risen over the last decade and increased 11.2 percent, 5.9 percent, and 2.8 percent, respectively, from 2018 to 2019 (National Center for HIV/AIDS, Viral Hepatitis, STD, and TB Prevention [NCHHSTP], 2021). People with HIV are at an increased risk of bacterial sexually transmitted infections (STIs), including chlamydia, gonorrhea, and syphilis (Centers for Disease Control and Prevention [CDC], 2004). However, early detection and treatment of bacterial STIs in people with HIV can lead to a reduction in HIV transmission (CDC, 2004). Despite guidelines for at least annual screening among sexually active persons with HIV, only an estimated 55 percent received a syphilis test in the past year, 23 percent received a gonorrhea test in the past year, and 24 percent received a chlamydia test in the past year based on a nationally-representative survey of adults with HIV receiving medical care in the United States (Flagg et al., 2015). This measure will help providers focus their attention and quality improvement efforts towards testing and treating sexually transmitted infections in patients with HIV, thus reducing the complications to long-term syphilis infection and reducing STI incidence (Patel et al., 2012).</p></td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Clinical Recommendation Statement</th>\n\n\n<td class=\"content-container\"><p>&quot;Routine serologic screening for syphilis is recommended at least annually for all persons with HIV infection who are sexually active, with more frequent screening (i.e., every 3-6 months) for those who have multiple or anonymous partners&quot; (Panel on Opportunistic Infections in Adults and Adolescents with HIV, 2022, p. Y-3).</p>\n<p>&quot;Patients undergoing screening or treatment for syphilis also should be evaluated for other sexually transmitted diseases such as chlamydia and gonorrhea at anatomic sites of exposure in men and for chlamydia, gonorrhea, and trichomonas in women&quot; (Panel on Opportunistic Infections in Adults and Adolescents with HIV, 2022, p. Y-3).</p>\n<p>&quot;The [United States Preventive Services Task Force (USPSTF)] recommends screening for syphilis in persons who are at increased risk for infection. When deciding which persons to screen for syphilis, clinicians should consider the prevalence of infection in the communities they serve, as well as other sociodemographic and behavioral factors that may be associated with increased risk of syphilis infection. For example, prevalence of syphilis is higher in men, men who have sex with men, persons with HIV infection, young adults, and persons with a history of incarceration, sex work, or military service…. Optimal screening frequency for persons who are at increased risk for syphilis infection is not well established. Men who have sex with men or persons with HIV infection may benefit from screening at least annually or more frequently (e.g., every 3 to 6 months) if they continue to be at high risk&quot; (USPSTF, 2022, p. 1244-1246).</p>\n<p>&quot;At the initial HIV care visit, providers should screen all sexually active persons for syphilis, gonorrhea, and chlamydia, and perform screening for these infections at least annually during the course of HIV care. Specific testing includes syphilis serology and [a nucleic acid amplification test] NAAT for N. gonorrhoeae and C. trachomatis at the anatomic site of exposure&quot; (Workowski et al., 2021, p. 26).</p></td>\n</tr>\n\n\n\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>Centers for Disease Control and Prevention, Health Resources and Services Administration, National Institutes of Health, HIV Medicine Association of the Infectious Diseases Society of America, &amp; HIV Prevention in Clinical Care Working Group. (2004). Recommendations for incorporating human immunodeficiency virus (HIV) prevention into the medical care of persons living with HIV. Clinical infectious diseases: an official publication of the Infectious Diseases Society of America, 38(1), 104-121. https://doi.org/10.1086/380131</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>Flagg, E. W., Weinstock, H. S., Frazier, E. L., Valverde, E. E., Heffelfinger, J. D., &amp; Skarbinski, J. (2015). Bacterial sexually transmitted infections among HIV-infected patients in the United States: Estimates from the Medical Monitoring Project. Sexually transmitted diseases, 42(4), 171-179. https://doi.org/10.1097/OLQ.0000000000000260. Erratum in: Sex Transm Dis. 2015 Jun;42(6):351-2. PMID: 25763669; PMCID: PMC6921480</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>National Center for HIV/AIDS, Viral Hepatitis, STD, and TB Prevention (U.S.). Division of STD Prevention. (2021). Sexually Transmitted Disease Surveillance 2019: National Overview – Sexually Transmitted Disease Surveillance, 2019. Retrieved from https://stacks.cdc.gov/view/cdc/105127</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>Panel on Opportunistic Infections in Adults and Adolescents with HIV. (2022, July). Guidelines for the prevention and treatment of opportunistic infections in adults and adolescents with HIV: Recommendations from the Centers for Disease Controls and Prevention, the National Institutes of Health, and the HIV Medicine Association of the Infectious Diseases Society of America. Retrieved from https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-opportunistic-infections/syphilis?view=full</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>Patel, P., Bush, T., Mayer, K., Milam, J., Richardson, J., Hammer, J., … SUN Study Investigators. (2012). Routine brief risk-reduction counseling with biannual STD testing reduces STD incidence among HIV-infected men who have sex with men in care. Sexually Transmitted Diseases, 39(6), 470-474. https://doi.org/10.1097/OLQ.0b013e31824b3110</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>US Preventive Services Task Force, Mangione, C. M., Barry, M. J., Nicholson, W. K., Cabana, M., Chelmow, D., ... Wong, J. B. (2022). Screening for syphilis infection in nonpregnant adolescents and adults: US Preventive Services Task Force reaffirmation recommendation statement. JAMA, 328(12), 1243-1249. https://doi.org/10.1001/jama.2022.15322</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>Workowski, K. A., Bachmann, L. H., Chan, P. A., Johnston, C. M., Muzny, C. A., Park, I., ... Bolan, G. A. (2021). Sexually transmitted infections treatment guidelines, 2021. MMWR. Recommendations and Reports, 70(4), 1-187. https://doi.org/10.15585/mmwr.rr7004a1</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Guidance (Usage)</th>\n\n\n<td class=\"content-container\"><p>This eCQM is a patient-based measure.</p>\n<p>This FHIR-based measure has been derived from the QDM-based measure: CMS1188v3.</p>\n<p>Please refer to the HL7 QI-Core Implementation Guide (https://hl7.org/fhir/us/qicore/STU6/) for more information on QI-Core and mapping recommendations from QDM to QI-Core STU 6 (https://hl7.org/fhir/us/qicore/STU6/qdm-to-qicore.html)</p></td>\n</tr>\n\n\n\n  \n    \n    <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Group (Rate) (ID: Group_1)</th>\n\n\n</tr>\n  \n  \n  \n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Basis</th>\n\n\n<td class=\"content-container\">boolean</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Scoring</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-scoring#proportion: 'Proportion']</td>\n</tr>\n\n\n\n\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Type</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-type#process: 'Process']</td>\n</tr>\n\n\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Improvement Notation</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase: 'Increased score indicates improvement']</td>\n</tr>\n\n\n  \n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: InitialPopulation_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>All patients 13 years of age and older at the start of the measurement period with an eligible encounter during the measurement period with a diagnosis of HIV before the end of the measurement period</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms1188fhirhivstitesting-initial-population\">Initial Population</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Denominator</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: Denominator_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>Equals Initial Population</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms1188fhirhivstitesting-denominator\">Denominator</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Numerator</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: Numerator_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>Patients who were tested for each of the following at least once during the measurement period: chlamydia, gonorrhea, and syphilis</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms1188fhirhivstitesting-numerator\">Numerator</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n\n\n  \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Guidance</th>\n\n\n<td class=\"content-container\"><p>For every patient evaluated by this measure also identify payer, race, ethnicity and sex</p></td>\n</tr>\n\n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Supplemental Data Elements</th>\n\n\n</tr>\n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-ethnicity\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Ethnicity\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms1188fhirhivstitesting-sde-ethnicity\">SDE Ethnicity</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-payer\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Payer\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms1188fhirhivstitesting-sde-payer\">SDE Payer</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-sex\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Sex\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms1188fhirhivstitesting-sde-sex\">SDE Sex</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-race\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Race\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms1188fhirhivstitesting-sde-race\">SDE Race</a> \n      \n    \n  </td>\n</tr>\n\n\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Logic</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Primary Library</th>\n\n\n<td class=\"content-container\">https://madie.cms.gov/Library/CMS1188FHIRHIVSTITesting</td>\n</tr>\n\n\n\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Contents</th>\n  <td class=\"content-container\">\n    <em><a href=\"#population-criteria\">Population Criteria</a></em>\n    <br/>\n    <em><a href=\"#definitions\">Logic Definitions</a></em>\n    <br/>\n    <em><a href=\"#terminology\">Terminology</a></em>\n    <br/>\n    <em><a href=\"#dependencies\">Dependencies</a></em>\n    <br/>\n    <em><a href=\"#data-requirements\">Data Requirements</a></em>\n    <br/>\n  </td>\n</tr>\n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"population-criteria\"> </a>Population Criteria</th>\n\n\n</tr>\n  \n  \n  \n  \n    \n    <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Group (Rate) (ID: Group_1)</th>\n\n\n</tr>\n  \n  \n  \n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms1188fhirhivstitesting-initial-population\"> </a>\n    \n    \n    Initial Population\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Initial Population&quot;:\n  AgeInYearsAt(date from start of &quot;Measurement Period&quot;) &gt;= 13\n    and &quot;Has Qualifying Encounter During Measurement Period&quot;\n    and &quot;Has HIV Diagnosis Before End of Measurement Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms1188fhirhivstitesting-denominator\"> </a>\n    \n    \n    Denominator\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator&quot;:\n  &quot;Initial Population&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms1188fhirhivstitesting-numerator\"> </a>\n    \n    \n    Numerator\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Numerator&quot;:\n  &quot;Has Chlamydia Testing&quot;\n    and &quot;Has Gonorrhea Testing&quot;\n    and &quot;Has Syphilis Testing&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n  \n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"definitions\"> </a>Logic Definitions</th>\n\n\n</tr>\n  \n  \n          \n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-sex\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Sex&quot;:\n  case\n    when Patient.sex = '248153007' then &quot;Male (finding)&quot;\n    when Patient.sex = '248152002' then &quot;Female (finding)&quot;\n    else null\n  end</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-payer\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Payer&quot;:\n  [Coverage: type in &quot;Payer Type&quot;] Payer\n    return {\n      code: Payer.type,\n      period: Payer.period\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-ethnicity\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Ethnicity&quot;:\n  Patient.ethnicity E\n    return Tuple {\n      codes: { E.ombCategory } union E.detailed,\n      display: E.text\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-race\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Race&quot;:\n  Patient.race R\n    return Tuple {\n      codes: R.ombCategory union R.detailed,\n      display: R.text\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n\n        \n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"qicorecommon-latest\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> QICoreCommon</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/*\n@description: Given an interval, returns the ending point if the interval has an ending boundary specified,\notherwise, returns the starting point\n*/\ndefine fluent function latest(choice Choice&lt;DateTime, Quantity, Interval&lt;DateTime&gt;, Interval&lt;Quantity&gt;&gt; ):\n  (choice.toInterval()) period\n    return\n      if (period.&quot;hasEnd&quot;()) then end of period\n      else start of period</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"qicorecommon-hasend\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> QICoreCommon</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/*\n@description: Given an interval, returns true if the interval has an ending boundary specified\n(i.e. the end of the interval is not null and not the maximum DateTime value)\n*/\ndefine fluent function hasEnd(period Interval&lt;DateTime&gt; ):\n  not (\n    end of period is null\n      or end of period = maximum DateTime\n  )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n\n        \n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1188fhirhivstitesting-sde-sex\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1188FHIRHIVSTITesting</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Sex&quot;:\n  SDE.&quot;SDE Sex&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1188fhirhivstitesting-has-chlamydia-testing\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1188FHIRHIVSTITesting</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Has Chlamydia Testing&quot;:\n  exists [&quot;LaboratoryResultObservation&quot;: &quot;Chlamydia Screening&quot;] ChlamydiaTest\n    where ChlamydiaTest.value is not null\n      and ChlamydiaTest.status in { 'final', 'amended', 'corrected' }\n      and ChlamydiaTest.effective.latest ( ) during day of &quot;Measurement Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1188fhirhivstitesting-has-gonorrhea-testing\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1188FHIRHIVSTITesting</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Has Gonorrhea Testing&quot;:\n  exists [&quot;LaboratoryResultObservation&quot;: &quot;Gonorrhea Screening&quot;] GonorrheaTest\n    where GonorrheaTest.value is not null\n      and GonorrheaTest.status in { 'final', 'amended', 'corrected' }\n      and GonorrheaTest.effective.latest ( ) during day of &quot;Measurement Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1188fhirhivstitesting-has-syphilis-testing\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1188FHIRHIVSTITesting</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Has Syphilis Testing&quot;:\n  exists [&quot;LaboratoryResultObservation&quot;: &quot;Syphilis Tests&quot;] SyphilisTest\n    where SyphilisTest.value is not null\n      and SyphilisTest.status in { 'final', 'amended', 'corrected' }\n      and SyphilisTest.effective.latest ( ) during day of &quot;Measurement Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1188fhirhivstitesting-numerator\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1188FHIRHIVSTITesting</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Numerator&quot;:\n  &quot;Has Chlamydia Testing&quot;\n    and &quot;Has Gonorrhea Testing&quot;\n    and &quot;Has Syphilis Testing&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1188fhirhivstitesting-has-qualifying-encounter-during-measurement-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1188FHIRHIVSTITesting</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Has Qualifying Encounter During Measurement Period&quot;:\n  exists ( ( [&quot;Encounter&quot;: &quot;Office Visit&quot;]\n      union [&quot;Encounter&quot;: &quot;Outpatient Consultation&quot;]\n      union [&quot;Encounter&quot;: &quot;Annual Wellness Visit&quot;]\n      union [&quot;Encounter&quot;: &quot;Face-to-Face Interaction&quot;]\n      union [&quot;Encounter&quot;: &quot;Home Healthcare Services&quot;]\n      union [&quot;Encounter&quot;: &quot;Preventive Care Services Established Office Visit, 18 and Up&quot;]\n      union [&quot;Encounter&quot;: &quot;Preventive Care Services Initial Office Visit, 18 and Up&quot;]\n      union [&quot;Encounter&quot;: &quot;Preventive Care Services, Initial Office Visit, 0 to 17&quot;]\n      union [&quot;Encounter&quot;: &quot;Preventive Care, Established Office Visit, 0 to 17&quot;]\n      union [&quot;Encounter&quot;: &quot;Telephone Visits&quot;]\n      union [&quot;Encounter&quot;: &quot;Preventive Care Services Other&quot;] ) QualifyingEncounter\n      where QualifyingEncounter.period during day of &quot;Measurement Period&quot;\n        and QualifyingEncounter.status = 'finished'\n  )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1188fhirhivstitesting-has-hiv-diagnosis-before-end-of-measurement-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1188FHIRHIVSTITesting</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Has HIV Diagnosis Before End of Measurement Period&quot;:\n  exists ( [&quot;ConditionProblemsHealthConcerns&quot;: &quot;HIV&quot;]\n    union [&quot;ConditionEncounterDiagnosis&quot;: &quot;HIV&quot;] ) HIVDx\n    where HIVDx.prevalenceInterval ( ) starts on or before day of end of &quot;Measurement Period&quot;\n      and HIVDx.isVerified ( )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1188fhirhivstitesting-initial-population\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1188FHIRHIVSTITesting</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Initial Population&quot;:\n  AgeInYearsAt(date from start of &quot;Measurement Period&quot;) &gt;= 13\n    and &quot;Has Qualifying Encounter During Measurement Period&quot;\n    and &quot;Has HIV Diagnosis Before End of Measurement Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1188fhirhivstitesting-denominator\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1188FHIRHIVSTITesting</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator&quot;:\n  &quot;Initial Population&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1188fhirhivstitesting-sde-payer\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1188FHIRHIVSTITesting</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Payer&quot;:\n  SDE.&quot;SDE Payer&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1188fhirhivstitesting-sde-ethnicity\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1188FHIRHIVSTITesting</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Ethnicity&quot;:\n  SDE.&quot;SDE Ethnicity&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1188fhirhivstitesting-sde-race\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1188FHIRHIVSTITesting</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Race&quot;:\n  SDE.&quot;SDE Race&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1188fhirhivstitesting-isverified\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1188FHIRHIVSTITesting</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define fluent function isVerified(condition Choice&lt;QICore.ConditionProblemsHealthConcerns, QICore.ConditionEncounterDiagnosis&gt;):\n  condition.verificationStatus is not null implies ( condition.verificationStatus ~ QICoreCommon.&quot;confirmed&quot;\n      or condition.verificationStatus ~ QICoreCommon.&quot;unconfirmed&quot;\n      or condition.verificationStatus ~ QICoreCommon.&quot;provisional&quot;\n      or condition.verificationStatus ~ QICoreCommon.&quot;differential&quot;\n  )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n\n        \n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tostring\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define function ToString(value uri): value.value</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tointerval\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/*\n@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)\nvalue to a CQL DateTime Interval\n@comment: If the start value of the given period is unspecified, the starting\nboundary of the resulting interval will be open (meaning the start of the interval\nis unknown, as opposed to interpreted as the beginning of time).\n*/\ndefine function ToInterval(period FHIR.Period):\n    if period is null then\n        null\n    else\n        if period.&quot;start&quot; is null then\n            Interval(period.&quot;start&quot;.value, period.&quot;end&quot;.value]\n        else\n            Interval[period.&quot;start&quot;.value, period.&quot;end&quot;.value]</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tocode\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/*\n@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.\n*/\ndefine function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }</code></pre>\n  </td>\n\n</tr>\n\n\n\n\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"terminology\"> </a>Terminology</th>\n\n\n</tr>\n  \n  \n  \n\n \n\n \n\n \n\n \n\n\n<tr>\n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Code System</th>\n\n\n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Code system SNOMEDCT\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://snomed.info/sct\n    <br/>\n    <em>Canonical URL</em>: <tt>http://snomed.info/sct</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Code System</th>\n\n\n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Code system ConditionVerificationStatusCodes\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://terminology.hl7.org/CodeSystem/condition-ver-status\n    <br/>\n    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Chlamydia Screening\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1052\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1052</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Gonorrhea Screening\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1258.1\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1258.1</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Syphilis Tests\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.389\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.389</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Office Visit\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Outpatient Consultation\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Annual Wellness Visit\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1240\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1240</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Face-to-Face Interaction\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.375\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.375</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Home Healthcare Services\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Preventive Care Services Established Office Visit, 18 and Up\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Preventive Care Services Initial Office Visit, 18 and Up\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1023\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1023</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Preventive Care Services, Initial Office Visit, 0 to 17\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1022\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1022</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Preventive Care, Established Office Visit, 0 to 17\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1024\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1024</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Telephone Visits\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Preventive Care Services Other\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.11.1150\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.11.1150</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set HIV\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.120.12.1003\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.120.12.1003</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Payer Type\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591</tt>\n    \n  </td>\n</tr>\n \n\n\n  \n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Male (finding)\n        <br/>\n      \n      <em>Code</em>: 248153007\n      <br/>\n      <em>System</em>: <tt>http://snomed.info/sct</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Female (finding)\n        <br/>\n      \n      <em>Code</em>: 248152002\n      <br/>\n      <em>System</em>: <tt>http://snomed.info/sct</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Confirmed\n        <br/>\n      \n      <em>Code</em>: confirmed\n      <br/>\n      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Unconfirmed\n        <br/>\n      \n      <em>Code</em>: unconfirmed\n      <br/>\n      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Provisional\n        <br/>\n      \n      <em>Code</em>: provisional\n      <br/>\n      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Differential\n        <br/>\n      \n      <em>Code</em>: differential\n      <br/>\n      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    </td>\n  </tr>\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"dependencies\"> </a>Dependencies</th>\n\n\n</tr>\n  \n  \n  \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: QICore model information\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://hl7.org/fhir/Library/QICore-ModelInfo\n    <br/>\n    <em>Canonical URL</em>: <tt>http://hl7.org/fhir/Library/QICore-ModelInfo</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library SDE\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/SupplementalDataElements|5.1.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/SupplementalDataElements|5.1.000</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library FHIRHelpers\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/FHIRHelpers|4.4.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/FHIRHelpers|4.4.000</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library QICoreCommon\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/QICoreCommon|4.0.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/QICoreCommon|4.0.000</tt>\n    \n  </td>\n</tr>\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"data-requirements\"> </a>Data Requirements</th>\n\n\n</tr>\n  \n  \n  \n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Patient\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: extension, url\n    <br/>\n   \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, value, status, status.value, effective\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1052\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, value, status, status.value, effective\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1258.1\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, value, status, status.value, effective\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.389\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1240\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.375\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1023\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1022\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1024\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.11.1150\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.120.12.1003\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.120.12.1003\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Coverage\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n  \n  \n\n<tr>\n  <th colspan=\"2\" scope=\"row\" class=\"row-header\">Generated using version 0.4.8 of the sample-content-ig Liquid templates</th>\n</tr>\n\n    </tbody>\n  </table>\n</div>"
+  },
+  "contained": [ {
+    "resourceType": "Library",
+    "id": "effective-data-requirements",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "248153007",
+        "display": "Male (finding)"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "248152002",
+        "display": "Female (finding)"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "unconfirmed",
+        "display": "Unconfirmed"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "provisional",
+        "display": "Provisional"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "differential",
+        "display": "Differential"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElements"
+      }, {
+        "url": "name",
+        "valueString": "SDE Sex"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Sex\":\n  case\n    when Patient.sex = '248153007' then \"Male (finding)\"\n    when Patient.sex = '248152002' then \"Female (finding)\"\n    else null\n  end"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 0
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1188FHIRHIVSTITesting"
+      }, {
+        "url": "name",
+        "valueString": "SDE Sex"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Sex\":\n  SDE.\"SDE Sex\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 1
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1188FHIRHIVSTITesting"
+      }, {
+        "url": "name",
+        "valueString": "Has Chlamydia Testing"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Has Chlamydia Testing\":\n  exists [\"LaboratoryResultObservation\": \"Chlamydia Screening\"] ChlamydiaTest\n    where ChlamydiaTest.value is not null\n      and ChlamydiaTest.status in { 'final', 'amended', 'corrected' }\n      and ChlamydiaTest.effective.latest ( ) during day of \"Measurement Period\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 2
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1188FHIRHIVSTITesting"
+      }, {
+        "url": "name",
+        "valueString": "Has Gonorrhea Testing"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Has Gonorrhea Testing\":\n  exists [\"LaboratoryResultObservation\": \"Gonorrhea Screening\"] GonorrheaTest\n    where GonorrheaTest.value is not null\n      and GonorrheaTest.status in { 'final', 'amended', 'corrected' }\n      and GonorrheaTest.effective.latest ( ) during day of \"Measurement Period\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 3
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1188FHIRHIVSTITesting"
+      }, {
+        "url": "name",
+        "valueString": "Has Syphilis Testing"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Has Syphilis Testing\":\n  exists [\"LaboratoryResultObservation\": \"Syphilis Tests\"] SyphilisTest\n    where SyphilisTest.value is not null\n      and SyphilisTest.status in { 'final', 'amended', 'corrected' }\n      and SyphilisTest.effective.latest ( ) during day of \"Measurement Period\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 4
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1188FHIRHIVSTITesting"
+      }, {
+        "url": "name",
+        "valueString": "Numerator"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Numerator\":\n  \"Has Chlamydia Testing\"\n    and \"Has Gonorrhea Testing\"\n    and \"Has Syphilis Testing\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 5
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1188FHIRHIVSTITesting"
+      }, {
+        "url": "name",
+        "valueString": "Has Qualifying Encounter During Measurement Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Has Qualifying Encounter During Measurement Period\":\n  exists ( ( [\"Encounter\": \"Office Visit\"]\n      union [\"Encounter\": \"Outpatient Consultation\"]\n      union [\"Encounter\": \"Annual Wellness Visit\"]\n      union [\"Encounter\": \"Face-to-Face Interaction\"]\n      union [\"Encounter\": \"Home Healthcare Services\"]\n      union [\"Encounter\": \"Preventive Care Services Established Office Visit, 18 and Up\"]\n      union [\"Encounter\": \"Preventive Care Services Initial Office Visit, 18 and Up\"]\n      union [\"Encounter\": \"Preventive Care Services, Initial Office Visit, 0 to 17\"]\n      union [\"Encounter\": \"Preventive Care, Established Office Visit, 0 to 17\"]\n      union [\"Encounter\": \"Telephone Visits\"]\n      union [\"Encounter\": \"Preventive Care Services Other\"] ) QualifyingEncounter\n      where QualifyingEncounter.period during day of \"Measurement Period\"\n        and QualifyingEncounter.status = 'finished'\n  )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 6
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1188FHIRHIVSTITesting"
+      }, {
+        "url": "name",
+        "valueString": "Has HIV Diagnosis Before End of Measurement Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Has HIV Diagnosis Before End of Measurement Period\":\n  exists ( [\"ConditionProblemsHealthConcerns\": \"HIV\"]\n    union [\"ConditionEncounterDiagnosis\": \"HIV\"] ) HIVDx\n    where HIVDx.prevalenceInterval ( ) starts on or before day of end of \"Measurement Period\"\n      and HIVDx.isVerified ( )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 7
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1188FHIRHIVSTITesting"
+      }, {
+        "url": "name",
+        "valueString": "Initial Population"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Initial Population\":\n  AgeInYearsAt(date from start of \"Measurement Period\") >= 13\n    and \"Has Qualifying Encounter During Measurement Period\"\n    and \"Has HIV Diagnosis Before End of Measurement Period\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 8
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1188FHIRHIVSTITesting"
+      }, {
+        "url": "name",
+        "valueString": "Denominator"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Denominator\":\n  \"Initial Population\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 9
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElements"
+      }, {
+        "url": "name",
+        "valueString": "SDE Payer"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Payer\":\n  [Coverage: type in \"Payer Type\"] Payer\n    return {\n      code: Payer.type,\n      period: Payer.period\n    }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 10
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1188FHIRHIVSTITesting"
+      }, {
+        "url": "name",
+        "valueString": "SDE Payer"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Payer\":\n  SDE.\"SDE Payer\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 11
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElements"
+      }, {
+        "url": "name",
+        "valueString": "SDE Ethnicity"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Ethnicity\":\n  Patient.ethnicity E\n    return Tuple {\n      codes: { E.ombCategory } union E.detailed,\n      display: E.text\n    }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 12
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1188FHIRHIVSTITesting"
+      }, {
+        "url": "name",
+        "valueString": "SDE Ethnicity"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Ethnicity\":\n  SDE.\"SDE Ethnicity\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 13
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElements"
+      }, {
+        "url": "name",
+        "valueString": "SDE Race"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Race\":\n  Patient.race R\n    return Tuple {\n      codes: R.ombCategory union R.detailed,\n      display: R.text\n    }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 14
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1188FHIRHIVSTITesting"
+      }, {
+        "url": "name",
+        "valueString": "SDE Race"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Race\":\n  SDE.\"SDE Race\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 15
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToString"
+      }, {
+        "url": "statement",
+        "valueString": "define function ToString(value uri): value.value"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 16
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "QICoreCommon"
+      }, {
+        "url": "name",
+        "valueString": "latest"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n@description: Given an interval, returns the ending point if the interval has an ending boundary specified,\notherwise, returns the starting point\n*/\ndefine fluent function latest(choice Choice<DateTime, Quantity, Interval<DateTime>, Interval<Quantity>> ):\n  (choice.toInterval()) period\n    return\n      if (period.\"hasEnd\"()) then end of period\n      else start of period"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 17
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "QICoreCommon"
+      }, {
+        "url": "name",
+        "valueString": "hasEnd"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n@description: Given an interval, returns true if the interval has an ending boundary specified\n(i.e. the end of the interval is not null and not the maximum DateTime value)\n*/\ndefine fluent function hasEnd(period Interval<DateTime> ):\n  not (\n    end of period is null\n      or end of period = maximum DateTime\n  )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 18
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToInterval"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)\nvalue to a CQL DateTime Interval\n@comment: If the start value of the given period is unspecified, the starting\nboundary of the resulting interval will be open (meaning the start of the interval\nis unknown, as opposed to interpreted as the beginning of time).\n*/\ndefine function ToInterval(period FHIR.Period):\n    if period is null then\n        null\n    else\n        if period.\"start\" is null then\n            Interval(period.\"start\".value, period.\"end\".value]\n        else\n            Interval[period.\"start\".value, period.\"end\".value]"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 19
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1188FHIRHIVSTITesting"
+      }, {
+        "url": "name",
+        "valueString": "isVerified"
+      }, {
+        "url": "statement",
+        "valueString": "define fluent function isVerified(condition Choice<QICore.ConditionProblemsHealthConcerns, QICore.ConditionEncounterDiagnosis>):\n  condition.verificationStatus is not null implies ( condition.verificationStatus ~ QICoreCommon.\"confirmed\"\n      or condition.verificationStatus ~ QICoreCommon.\"unconfirmed\"\n      or condition.verificationStatus ~ QICoreCommon.\"provisional\"\n      or condition.verificationStatus ~ QICoreCommon.\"differential\"\n  )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 20
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToCode"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.\n*/\ndefine function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 21
+      } ]
+    } ],
+    "name": "EffectiveDataRequirements",
+    "status": "active",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "module-definition"
+      } ]
+    },
+    "relatedArtifact": [ {
+      "type": "depends-on",
+      "display": "QICore model information",
+      "resource": "http://hl7.org/fhir/Library/QICore-ModelInfo"
+    }, {
+      "type": "depends-on",
+      "display": "Library SDE",
+      "resource": "https://madie.cms.gov/Library/SupplementalDataElements|5.1.000"
+    }, {
+      "type": "depends-on",
+      "display": "Library FHIRHelpers",
+      "resource": "https://madie.cms.gov/Library/FHIRHelpers|4.4.000"
+    }, {
+      "type": "depends-on",
+      "display": "Library QICoreCommon",
+      "resource": "https://madie.cms.gov/Library/QICoreCommon|4.0.000"
+    }, {
+      "type": "depends-on",
+      "display": "Code system SNOMEDCT",
+      "resource": "http://snomed.info/sct"
+    }, {
+      "type": "depends-on",
+      "display": "Code system ConditionVerificationStatusCodes",
+      "resource": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Chlamydia Screening",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1052"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Gonorrhea Screening",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1258.1"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Syphilis Tests",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.389"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Office Visit",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Outpatient Consultation",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Annual Wellness Visit",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1240"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Face-to-Face Interaction",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.375"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Home Healthcare Services",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Preventive Care Services Established Office Visit, 18 and Up",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Preventive Care Services Initial Office Visit, 18 and Up",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1023"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Preventive Care Services, Initial Office Visit, 0 to 17",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1022"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Preventive Care, Established Office Visit, 0 to 17",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1024"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Telephone Visits",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Preventive Care Services Other",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.11.1150"
+    }, {
+      "type": "depends-on",
+      "display": "Value set HIV",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.120.12.1003"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Payer Type",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
+    } ],
+    "parameter": [ {
+      "name": "Measurement Period",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "Period"
+    }, {
+      "name": "Numerator",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Denominator",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Initial Population",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "SDE Sex",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Coding"
+    }, {
+      "name": "SDE Payer",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Resource"
+    }, {
+      "name": "SDE Ethnicity",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Resource"
+    }, {
+      "name": "SDE Race",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Resource"
+    } ],
+    "dataRequirement": [ {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "extension", "url" ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab" ],
+      "mustSupport": [ "code", "value", "status", "status.value", "effective" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1052"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab" ],
+      "mustSupport": [ "code", "value", "status", "status.value", "effective" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1258.1"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab" ],
+      "mustSupport": [ "code", "value", "status", "status.value", "effective" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.389"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1240"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.375"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1016"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1025"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1023"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1022"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1024"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.11.1150"
+      } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.120.12.1003"
+      } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.120.12.1003"
+      } ]
+    }, {
+      "type": "Coverage",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage" ],
+      "mustSupport": [ "type", "period" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
+      } ]
+    } ]
+  } ],
+  "extension": [ {
+    "id": "supplementalDataGuidance",
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance",
+    "extension": [ {
+      "url": "guidance",
+      "valueString": "<p>For every patient evaluated by this measure also identify payer, race, ethnicity and sex</p>"
+    }, {
+      "url": "usage",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+          "code": "supplemental-data",
+          "display": "Supplemental Data"
+        } ],
+        "text": "Supplemental Data Guidance"
+      }
+    } ]
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueReference": {
+      "reference": "#effective-data-requirements"
+    }
+  } ],
+  "url": "https://madie.cms.gov/Measure/CMS1188FHIRHIVSTITesting",
+  "identifier": [ {
+    "use": "usual",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "short-name",
+        "display": "Short Name"
+      } ]
+    },
+    "system": "https://madie.cms.gov/measure/shortName",
+    "value": "CMS1188FHIR"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "version-independent",
+        "display": "Version Independent"
+      } ]
+    },
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:6f66ca77-1a2c-489c-b0d8-730da6e5a763"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "version-specific",
+        "display": "Version Specific"
+      } ]
+    },
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:d64f90d4-91eb-4695-9b90-adc204023466"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "publisher",
+        "display": "Publisher"
+      } ]
+    },
+    "system": "https://madie.cms.gov/measure/cmsId",
+    "value": "1188FHIR",
+    "assigner": {
+      "display": "CMS"
+    }
+  } ],
+  "version": "1.0.000",
+  "name": "CMS1188FHIRHIVSTITesting",
+  "title": "Sexually Transmitted Infection (STI) Testing for People with HIVFHIR\n",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-21T14:16:24+00:00",
+  "publisher": "Health Resources &amp; Services Administration",
+  "contact": [ {
+    "telecom": [ {
+      "system": "url",
+      "value": " https://www.hrsa.gov/"
+    } ]
+  } ],
+  "description": "Percentage of patients 13 years of age and older with a diagnosis of Human Immunodeficiency Virus (HIV) who had tests for syphilis, gonorrhea, and chlamydia performed within the measurement period\n",
+  "usage": "This eCQM is a patient-based measure.\n\nThis FHIR-based measure has been derived from the QDM-based measure: CMS1188v3.\n\nPlease refer to the HL7 QI-Core Implementation Guide (https://hl7.org/fhir/us/qicore/STU6/) for more information on QI-Core and mapping recommendations from QDM to QI-Core STU 6 (https://hl7.org/fhir/us/qicore/STU6/qdm-to-qicore.html)\n",
+  "copyright": "This measure was developed by the Health Resources \\& Services Administration (HRSA) of the U.S. Department of Health \\& Human Services (HHS). It is in the public domain.\n\nCitation of HRSA as the source of the original measure is appreciated. Any modified versions may not be represented as approved, endorsed, or authorized by HRSA or HHS. 42 U.S.C. Section 1320b-10. Users of modified versions should clearly explain how they deviate from HRSA's original measure.\n\nLimited proprietary coding is contained in the Measure specifications for user convenience. Users of proprietary code sets should obtain all necessary licenses from the owners of the code sets.\n\nCPT(R) contained in the Measure specifications is copyright 2004-2024 American Medical Association. LOINC(R) is copyright 2004-2024 Regenstrief Institute, Inc. This material contains SNOMED Clinical Terms(R) (SNOMED CT\\[R\\]) copyright 2004-2024 International Health Terminology Standards Development Organisation. ICD-10 is copyright 2024 World Health Organization. All Rights Reserved.\n\nDue to technical limitations, registered trademarks are indicated by (R) or \\[R\\] and unregistered trademarks are indicated by (TM) or \\[TM\\].\n",
+  "effectivePeriod": {
+    "start": "2026-01-01",
+    "end": "2026-12-31"
+  },
+  "author": [ {
+    "name": "Health Resources &amp; Services Administration",
+    "telecom": [ {
+      "system": "url",
+      "value": " https://www.hrsa.gov/"
+    } ]
+  } ],
+  "relatedArtifact": [ {
+    "type": "citation",
+    "citation": "Centers for Disease Control and Prevention, Health Resources and Services Administration, National Institutes of Health, HIV Medicine Association of the Infectious Diseases Society of America, \\& HIV Prevention in Clinical Care Working Group. (2004). Recommendations for incorporating human immunodeficiency virus (HIV) prevention into the medical care of persons living with HIV. Clinical infectious diseases: an official publication of the Infectious Diseases Society of America, 38(1), 104-121. https://doi.org/10.1086/380131\n"
+  }, {
+    "type": "citation",
+    "citation": "Flagg, E. W., Weinstock, H. S., Frazier, E. L., Valverde, E. E., Heffelfinger, J. D., \\& Skarbinski, J. (2015). Bacterial sexually transmitted infections among HIV-infected patients in the United States: Estimates from the Medical Monitoring Project. Sexually transmitted diseases, 42(4), 171-179. https://doi.org/10.1097/OLQ.0000000000000260. Erratum in: Sex Transm Dis. 2015 Jun;42(6):351-2. PMID: 25763669; PMCID: PMC6921480\n"
+  }, {
+    "type": "citation",
+    "citation": "National Center for HIV/AIDS, Viral Hepatitis, STD, and TB Prevention (U.S.). Division of STD Prevention. (2021). Sexually Transmitted Disease Surveillance 2019: National Overview -- Sexually Transmitted Disease Surveillance, 2019. Retrieved from https://stacks.cdc.gov/view/cdc/105127\n"
+  }, {
+    "type": "citation",
+    "citation": "Panel on Opportunistic Infections in Adults and Adolescents with HIV. (2022, July). Guidelines for the prevention and treatment of opportunistic infections in adults and adolescents with HIV: Recommendations from the Centers for Disease Controls and Prevention, the National Institutes of Health, and the HIV Medicine Association of the Infectious Diseases Society of America. Retrieved from https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-opportunistic-infections/syphilis?view=full\n"
+  }, {
+    "type": "citation",
+    "citation": "Patel, P., Bush, T., Mayer, K., Milam, J., Richardson, J., Hammer, J., ... SUN Study Investigators. (2012). Routine brief risk-reduction counseling with biannual STD testing reduces STD incidence among HIV-infected men who have sex with men in care. Sexually Transmitted Diseases, 39(6), 470-474. https://doi.org/10.1097/OLQ.0b013e31824b3110\n"
+  }, {
+    "type": "citation",
+    "citation": "US Preventive Services Task Force, Mangione, C. M., Barry, M. J., Nicholson, W. K., Cabana, M., Chelmow, D., ... Wong, J. B. (2022). Screening for syphilis infection in nonpregnant adolescents and adults: US Preventive Services Task Force reaffirmation recommendation statement. JAMA, 328(12), 1243-1249. https://doi.org/10.1001/jama.2022.15322\n"
+  }, {
+    "type": "citation",
+    "citation": "Workowski, K. A., Bachmann, L. H., Chan, P. A., Johnston, C. M., Muzny, C. A., Park, I., ... Bolan, G. A. (2021). Sexually transmitted infections treatment guidelines, 2021. MMWR. Recommendations and Reports, 70(4), 1-187. https://doi.org/10.15585/mmwr.rr7004a1\n"
+  } ],
+  "library": [ "https://madie.cms.gov/Library/CMS1188FHIRHIVSTITesting" ],
+  "disclaimer": "These performance measures are not clinical guidelines and do not establish a standard of medical care, and have not been tested for all potential applications.\n\nTHE MEASURES AND SPECIFICATIONS ARE PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND.\n\nDue to technical limitations, registered trademarks are indicated by (R) or \\[R\\] and unregistered trademarks are indicated by (TM) or \\[TM\\].\n",
+  "rationale": "The rates of syphilis, gonorrhea, and chlamydia cases per 100,000 in the United States have steadily risen over the last decade and increased 11.2 percent, 5.9 percent, and 2.8 percent, respectively, from 2018 to 2019 (National Center for HIV/AIDS, Viral Hepatitis, STD, and TB Prevention \\[NCHHSTP\\], 2021). People with HIV are at an increased risk of bacterial sexually transmitted infections (STIs), including chlamydia, gonorrhea, and syphilis (Centers for Disease Control and Prevention \\[CDC\\], 2004). However, early detection and treatment of bacterial STIs in people with HIV can lead to a reduction in HIV transmission (CDC, 2004). Despite guidelines for at least annual screening among sexually active persons with HIV, only an estimated 55 percent received a syphilis test in the past year, 23 percent received a gonorrhea test in the past year, and 24 percent received a chlamydia test in the past year based on a nationally-representative survey of adults with HIV receiving medical care in the United States (Flagg et al., 2015). This measure will help providers focus their attention and quality improvement efforts towards testing and treating sexually transmitted infections in patients with HIV, thus reducing the complications to long-term syphilis infection and reducing STI incidence (Patel et al., 2012).\n",
+  "clinicalRecommendationStatement": "\"Routine serologic screening for syphilis is recommended at least annually for all persons with HIV infection who are sexually active, with more frequent screening (i.e., every 3-6 months) for those who have multiple or anonymous partners\" (Panel on Opportunistic Infections in Adults and Adolescents with HIV, 2022, p. Y-3).\n\n\"Patients undergoing screening or treatment for syphilis also should be evaluated for other sexually transmitted diseases such as chlamydia and gonorrhea at anatomic sites of exposure in men and for chlamydia, gonorrhea, and trichomonas in women\" (Panel on Opportunistic Infections in Adults and Adolescents with HIV, 2022, p. Y-3).\n\n\"The \\[United States Preventive Services Task Force (USPSTF)\\] recommends screening for syphilis in persons who are at increased risk for infection. When deciding which persons to screen for syphilis, clinicians should consider the prevalence of infection in the communities they serve, as well as other sociodemographic and behavioral factors that may be associated with increased risk of syphilis infection. For example, prevalence of syphilis is higher in men, men who have sex with men, persons with HIV infection, young adults, and persons with a history of incarceration, sex work, or military service.... Optimal screening frequency for persons who are at increased risk for syphilis infection is not well established. Men who have sex with men or persons with HIV infection may benefit from screening at least annually or more frequently (e.g., every 3 to 6 months) if they continue to be at high risk\" (USPSTF, 2022, p. 1244-1246).\n\n\"At the initial HIV care visit, providers should screen all sexually active persons for syphilis, gonorrhea, and chlamydia, and perform screening for these infections at least annually during the course of HIV care. Specific testing includes syphilis serology and \\[a nucleic acid amplification test\\] NAAT for N. gonorrhoeae and C. trachomatis at the anatomic site of exposure\" (Workowski et al., 2021, p. 26).\n",
+  "group": [ {
+    "id": "Group_1",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+          "code": "proportion",
+          "display": "Proportion"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
+      "valueCode": "boolean"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-type",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+          "code": "process",
+          "display": "Process"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-improvementNotation",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+          "code": "increase",
+          "display": "Increased score indicates improvement"
+        } ]
+      }
+    } ],
+    "population": [ {
+      "id": "InitialPopulation_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "initial-population",
+          "display": "Initial Population"
+        } ]
+      },
+      "description": "All patients 13 years of age and older at the start of the measurement period with an eligible encounter during the measurement period with a diagnosis of HIV before the end of the measurement period\n",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Initial Population"
+      }
+    }, {
+      "id": "Denominator_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "denominator",
+          "display": "Denominator"
+        } ]
+      },
+      "description": "Equals Initial Population\n",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Denominator"
+      }
+    }, {
+      "id": "Numerator_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "numerator",
+          "display": "Numerator"
+        } ]
+      },
+      "description": "Patients who were tested for each of the following at least once during the measurement period: chlamydia, gonorrhea, and syphilis\n",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Numerator"
+      }
+    } ]
+  } ],
+  "supplementalData": [ {
+    "id": "sde-ethnicity",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Ethnicity\n",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Ethnicity"
+    }
+  }, {
+    "id": "sde-payer",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Payer\n",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Payer"
+    }
+  }, {
+    "id": "sde-sex",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Sex\n",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Sex"
+    }
+  }, {
+    "id": "sde-race",
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Race\n",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Race"
+    }
+  } ]
+}
