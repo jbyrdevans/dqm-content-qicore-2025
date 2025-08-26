@@ -1,0 +1,1154 @@
+{
+  "resourceType": "Measure",
+  "id": "CMS1154ScreeningPrediabetesFHIR",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/executable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/elm-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm" ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"col-12\">\n  <table class=\"narrative-table\">\n    <tbody>\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Metadata</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Title</th>\n\n\n<td class=\"content-container\">Screening for Abnormal Glucose Metabolism in Patients at Risk of Developing DiabetesFHIR</td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Version</th>\n\n\n<td class=\"content-container\">1.0.000</td>\n</tr>\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Short Name</th>\n\n\n<td class=\"content-container\">CMS1154FHIR</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">GUID (Version Independent)</th>\n\n\n<td class=\"content-container\">urn:uuid:d5fabe20-5aaa-4dea-bfb4-2fde59ea40d6</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">GUID (Version Specific)</th>\n\n\n<td class=\"content-container\">urn:uuid:c116e4ae-6daf-49b2-b415-dd229215c674</td>\n</tr>\n\n\n\n  \n    \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">CMS Identifier</th>\n\n\n<td class=\"content-container\">1154FHIR</td>\n</tr>\n\n  \n\n\n\n\n  \n    \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Effective Period</th>\n\n\n<td class=\"content-container\">2026-01-01 through 2026-12-31</td>\n</tr>\n\n  \n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Use Context</th>\n\n\n<td class=\"content-container\">org.hl7.fhir.r5.model.UsageContext@5f13e610</td>\n</tr>\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Steward (Publisher)</th>\n\n\n<td class=\"content-container\">American Medical Association (AMA)</td>\n</tr>\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Developer</th>\n\n\n<td class=\"content-container\">American Medical Association (AMA)</td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Developer</th>\n\n\n<td class=\"content-container\">Health Services Advisory Group</td>\n</tr>\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Description</th>\n\n\n<td class=\"content-container\"><p>Percentage of adult patients with risk factors for type 2 diabetes who are due for glycemic screening for whom the screening process was completed during the measurement period.</p></td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Copyright</th>\n\n\n<td class=\"content-container\"><p>Prediabetes Quality Measures (C) 2018-2025. American Medical Association. All rights reserved.</p>\n<p>CPT (R) 2025 American Medical Association (“AMA”). All rights reserved. You cannot, without express written permission from the AMA, copy, modify, distribute, display, or use CPT for any commercial purpose, including for productive use in a clinical setting. Any such use requires a separate license from the AMA.</p>\n<p>You agree that you shall not remove, obscure, or alter any proprietary rights notices (including copyright and trademark notices) which may be affixed to or contained within the measure.</p>\n<p>Current Procedural Terminology (CPT [R] code(s) (“CPT Codes”) information provided in the Measures is intended for reference and informational purposes only. Decisions regarding which CPT Code is appropriate must be made by physicians and/or their staff considering the clinical facts, circumstances, applicable coding and published AMA coding guideline and payor policies. The AMA does not dictate payer reimbursement policy and does not substitute for the professional judgment of the practitioner performing a procedure, who remains responsible for correct coding. The AMA is not engaged in the practice of medicine or dispensing medical services. Fee schedules, relative value units, conversion factors and/or related components are not assigned by the AMA, are not part of the CPT code set, and the AMA is not recommending their use.</p>\n<p>Information contained in the measure includes information protected by intellectual property rights which are owned by the AMA. The Measures may also contain proprietary code sets not owned by the AMA. The AMA disclaims all liability for the use or accuracy of any such information. Users of the proprietary code sets should obtain all necessary licenses from the owners of these code sets. LOINC [R] copyright 2004-2025 Regenstrief Institute, Inc., SNOMED CLINICAL TERMS (SNOMED CT[R]) copyright 2004-2025, The International Health Information Standards Development Organisation (IHTSDO). ICD-10 is copyright 2024 World Health Organization. All Rights Reserved.</p></td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Disclaimer</th>\n\n\n<td class=\"content-container\"><p>The Prediabetes Quality Measure set descriptions and specifications (collectively, “Measures”) are not clinical guidelines, do not establish a standard of medical care, and have not been tested for all potential applications. The Measures are not intended to diagnose or treat disease or other conditions. The Measures are not a medical device and have not been evaluated by the Food and Drug Administration. Information provided through the Measures is not intended to direct or substitute for the independent assessment or judgment of a qualified healthcare professional. The American Medical Association (“AMA”) assumes no liability for use of the Measures, or data contained or not contained in the Measures.</p>\n<p>The AMA consents to the use, reproduction and distribution of the Measures for non-commercial purposes only (e.g., for use by health care providers in a professional setting). You cannot, without the express written consent of the AMA, use the Measures for any commercial purpose. Unauthorized commercial use of the Measures is expressly prohibited. Commercial use is defined as the sale, license, or distribution of the Measures for commercial gain, or incorporation of the Measures into a product or service that is sold, licensed, or distributed for commercial gain. These requirements apply to both you as an individual and to the corporate entity that you represent as an employee or agent, to the extent applicable.</p>\n<p>To request to make a commercial use of the Measures, please email: AMA.IHO.QualityMeasures@ama-assn.org. Any commercial use of the Measures requires a separate license from the AMA.</p>\n<p>Any use, publication or other dissemination of these Measures shall include the following attribution:</p>\n<p>“This [publication, etc.] was prepared using clinical quality measures developed by the American Medical Association. The content reflects the views of [name of author(s)].”</p>\n<p>USE OF THE MEASURES (INCLUDING ANY CPT CODES) IS AT YOUR SOLE RISK. THE MEASURES ARE PROVIDED “AS IS” WITHOUT EXPRESS OR IMPLIED WARRANTIES OF ANY KIND, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT. AMA EXPRESSLY DISCLAIMS ANY AND ALL RESPONSIBILITY OR LIABILITY FOR DAMAGES OF ANY KIND ARISING OUT OF USE, REFERENCE TO, OR RELIANCE ON THE MEAUSURES.</p>\n<p>These requirements apply to both you as an individual and to the corporate entity that you represent as an employee or agent, to the extent applicable.</p>\n<p>Due to technical limitations, registered trademarks are indicated by (R) or [R] and unregistered trademarks are indicated by (TM) or [TM].</p></td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Rationale</th>\n\n\n<td class=\"content-container\"><p>This measure is critical to identifying patients with prediabetes who may benefit from interventions to prevent type 2 diabetes and identification of undiagnosed type 2 diabetes. The Centers for Disease Control and Prevention (CDC) estimates that approximately 97.6 million American adults have prediabetes (CDC, 2024). They note that more than 80% of adults with prediabetes are not aware that they have the condition. Regular screening for prediabetes is a critical first step to helping patients avoid the disability and costs associated with progression to type 2 diabetes.</p>\n<p>The measure gives credit for three types of tests that can be used to detect abnormal glucose metabolism: HbA1c, oral glucose tolerance, and fasting plasma glucose. When considering which plasma glucose screening codes to include in the measure, the measure development team carefully considered two potential unintended consequences related to the limited use of accompanying fasting status codes. If the measure specified plasma glucose screening too narrowly, it could incentivize over screening, which would impose added burden on clinicians and increased costs to some patients. Alternatively, if the measure specified plasma glucose screening too broadly, it could give credit for non-fasting plasma glucose tests that are not adequate for diagnostic purposes.</p></td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Clinical Recommendation Statement</th>\n\n\n<td class=\"content-container\"><p>The U.S. Preventive Services Task Force (USPSTF) recommends screening for prediabetes and type 2 diabetes in adults aged 35 to 70 years who have overweight or obesity. Clinicians should offer or refer patients with prediabetes to effective preventive interventions (B recommendation) (USPSTF, 2021).</p>\n<p>Evidence on the optimal screening interval for adults with an initial normal glucose test result is limited. Cohort and modeling studies suggest that screening every 3 years may be a reasonable approach for adults with normal blood glucose levels (USPSTF, 2021).</p>\n<p>Prediabetes and type 2 diabetes can be detected by measuring fasting plasma glucose or HbA1c level, or with an oral glucose tolerance test. A fasting plasma glucose level of 126 mg/dL (6.99 mmol/L) or greater, an HbA1c level of 6.5% or greater, or a 2-hour post-load glucose level of 200 mg/dL (11.1 mmol/L) or greater are consistent with the diagnosis of type 2 diabetes. A fasting plasma glucose level of 100 to 125 mg/dL (5.55-6.94 mmol/L), an HbA1c level of 5.7% to 6.4%, or a 2-hour post-load glucose level of 140 to 199 mg/dL (7.77-11.04 mmol/L) are consistent with prediabetes (USPSTF, 2021).</p></td>\n</tr>\n\n\n\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>Centers for Disease Control and Prevention. (2024, July 23). National Diabetes Statistics Report. Retrieved November 15, 2024, from Diabetes website: https://www.cdc.gov/diabetes/php/data-research/</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>U.S. Preventive Services Task Force. (2021). Screening for Prediabetes and Type 2 Diabetes: US Preventive Services Task Force Recommendation Statement. JAMA, 326(8), 736–743. https://doi.org/10.1001/jama.2021.12531</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Guidance (Usage)</th>\n\n\n<td class=\"content-container\"><p>The measure is limited to patients aged 35 to 70 with overweight or obesity because it is recommended that all patients with those risk factors be screened for diabetes at least once every three years. However, this measure is not intended to discourage screening at younger ages, which the USPSTF recommends considering for adults with overweight or obesity and any of the following risk factors:</p>\n<ul>\n <li>Race/ethnicity with disproportionately high incidence and prevalence of diabetes (American Indian/Alaska Native, Asian American, Black, Hispanic/Latino, or Native Hawaiian/Pacific Islander persons)</li>\n <li>Family history of diabetes</li>\n <li>History of gestational diabetes</li>\n <li>History of polycystic ovarian syndrome</li>\n</ul>\n<p>It is recommended that every patient evaluated by this measure also identify payer, race, ethnicity, and sex.</p>\n<p>This eCQM is a patient-based measure.</p>\n<p>This FHIR-based measure has been derived from the QDM-based measure CMS1154v1. Please refer to the HL7 QI-Core Implementation Guide (https://hl7.org/fhir/us/qicore/STU6/) for more information on QI-Core and mapping recommendations from QDM to QI-Core STU 6 (https://hl7.org/fhir/us/qicore/STU6/qdm-to-qicore.html).</p></td>\n</tr>\n\n\n\n  \n    \n    <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Group (Rate) (ID: Group_1)</th>\n\n\n</tr>\n  \n  \n  \n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Basis</th>\n\n\n<td class=\"content-container\">boolean</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Scoring</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-scoring#proportion: 'Proportion']</td>\n</tr>\n\n\n\n\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Type</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-type#process: 'Process']</td>\n</tr>\n\n\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Improvement Notation</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase: 'Increased score indicates improvement']</td>\n</tr>\n\n\n  \n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: InitialPopulation_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>All patients with at least two outpatient clinical encounters or one preventive clinical encounter during the measurement period who have the following risk factors for type 2 diabetes:</p>\n<ul>\n <li>Most recent BMI ≥25 kg/m2 (BMI ≥23 kg/m2 for Asian patients) during measurement period, AND</li>\n <li>Age 35-70 at start of measurement period.</li>\n</ul></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms1154screeningprediabetesfhir-initial-population\">Initial Population</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Denominator</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: Denominator_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>All patients in the initial population.</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms1154screeningprediabetesfhir-denominator\">Denominator</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Denominator Exclusion</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: DenominatorExclusion_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><ul>\n <li>Patient's pregnancy overlaps measurement period.</li>\n <li>Patient with diagnosis of advanced illness or limited life expectancy overlaps measurement period.</li>\n <li>Patient with diagnosis of diabetes overlaps 2-year look-back period.</li>\n <li>Patient with diagnosis of prediabetes overlaps 2-year look-back period.</li>\n <li>Patient with glycemic screening performed during 2-year look-back period.</li>\n</ul></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms1154screeningprediabetesfhir-denominator-exclusions\">Denominator Exclusions</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Numerator</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: Numerator_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>Patients who had a glycemic screening test performed during the measurement period.</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms1154screeningprediabetesfhir-numerator\">Numerator</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n\n\n  \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Guidance</th>\n\n\n<td class=\"content-container\"><p>For every patient evaluated by this measure also identify payer, race, ethnicity and sex.</p></td>\n</tr>\n\n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Supplemental Data Elements</th>\n\n\n</tr>\n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-ethnicity\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Ethnicity\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms1154screeningprediabetesfhir-sde-ethnicity\">SDE Ethnicity</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-payer\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Payer\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms1154screeningprediabetesfhir-sde-payer\">SDE Payer</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-race\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Race\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms1154screeningprediabetesfhir-sde-race\">SDE Race</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-sex\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Sex\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms1154screeningprediabetesfhir-sde-sex\">SDE Sex</a> \n      \n    \n  </td>\n</tr>\n\n\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Logic</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Primary Library</th>\n\n\n<td class=\"content-container\">https://madie.cms.gov/Library/CMS1154ScreeningPrediabetesFHIR</td>\n</tr>\n\n\n\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Contents</th>\n  <td class=\"content-container\">\n    <em><a href=\"#population-criteria\">Population Criteria</a></em>\n    <br/>\n    <em><a href=\"#definitions\">Logic Definitions</a></em>\n    <br/>\n    <em><a href=\"#terminology\">Terminology</a></em>\n    <br/>\n    <em><a href=\"#dependencies\">Dependencies</a></em>\n    <br/>\n    <em><a href=\"#data-requirements\">Data Requirements</a></em>\n    <br/>\n  </td>\n</tr>\n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"population-criteria\"> </a>Population Criteria</th>\n\n\n</tr>\n  \n  \n  \n  \n    \n    <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Group (Rate) (ID: Group_1)</th>\n\n\n</tr>\n  \n  \n  \n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms1154screeningprediabetesfhir-initial-population\"> </a>\n    \n    \n    Initial Population\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Initial Population&quot;:\n  &quot;Patients Aged 35 to 70 with an Office Visit During the Measurement Period&quot;\n    and ( &quot;Most Recent BMI Equal to or Greater Than 25 and Is Not Asian&quot;\n        or &quot;Most Recent BMI Equal to or Greater Than 23 and Is Asian&quot;\n    )</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms1154screeningprediabetesfhir-denominator\"> </a>\n    \n    \n    Denominator\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator&quot;:\n  &quot;Initial Population&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms1154screeningprediabetesfhir-denominator-exclusions\"> </a>\n    \n    \n    Denominator Exclusion\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator Exclusions&quot;:\n  &quot;Has Pregnancy Observation During Measurement Period&quot;\n    or exists &quot;Has Pregnancy Diagnosis During Measurement Period&quot;\n    or exists &quot;Has Advanced Illness or Limited Life Expectancy&quot;\n    or exists &quot;Diabetes Diagnosis Overlaps 2 Year Look Back Period&quot;\n    or exists &quot;Prediabetes Diagnosis Overlaps 2 Year Look Back Period&quot;\n    or &quot;Has Glycemic Laboratory Test Performed During 2 Year Look Back Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms1154screeningprediabetesfhir-numerator\"> </a>\n    \n    \n    Numerator\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Numerator&quot;:\n  exists &quot;Glycemic Laboratory Test Performed During Measurement Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n  \n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"definitions\"> </a>Logic Definitions</th>\n\n\n</tr>\n  \n  \n          \n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-sex\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Sex&quot;:\n  case\n    when Patient.sex = '248153007' then &quot;Male (finding)&quot;\n    when Patient.sex = '248152002' then &quot;Female (finding)&quot;\n    else null\n  end</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-race\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Race&quot;:\n  Patient.race R\n    return Tuple {\n      codes: R.ombCategory union R.detailed,\n      display: R.text\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-payer\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Payer&quot;:\n  [Coverage: type in &quot;Payer Type&quot;] Payer\n    return {\n      code: Payer.type,\n      period: Payer.period\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-ethnicity\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Ethnicity&quot;:\n  Patient.ethnicity E\n    return Tuple {\n      codes: { E.ombCategory } union E.detailed,\n      display: E.text\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n\n        \n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tostring\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define function ToString(value uri): value.value</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tointerval\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/*\n@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)\nvalue to a CQL DateTime Interval\n@comment: If the start value of the given period is unspecified, the starting\nboundary of the resulting interval will be open (meaning the start of the interval\nis unknown, as opposed to interpreted as the beginning of time).\n*/\ndefine function ToInterval(period FHIR.Period):\n    if period is null then\n        null\n    else\n        if period.&quot;start&quot; is null then\n            Interval(period.&quot;start&quot;.value, period.&quot;end&quot;.value]\n        else\n            Interval[period.&quot;start&quot;.value, period.&quot;end&quot;.value]</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tocode\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/*\n@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.\n*/\ndefine function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n\n        \n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"qicorecommon-tointerval\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> QICoreCommon</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/*\n@description: Normalizes a value that is a choice of timing-valued types to an equivalent interval\n@comment: Normalizes a choice type of DateTime, Quanitty, Interval&lt;DateTime&gt;, or Interval&lt;Quantity&gt; types\nto an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible\nrepresentations for timing-valued elements in QICore, allowing this function to be used across any resource.\nThe input can be provided as a DateTime, Quantity, Interval&lt;DateTime&gt; or Interval&lt;Quantity&gt;.\nThe intent of this function is to provide a clear and concise mechanism to treat single\nelements that have multiple possible representations as intervals so that logic doesn't have to account\nfor the variability. More complex calculations (such as medication request period or dispense period\ncalculation) need specific guidance and consideration. That guidance may make use of this function, but\nthe focus of this function is on single element calculations where the semantics are unambiguous.\nIf the input is a DateTime, the result a DateTime Interval beginning and ending on that DateTime.\nIf the input is a Quantity, the quantity is expected to be a calendar-duration interpreted as an Age,\nand the result is a DateTime Interval beginning on the Date the patient turned that age and ending immediately before one year later.\nIf the input is a DateTime Interval, the result is the input.\nIf the input is a Quantity Interval, the quantities are expected to be calendar-durations interpreted as an Age, and the result\nis a DateTime Interval beginning on the date the patient turned the age given as the start of the quantity interval, and ending\nimmediately before one year later than the date the patient turned the age given as the end of the quantity interval.\nIf the input is a Timing, an error will be thrown indicating that Timing calculations are not implemented. Any other input will reslt in a null DateTime Interval\n*/\ndefine fluent function toInterval(choice Choice&lt;DateTime, Quantity, Interval&lt;DateTime&gt;, Interval&lt;Quantity&gt;, Timing&gt;):\n  case\n\t  when choice is DateTime then\n    \tInterval[choice as DateTime, choice as DateTime]\n\t\twhen choice is Interval&lt;DateTime&gt; then\n  \t\tchoice as Interval&lt;DateTime&gt;\n\t\twhen choice is Quantity then\n\t\t  Interval[Patient.birthDate + (choice as Quantity),\n\t\t\t  Patient.birthDate + (choice as Quantity) + 1 year)\n\t\twhen choice is Interval&lt;Quantity&gt; then\n\t\t  Interval[Patient.birthDate + (choice.low as Quantity),\n\t\t\t  Patient.birthDate + (choice.high as Quantity) + 1 year)\n\t\twhen choice is Timing then\n      Message(null, true, 'NOT_IMPLEMENTED', 'Error', 'Calculation of an interval from a Timing value is not supported') as Interval&lt;DateTime&gt;\n\t\telse\n\t\t\tnull as Interval&lt;DateTime&gt;\n\tend</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n\n        \n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-sde-sex\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Sex&quot;:\n  SDE.&quot;SDE Sex&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-glycemic-laboratory-test-performed-during-measurement-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Glycemic Laboratory Test Performed During Measurement Period&quot;:\n  [LaboratoryResultObservation: &quot;Glycemic Screening Tests&quot;] LabTestPerformed\n    where QICoreCommon.ToInterval ( LabTestPerformed.effective ) during day of &quot;Measurement Period&quot;\n      and LabTestPerformed.status in { 'final', 'amended', 'corrected' }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-numerator\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Numerator&quot;:\n  exists &quot;Glycemic Laboratory Test Performed During Measurement Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-preventive-care-outpatient-visits-during-measurement-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Preventive Care Outpatient Visits During Measurement Period&quot;:\n  [Encounter: &quot;Preventative Clinical Encounters&quot;] PreventiveCare\n    where PreventiveCare.period ends during day of &quot;Measurement Period&quot;\n      and PreventiveCare.status = 'finished'</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-office-visit-during-the-measurement-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Office Visit During the Measurement Period&quot;:\n  [Encounter: &quot;Outpatient Clinical Encounters&quot;] OfficeVisit\n    where OfficeVisit.period during day of &quot;Measurement Period&quot;\n      and OfficeVisit.status = 'finished'</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-aged-35-to-70-at-start-of-measurement-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Aged 35 to 70 at Start of Measurement Period&quot;:\n  &quot;AgeInYearsAt&quot;(date from start of &quot;Measurement Period&quot;) between 35 and 70</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-patients-aged-35-to-70-with-an-office-visit-during-the-measurement-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Patients Aged 35 to 70 with an Office Visit During the Measurement Period&quot;:\n  ( exists ( &quot;Preventive Care Outpatient Visits During Measurement Period&quot; )\n      or Count(&quot;Office Visit During the Measurement Period&quot;) &gt;= 2\n  )\n    and &quot;Aged 35 to 70 at Start of Measurement Period&quot; is true</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-most-recent-bmi\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Most Recent BMI&quot;:\n  First([USCoreBMIProfile] BMI\n      where BMI.status in { 'final', 'amended', 'corrected' }\n      sort by start of effective.toInterval() desc\n  )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-patient-is-asian\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Patient is Asian&quot;:\n  exists ( SDE.&quot;SDE Race&quot;.codes C\n      where C ~ &quot;Asian&quot;\n  )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-patient-is-not-asian\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Patient is not Asian&quot;:\n  not ( &quot;Patient is Asian&quot; )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-most-recent-bmi-equal-to-or-greater-than-25-and-is-not-asian\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Most Recent BMI Equal to or Greater Than 25 and Is Not Asian&quot;:\n  &quot;Most Recent BMI&quot;.value &gt;= 25 'kg/m2'\n    and &quot;Patient is not Asian&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-most-recent-bmi-equal-to-or-greater-than-23-and-is-asian\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Most Recent BMI Equal to or Greater Than 23 and Is Asian&quot;:\n  &quot;Most Recent BMI&quot;.value &gt;= 23 'kg/m2'\n    and &quot;Patient is Asian&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-initial-population\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Initial Population&quot;:\n  &quot;Patients Aged 35 to 70 with an Office Visit During the Measurement Period&quot;\n    and ( &quot;Most Recent BMI Equal to or Greater Than 25 and Is Not Asian&quot;\n        or &quot;Most Recent BMI Equal to or Greater Than 23 and Is Asian&quot;\n    )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-denominator\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator&quot;:\n  &quot;Initial Population&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-sde-payer\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Payer&quot;:\n  SDE.&quot;SDE Payer&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-sde-ethnicity\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Ethnicity&quot;:\n  SDE.&quot;SDE Ethnicity&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-has-pregnancy-observation-during-measurement-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Has Pregnancy Observation During Measurement Period&quot;:\n  exists ( [USCoreObservationPregnancyStatusProfile] PregnantObservation\n      where PregnantObservation.value in &quot;Pregnancy&quot;\n        and PregnantObservation.effective.toInterval ( ) overlaps day of &quot;Measurement Period&quot;\n  )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-has-pregnancy-diagnosis-during-measurement-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Has Pregnancy Diagnosis During Measurement Period&quot;:\n  ( ( [ConditionProblemsHealthConcerns: &quot;Pregnancy&quot;]\n      union [ConditionEncounterDiagnosis: &quot;Pregnancy&quot;]\n  ).verified ( ) ) PregnancyDx\n    where PregnancyDx.prevalenceInterval ( ) overlaps day of &quot;Measurement Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-has-advanced-illness-or-limited-life-expectancy\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Has Advanced Illness or Limited Life Expectancy&quot;:\n  ( ( [&quot;ConditionProblemsHealthConcerns&quot;: &quot;Advanced Illness&quot;]\n      union [&quot;ConditionEncounterDiagnosis&quot;: &quot;Advanced Illness&quot;]\n      union [&quot;ConditionProblemsHealthConcerns&quot;: &quot;Limited Life Expectancy&quot;]\n      union [&quot;ConditionEncounterDiagnosis&quot;: &quot;Limited Life Expectancy&quot;]\n  ).verified ( ) ) AdvancedIllness\n    where &quot;AdvancedIllness&quot;.onset before day of end of &quot;Measurement Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-look-back-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Look Back Period&quot;:\n  Interval[start of &quot;Measurement Period&quot; - 2 years, start of &quot;Measurement Period&quot; )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-diabetes-diagnosis-overlaps-2-year-look-back-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Diabetes Diagnosis Overlaps 2 Year Look Back Period&quot;:\n  ( ( [&quot;ConditionProblemsHealthConcerns&quot;: &quot;Diabetes&quot;]\n      union [ConditionEncounterDiagnosis: &quot;Diabetes&quot;]\n  ).verified ( ) ) PriorDiabetes\n    where &quot;PriorDiabetes&quot;.prevalenceInterval ( ) overlaps day of &quot;Look Back Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-prediabetes-diagnosis-overlaps-2-year-look-back-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Prediabetes Diagnosis Overlaps 2 Year Look Back Period&quot;:\n  ( ( [&quot;ConditionProblemsHealthConcerns&quot;: &quot;Prediabetes (Borderline Diabetes)&quot;]\n      union [ConditionEncounterDiagnosis: &quot;Prediabetes (Borderline Diabetes)&quot;]\n  ).verified ( ) ) PriorPrediabetes\n    where &quot;PriorPrediabetes&quot;.prevalenceInterval ( ) overlaps day of &quot;Look Back Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-has-glycemic-laboratory-test-performed-during-2-year-look-back-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Has Glycemic Laboratory Test Performed During 2 Year Look Back Period&quot;:\n  exists ( [LaboratoryResultObservation: &quot;Glycemic Screening Tests&quot;] LabTestPerformed\n      where QICoreCommon.ToInterval ( LabTestPerformed.effective ) during day of &quot;Look Back Period&quot;\n        and LabTestPerformed.status in { 'final', 'amended', 'corrected' }\n  )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-denominator-exclusions\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator Exclusions&quot;:\n  &quot;Has Pregnancy Observation During Measurement Period&quot;\n    or exists &quot;Has Pregnancy Diagnosis During Measurement Period&quot;\n    or exists &quot;Has Advanced Illness or Limited Life Expectancy&quot;\n    or exists &quot;Diabetes Diagnosis Overlaps 2 Year Look Back Period&quot;\n    or exists &quot;Prediabetes Diagnosis Overlaps 2 Year Look Back Period&quot;\n    or &quot;Has Glycemic Laboratory Test Performed During 2 Year Look Back Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-sde-race\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Race&quot;:\n  SDE.&quot;SDE Race&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms1154screeningprediabetesfhir-verified\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS1154ScreeningPrediabetesFHIR</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define fluent function verified(conditions List&lt;Choice&lt;ConditionProblemsHealthConcerns, ConditionEncounterDiagnosis&gt;&gt;):\n  conditions C\n    where C.verificationStatus is not null implies ( C.verificationStatus ~ &quot;confirmed&quot;\n        or C.verificationStatus ~ &quot;unconfirmed&quot;\n        or C.verificationStatus ~ &quot;provisional&quot;\n        or C.verificationStatus ~ &quot;differential&quot;\n    )</code></pre>\n  </td>\n\n</tr>\n\n\n\n\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"terminology\"> </a>Terminology</th>\n\n\n</tr>\n  \n  \n  \n\n \n\n \n\n \n\n \n\n\n<tr>\n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Code System</th>\n\n\n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Code system SNOMEDCT\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://snomed.info/sct\n    <br/>\n    <em>Canonical URL</em>: <tt>http://snomed.info/sct</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Code System</th>\n\n\n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Code system CDCREC\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: urn:oid:2.16.840.1.113883.6.238\n    <br/>\n    <em>Canonical URL</em>: <tt>urn:oid:2.16.840.1.113883.6.238</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Code System</th>\n\n\n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Code system ConditionVerificationStatusCodes\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://terminology.hl7.org/CodeSystem/condition-ver-status\n    <br/>\n    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Glycemic Screening Tests\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.5\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.5</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Preventative Clinical Encounters\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.13\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.13</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Outpatient Clinical Encounters\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.24\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.24</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Payer Type\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Pregnancy\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.378\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.378</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Advanced Illness\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1082\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1082</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Limited Life Expectancy\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1259\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1259</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Diabetes\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.103.12.1001\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.103.12.1001</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Prediabetes (Borderline Diabetes)\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.419\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.419</tt>\n    \n  </td>\n</tr>\n \n\n\n  \n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Male (finding)\n        <br/>\n      \n      <em>Code</em>: 248153007\n      <br/>\n      <em>System</em>: <tt>http://snomed.info/sct</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Female (finding)\n        <br/>\n      \n      <em>Code</em>: 248152002\n      <br/>\n      <em>System</em>: <tt>http://snomed.info/sct</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Asian\n        <br/>\n      \n      <em>Code</em>: 2028-9\n      <br/>\n      <em>System</em>: <tt>urn:oid:2.16.840.1.113883.6.238</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Confirmed\n        <br/>\n      \n      <em>Code</em>: confirmed\n      <br/>\n      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Unconfirmed\n        <br/>\n      \n      <em>Code</em>: unconfirmed\n      <br/>\n      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Provisional\n        <br/>\n      \n      <em>Code</em>: provisional\n      <br/>\n      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Differential\n        <br/>\n      \n      <em>Code</em>: differential\n      <br/>\n      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    </td>\n  </tr>\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"dependencies\"> </a>Dependencies</th>\n\n\n</tr>\n  \n  \n  \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: QICore model information\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://hl7.org/fhir/Library/QICore-ModelInfo\n    <br/>\n    <em>Canonical URL</em>: <tt>http://hl7.org/fhir/Library/QICore-ModelInfo</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library SDE\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/SupplementalDataElements|5.1.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/SupplementalDataElements|5.1.000</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library FHIRHelpers\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/FHIRHelpers|4.4.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/FHIRHelpers|4.4.000</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library QICoreCommon\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/QICoreCommon|4.0.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/QICoreCommon|4.0.000</tt>\n    \n  </td>\n</tr>\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"data-requirements\"> </a>Data Requirements</th>\n\n\n</tr>\n  \n  \n  \n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Patient\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: extension, url, birthDate, birthDate.value\n    <br/>\n   \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, effective, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.5\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.13\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.24\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: status, status.value, value\n    <br/>\n   \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Coverage\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: value, effective, effective.value\n    <br/>\n   \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.378\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1082\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1259\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.103.12.1001\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.419\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.378\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1082\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1259\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.103.12.1001\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.419\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n  \n  \n\n<tr>\n  <th colspan=\"2\" scope=\"row\" class=\"row-header\">Generated using version 0.4.8 of the sample-content-ig Liquid templates</th>\n</tr>\n\n    </tbody>\n  </table>\n</div>"
+  },
+  "contained": [ {
+    "resourceType": "Library",
+    "id": "effective-data-requirements",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "248153007",
+        "display": "Male (finding)"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://snomed.info/sct",
+        "code": "248152002",
+        "display": "Female (finding)"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "urn:oid:2.16.840.1.113883.6.238",
+        "code": "2028-9",
+        "display": "Asian"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "unconfirmed",
+        "display": "Unconfirmed"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "provisional",
+        "display": "Provisional"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-directReferenceCode",
+      "valueCoding": {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "differential",
+        "display": "Differential"
+      }
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElements"
+      }, {
+        "url": "name",
+        "valueString": "SDE Sex"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Sex\":\n  case\n    when Patient.sex = '248153007' then \"Male (finding)\"\n    when Patient.sex = '248152002' then \"Female (finding)\"\n    else null\n  end"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 0
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "SDE Sex"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Sex\":\n  SDE.\"SDE Sex\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 1
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Glycemic Laboratory Test Performed During Measurement Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Glycemic Laboratory Test Performed During Measurement Period\":\n  [LaboratoryResultObservation: \"Glycemic Screening Tests\"] LabTestPerformed\n    where QICoreCommon.ToInterval ( LabTestPerformed.effective ) during day of \"Measurement Period\"\n      and LabTestPerformed.status in { 'final', 'amended', 'corrected' }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 2
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Numerator"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Numerator\":\n  exists \"Glycemic Laboratory Test Performed During Measurement Period\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 3
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Preventive Care Outpatient Visits During Measurement Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Preventive Care Outpatient Visits During Measurement Period\":\n  [Encounter: \"Preventative Clinical Encounters\"] PreventiveCare\n    where PreventiveCare.period ends during day of \"Measurement Period\"\n      and PreventiveCare.status = 'finished'"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 4
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Office Visit During the Measurement Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Office Visit During the Measurement Period\":\n  [Encounter: \"Outpatient Clinical Encounters\"] OfficeVisit\n    where OfficeVisit.period during day of \"Measurement Period\"\n      and OfficeVisit.status = 'finished'"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 5
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Aged 35 to 70 at Start of Measurement Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Aged 35 to 70 at Start of Measurement Period\":\n  \"AgeInYearsAt\"(date from start of \"Measurement Period\") between 35 and 70"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 6
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Patients Aged 35 to 70 with an Office Visit During the Measurement Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Patients Aged 35 to 70 with an Office Visit During the Measurement Period\":\n  ( exists ( \"Preventive Care Outpatient Visits During Measurement Period\" )\n      or Count(\"Office Visit During the Measurement Period\") >= 2\n  )\n    and \"Aged 35 to 70 at Start of Measurement Period\" is true"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 7
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Most Recent BMI"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Most Recent BMI\":\n  First([USCoreBMIProfile] BMI\n      where BMI.status in { 'final', 'amended', 'corrected' }\n      sort by start of effective.toInterval() desc\n  )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 8
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElements"
+      }, {
+        "url": "name",
+        "valueString": "SDE Race"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Race\":\n  Patient.race R\n    return Tuple {\n      codes: R.ombCategory union R.detailed,\n      display: R.text\n    }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 9
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Patient is Asian"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Patient is Asian\":\n  exists ( SDE.\"SDE Race\".codes C\n      where C ~ \"Asian\"\n  )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 10
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Patient is not Asian"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Patient is not Asian\":\n  not ( \"Patient is Asian\" )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 11
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Most Recent BMI Equal to or Greater Than 25 and Is Not Asian"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Most Recent BMI Equal to or Greater Than 25 and Is Not Asian\":\n  \"Most Recent BMI\".value >= 25 'kg/m2'\n    and \"Patient is not Asian\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 12
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Most Recent BMI Equal to or Greater Than 23 and Is Asian"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Most Recent BMI Equal to or Greater Than 23 and Is Asian\":\n  \"Most Recent BMI\".value >= 23 'kg/m2'\n    and \"Patient is Asian\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 13
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Initial Population"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Initial Population\":\n  \"Patients Aged 35 to 70 with an Office Visit During the Measurement Period\"\n    and ( \"Most Recent BMI Equal to or Greater Than 25 and Is Not Asian\"\n        or \"Most Recent BMI Equal to or Greater Than 23 and Is Asian\"\n    )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 14
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Denominator"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Denominator\":\n  \"Initial Population\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 15
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElements"
+      }, {
+        "url": "name",
+        "valueString": "SDE Payer"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Payer\":\n  [Coverage: type in \"Payer Type\"] Payer\n    return {\n      code: Payer.type,\n      period: Payer.period\n    }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 16
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "SDE Payer"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Payer\":\n  SDE.\"SDE Payer\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 17
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "SupplementalDataElements"
+      }, {
+        "url": "name",
+        "valueString": "SDE Ethnicity"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Ethnicity\":\n  Patient.ethnicity E\n    return Tuple {\n      codes: { E.ombCategory } union E.detailed,\n      display: E.text\n    }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 18
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "SDE Ethnicity"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Ethnicity\":\n  SDE.\"SDE Ethnicity\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 19
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Has Pregnancy Observation During Measurement Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Has Pregnancy Observation During Measurement Period\":\n  exists ( [USCoreObservationPregnancyStatusProfile] PregnantObservation\n      where PregnantObservation.value in \"Pregnancy\"\n        and PregnantObservation.effective.toInterval ( ) overlaps day of \"Measurement Period\"\n  )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 20
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Has Pregnancy Diagnosis During Measurement Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Has Pregnancy Diagnosis During Measurement Period\":\n  ( ( [ConditionProblemsHealthConcerns: \"Pregnancy\"]\n      union [ConditionEncounterDiagnosis: \"Pregnancy\"]\n  ).verified ( ) ) PregnancyDx\n    where PregnancyDx.prevalenceInterval ( ) overlaps day of \"Measurement Period\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 21
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Has Advanced Illness or Limited Life Expectancy"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Has Advanced Illness or Limited Life Expectancy\":\n  ( ( [\"ConditionProblemsHealthConcerns\": \"Advanced Illness\"]\n      union [\"ConditionEncounterDiagnosis\": \"Advanced Illness\"]\n      union [\"ConditionProblemsHealthConcerns\": \"Limited Life Expectancy\"]\n      union [\"ConditionEncounterDiagnosis\": \"Limited Life Expectancy\"]\n  ).verified ( ) ) AdvancedIllness\n    where \"AdvancedIllness\".onset before day of end of \"Measurement Period\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 22
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Look Back Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Look Back Period\":\n  Interval[start of \"Measurement Period\" - 2 years, start of \"Measurement Period\" )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 23
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Diabetes Diagnosis Overlaps 2 Year Look Back Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Diabetes Diagnosis Overlaps 2 Year Look Back Period\":\n  ( ( [\"ConditionProblemsHealthConcerns\": \"Diabetes\"]\n      union [ConditionEncounterDiagnosis: \"Diabetes\"]\n  ).verified ( ) ) PriorDiabetes\n    where \"PriorDiabetes\".prevalenceInterval ( ) overlaps day of \"Look Back Period\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 24
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Prediabetes Diagnosis Overlaps 2 Year Look Back Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Prediabetes Diagnosis Overlaps 2 Year Look Back Period\":\n  ( ( [\"ConditionProblemsHealthConcerns\": \"Prediabetes (Borderline Diabetes)\"]\n      union [ConditionEncounterDiagnosis: \"Prediabetes (Borderline Diabetes)\"]\n  ).verified ( ) ) PriorPrediabetes\n    where \"PriorPrediabetes\".prevalenceInterval ( ) overlaps day of \"Look Back Period\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 25
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Has Glycemic Laboratory Test Performed During 2 Year Look Back Period"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Has Glycemic Laboratory Test Performed During 2 Year Look Back Period\":\n  exists ( [LaboratoryResultObservation: \"Glycemic Screening Tests\"] LabTestPerformed\n      where QICoreCommon.ToInterval ( LabTestPerformed.effective ) during day of \"Look Back Period\"\n        and LabTestPerformed.status in { 'final', 'amended', 'corrected' }\n  )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 26
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "Denominator Exclusions"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Denominator Exclusions\":\n  \"Has Pregnancy Observation During Measurement Period\"\n    or exists \"Has Pregnancy Diagnosis During Measurement Period\"\n    or exists \"Has Advanced Illness or Limited Life Expectancy\"\n    or exists \"Diabetes Diagnosis Overlaps 2 Year Look Back Period\"\n    or exists \"Prediabetes Diagnosis Overlaps 2 Year Look Back Period\"\n    or \"Has Glycemic Laboratory Test Performed During 2 Year Look Back Period\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 27
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "SDE Race"
+      }, {
+        "url": "statement",
+        "valueString": "define \"SDE Race\":\n  SDE.\"SDE Race\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 28
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToString"
+      }, {
+        "url": "statement",
+        "valueString": "define function ToString(value uri): value.value"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 29
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToInterval"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)\nvalue to a CQL DateTime Interval\n@comment: If the start value of the given period is unspecified, the starting\nboundary of the resulting interval will be open (meaning the start of the interval\nis unknown, as opposed to interpreted as the beginning of time).\n*/\ndefine function ToInterval(period FHIR.Period):\n    if period is null then\n        null\n    else\n        if period.\"start\" is null then\n            Interval(period.\"start\".value, period.\"end\".value]\n        else\n            Interval[period.\"start\".value, period.\"end\".value]"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 30
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "FHIRHelpers"
+      }, {
+        "url": "name",
+        "valueString": "ToCode"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.\n*/\ndefine function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 31
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "QICoreCommon"
+      }, {
+        "url": "name",
+        "valueString": "toInterval"
+      }, {
+        "url": "statement",
+        "valueString": "/*\n@description: Normalizes a value that is a choice of timing-valued types to an equivalent interval\n@comment: Normalizes a choice type of DateTime, Quanitty, Interval<DateTime>, or Interval<Quantity> types\nto an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible\nrepresentations for timing-valued elements in QICore, allowing this function to be used across any resource.\nThe input can be provided as a DateTime, Quantity, Interval<DateTime> or Interval<Quantity>.\nThe intent of this function is to provide a clear and concise mechanism to treat single\nelements that have multiple possible representations as intervals so that logic doesn't have to account\nfor the variability. More complex calculations (such as medication request period or dispense period\ncalculation) need specific guidance and consideration. That guidance may make use of this function, but\nthe focus of this function is on single element calculations where the semantics are unambiguous.\nIf the input is a DateTime, the result a DateTime Interval beginning and ending on that DateTime.\nIf the input is a Quantity, the quantity is expected to be a calendar-duration interpreted as an Age,\nand the result is a DateTime Interval beginning on the Date the patient turned that age and ending immediately before one year later.\nIf the input is a DateTime Interval, the result is the input.\nIf the input is a Quantity Interval, the quantities are expected to be calendar-durations interpreted as an Age, and the result\nis a DateTime Interval beginning on the date the patient turned the age given as the start of the quantity interval, and ending\nimmediately before one year later than the date the patient turned the age given as the end of the quantity interval.\nIf the input is a Timing, an error will be thrown indicating that Timing calculations are not implemented. Any other input will reslt in a null DateTime Interval\n*/\ndefine fluent function toInterval(choice Choice<DateTime, Quantity, Interval<DateTime>, Interval<Quantity>, Timing>):\n  case\n\t  when choice is DateTime then\n    \tInterval[choice as DateTime, choice as DateTime]\n\t\twhen choice is Interval<DateTime> then\n  \t\tchoice as Interval<DateTime>\n\t\twhen choice is Quantity then\n\t\t  Interval[Patient.birthDate + (choice as Quantity),\n\t\t\t  Patient.birthDate + (choice as Quantity) + 1 year)\n\t\twhen choice is Interval<Quantity> then\n\t\t  Interval[Patient.birthDate + (choice.low as Quantity),\n\t\t\t  Patient.birthDate + (choice.high as Quantity) + 1 year)\n\t\twhen choice is Timing then\n      Message(null, true, 'NOT_IMPLEMENTED', 'Error', 'Calculation of an interval from a Timing value is not supported') as Interval<DateTime>\n\t\telse\n\t\t\tnull as Interval<DateTime>\n\tend"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 32
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
+        "valueString": "CMS1154ScreeningPrediabetesFHIR"
+      }, {
+        "url": "name",
+        "valueString": "verified"
+      }, {
+        "url": "statement",
+        "valueString": "define fluent function verified(conditions List<Choice<ConditionProblemsHealthConcerns, ConditionEncounterDiagnosis>>):\n  conditions C\n    where C.verificationStatus is not null implies ( C.verificationStatus ~ \"confirmed\"\n        or C.verificationStatus ~ \"unconfirmed\"\n        or C.verificationStatus ~ \"provisional\"\n        or C.verificationStatus ~ \"differential\"\n    )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 33
+      } ]
+    } ],
+    "name": "EffectiveDataRequirements",
+    "status": "active",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/library-type",
+        "code": "module-definition"
+      } ]
+    },
+    "relatedArtifact": [ {
+      "type": "depends-on",
+      "display": "QICore model information",
+      "resource": "http://hl7.org/fhir/Library/QICore-ModelInfo"
+    }, {
+      "type": "depends-on",
+      "display": "Library SDE",
+      "resource": "https://madie.cms.gov/Library/SupplementalDataElements|5.1.000"
+    }, {
+      "type": "depends-on",
+      "display": "Library FHIRHelpers",
+      "resource": "https://madie.cms.gov/Library/FHIRHelpers|4.4.000"
+    }, {
+      "type": "depends-on",
+      "display": "Library QICoreCommon",
+      "resource": "https://madie.cms.gov/Library/QICoreCommon|4.0.000"
+    }, {
+      "type": "depends-on",
+      "display": "Code system SNOMEDCT",
+      "resource": "http://snomed.info/sct"
+    }, {
+      "type": "depends-on",
+      "display": "Code system CDCREC",
+      "resource": "urn:oid:2.16.840.1.113883.6.238"
+    }, {
+      "type": "depends-on",
+      "display": "Code system ConditionVerificationStatusCodes",
+      "resource": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Glycemic Screening Tests",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.5"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Preventative Clinical Encounters",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.13"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Outpatient Clinical Encounters",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.24"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Payer Type",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Pregnancy",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.378"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Advanced Illness",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1082"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Limited Life Expectancy",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1259"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Diabetes",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.103.12.1001"
+    }, {
+      "type": "depends-on",
+      "display": "Value set Prediabetes (Borderline Diabetes)",
+      "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.419"
+    } ],
+    "parameter": [ {
+      "name": "Measurement Period",
+      "use": "in",
+      "min": 0,
+      "max": "1",
+      "type": "Period"
+    }, {
+      "name": "Numerator",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Denominator",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Initial Population",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "Denominator Exclusions",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
+      "name": "SDE Sex",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Coding"
+    }, {
+      "name": "SDE Payer",
+      "use": "out",
+      "min": 0,
+      "max": "*",
+      "type": "Resource"
+    }, {
+      "name": "SDE Ethnicity",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Resource"
+    }, {
+      "name": "SDE Race",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Resource"
+    } ],
+    "dataRequirement": [ {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "extension", "url", "birthDate", "birthDate.value" ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab" ],
+      "mustSupport": [ "code", "effective", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.5"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.13"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.24"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi" ],
+      "mustSupport": [ "status", "status.value", "value" ]
+    }, {
+      "type": "Coverage",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage" ],
+      "mustSupport": [ "type", "period" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
+      } ]
+    }, {
+      "type": "Observation",
+      "profile": [ "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus" ],
+      "mustSupport": [ "value", "effective", "effective.value" ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.378"
+      } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1082"
+      } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1259"
+      } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.103.12.1001"
+      } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.419"
+      } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.378"
+      } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.110.12.1082"
+      } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1259"
+      } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.103.12.1001"
+      } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1222.419"
+      } ]
+    } ]
+  } ],
+  "extension": [ {
+    "id": "supplementalDataGuidance",
+    "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-supplementalDataGuidance",
+    "extension": [ {
+      "url": "guidance",
+      "valueString": "<p>For every patient evaluated by this measure also identify payer, race, ethnicity and sex.</p>"
+    }, {
+      "url": "usage",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+          "code": "supplemental-data",
+          "display": "Supplemental Data"
+        } ],
+        "text": "Supplemental Data Guidance"
+      }
+    } ]
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueReference": {
+      "reference": "#effective-data-requirements"
+    }
+  } ],
+  "url": "https://madie.cms.gov/Measure/CMS1154ScreeningPrediabetesFHIR",
+  "identifier": [ {
+    "use": "usual",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "short-name",
+        "display": "Short Name"
+      } ]
+    },
+    "system": "https://madie.cms.gov/measure/shortName",
+    "value": "CMS1154FHIR"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "version-independent",
+        "display": "Version Independent"
+      } ]
+    },
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:d5fabe20-5aaa-4dea-bfb4-2fde59ea40d6"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "version-specific",
+        "display": "Version Specific"
+      } ]
+    },
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:c116e4ae-6daf-49b2-b415-dd229215c674"
+  }, {
+    "use": "official",
+    "type": {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/artifact-identifier-type",
+        "code": "publisher",
+        "display": "Publisher"
+      } ]
+    },
+    "system": "https://madie.cms.gov/measure/cmsId",
+    "value": "1154FHIR",
+    "assigner": {
+      "display": "CMS"
+    }
+  } ],
+  "version": "1.0.000",
+  "name": "CMS1154ScreeningPrediabetesFHIR",
+  "title": "Screening for Abnormal Glucose Metabolism in Patients at Risk of Developing DiabetesFHIR\n",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-21T14:25:52+00:00",
+  "publisher": "American Medical Association (AMA)",
+  "contact": [ {
+    "telecom": [ {
+      "system": "url",
+      "value": "https://www.ama-assn.org/"
+    } ]
+  } ],
+  "description": "Percentage of adult patients with risk factors for type 2 diabetes who are due for glycemic screening for whom the screening process was completed during the measurement period.\n",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "venue",
+      "display": "Venue"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/us/cqfmeasures/CodeSystem/intended-venue-codes",
+        "code": "ec",
+        "display": "EC"
+      } ]
+    }
+  } ],
+  "usage": "The measure is limited to patients aged 35 to 70 with overweight or obesity because it is recommended that all patients with those risk factors be screened for diabetes at least once every three years. However, this measure is not intended to discourage screening at younger ages, which the USPSTF recommends considering for adults with overweight or obesity and any of the following risk factors:\n\n* Race/ethnicity with disproportionately high incidence and prevalence of diabetes (American Indian/Alaska Native, Asian American, Black, Hispanic/Latino, or Native Hawaiian/Pacific Islander persons)\n* Family history of diabetes\n* History of gestational diabetes\n* History of polycystic ovarian syndrome\n\nIt is recommended that every patient evaluated by this measure also identify payer, race, ethnicity, and sex.\n\nThis eCQM is a patient-based measure.\n\nThis FHIR-based measure has been derived from the QDM-based measure CMS1154v1. Please refer to the HL7 QI-Core Implementation Guide (https://hl7.org/fhir/us/qicore/STU6/) for more information on QI-Core and mapping recommendations from QDM to QI-Core STU 6 (https://hl7.org/fhir/us/qicore/STU6/qdm-to-qicore.html).\n",
+  "copyright": "Prediabetes Quality Measures (C) 2018-2025. American Medical Association. All rights reserved.\n\nCPT (R) 2025 American Medical Association (\"AMA\"). All rights reserved. You cannot, without express written permission from the AMA, copy, modify, distribute, display, or use CPT for any commercial purpose, including for productive use in a clinical setting. Any such use requires a separate license from the AMA.\n\nYou agree that you shall not remove, obscure, or alter any proprietary rights notices (including copyright and trademark notices) which may be affixed to or contained within the measure.\n\nCurrent Procedural Terminology (CPT \\[R\\] code(s) (\"CPT Codes\") information provided in the Measures is intended for reference and informational purposes only. Decisions regarding which CPT Code is appropriate must be made by physicians and/or their staff considering the clinical facts, circumstances, applicable coding and published AMA coding guideline and payor policies. The AMA does not dictate payer reimbursement policy and does not substitute for the professional judgment of the practitioner performing a procedure, who remains responsible for correct coding. The AMA is not engaged in the practice of medicine or dispensing medical services. Fee schedules, relative value units, conversion factors and/or related components are not assigned by the AMA, are not part of the CPT code set, and the AMA is not recommending their use.\n\nInformation contained in the measure includes information protected by intellectual property rights which are owned by the AMA. The Measures may also contain proprietary code sets not owned by the AMA. The AMA disclaims all liability for the use or accuracy of any such information. Users of the proprietary code sets should obtain all necessary licenses from the owners of these code sets. LOINC \\[R\\] copyright 2004-2025 Regenstrief Institute, Inc., SNOMED CLINICAL TERMS (SNOMED CT\\[R\\]) copyright 2004-2025, The International Health Information Standards Development Organisation (IHTSDO). ICD-10 is copyright 2024 World Health Organization. All Rights Reserved.\n",
+  "effectivePeriod": {
+    "start": "2026-01-01",
+    "end": "2026-12-31"
+  },
+  "author": [ {
+    "name": "American Medical Association (AMA)",
+    "telecom": [ {
+      "system": "url",
+      "value": "https://www.ama-assn.org/"
+    } ]
+  }, {
+    "name": "Health Services Advisory Group",
+    "telecom": [ {
+      "system": "url",
+      "value": "https://www.hsag.com/en/"
+    } ]
+  } ],
+  "relatedArtifact": [ {
+    "type": "citation",
+    "citation": "Centers for Disease Control and Prevention. (2024, July 23). National Diabetes Statistics Report. Retrieved November 15, 2024, from Diabetes website: https://www.cdc.gov/diabetes/php/data-research/\n"
+  }, {
+    "type": "citation",
+    "citation": "U.S. Preventive Services Task Force. (2021). Screening for Prediabetes and Type 2 Diabetes: US Preventive Services Task Force Recommendation Statement. JAMA, 326(8), 736--743. https://doi.org/10.1001/jama.2021.12531\n"
+  } ],
+  "library": [ "https://madie.cms.gov/Library/CMS1154ScreeningPrediabetesFHIR" ],
+  "disclaimer": "The Prediabetes Quality Measure set descriptions and specifications (collectively, \"Measures\") are not clinical guidelines, do not establish a standard of medical care, and have not been tested for all potential applications. The Measures are not intended to diagnose or treat disease or other conditions. The Measures are not a medical device and have not been evaluated by the Food and Drug Administration. Information provided through the Measures is not intended to direct or substitute for the independent assessment or judgment of a qualified healthcare professional. The American Medical Association (\"AMA\") assumes no liability for use of the Measures, or data contained or not contained in the Measures.\n\nThe AMA consents to the use, reproduction and distribution of the Measures for non-commercial purposes only (e.g., for use by health care providers in a professional setting). You cannot, without the express written consent of the AMA, use the Measures for any commercial purpose. Unauthorized commercial use of the Measures is expressly prohibited. Commercial use is defined as the sale, license, or distribution of the Measures for commercial gain, or incorporation of the Measures into a product or service that is sold, licensed, or distributed for commercial gain. These requirements apply to both you as an individual and to the corporate entity that you represent as an employee or agent, to the extent applicable.\n\nTo request to make a commercial use of the Measures, please email: AMA.IHO.QualityMeasures@ama-assn.org. Any commercial use of the Measures requires a separate license from the AMA.\n\nAny use, publication or other dissemination of these Measures shall include the following attribution:\n\n\"This \\[publication, etc.\\] was prepared using clinical quality measures developed by the American Medical Association. The content reflects the views of \\[name of author(s)\\].\"\n\nUSE OF THE MEASURES (INCLUDING ANY CPT CODES) IS AT YOUR SOLE RISK. THE MEASURES ARE PROVIDED \"AS IS\" WITHOUT EXPRESS OR IMPLIED WARRANTIES OF ANY KIND, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT. AMA EXPRESSLY DISCLAIMS ANY AND ALL RESPONSIBILITY OR LIABILITY FOR DAMAGES OF ANY KIND ARISING OUT OF USE, REFERENCE TO, OR RELIANCE ON THE MEAUSURES.\n\nThese requirements apply to both you as an individual and to the corporate entity that you represent as an employee or agent, to the extent applicable.\n\nDue to technical limitations, registered trademarks are indicated by (R) or \\[R\\] and unregistered trademarks are indicated by (TM) or \\[TM\\].\n",
+  "rationale": "This measure is critical to identifying patients with prediabetes who may benefit from interventions to prevent type 2 diabetes and identification of undiagnosed type 2 diabetes. The Centers for Disease Control and Prevention (CDC) estimates that approximately 97.6 million American adults have prediabetes (CDC, 2024). They note that more than 80% of adults with prediabetes are not aware that they have the condition. Regular screening for prediabetes is a critical first step to helping patients avoid the disability and costs associated with progression to type 2 diabetes.\n\nThe measure gives credit for three types of tests that can be used to detect abnormal glucose metabolism: HbA1c, oral glucose tolerance, and fasting plasma glucose. When considering which plasma glucose screening codes to include in the measure, the measure development team carefully considered two potential unintended consequences related to the limited use of accompanying fasting status codes. If the measure specified plasma glucose screening too narrowly, it could incentivize over screening, which would impose added burden on clinicians and increased costs to some patients. Alternatively, if the measure specified plasma glucose screening too broadly, it could give credit for non-fasting plasma glucose tests that are not adequate for diagnostic purposes.\n",
+  "clinicalRecommendationStatement": "The U.S. Preventive Services Task Force (USPSTF) recommends screening for prediabetes and type 2 diabetes in adults aged 35 to 70 years who have overweight or obesity. Clinicians should offer or refer patients with prediabetes to effective preventive interventions (B recommendation) (USPSTF, 2021).\n\nEvidence on the optimal screening interval for adults with an initial normal glucose test result is limited. Cohort and modeling studies suggest that screening every 3 years may be a reasonable approach for adults with normal blood glucose levels (USPSTF, 2021).\n\nPrediabetes and type 2 diabetes can be detected by measuring fasting plasma glucose or HbA1c level, or with an oral glucose tolerance test. A fasting plasma glucose level of 126 mg/dL (6.99 mmol/L) or greater, an HbA1c level of 6.5% or greater, or a 2-hour post-load glucose level of 200 mg/dL (11.1 mmol/L) or greater are consistent with the diagnosis of type 2 diabetes. A fasting plasma glucose level of 100 to 125 mg/dL (5.55-6.94 mmol/L), an HbA1c level of 5.7% to 6.4%, or a 2-hour post-load glucose level of 140 to 199 mg/dL (7.77-11.04 mmol/L) are consistent with prediabetes (USPSTF, 2021).\n",
+  "group": [ {
+    "id": "Group_1",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-scoring",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-scoring",
+          "code": "proportion",
+          "display": "Proportion"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-populationBasis",
+      "valueCode": "boolean"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-type",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-type",
+          "code": "process",
+          "display": "Process"
+        } ]
+      }
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-improvementNotation",
+      "valueCodeableConcept": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+          "code": "increase",
+          "display": "Increased score indicates improvement"
+        } ]
+      }
+    } ],
+    "population": [ {
+      "id": "InitialPopulation_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "initial-population",
+          "display": "Initial Population"
+        } ]
+      },
+      "description": "All patients with at least two outpatient clinical encounters or one preventive clinical encounter during the measurement period who have the following risk factors for type 2 diabetes:\n\n* Most recent BMI ≥25 kg/m2 (BMI ≥23 kg/m2 for Asian patients) during measurement period, AND\n* Age 35-70 at start of measurement period.\n",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Initial Population"
+      }
+    }, {
+      "id": "Denominator_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "denominator",
+          "display": "Denominator"
+        } ]
+      },
+      "description": "All patients in the initial population.\n",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Denominator"
+      }
+    }, {
+      "id": "DenominatorExclusion_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "denominator-exclusion",
+          "display": "Denominator Exclusion"
+        } ]
+      },
+      "description": "* Patient's pregnancy overlaps measurement period.\n* Patient with diagnosis of advanced illness or limited life expectancy overlaps measurement period.\n* Patient with diagnosis of diabetes overlaps 2-year look-back period.\n* Patient with diagnosis of prediabetes overlaps 2-year look-back period.\n* Patient with glycemic screening performed during 2-year look-back period.\n",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Denominator Exclusions"
+      }
+    }, {
+      "id": "Numerator_1",
+      "code": {
+        "coding": [ {
+          "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+          "code": "numerator",
+          "display": "Numerator"
+        } ]
+      },
+      "description": "Patients who had a glycemic screening test performed during the measurement period.\n",
+      "criteria": {
+        "language": "text/cql-identifier",
+        "expression": "Numerator"
+      }
+    } ]
+  } ],
+  "supplementalData": [ {
+    "id": "sde-ethnicity",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "individual"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "subject-list"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "summary"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "data-collection"
+    } ],
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Ethnicity\n",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Ethnicity"
+    }
+  }, {
+    "id": "sde-payer",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "individual"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "subject-list"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "summary"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "data-collection"
+    } ],
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Payer\n",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Payer"
+    }
+  }, {
+    "id": "sde-race",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "individual"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "subject-list"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "summary"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "data-collection"
+    } ],
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Race\n",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Race"
+    }
+  }, {
+    "id": "sde-sex",
+    "extension": [ {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "individual"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "subject-list"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "summary"
+    }, {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-includeInReportType",
+      "valueCode": "data-collection"
+    } ],
+    "usage": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
+        "code": "supplemental-data"
+      } ]
+    } ],
+    "description": "SDE Sex\n",
+    "criteria": {
+      "language": "text/cql-identifier",
+      "expression": "SDE Sex"
+    }
+  } ]
+}
