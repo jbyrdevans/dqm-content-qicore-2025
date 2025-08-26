@@ -1,0 +1,4088 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #ffffff;;
+            margin: 0px;
+            padding: 10px;
+            height: 100%;
+            font-size: 1em;
+        }
+
+        p, li {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            margin: 0 0 5px 0;
+            font-weight: normal;
+        }
+
+        td {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        tr {
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        table.colstu td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #fff5e6;
+        }
+
+        table.colsd td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #efefef;
+        }
+
+        table.colsn td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #e6ffe6;
+        }
+
+        table.colse td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #e6e6e6;
+        }
+
+        table.colsi td {
+            border: 1px grey solid;
+            border-spacing: 0;
+            padding: 5px;
+            border-collapse: collapse;
+            background-color: #ffffe6;
+        }
+
+        table.list td {
+            border-top: 1px silver solid;
+            border-spacing: 0;
+        }
+
+        table.bare td {
+            border-spacing: 0;
+        }
+
+        ul.dict li {
+            font-size: 11px;
+            line-height: 1.2em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+        }
+
+        table.dict td {
+            padding: 3px 7px 2px 7px;
+            font-size: 11px;
+            line-height: 1.2em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.dict p {
+            font-size: 11px;
+        }
+
+        table {
+            margin-bottom: 10px;
+            border-collapse: collapse;
+        }
+
+        table.codes td {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.grid {
+            margin-bottom: 10px;
+            border: 1px black solid;
+            margin-right: auto;
+
+        }
+
+        table.grid th {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: bold;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        table.grid td {
+            border: 1px solid silver;
+            padding: 3px 7px 2px 7px;
+            font-size: 12px;
+            line-height: 1.4em;
+            font-family: verdana;
+            font-weight: normal;
+            padding: 3px;
+            vertical-align: top;
+        }
+
+        ul, ol {
+            margin: 10px 0;
+            padding: 0 0 0 25px;
+        }
+
+        .dense li {
+            margin: 0 0 0 0;
+        }
+
+        li {
+            margin: 0 0 5px 0;
+        }
+
+        h1 {
+            font-size: 16px;
+            margin: 0 0 4px 0;
+            font-family: verdana;
+            border-bottom: 1px solid #7e7e7e;
+            padding-bottom: 2px;
+        }
+
+        h2 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 14px;
+            margin: 0 0 3px 0;
+            margin-top: 15px;
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 2px;
+        }
+
+        h3 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 12px;
+            margin: 0 0 3px 0;
+            margin-top: 10px;
+        }
+
+        h4 {
+            font-family: verdana;
+            line-height: 1.2em;
+            font-size: 11px;
+            margin: 0 0 3px 0;
+            margin-top: 10px;
+        }
+
+        div.sidebar h2 {
+            border-bottom: 1px solid #dcdcdc;
+            padding-bottom: 2px;
+            padding-top: 0px;
+            margin-top: 0px;
+            font-weight: normal;
+            margin-left: 8px;
+            margin-bottom: 0px;
+            font-size: 12px;
+        }
+
+        div.sidebar p {
+            padding-bottom: 0px;
+            padding-top: 10px;
+            font-weight: normal;
+            margin-left: 8px;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        div.sidebar ul {
+            list-style: none;
+            padding: 0px;
+            margin-left: 6px;
+            font-size: 11px;
+            line-height: 2.125em;
+        }
+
+        div.sidebar li {
+            margin: 0px 0px 0px 6px;
+            padding: 0px;
+            font-size: 11px;
+            line-height: 2.125em;
+        }
+
+        a {
+            color: #428bca;
+            text-decoration: none;
+        }
+
+        a.xmltag :visited {
+            color: Navy;
+        }
+
+        a.xmltag :hover {
+            color: Blue;
+        }
+
+        pre {
+            display: block;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+
+        pre a {
+            color: darkgreen;
+            text-decoration: none;
+            border: 0;
+
+        }
+
+        /* PrismJS 1.21.0
+        https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apl+applescript+aql+arduino+arff+asciidoc+aspnet+asm6502+autohotkey+autoit+bash+basic+batch+bbcode+birb+bison+bnf+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cil+clojure+cmake+coffeescript+concurnas+csp+crystal+css-extras+cypher+d+dart+dax+dhall+diff+django+dns-zone-file+docker+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+firestore-security-rules+flow+fortran+ftl+gml+gcode+gdscript+gedcom+gherkin+git+glsl+go+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+http+hpkp+hsts+ichigojam+icon+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keyman+kotlin+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+lolcode+lua+makefile+markdown+markup-templating+matlab+mel+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nginx+nim+nix+nsis+objectivec+ocaml+opencl+oz+parigp+parser+pascal+pascaligo+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plsql+powerquery+powershell+processing+prolog+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+q+qml+qore+r+racket+jsx+tsx+reason+regex+renpy+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+stan+iecst+stylus+swift+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+turtle+twig+typescript+typoscript+unrealscript+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+wiki+xeora+xml-doc+xojo+xquery+yaml+yang+zig&plugins=keep-markup */
+        /**
+         * prism.js default theme for JavaScript, CSS and HTML
+         * Based on dabblet (http://dabblet.com)
+         * @author Lea Verou
+         */
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            color: black;
+            background: none;
+            text-shadow: 0 1px white;
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 0.95em;
+            text-align: left;
+            white-space: pre;
+            word-spacing: normal;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 1.5;
+
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+        }
+
+        pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+        code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+        code[class*="language-"]::selection, code[class*="language-"] ::selection {
+            text-shadow: none;
+            background: #b3d4fc;
+        }
+
+        @media print {
+            code[class*="language-"],
+            pre[class*="language-"] {
+                text-shadow: none;
+            }
+        }
+
+        /* Code blocks */
+        pre[class*="language-"] {
+            padding: 1em;
+            margin: .5em 0;
+            overflow: auto;
+        }
+
+        :not(pre) > code[class*="language-"],
+        pre[class*="language-"] {
+            background: #f5f2f0;
+        }
+
+        /* Inline code */
+        :not(pre) > code[class*="language-"] {
+            padding: .1em;
+            border-radius: .3em;
+            white-space: normal;
+        }
+        /*
+  ===============================
+  Liquid Narrative Styling Start
+  ===============================
+  */
+
+        .narrative-table {
+            border: 1pt inset rgb(0, 0, 0);
+            line-height: 10pt;
+            border-collapse: separate;
+            -webkit-border-horizontal-spacing: 2px;
+            -webkit-border-vertical-spacing: 2px;
+        }
+
+
+        .narrative-table ul,
+        .content-container ul {
+            list-style: disc;
+            padding-left: 25px;
+            margin-top: 5px;
+        }
+
+        .narrative-table ol,
+        .content-container ol {
+            list-style: decimal;
+            padding: 0 0 0 25px;
+            margin-top: 5px;
+        }
+
+        .narrative-table strong,
+        .content-container strong {
+            font-weight: 700;
+        }
+
+        .narrative-table>tbody {
+            display: table-row-group;
+            vertical-align: middle;
+        }
+
+        .narrative-table>tbody>tr {
+            display: table-row;
+            background-color: lightgray;
+            vertical-align: inherit;
+        }
+
+        .narrative-table>tbody>tr>th {
+            padding: 5px;
+        }
+
+        .section-header {
+            background-color: #656565;
+            color: whitesmoke;
+            vertical-align: inherit;
+        }
+
+        .row-header {
+            background-color: #656565;
+            color: whitesmoke;
+            vertical-align: inherit;
+        }
+
+        .tab-one {
+            padding-left: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .row-header {
+                min-width: 138px;
+                max-width: 138px;
+            }
+
+            .content-container {
+                max-width: 576px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .row-header {
+                min-width: 181px;
+                max-width: 181px;
+            }
+
+            .content-container {
+                max-width: 745px;
+            }
+        }
+
+        @media (min-width: 1100px) {
+            .row-header {
+                min-width: 213px;
+                max-width: 213px;
+            }
+
+            .content-container {
+                max-width: 873px;
+            }
+        }
+
+        /*
+        ===============================
+        Liquid Narrative Styling End
+        ===============================
+        */
+
+        /*
+        ===============================
+        Rich text editor styling
+        ===============================
+        */
+
+        table.rich-text-table th,td {
+            border: 1px solid #9c9c9c;
+            box-sizing: border-box;
+            min-width: 1em;
+            padding: 6px 8px;
+            position: relative;
+            vertical-align: top;
+        }
+        table.rich-text-table th {
+            background-color: #3d25140d;
+        }
+    </style>
+</head>
+<body>
+<div xmlns="http://www.w3.org/1999/xhtml" class="col-12">
+  <table class="narrative-table">
+    <tbody>
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Metadata</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Title</th>
+
+
+<td class="content-container">Urinary Symptom Score Change 6-12 Months After Diagnosis of Benign Prostatic HyperplasiaFHIR</td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Version</th>
+
+
+<td class="content-container">1.0.000</td>
+</tr>
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Short Name</th>
+
+
+<td class="content-container">CMS771FHIR</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">GUID (Version Independent)</th>
+
+
+<td class="content-container">urn:uuid:0748d873-8e20-441e-9bbf-c1eefe3ea054</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">GUID (Version Specific)</th>
+
+
+<td class="content-container">urn:uuid:1765122b-5409-43cb-9449-3d1a62a8ea78</td>
+</tr>
+
+
+
+  
+    
+    
+<tr>
+
+
+<th scope="row" class="row-header">CMS Identifier</th>
+
+
+<td class="content-container">771FHIR</td>
+</tr>
+
+  
+
+
+
+
+  
+    
+    
+<tr>
+
+
+<th scope="row" class="row-header">Effective Period</th>
+
+
+<td class="content-container">2026-01-01 through 2026-12-31</td>
+</tr>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Steward (Publisher)</th>
+
+
+<td class="content-container">Large Urology Group Practice Association (LUGPA)</td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Developer</th>
+
+
+<td class="content-container">Large Urology Group Practice Association (LUGPA)</td>
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Description</th>
+
+
+<td class="content-container"><p>Percentage of patients with an office visit within the measurement period and with a new diagnosis of clinically significant Benign Prostatic Hyperplasia who have International Prostate Symptoms Score (IPSS) or American Urological Association (AUA) Symptom Index (SI) documented at time of diagnosis and again 6-12 months later with an improvement of 3 points</p></td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Copyright</th>
+
+
+<td class="content-container"><p>Limited proprietary coding is contained in the measure specifications for user convenience. Users of the proprietary code sets should obtain all necessary licenses from the owners of these code sets. Large Urology Group Practice Association (LUGPA) and Oregon Urology Institute (OUI) disclaim all liability for the use or accuracy of any third-party codes contained in the specifications.</p>
+<p>CPT(R) contained in the Measure specifications is copyright 2004-2024. American Medical Association. LOINC(R) copyright 2004-2024 Regenstrief Institute, Inc. This material contains SNOMED Clinical Terms(R) (SNOMED CT[R]) copyright 2004-2024 International Health Terminology Standards Development Organisation. ICD-10 copyright 2024 World Health Organization. All Rights Reserved.</p></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Disclaimer</th>
+
+
+<td class="content-container"><p>The performance measure is not a clinical guideline and does not establish a standard of medical care, and has not been tested for all potential applications.</p>
+<p>THE MEASURE AND SPECIFICATIONS ARE PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND.</p>
+<p>Due to technical limitations, registered trademarks are indicated by (R) or [R], and unregistered trademarks are indicated by (TM) or [TM].</p></td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Rationale</th>
+
+
+<td class="content-container"><p>Benign prostatic hyperplasia (BPH) is one of the most common conditions affecting older males, with a prevalence of 50% by age 60 years and 90% by the ninth decade of life (Medina et al., 1999). The enlarged gland had been proposed to contribute to the overall lower urinary tract symptoms (LUTS) complex (McVary et al., 2014). Although LUTS secondary to BPH is not often a life-threatening condition, the impact of LUTS/BPH on quality of life can be significant (Wei et al., 2005). The American Urological Association Symptom Index (AUA-SI) and the International Prostate Symptom Score (IPSS) were developed to measure outcomes in studies of different treatments for BPH (Wuerstle et al., 2011). The IPSS uses the same questions as the AUA-SI, but also adds a disease-specific Quality of Life (QOL) score question (O'Leary, 2005). The IPSS was adopted in 1993 by the World Health Organization. It is a reproducible, validated index designed to determine disease severity and response to therapy (D’Silva et al., 2014). It includes 3 storage symptom questions (frequency, nocturia, urgency) and four voiding symptoms (feeling of incomplete emptying, intermittency, straining, and a weak stream) as well as a Bother question: If you were to spend the rest of your life with your urinary condition just the way it is now, how would you feel about that? A three-point improvement in the score is considered meaningful (McVary et al., 2014).</p></td>
+</tr>
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Clinical Recommendation Statement</th>
+
+
+<td class="content-container"><p>The symptoms of BPH are lower urinary tract symptoms (LUTS). There are other disorders with similar symptoms that need to be excluded. History, physical examination, and testing are required prior to a diagnosis of BPH. IPSS by itself is not a reliable diagnostic tool for LUTS suggestive of BPH but serves as a quantitative measure of LUTS after the diagnosis is established (D’Silva et al., 2014). Medical and surgical interventions for BPH recommend a follow up IPSS evaluation to determine effectiveness of treatment. IPSS should be evaluated at the time of diagnosis and after definitive treatment.</p></td>
+</tr>
+
+
+
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>D'Silva, K. A., Dahm, P., &amp; Wong, C. L. (2014). Does this man with lower urinary tract symptoms have bladder outlet obstruction? The Rational Clinical Examination: A systematic review. Journal of the American Medical Association, 312(5), 535-542. Retrieved from https://www.ncbi.nlm.nih.gov/pubmed/25096693</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>McVary, K. T., Roehrborn, C. G., Avins, A. L., et al. (2014). Management of benign prostatic hyperplasia. Retrieved from https://pubmed.ncbi.nlm.nih.gov/21420124/</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Medina, J. J., Parra, R. O., &amp; Moore, R. G. (1999). Benign prostatic hyperplasia (the aging prostate). Medical Clinics of North America, 83(5), 1213-1229. Retrieved from http://www.sciencedirect.com/science/article/pii/S0025712505701590</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>O'Leary, M. P. (2005). Validity of the Bother Score in the evaluation and treatment of symptomatic benign prostatic hyperplasia. Reviews in Urology, 7(1), 1-10. Retrieved from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1477553/</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Wei, J., Calhoun, E., &amp; Jacobsen, S. (2005). Urologic diseases in America project: Benign prostatic hyperplasia. Journal of Urology, 173(4), 1256-1261. Retrieved from https://www.ncbi.nlm.nih.gov/pubmed/15758764</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+<tr>
+  
+  
+  
+  
+
+<th scope="row" class="row-header">Citation</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    
+    
+    <p>Wuerstle, M. C., Van Den Eeden, S. K., Poon, K. T., et al. (2011). Contribution of common medications to lower urinary tract symptoms in men. Archives of Internal Medicine, 171(18), 1680-1682. Retrieved from https://www.ncbi.nlm.nih.gov/pubmed/21987200</p>
+    
+    
+    
+    
+    
+  </td>
+</tr>
+
+
+
+
+
+
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Definition</th>
+
+
+<td class="content-container">Clinically Significant Benign Prostatic Hyperplasia (BPH) : <p>BPH with lower urinary tract symptoms (LUTS)</p></td>
+</tr>
+
+
+
+<tr>
+
+
+<th scope="row" class="row-header">Guidance (Usage)</th>
+
+
+<td class="content-container"><p>The IPSS is inclusive of the symptom index score and the Quality of Life (QOL) score. The AUA-SI is the symptom index score alone and must be added to the QOL score. The AUA-SI with the QOL equals the IPSS. Both of these are the urinary symptom score.</p>
+<p>The patient must have a urinary symptom score (USS) within 1 month after initial diagnosis. If more than one USS in the initial one month, then the first USS counts. The patient must have a USS again at 6-12 months after the initial diagnosis and if more than one USS in this time frame, then the last USS counts.</p>
+<p>The result of the test is a numeric value that relates to a continuous numeric scale. Reported either as an integer, a ratio, a real number, or a range. The test result value may optionally contain a relational operator from the set {&lt;=, &lt;, &gt;, &gt;=}. Valid values for a quantitative test are of the form “7”, “-7”, “7.4”, “-7.4”, “7.8912”, “0.125”, “&lt;10”, “&lt;10.15”, “&gt;12000”, 1-10, 1:256.</p>
+<p>Hospitalization within 30 days of Initial BPH Diagnosis refers to a 30-day period between the end of the hospitalization and the clinical office setting BPH diagnosis. This is due to aggravating factors from hospitalization, such as bed rest, medications, surgery, and altered body functions.</p>
+<p>Symptoms of BPH include urinary frequency, urinary urgency, difficulty starting urination, weak urine stream, dribbling at the end of urination, incomplete bladder emptying.</p>
+<p>This eCQM is a patient-based measure.</p>
+<p>Telehealth encounters are not eligible for this measure because the measure requires a clinical action that cannot be conducted via telehealth.</p>
+<p>This FHIR-based measure has been derived from the QDM-based measure CMS771v7. Please refer to the HL7 QI-Core Implementation Guide (https://hl7.org/fhir/us/qicore/STU6/) for more information on QI-Core and mapping recommendations from QDM to QI-Core STU 6 (https://hl7.org/fhir/us/qicore/STU6/qdm-to-qicore.html).</p></td>
+</tr>
+
+
+
+  
+    
+    <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Group (Rate) (ID: Group_1)</th>
+
+
+</tr>
+  
+  
+  
+  
+<tr>
+
+
+<th scope="row" class="row-header">Basis</th>
+
+
+<td class="content-container">boolean</td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Scoring</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-scoring#proportion: 'Proportion']</td>
+</tr>
+
+
+
+
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Type</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-type#outcome: 'Outcome']</td>
+</tr>
+
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Rate Aggregation</th>
+
+
+<td class="content-container"><p>None</p></td>
+</tr>
+
+
+
+  
+<tr>
+
+
+<th scope="row" class="row-header">Improvement Notation</th>
+
+
+<td class="content-container">[http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase: 'Increased score indicates improvement']</td>
+</tr>
+
+
+  
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Initial Population</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: InitialPopulation_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p>Male patients with an initial diagnosis of benign prostatic hyperplasia 6 months prior to the measurement period who had a qualifying visit during the measurement period</p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-cms771fhirurinarysymptomscorebph-initial-population">Initial Population</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Denominator</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: Denominator_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p>Patients in the Initial Population with a urinary symptom score assessment within 1 month of initial diagnosis and a follow-up urinary symptom score assessment within 6-12 months</p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-cms771fhirurinarysymptomscorebph-denominator">Denominator</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Denominator Exclusion</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: DenominatorExclusion_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p>Patients with urinary retention that starts within 1 year of initial BPH diagnosis. Patients with an initial BPH diagnosis that starts during, or within 30 days after end of hospitalization.</p>
+<p>Patients with a diagnosis of morbid obesity, or with a BMI Exam &gt;=40 before the follow up urinary symptom score.</p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-cms771fhirurinarysymptomscorebph-denominator-exclusions">Denominator Exclusions</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+    <tr>
+      
+        
+
+<th scope="row" class="row-header">Numerator</th>
+
+
+      
+      <td class="content-container">
+        
+        <em>ID</em>: Numerator_1
+        <br/>
+        
+        
+          <em>Description</em>:
+          <p style="white-space: pre-line" class="tab-one"><p>Patients with a documented improvement of at least 3 points in their urinary symptom score during the measurement period</p></p>
+        
+        
+          
+            
+            <em>Logic Definition</em>: <a href="#primary-cms771fhirurinarysymptomscorebph-numerator">Numerator</a> 
+          
+        
+      </td>
+    </tr>
+  
+
+  
+
+
+  
+    
+<tr>
+
+
+<th scope="row" class="row-header">Supplemental Data Guidance</th>
+
+
+<td class="content-container"><p>For every patient evaluated by this measure also identify payer, race, ethnicity and sex</p></td>
+</tr>
+
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Supplemental Data Elements</th>
+
+
+</tr>
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-ethnicity
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Ethnicity
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#cms771fhirurinarysymptomscorebph-sde-ethnicity">SDE Ethnicity</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-payer
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Payer
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#cms771fhirurinarysymptomscorebph-sde-payer">SDE Payer</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-race
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Race
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#cms771fhirurinarysymptomscorebph-sde-race">SDE Race</a> 
+      
+    
+  </td>
+</tr>
+
+<tr>
+  
+
+<th scope="row" class="row-header">Supplemental Data Element</th>
+
+
+  <td class="content-container">
+    
+      <em>ID</em>: sde-sex
+      
+      <br/>
+      
+    
+    
+      
+        
+          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]
+        
+        <br/>
+      
+    
+    
+      <em>Description</em>: SDE Sex
+    
+    
+      
+        <br/>
+        
+        <em>Logic Definition</em>: <a href="#cms771fhirurinarysymptomscorebph-sde-sex">SDE Sex</a> 
+      
+    
+  </td>
+</tr>
+
+
+<tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Logic</th>
+
+
+</tr>
+
+<tr>
+
+
+<th scope="row" class="row-header">Primary Library</th>
+
+
+<td class="content-container">https://madie.cms.gov/Library/CMS771FHIRUrinarySymptomScoreBPH</td>
+</tr>
+
+
+
+
+<tr>
+  <th scope="row" class="row-header">Contents</th>
+  <td class="content-container">
+    <em><a href="#population-criteria">Population Criteria</a></em>
+    <br/>
+    <em><a href="#definitions">Logic Definitions</a></em>
+    <br/>
+    <em><a href="#terminology">Terminology</a></em>
+    <br/>
+    <em><a href="#dependencies">Dependencies</a></em>
+    <br/>
+    <em><a href="#data-requirements">Data Requirements</a></em>
+    <br/>
+  </td>
+</tr>
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="population-criteria"> </a>Population Criteria</th>
+
+
+</tr>
+  
+  
+  
+  
+    
+    <tr>
+
+
+<th colspan="2" scope="row" class="row-header">Measure Group (Rate) (ID: Group_1)</th>
+
+
+</tr>
+  
+  
+  
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-cms771fhirurinarysymptomscorebph-initial-population"> </a>
+    
+    
+    Initial Population
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
+  ( &quot;Patient is Male&quot; )
+    and &quot;Has Qualifying Encounter&quot;
+    and &quot;Has Qualifying BPH Diagnosis&quot;</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-cms771fhirurinarysymptomscorebph-denominator"> </a>
+    
+    
+    Denominator
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Denominator&quot;:
+  &quot;Initial Population&quot;
+    and &quot;Urinary Symptom Score Within 1 Month After Initial BPH Diagnosis&quot; is not null
+    and &quot;Urinary Symptom Score 6 to 12 Months After Initial BPH Diagnosis&quot; is not null</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-cms771fhirurinarysymptomscorebph-denominator-exclusions"> </a>
+    
+    
+    Denominator Exclusion
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Denominator Exclusions&quot;:
+  exists ( &quot;Urinary Retention Diagnosis Starts Within 1 Year After Initial BPH Diagnosis&quot; )
+    or ( &quot;Has Initial BPH Diagnosis Starts During or Within 30 Days After End of Hospitalization&quot; is not null )
+    or ( &quot;Morbid Obesity Diagnosis or BMI Exam Result Greater Than or Equal to 40 Starts On or Before Follow Up USS Assessment&quot; )</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+    
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              
+            
+            <tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="primary-cms771fhirurinarysymptomscorebph-numerator"> </a>
+    
+    
+    Numerator
+    
+  </th>
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Numerator&quot;:
+  &quot;Urinary Symptom Score Improvement Greater Than or Equal To 3&quot;</code></pre>
+  </td>
+
+</tr>
+
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+    
+  
+
+  
+  
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="definitions"> </a>Logic Definitions</th>
+
+
+</tr>
+  
+  
+          
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-sex"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Sex&quot;:
+  case
+    when Patient.sex = '248153007' then &quot;Male (finding)&quot;
+    when Patient.sex = '248152002' then &quot;Female (finding)&quot;
+    else null
+  end</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-payer"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Payer&quot;:
+  [Coverage: type in &quot;Payer Type&quot;] Payer
+    return {
+      code: Payer.type,
+      period: Payer.period
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-ethnicity"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Ethnicity&quot;:
+  Patient.ethnicity E
+    return Tuple {
+      codes: { E.ombCategory } union E.detailed,
+      display: E.text
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="supplementaldataelements-sde-race"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> SupplementalDataElements</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Race&quot;:
+  Patient.race R
+    return Tuple {
+      codes: R.ombCategory union R.detailed,
+      display: R.text
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-sde-sex"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Sex&quot;:
+  SDE.&quot;SDE Sex&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-documented-ipss-assessment-result"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Documented IPSS Assessment Result&quot;:
+  [ObservationScreeningAssessment: &quot;International Prostate Symptom Score [IPSS]&quot;] IPSSAssessment
+    where IPSSAssessment.status in { 'final', 'amended', 'corrected' }
+      and IPSSAssessment.value is not null
+    return {
+      effectiveDatetime: IPSSAssessment.effective.earliest ( ),
+      valueInteger: IPSSAssessment.value as Integer
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-aua-symptom-index-and-quality-of-life-assessment-result"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;AUA Symptom Index and Quality of Life Assessment Result&quot;:
+  [ObservationScreeningAssessment: &quot;American Urological Association Symptom Index [AUASI]&quot;] AUASIAssessment
+    let LastQOLOnDate: Last([ObservationScreeningAssessment: &quot;If you were to spend the rest of your life with your urinary condition just the way it is now, how would you feel about that [IPSS]&quot;] QOLAssessment
+        where QOLAssessment.effective.earliest() same day as AUASIAssessment.effective.earliest()
+          and QOLAssessment.status in { 'final', 'amended', 'corrected' }
+          and QOLAssessment.value is not null
+        sort by effective.earliest()
+    )
+    where AUASIAssessment.status in { 'final', 'amended', 'corrected' }
+      and AUASIAssessment.value is not null
+    return {
+      effectiveDatetime: AUASIAssessment.effective.earliest ( ),
+      valueInteger: ( AUASIAssessment.value as Integer ) + ( LastQOLOnDate.value as Integer )
+    }</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-urinary-symptom-score-assessment"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Urinary Symptom Score Assessment&quot;:
+  &quot;Documented IPSS Assessment Result&quot;
+    union &quot;AUA Symptom Index and Quality of Life Assessment Result&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-initial-bph-diagnosis-starts-within-6-months-before-the-measurement-period"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial BPH Diagnosis Starts Within 6 Months Before the Measurement Period&quot;:
+  First(([ConditionProblemsHealthConcerns: &quot;Benign prostatic hyperplasia with lower urinary tract symptoms&quot;]
+      union [ConditionEncounterDiagnosis: &quot;Benign prostatic hyperplasia with lower urinary tract symptoms&quot;]) NewBPHDiagnosis
+      where NewBPHDiagnosis.prevalenceInterval() starts during Interval[start of &quot;Measurement Period&quot; - 6 months, start of &quot;Measurement Period&quot;]
+        and NewBPHDiagnosis.verificationStatusIsNotInvalid()
+      sort by start of onset.toInterval()
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-urinary-symptom-score-within-1-month-after-initial-bph-diagnosis"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Urinary Symptom Score Within 1 Month After Initial BPH Diagnosis&quot;:
+  First(&quot;Urinary Symptom Score Assessment&quot; USSAssessment
+      with &quot;Initial BPH Diagnosis Starts Within 6 Months Before the Measurement Period&quot; InitialBPHDiagnosis
+        such that USSAssessment.effectiveDatetime 1 month or less on or after day of start of InitialBPHDiagnosis.prevalenceInterval()
+      sort by effectiveDatetime
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-urinary-symptom-score-6-to-12-months-after-initial-bph-diagnosis"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Urinary Symptom Score 6 to 12 Months After Initial BPH Diagnosis&quot;:
+  Last(&quot;Urinary Symptom Score Assessment&quot; USSAssessment
+      with &quot;Initial BPH Diagnosis Starts Within 6 Months Before the Measurement Period&quot; InitialBPHDiagnosis
+        such that difference in months between start of InitialBPHDiagnosis.prevalenceInterval() and USSAssessment.effectiveDatetime in Interval[6, 12]
+      sort by effectiveDatetime
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-urinary-symptom-score-change"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Urinary Symptom Score Change&quot;:
+  from
+    &quot;Urinary Symptom Score Within 1 Month After Initial BPH Diagnosis&quot; FirstUSSAssessment,
+    &quot;Urinary Symptom Score 6 to 12 Months After Initial BPH Diagnosis&quot; FollowUpUSSAssessment
+    let USSChange: ( FirstUSSAssessment.valueInteger ) - ( FollowUpUSSAssessment.valueInteger )
+    return USSChange</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-urinary-symptom-score-improvement-greater-than-or-equal-to-3"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Urinary Symptom Score Improvement Greater Than or Equal To 3&quot;:
+  ( &quot;Urinary Symptom Score Change&quot; USSImprovement
+      where USSImprovement &gt;= 3
+  ) is not null</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-numerator"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Numerator&quot;:
+  &quot;Urinary Symptom Score Improvement Greater Than or Equal To 3&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-patient-is-male"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Patient is Male&quot;:
+  SDE.&quot;SDE Sex&quot; ~ SDE.&quot;Male (finding)&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-has-qualifying-encounter"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Qualifying Encounter&quot;:
+  exists ( [Encounter: &quot;Office Visit&quot;] ValidEncounter
+      where ValidEncounter.period during day of &quot;Measurement Period&quot;
+        and ValidEncounter.class !~ &quot;virtual&quot;
+        and ValidEncounter.status = 'finished'
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-has-qualifying-bph-diagnosis"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Qualifying BPH Diagnosis&quot;:
+  &quot;Initial BPH Diagnosis Starts Within 6 Months Before the Measurement Period&quot; is not null</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-initial-population"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Initial Population&quot;:
+  ( &quot;Patient is Male&quot; )
+    and &quot;Has Qualifying Encounter&quot;
+    and &quot;Has Qualifying BPH Diagnosis&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-denominator"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Denominator&quot;:
+  &quot;Initial Population&quot;
+    and &quot;Urinary Symptom Score Within 1 Month After Initial BPH Diagnosis&quot; is not null
+    and &quot;Urinary Symptom Score 6 to 12 Months After Initial BPH Diagnosis&quot; is not null</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-sde-payer"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Payer&quot;:
+  SDE.&quot;SDE Payer&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-sde-ethnicity"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Ethnicity&quot;:
+  SDE.&quot;SDE Ethnicity&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-urinary-retention-diagnosis-starts-within-1-year-after-initial-bph-diagnosis"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Urinary Retention Diagnosis Starts Within 1 Year After Initial BPH Diagnosis&quot;:
+  ( [ConditionProblemsHealthConcerns: &quot;Urinary Retention&quot;]
+    union [ConditionEncounterDiagnosis: &quot;Urinary Retention&quot;] ) UrinaryRetention
+    with &quot;Initial BPH Diagnosis Starts Within 6 Months Before the Measurement Period&quot; InitialBPHDiagnosis
+      such that UrinaryRetention.prevalenceInterval ( ) starts 1 year or less on or after day of start of InitialBPHDiagnosis.prevalenceInterval ( )
+    where UrinaryRetention.verificationStatusIsNotInvalid ( )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-has-initial-bph-diagnosis-starts-during-or-within-30-days-after-end-of-hospitalization"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Has Initial BPH Diagnosis Starts During or Within 30 Days After End of Hospitalization&quot;:
+  &quot;Initial BPH Diagnosis Starts Within 6 Months Before the Measurement Period&quot; InitialBPHDiagnosis
+    with [Encounter: &quot;Hospital Services for Urology Care&quot;] UrologyHospitalServices
+      such that InitialBPHDiagnosis.prevalenceInterval ( ) starts during Interval[start of UrologyHospitalServices.period, end of UrologyHospitalServices.period + 31 days]
+        and UrologyHospitalServices.status = 'finished'</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-morbid-obesity-diagnosis-on-or-before-follow-up-uss-assessment"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Morbid Obesity Diagnosis On or Before Follow Up USS Assessment&quot;:
+  ( [ConditionProblemsHealthConcerns: &quot;Morbid Obesity&quot;]
+    union [ConditionEncounterDiagnosis: &quot;Morbid Obesity&quot;] ) MorbidObesityDiagnosis
+    with &quot;Urinary Symptom Score 6 to 12 Months After Initial BPH Diagnosis&quot; FollowUpUSSAssessment
+      such that MorbidObesityDiagnosis.prevalenceInterval ( ) overlaps &quot;Measurement Period&quot;
+        and MorbidObesityDiagnosis.prevalenceInterval ( ) starts on or before FollowUpUSSAssessment.effectiveDatetime
+    where MorbidObesityDiagnosis.verificationStatusIsNotInvalid ( )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-bmi-exam-result-greater-than-or-equal-to-40-during-measurement-period-and-on-or-before-follow-up-uss-assessment"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+* @code: Body mass index (BMI) [Ratio] - 39156-5
+* @profile: http://hl7.org/fhir/StructureDefinition/bmi
+*/
+
+
+define &quot;BMI Exam Result Greater Than or Equal To 40 During Measurement Period and On or Before Follow Up USS Assessment&quot;:
+  exists ( [&quot;USCoreBMIProfile&quot;] BMIExam
+      with &quot;Urinary Symptom Score 6 to 12 Months After Initial BPH Diagnosis&quot; FollowUpUSSAssessment
+        such that BMIExam.value &gt;= 40 'kg/m2'
+          and BMIExam.status in { 'final', 'amended', 'corrected' }
+          and BMIExam.effective.earliest ( ) during day of &quot;Measurement Period&quot;
+          and BMIExam.effective.earliest ( ) on or before FollowUpUSSAssessment.effectiveDatetime
+      return BMIExam.effective.earliest ( )
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-morbid-obesity-diagnosis-or-bmi-exam-result-greater-than-or-equal-to-40-starts-on-or-before-follow-up-uss-assessment"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Morbid Obesity Diagnosis or BMI Exam Result Greater Than or Equal to 40 Starts On or Before Follow Up USS Assessment&quot;:
+  exists &quot;Morbid Obesity Diagnosis On or Before Follow Up USS Assessment&quot;
+    or &quot;BMI Exam Result Greater Than or Equal To 40 During Measurement Period and On or Before Follow Up USS Assessment&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-denominator-exclusions"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;Denominator Exclusions&quot;:
+  exists ( &quot;Urinary Retention Diagnosis Starts Within 1 Year After Initial BPH Diagnosis&quot; )
+    or ( &quot;Has Initial BPH Diagnosis Starts During or Within 30 Days After End of Hospitalization&quot; is not null )
+    or ( &quot;Morbid Obesity Diagnosis or BMI Exam Result Greater Than or Equal to 40 Starts On or Before Follow Up USS Assessment&quot; )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="cms771fhirurinarysymptomscorebph-sde-race"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> CMS771FHIRUrinarySymptomScoreBPH</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define &quot;SDE Race&quot;:
+  SDE.&quot;SDE Race&quot;</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="qicorecommon-earliest"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> QICoreCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Given an interval, return the starting point if the interval has a starting boundary specified,
+otherwise, return the ending point
+*/
+define fluent function earliest(choice Choice&lt;DateTime, Quantity, Interval&lt;DateTime&gt;, Interval&lt;Quantity&gt;&gt; ):
+  (choice.toInterval()) period
+    return
+      if (period.&quot;hasStart&quot;()) then start of period
+      else end of period</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="qicorecommon-hasstart"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> QICoreCommon</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Given an interval, return true if the interval has a starting boundary specified
+(i.e. the start of the interval is not null and not the minimum DateTime value)
+*/
+define fluent function hasStart(period Interval&lt;DateTime&gt; ):
+  not ( start of period is null
+      or start of period = minimum DateTime
+  )</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+
+        
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tostring"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">define function ToString(value uri): value.value</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tointerval"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)
+value to a CQL DateTime Interval
+@comment: If the start value of the given period is unspecified, the starting
+boundary of the resulting interval will be open (meaning the start of the interval
+is unknown, as opposed to interpreted as the beginning of time).
+*/
+define function ToInterval(period FHIR.Period):
+    if period is null then
+        null
+    else
+        if period.&quot;start&quot; is null then
+            Interval(period.&quot;start&quot;.value, period.&quot;end&quot;.value]
+        else
+            Interval[period.&quot;start&quot;.value, period.&quot;end&quot;.value]</code></pre>
+  </td>
+
+</tr>
+
+
+
+        
+
+
+<tr>
+  <th scope="row" rowspan="2" class="row-header">
+    
+      
+      <a name="fhirhelpers-tocode"> </a>
+    
+    Logic Definition
+  </th>
+
+  <td class="content-container"><em>Library Name:</em> FHIRHelpers</td>
+
+</tr>
+<tr>
+
+  <td>
+    <pre style="border: none;" class="content-container highlight language-cql"><code class="language-cql">/*
+@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.
+*/
+define function ToCode(coding FHIR.Coding):
+    if coding is null then
+        null
+    else
+        System.Code {
+          code: coding.code.value,
+          system: coding.system.value,
+          version: coding.version.value,
+          display: coding.display.value
+        }</code></pre>
+  </td>
+
+</tr>
+
+
+
+
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="terminology"> </a>Terminology</th>
+
+
+</tr>
+  
+  
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system SNOMEDCT
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://snomed.info/sct
+    <br/>
+    <em>Canonical URL</em>: <tt>http://snomed.info/sct</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system LOINC
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://loinc.org
+    <br/>
+    <em>Canonical URL</em>: <tt>http://loinc.org</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system ICD10CM
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://hl7.org/fhir/sid/icd-10-cm
+    <br/>
+    <em>Canonical URL</em>: <tt>http://hl7.org/fhir/sid/icd-10-cm</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+  
+
+<th scope="row" class="row-header">Code System</th>
+
+
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Code system ActCode
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://terminology.hl7.org/CodeSystem/v3-ActCode
+    <br/>
+    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Office Visit
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Payer Type
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Urinary Retention
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.372
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.372</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Hospital Services for Urology Care
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.360
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.360</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+  
+
+<th scope="row" class="row-header">Value Set</th>
+
+
+  
+  
+  <td class="content-container">
+    
+    <em>Description</em>: Value set Morbid Obesity
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.368
+    <br/>
+    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.368</tt>
+    
+  </td>
+</tr>
+ 
+
+
+  
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Male (finding)
+        <br/>
+      
+      <em>Code</em>: 248153007
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Female (finding)
+        <br/>
+      
+      <em>Code</em>: 248152002
+      <br/>
+      <em>System</em>: <tt>http://snomed.info/sct</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: International Prostate Symptom Score [IPSS]
+        <br/>
+      
+      <em>Code</em>: 80976-4
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: American Urological Association Symptom Index [AUASI]
+        <br/>
+      
+      <em>Code</em>: 80883-2
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: If you were to spend the rest of your life with your urinary condition just the way it is now, how would you feel about that [IPSS]
+        <br/>
+      
+      <em>Code</em>: 81090-3
+      <br/>
+      <em>System</em>: <tt>http://loinc.org</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: Benign prostatic hyperplasia with lower urinary tract symptoms
+        <br/>
+      
+      <em>Code</em>: N40.1
+      <br/>
+      <em>System</em>: <tt>http://hl7.org/fhir/sid/icd-10-cm</tt>
+    </td>
+  </tr>
+
+  <tr>
+    <th scope="row" class="row-header">Direct Reference Code</th>
+    <td class="content-container">
+      
+        <em>Display</em>: virtual
+        <br/>
+      
+      <em>Code</em>: VR
+      <br/>
+      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>
+    </td>
+  </tr>
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="dependencies"> </a>Dependencies</th>
+
+
+</tr>
+  
+  
+  
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: QICore model information
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: http://hl7.org/fhir/Library/QICore-ModelInfo
+    <br/>
+    <em>Canonical URL</em>: <tt>http://hl7.org/fhir/Library/QICore-ModelInfo</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library SDE
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/SupplementalDataElements|5.1.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/SupplementalDataElements|5.1.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library FHIRHelpers
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/FHIRHelpers|4.4.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/FHIRHelpers|4.4.000</tt>
+    
+  </td>
+</tr>
+ 
+
+
+<tr>
+  
+
+<th scope="row" class="row-header">Dependency</th>
+
+
+  <td class="content-container">
+    
+    <em>Description</em>: Library QICoreCommon
+    
+    <br/>
+    
+    
+    
+    
+    
+    
+    <em>Resource</em>: https://madie.cms.gov/Library/QICoreCommon|4.0.000
+    <br/>
+    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/QICoreCommon|4.0.000</tt>
+    
+  </td>
+</tr>
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+  
+  
+
+
+  <tr>
+
+
+<th colspan="2" scope="row" class="row-header"><a name="data-requirements"> </a>Data Requirements</th>
+
+
+</tr>
+  
+  
+  
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Patient
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: extension, url
+    <br/>
+   
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value, value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#80883-2: 'American Urological Association Symptom Index [AUASI]'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, effective, status, status.value, value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#81090-3: 'If you were to spend the rest of your life with your urinary condition just the way it is now, how would you feel about that [IPSS]'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code, status, status.value, value, effective
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://loinc.org#80976-4: 'International Prostate Symptom Score [IPSS]'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://hl7.org/fhir/sid/icd-10-cm#N40.1: 'Benign prostatic hyperplasia with lower urinary tract symptoms'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.372
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.368
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+  
+    <span class="tab-one"><em>Code(s)</em>: 
+    
+      
+      http://hl7.org/fhir/sid/icd-10-cm#N40.1: 'Benign prostatic hyperplasia with lower urinary tract symptoms'
+      
+    
+    </span>
+    <br/>
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.372
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Condition
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: code
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: code</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.368
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period, class, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Encounter
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period, status, status.value
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.360
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Coverage
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: type, period
+    <br/>
+   
+  
+    <em>Code Filter(s)</em>: 
+    <br/>
+  
+  
+    <span class="tab-one"><em>Path</em>: type</span>
+    <br/>
+  
+  
+  
+    <span class="tab-one"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591
+    <br/> 
+  
+  
+  
+   
+  </td>
+</tr>
+
+<tr>
+  <th scope="row" class="row-header">Data Requirement</th>
+  <td class="content-container">
+    <em>Type</em>: Observation
+    <br/>
+  
+    <em>Profile(s)</em>: 
+  
+    http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi
+    <br/>        
+  
+   
+   
+    <em>Must Support Elements</em>: value, status, status.value, effective
+    <br/>
+   
+   
+  </td>
+</tr>
+
+  
+  
+
+<tr>
+  <th colspan="2" scope="row" class="row-header">Generated using version 0.4.8 of the sample-content-ig Liquid templates</th>
+</tr>
+
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
