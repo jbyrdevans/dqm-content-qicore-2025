@@ -1,6 +1,6 @@
 {
     "resourceType": "Library",
-    "id": "ecqm-fhir-update-2025",
+    "id": "ecqm-fhir-update-2025-draft",
     "meta": {
         "profile": [
             "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-manifestlibrary"
@@ -224,11 +224,11 @@
             }
         }
     ],
-    "url": "http://hl7.org/fhir/us/cqfmeasures/Library/ecqm-fhir-update-2025",
+    "url": "http://cts.nlm.nih.gov/fhir/Library/ecqm-fhir-update-2025",
     "identifier": [
         {
             "use": "official",
-            "system": "http://example.org/fhir/cqi/ecqm/Library/Identifier",
+            "system": "https://madie.cms.gov/measure/cmsId",
             "value": "eCQM Update QI Core 2025"
         }
     ],
@@ -236,7 +236,7 @@
     "name": "ECQMUpdateQICore2025",
     "title": "eCQM Update QI Core 2025",
     "status": "draft",
-    "experimental": true,
+    "experimental": false,
     "type": {
         "coding": [
             {
@@ -245,7 +245,7 @@
             }
         ]
     },
-    "date": "2025-08-25T10:05:15-06:00",
+    "date": "2025-08-29",
     "publisher": "Clinical Quality Information WG",
     "contact": [
         {
@@ -257,7 +257,7 @@
             ]
         }
     ],
-    "description": "This library is an example of a release version manifest (also referred to as an expansion profile) that specifies expansion rules for a set of value sets used for an example set of EP/EC measures.",
+    "description": "This library is the final draft version of the eCQM FHIR release manifest (also referred to as an expansion profile) that specifies expansion rules for the set of value sets used for FHIR-based eCQMs published for public comment review as part of the eCQM 2025 Annual Update.",
     "jurisdiction": [
         {
             "coding": [
@@ -268,9 +268,7 @@
             ]
         }
     ],
-    "purpose": "This library is defined to illustrate a release Version Manifest, as it would look as part of release publication of an eCQM Annual Update cycle, approved on April 23rd, 2024. The latest available version of code systems used at that time is specified to provide stability for value set expansion during the testing and implementation phase. Terminology.HL7.org, in particular, was version 5.5.0 at the time, and FHIR code system versions are chosen from that release.",
-    "approvalDate": "2025-08-26",
-    "lastReviewDate": "2025-08-26",
+    "lastReviewDate": "2025-08-27",
     "relatedArtifact": [
         {
             "type": "composed-of",

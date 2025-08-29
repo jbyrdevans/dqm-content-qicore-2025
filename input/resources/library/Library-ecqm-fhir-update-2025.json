@@ -2,8 +2,6 @@
     "resourceType": "Library",
     "id": "ecqm-fhir-update-2025",
     "meta": {
-        "versionId": "2",
-        "lastUpdated": "2025-08-27T09:55:38.034-06:00",
         "profile": [
             "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-manifestlibrary"
         ]
@@ -211,6 +209,54 @@
                 },
                 {
                     "name": "canonicalVersion",
+                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.837|20121025",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                                "valueCode": "ValueSet"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "ValueSet Ethnicity, 20121025"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "canonicalVersion",
+                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121|20250228",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                                "valueCode": "ValueSet"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "ValueSet Federal Administrative Sex, 20250228"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "canonicalVersion",
+                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.836|20120225",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                                "valueCode": "ValueSet"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "ValueSet Race, 20120225"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "canonicalVersion",
                     "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591|20250419",
                     "_valueCanonical": {
                         "extension": [
@@ -221,6 +267,22 @@
                             {
                                 "url": "http://hl7.org/fhir/StructureDefinition/display",
                                 "valueString": "ValueSet Payer Type, 20250419"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "canonicalVersion",
+                    "valueCanonical": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.220|20240112",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                                "valueCode": "ValueSet"
+                            },
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "ValueSet Smoking status, 20240112"
                             }
                         ]
                     }
@@ -26826,11 +26888,11 @@
             }
         }
     ],
-    "url": "http://hl7.org/fhir/us/cqfmeasures/Library/ecqm-fhir-update-2025",
+    "url": "http://cts.nlm.nih.gov/fhir/Library/ecqm-fhir-update-2025",
     "identifier": [
         {
             "use": "official",
-            "system": "http://example.org/fhir/cqi/ecqm/Library/Identifier",
+            "system": "https://madie.cms.gov/measure/cmsId",
             "value": "eCQM Update QI Core 2025"
         }
     ],
@@ -26838,7 +26900,7 @@
     "name": "ECQMUpdateQICore2025",
     "title": "eCQM Update QI Core 2025",
     "status": "active",
-    "experimental": true,
+    "experimental": false,
     "type": {
         "coding": [
             {
@@ -26847,7 +26909,7 @@
             }
         ]
     },
-    "date": "2025-08-27T09:32:32-06:00",
+    "date": "2025-08-29",
     "publisher": "Clinical Quality Information WG",
     "contact": [
         {
@@ -26859,7 +26921,7 @@
             ]
         }
     ],
-    "description": "This library is an example of a release version manifest (also referred to as an expansion profile) that specifies expansion rules for a set of value sets used for an example set of EP/EC measures.",
+    "description": "This library is the final release version of the eCQM FHIR release manifest (also referred to as an expansion profile) that specifies expansion rules for the set of value sets used for FHIR-based eCQMs published for public comment review as part of the eCQM 2025 Annual Update.",
     "jurisdiction": [
         {
             "coding": [
@@ -26870,9 +26932,9 @@
             ]
         }
     ],
-    "purpose": "This library is defined to illustrate a release Version Manifest, as it would look as part of release publication of an eCQM Annual Update cycle, approved on April 23rd, 2024. The latest available version of code systems used at that time is specified to provide stability for value set expansion during the testing and implementation phase. Terminology.HL7.org, in particular, was version 5.5.0 at the time, and FHIR code system versions are chosen from that release.",
-    "approvalDate": "2025-08-26",
-    "lastReviewDate": "2025-08-26",
+    "purpose": "This library is a release manifest that provides explicit version information for all the dependencies of FHIR-based eCQMs published for public comment review as part of the eCQM 2025 Annual Update.",
+    "approvalDate": "2025-08-29",
+    "lastReviewDate": "2025-08-29",
     "relatedArtifact": [
         {
             "type": "composed-of",
@@ -28437,8 +28499,60 @@
         },
         {
             "type": "depends-on",
+            "display": "ValueSet Ethnicity, 20121025",
+            "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.837|20121025",
+            "_resource": {
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                        "valueCode": "ValueSet"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "depends-on",
+            "display": "ValueSet Federal Administrative Sex, 20250228",
+            "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121|20250228",
+            "_resource": {
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                        "valueCode": "ValueSet"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "depends-on",
+            "display": "ValueSet Race, 20121025",
+            "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.836|20121025",
+            "_resource": {
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                        "valueCode": "ValueSet"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "depends-on",
             "display": "ValueSet Payer Type, 20250419",
             "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591|20250419",
+            "_resource": {
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/cqf-resourceType",
+                        "valueCode": "ValueSet"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "depends-on",
+            "display": "ValueSet Smoking status, 20240112",
+            "resource": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.220|20240112",
             "_resource": {
                 "extension": [
                     {
