@@ -9,7 +9,7 @@
     "contained": [
         {
             "resourceType": "Parameters",
-            "id": "manifest",
+            "id": "exp-params",
             "parameter": [
                 {
                     "name": "activeOnly",
@@ -24900,7 +24900,7 @@
         {
             "url": "http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters",
             "valueReference": {
-                "reference": "#manifest"
+                "reference": "#exp-params"
             }
         },
         {
@@ -26893,12 +26893,12 @@
         {
             "use": "official",
             "system": "https://madie.cms.gov/measure/cmsId",
-            "value": "eCQM Update QI Core 2025"
+            "value": "eCQM FHIR Update 2025"
         }
     ],
     "version": "1.0.0",
-    "name": "ECQMUpdateQICore2025",
-    "title": "eCQM Update QI Core 2025",
+    "name": "ECQMFHIRUpdate2025",
+    "title": "eCQM FHIR Update 2025",
     "status": "active",
     "experimental": false,
     "type": {
