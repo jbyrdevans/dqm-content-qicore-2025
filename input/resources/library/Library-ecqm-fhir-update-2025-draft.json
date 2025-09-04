@@ -281,12 +281,12 @@
                 },
                 {
                     "name": "system-version",
-                    "valueCanonical": "http://terminology.hl7.org/CodeSystem/diagnosis-role|1.0.0",
+                    "valueCanonical": "http://terminology.hl7.org/CodeSystem/diagnosis-role|1.1.0",
                     "_valueCanonical": {
                         "extension": [
                             {
                                 "url": "http://hl7.org/fhir/StructureDefinition/display",
-                                "valueString": "Diagnosis Role, 1.0.0"
+                                "valueString": "Diagnosis Role, 1.1.0"
                             }
                         ]
                     }
