@@ -13,7 +13,7 @@
             "parameter": [
                 {
                     "name": "activeOnly",
-                    "valueString": false
+                    "valueBoolean": true
                 },
                 {
                     "name": "system-version",
@@ -203,6 +203,138 @@
                             {
                                 "url": "http://hl7.org/fhir/StructureDefinition/display",
                                 "valueString": "SOP, 9.2"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "system-version",
+                    "valueCanonical": "http://hl7.org/fhir/CodeSystem/task-code|4.0.1",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "Task Codes, 4.0.1"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "system-version",
+                    "valueCanonical": "http://hl7.org/fhir/us/core/CodeSystem/condition-category|6.1.0",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "US Core Condition Category Extension Codes, 6.1.0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "system-version",
+                    "valueCanonical": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical|1.0.0",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "AllergyIntolerance Clinical Status Codes, 1.0.0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "system-version",
+                    "valueCanonical": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification|1.0.0",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "AllergyIntolerance Verification Status, 1.0.0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "system-version",
+                    "valueCanonical": "http://terminology.hl7.org/CodeSystem/condition-clinical|3.0.0",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "Condition Clinical Status Codes, 3.0.0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "system-version",
+                    "valueCanonical": "http://terminology.hl7.org/CodeSystem/condition-ver-status|2.0.0",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "Condition Verification Status, 2.0.0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "system-version",
+                    "valueCanonical": "http://terminology.hl7.org/CodeSystem/diagnosis-role|1.0.0",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "Diagnosis Role, 1.0.0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "system-version",
+                    "valueCanonical": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype|1.0.0",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "Example Diagnosis Type Codes, 1.0.0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "system-version",
+                    "valueCanonical": "http://terminology.hl7.org/CodeSystem/ex-procedure-type|1.0.0",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "Example Procedure Type Codes, 1.0.0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "system-version",
+                    "valueCanonical": "http://terminology.hl7.org/CodeSystem/medicationrequest-category|1.0.0",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "Medication Request Category Codes, 1.0.0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "system-version",
+                    "valueCanonical": "http://terminology.hl7.org/CodeSystem/observation-category|1.0.0",
+                    "_valueCanonical": {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/StructureDefinition/display",
+                                "valueString": "Observation Category Codes, 1.0.0"
                             }
                         ]
                     }
@@ -26909,7 +27041,7 @@
             }
         ]
     },
-    "date": "2025-08-29",
+    "date": "2025-09-04",
     "publisher": "Clinical Quality Information WG",
     "contact": [
         {
