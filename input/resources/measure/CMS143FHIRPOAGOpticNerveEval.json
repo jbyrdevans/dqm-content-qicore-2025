@@ -4,10 +4,6 @@
   "meta": {
     "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/executable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/elm-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm" ]
   },
-  "text": {
-    "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"col-12\">\n  <table class=\"narrative-table\">\n    <tbody>\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Metadata</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Title</th>\n\n\n<td class=\"content-container\">Primary Open-Angle Glaucoma (POAG): Optic Nerve EvaluationFHIR</td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Version</th>\n\n\n<td class=\"content-container\">1.0.000</td>\n</tr>\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Short Name</th>\n\n\n<td class=\"content-container\">CMS143FHIR</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">GUID (Version Independent)</th>\n\n\n<td class=\"content-container\">urn:uuid:7b41a49e-61af-4a73-8dfd-a6a76e8e7c49</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">GUID (Version Specific)</th>\n\n\n<td class=\"content-container\">urn:uuid:296ccae8-bab6-4e8a-bb08-0ea55e2e3485</td>\n</tr>\n\n\n\n  \n    \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">CMS Identifier</th>\n\n\n<td class=\"content-container\">143FHIR</td>\n</tr>\n\n  \n\n\n  \n    \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">CMS Consensus Based Entity Identifier</th>\n\n\n<td class=\"content-container\">0086e</td>\n</tr>\n\n  \n\n\n\n  \n    \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Effective Period</th>\n\n\n<td class=\"content-container\">2026-01-01 through 2026-12-31</td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Steward (Publisher)</th>\n\n\n<td class=\"content-container\">American Academy of Ophthalmology</td>\n</tr>\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Developer</th>\n\n\n<td class=\"content-container\">American Academy of Ophthalmology</td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Developer</th>\n\n\n<td class=\"content-container\">American Medical Association (AMA)</td>\n</tr>\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Description</th>\n\n\n<td class=\"content-container\">Percentage of patients aged 18 years and older with a diagnosis of primary open-angle glaucoma (POAG) who have an optic nerve head evaluation during one or more visits during the measurement period</td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Copyright</th>\n\n\n<td class=\"content-container\">Copyright 2025 American Academy of Ophthalmology. All Rights Reserved.</td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Disclaimer</th>\n\n\n<td class=\"content-container\">The Measure is not a clinical guideline, does not establish a standard of medical care, and has not been tested for all potential applications. The Measure, while copyrighted, can be reproduced and distributed, without modification, for noncommercial purposes, e.g., use by health care providers in connection with their practices. Commercial use is defined as the sale, license, or distribution of the Measure for commercial gain, or incorporation of the Measure into a product or service that is sold, licensed or distributed for commercial gain. Commercial uses of the Measure require a license agreement between the user and the American Academy of Ophthalmology (Academy). Neither the Academy, its members, the American Medical Association (AMA), nor the former AMA-convened Physician Consortium for Performance Improvement(R) (AMA-PCPI), nor PCPI, nor their members shall be responsible for any use of the Measure. The PCPI’s and AMA’s significant past efforts and contributions to the development and updating of the Measures are acknowledged. The National Committee for Quality Assurance's significant past efforts and contributions to the development and updating of the Measure is acknowledged. THE MEASURE AND SPECIFICATIONS ARE PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. Limited proprietary coding is contained in the Measure specifications for convenience. A license agreement must be entered prior to a third party’s use of Current Procedural Terminology (CPT[R]) or other proprietary code set contained in the Measures. Any other use of CPT or other coding by the third party is strictly prohibited. The Academy, its members, the AMA, and former members of the PCPI disclaim all liability for use or accuracy of any CPT or other coding contained in the specifications. CPT(R) contained in the Measure specifications is copyright 2004-2024 American Medical Association. LOINC(R) is copyright 2004-2024 Regenstrief Institute, Inc. This material contains SNOMED Clinical Terms(R) (SNOMED CT[R]) copyright 2004-2024 International Health Terminology Standards Development Organisation. ICD-10 is copyright 2024 World Health Organization. All Rights Reserved. Due to technical limitations, registered trademarks are indicated by (R) or [R].</td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Rationale</th>\n\n\n<td class=\"content-container\">Glaucoma is a group of diseases that damage the eye’s optic nerve and can result in vision loss and blindness. In 2011, 2.71 million persons in the U.S. had primary open-angle glaucoma (POAG) and in 2050, an estimated 7.32 million persons will have POAG (Vajaranant, Wu, Torres, &amp; Varma, 2012). Furthermore, a study by Rein, Zhang, &amp; Wirth (2006) estimated that the total financial burden of major visual disorders among U.S. residents aged 40 years or older was $35.4 billion in 2004: $16.2 billion in direct medical costs, $11.1 billion in other direct costs, and $8 billion in productivity losses. Of the direct medical costs, approximately $2.9 billion was attributable to glaucoma (Rein, Zhang, &amp; Wirth, 2006). It is imperative that evidence-based care be delivered to all glaucoma patients. According to recent guidelines, optic nerve changes are one of the characteristics which reflect progression of glaucoma (the other characteristic is visual field). Examination of the optic nerve head (ONH) and retinal nerve fiber layer (RNFL) provides valuable structural information about optic nerve damage from glaucoma. Visible structural alterations of the ONH or RNFL may precede the onset of visual field defects. Careful study of the optic disc neural rim for small hemorrhages is important because these hemorrhages sometimes signal focal disc damage and visual field loss, and they may signify ongoing optic nerve damage in patients with glaucoma (Gedde et al., 2021). Despite evidence emphasizing the value of an optic nerve evaluation, there is a gap in documentation patterns of the optic nerve for both initial and follow-up care. This measure is intended to promote examination and documentation of the structure and function of the optic nerve, and to monitor and detect disease progression among patients diagnosed with POAG.</td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Clinical Recommendation Statement</th>\n\n\n<td class=\"content-container\">Ophthalmic Evaluation The ophthalmic evaluation specifically focuses on the following elements in the comprehensive adult medical eye evaluation: Visual acuity measurement Pupil examination Anterior segment examination IOP measurement Gonioscopy Optic nerve head (ONH) and retinal nerve fiber layer (RNFL) examination Fundus examination (Gedde et al., 2021) The optic nerve should be carefully examined for the signs of glaucoma damage, and its appearance should be serially documented (I+, moderate quality, strong recommendation) (Gedde et al., 2021).</td>\n</tr>\n\n\n\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    Gedde, S. J., Vinod, K., Wright, M. M., Muir, K. W., Lind, J. T., Chen, P. P., Li, T., Mansberger, S. L., &amp; American Academy of Ophthalmology Preferred Practice Pattern Glaucoma Panel (2021). Primary Open-Angle Glaucoma Preferred Practice Pattern(R). Ophthalmology, 128(1), P71–P150. https://doi.org/10.1016/j.ophtha.2020.10.022\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    Rein, D. B., Zhang, P., &amp; Wirth, K. (2006). The economic burden of major adult visual disorders in the United States. Archives of Ophthalmology, 124(12), 1754-1760. doi:10.1001/archopht.124.12.1754\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    Vajaranant, T. S., Wu, S., Torres, M., &amp; Varma, R. (2012). The changing face of primary open-angle glaucoma in the United States: Demographic and geographic changes from 2011 to 2050. American Journal of Ophthalmology, 154(2). doi:10.1016/j.ajo.2012.02.024\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Guidance (Usage)</th>\n\n\n<td class=\"content-container\">Optic nerve head evaluation includes examination of the cup to disc ratio and identification of optic disc or retinal nerve abnormalities. Both of these components of the optic nerve head evaluation are examined using ophthalmoscopy. The measure, as written, does not specifically require documentation of laterality. Coding limitations in particular clinical terminologies do not currently allow for that level of specificity (ICD-10-CM includes laterality, but SNOMED-CT does not uniformly include this distinction). Therefore, at this time, it is not a requirement of this measure to indicate laterality of the diagnoses, findings or procedures. Available coding to capture the data elements specified in this measure has been provided. It is assumed that the eligible clinician will record laterality in the patient medical record, as quality care and clinical documentation should include laterality. This eCQM is a patient-based measure. Telehealth encounters are not eligible for this measure because the measure requires a clinical action that cannot be conducted via telehealth. This FHIR-based measure has been derived from the QDM-based measure CMS 143v14. Please refer to the HL7 QI-Core Implementation Guide (https://hl7.org/fhir/us/qicore/STU6/) for more information on QI-Core and mapping recommendations from QDM to QI-Core STU 6 (https://hl7.org/fhir/us/qicore/STU6/qdm-to-qicore.html).</td>\n</tr>\n\n\n\n  \n    \n    <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Group (Rate) (ID: Group_1)</th>\n\n\n</tr>\n  \n  \n  \n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Basis</th>\n\n\n<td class=\"content-container\">boolean</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Scoring</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-scoring#proportion: 'Proportion']</td>\n</tr>\n\n\n\n\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Type</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-type#process: 'Process']</td>\n</tr>\n\n\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Improvement Notation</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase: 'Increased score indicates improvement']</td>\n</tr>\n\n\n  \n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: InitialPopulation_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>All patients aged 18 years and older with a diagnosis of primary open-angle glaucoma</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms143fhirpoagopticnerveeval-initial-population\">Initial Population</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Denominator</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: Denominator_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>Equals Initial Population</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms143fhirpoagopticnerveeval-denominator\">Denominator</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Numerator</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: Numerator_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>Patients who have an optic nerve head evaluation during one or more visits during the measurement period</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms143fhirpoagopticnerveeval-numerator\">Numerator</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Denominator Exception</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: DenominatorException_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>Documentation of medical reason(s) for not performing an optic nerve head evaluation</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms143fhirpoagopticnerveeval-denominator-exceptions\">Denominator Exceptions</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n\n\n  \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Guidance</th>\n\n\n<td class=\"content-container\">For every patient evaluated by this measure also identify payer, race, ethnicity and sex</td>\n</tr>\n\n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Supplemental Data Elements</th>\n\n\n</tr>\n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-ethnicity\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Ethnicity\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms143fhirpoagopticnerveeval-sde-ethnicity\">SDE Ethnicity</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-payer\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Payer\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms143fhirpoagopticnerveeval-sde-payer\">SDE Payer</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-race\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Race\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms143fhirpoagopticnerveeval-sde-race\">SDE Race</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-sex\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Sex\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms143fhirpoagopticnerveeval-sde-sex\">SDE Sex</a> \n      \n    \n  </td>\n</tr>\n\n\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Logic</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Primary Library</th>\n\n\n<td class=\"content-container\">https://madie.cms.gov/Library/CMS143FHIRPOAGOpticNerveEval</td>\n</tr>\n\n\n\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Contents</th>\n  <td class=\"content-container\">\n    <em><a href=\"#population-criteria\">Population Criteria</a></em>\n    <br/>\n    <em><a href=\"#definitions\">Logic Definitions</a></em>\n    <br/>\n    <em><a href=\"#terminology\">Terminology</a></em>\n    <br/>\n    <em><a href=\"#dependencies\">Dependencies</a></em>\n    <br/>\n    <em><a href=\"#data-requirements\">Data Requirements</a></em>\n    <br/>\n  </td>\n</tr>\n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"population-criteria\"> </a>Population Criteria</th>\n\n\n</tr>\n  \n  \n  \n  \n    \n    <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Group (Rate) (ID: Group_1)</th>\n\n\n</tr>\n  \n  \n  \n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms143fhirpoagopticnerveeval-initial-population\"> </a>\n    \n    \n    Initial Population\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Initial Population&quot;:\n  AgeInYearsAt(date from start of &quot;Measurement Period&quot;) &gt;= 18\n    and exists &quot;Primary Open Angle Glaucoma Encounter&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms143fhirpoagopticnerveeval-denominator\"> </a>\n    \n    \n    Denominator\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator&quot;:\n  &quot;Initial Population&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms143fhirpoagopticnerveeval-numerator\"> </a>\n    \n    \n    Numerator\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Numerator&quot;:\n  exists &quot;Cup to Disc Ratio Performed with Result&quot;\n    and exists &quot;Optic Disc Exam Performed with Result&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms143fhirpoagopticnerveeval-denominator-exceptions\"> </a>\n    \n    \n    Denominator Exception\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator Exceptions&quot;:\n  exists &quot;Medical Reason for Not Performing Cup to Disc Ratio&quot;\n    or exists &quot;Medical Reason for Not Performing Optic Disc Exam&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n  \n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"definitions\"> </a>Logic Definitions</th>\n\n\n</tr>\n  \n  \n          \n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-sex\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Sex&quot;:\n  case\n    when Patient.sex = '248153007' then &quot;Male (finding)&quot;\n    when Patient.sex = '248152002' then &quot;Female (finding)&quot;\n    else null\n  end</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-payer\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Payer&quot;:\n  [Coverage: type in &quot;Payer Type&quot;] Payer\n    return {\n      code: Payer.type,\n      period: Payer.period\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-ethnicity\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Ethnicity&quot;:\n  Patient.ethnicity E\n    return Tuple {\n      codes: { E.ombCategory } union E.detailed,\n      display: E.text\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-race\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Race&quot;:\n  Patient.race R\n    return Tuple {\n      codes: R.ombCategory union R.detailed,\n      display: R.text\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n\n        \n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms143fhirpoagopticnerveeval-sde-sex\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS143FHIRPOAGOpticNerveEval</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Sex&quot;:\n  SDE.&quot;SDE Sex&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms143fhirpoagopticnerveeval-qualifying-encounter-during-measurement-period\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS143FHIRPOAGOpticNerveEval</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Qualifying Encounter During Measurement Period&quot;:\n  ( [&quot;Encounter&quot;: &quot;Office Visit&quot;]\n    union [&quot;Encounter&quot;: &quot;Ophthalmological Services&quot;]\n    union [&quot;Encounter&quot;: &quot;Outpatient Consultation&quot;]\n    union [&quot;Encounter&quot;: &quot;Nursing Facility Visit&quot;]\n    union [&quot;Encounter&quot;: &quot;Care Services in Long-Term Residential Facility&quot;] ) QualifyingEncounter\n    where QualifyingEncounter.period during day of &quot;Measurement Period&quot;\n      and QualifyingEncounter.status = 'finished'\n      and QualifyingEncounter.class !~ &quot;virtual&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms143fhirpoagopticnerveeval-primary-open-angle-glaucoma-encounter\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS143FHIRPOAGOpticNerveEval</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Primary Open Angle Glaucoma Encounter&quot;:\n  &quot;Qualifying Encounter During Measurement Period&quot; ValidQualifyingEncounter\n    with ( [&quot;ConditionProblemsHealthConcerns&quot;: &quot;Primary Open-Angle Glaucoma&quot;]\n      union [&quot;ConditionEncounterDiagnosis&quot;: &quot;Primary Open-Angle Glaucoma&quot;] ) PrimaryOpenAngleGlaucoma\n      such that PrimaryOpenAngleGlaucoma.prevalenceInterval ( ) overlaps day of ValidQualifyingEncounter.period\n        and PrimaryOpenAngleGlaucoma.isVerified ( )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms143fhirpoagopticnerveeval-cup-to-disc-ratio-performed-with-result\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS143FHIRPOAGOpticNerveEval</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Cup to Disc Ratio Performed with Result&quot;:\n  [&quot;ObservationClinicalResult&quot;: &quot;Cup to Disc Ratio&quot;] CupToDiscExamPerformed\n    with &quot;Primary Open Angle Glaucoma Encounter&quot; EncounterWithPOAG\n      such that CupToDiscExamPerformed.effective.toInterval ( ) during day of EncounterWithPOAG.period\n    where CupToDiscExamPerformed.value is not null\n      and CupToDiscExamPerformed.status in { 'final', 'amended', 'corrected' }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms143fhirpoagopticnerveeval-optic-disc-exam-performed-with-result\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS143FHIRPOAGOpticNerveEval</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Optic Disc Exam Performed with Result&quot;:\n  [&quot;ObservationClinicalResult&quot;: &quot;Optic Disc Exam for Structural Abnormalities&quot;] OpticDiscExamPerformed\n    with &quot;Primary Open Angle Glaucoma Encounter&quot; EncounterWithPOAG\n      such that OpticDiscExamPerformed.effective.toInterval ( ) during day of EncounterWithPOAG.period\n    where OpticDiscExamPerformed.value is not null\n      and OpticDiscExamPerformed.status in { 'final', 'amended', 'corrected' }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms143fhirpoagopticnerveeval-numerator\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS143FHIRPOAGOpticNerveEval</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Numerator&quot;:\n  exists &quot;Cup to Disc Ratio Performed with Result&quot;\n    and exists &quot;Optic Disc Exam Performed with Result&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms143fhirpoagopticnerveeval-initial-population\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS143FHIRPOAGOpticNerveEval</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Initial Population&quot;:\n  AgeInYearsAt(date from start of &quot;Measurement Period&quot;) &gt;= 18\n    and exists &quot;Primary Open Angle Glaucoma Encounter&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms143fhirpoagopticnerveeval-denominator\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS143FHIRPOAGOpticNerveEval</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator&quot;:\n  &quot;Initial Population&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms143fhirpoagopticnerveeval-sde-payer\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS143FHIRPOAGOpticNerveEval</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Payer&quot;:\n  SDE.&quot;SDE Payer&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms143fhirpoagopticnerveeval-sde-ethnicity\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS143FHIRPOAGOpticNerveEval</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Ethnicity&quot;:\n  SDE.&quot;SDE Ethnicity&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms143fhirpoagopticnerveeval-sde-race\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS143FHIRPOAGOpticNerveEval</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Race&quot;:\n  SDE.&quot;SDE Race&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms143fhirpoagopticnerveeval-medical-reason-for-not-performing-cup-to-disc-ratio\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS143FHIRPOAGOpticNerveEval</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Medical Reason for Not Performing Cup to Disc Ratio&quot;:\n  [&quot;ObservationCancelled&quot;: &quot;Cup to Disc Ratio&quot;] CupToDiscExamNotPerformed\n    with &quot;Primary Open Angle Glaucoma Encounter&quot; EncounterWithPOAG\n      such that CupToDiscExamNotPerformed.issued during day of EncounterWithPOAG.period\n    where CupToDiscExamNotPerformed.notDoneReason in &quot;Medical Reason&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms143fhirpoagopticnerveeval-medical-reason-for-not-performing-optic-disc-exam\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS143FHIRPOAGOpticNerveEval</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Medical Reason for Not Performing Optic Disc Exam&quot;:\n  [&quot;ObservationCancelled&quot;: &quot;Optic Disc Exam for Structural Abnormalities&quot;] OpticDiscExamNotPerformed\n    with &quot;Primary Open Angle Glaucoma Encounter&quot; EncounterWithPOAG\n      such that OpticDiscExamNotPerformed.issued during day of EncounterWithPOAG.period\n    where OpticDiscExamNotPerformed.notDoneReason in &quot;Medical Reason&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms143fhirpoagopticnerveeval-denominator-exceptions\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS143FHIRPOAGOpticNerveEval</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator Exceptions&quot;:\n  exists &quot;Medical Reason for Not Performing Cup to Disc Ratio&quot;\n    or exists &quot;Medical Reason for Not Performing Optic Disc Exam&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n\n        \n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tostring\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define function ToString(value uri): value.value</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tointerval\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/*\n@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)\nvalue to a CQL DateTime Interval\n@comment: If the start value of the given period is unspecified, the starting\nboundary of the resulting interval will be open (meaning the start of the interval\nis unknown, as opposed to interpreted as the beginning of time).\n*/\ndefine function ToInterval(period FHIR.Period):\n    if period is null then\n        null\n    else\n        if period.&quot;start&quot; is null then\n            Interval(period.&quot;start&quot;.value, period.&quot;end&quot;.value]\n        else\n            Interval[period.&quot;start&quot;.value, period.&quot;end&quot;.value]</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tocode\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/*\n@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.\n*/\ndefine function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }</code></pre>\n  </td>\n\n</tr>\n\n\n\n\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"terminology\"> </a>Terminology</th>\n\n\n</tr>\n  \n  \n  \n\n \n\n \n\n \n\n \n\n\n<tr>\n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Code System</th>\n\n\n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Code system SNOMEDCT\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://snomed.info/sct\n    <br/>\n    <em>Canonical URL</em>: <tt>http://snomed.info/sct</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Code System</th>\n\n\n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Code system ActCode\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://terminology.hl7.org/CodeSystem/v3-ActCode\n    <br/>\n    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Cup to Disc Ratio\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1333\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1333</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Office Visit\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Ophthalmological Services\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1285\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1285</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Outpatient Consultation\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Nursing Facility Visit\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1012\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1012</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Care Services in Long-Term Residential Facility\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1014\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1014</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Primary Open-Angle Glaucoma\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.326\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.326</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Optic Disc Exam for Structural Abnormalities\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1334\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1334</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Payer Type\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Medical Reason\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1007\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1007</tt>\n    \n  </td>\n</tr>\n \n\n\n  \n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Male (finding)\n        <br/>\n      \n      <em>Code</em>: 248153007\n      <br/>\n      <em>System</em>: <tt>http://snomed.info/sct</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Female (finding)\n        <br/>\n      \n      <em>Code</em>: 248152002\n      <br/>\n      <em>System</em>: <tt>http://snomed.info/sct</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: virtual\n        <br/>\n      \n      <em>Code</em>: VR\n      <br/>\n      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/v3-ActCode</tt>\n    </td>\n  </tr>\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"dependencies\"> </a>Dependencies</th>\n\n\n</tr>\n  \n  \n  \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: QICore model information\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://hl7.org/fhir/Library/QICore-ModelInfo\n    <br/>\n    <em>Canonical URL</em>: <tt>http://hl7.org/fhir/Library/QICore-ModelInfo</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library SDE\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/SupplementalDataElements|5.1.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/SupplementalDataElements|5.1.000</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library FHIRHelpers\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/FHIRHelpers|4.4.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/FHIRHelpers|4.4.000</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library QICoreCommon\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/QICoreCommon|4.0.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/QICoreCommon|4.0.000</tt>\n    \n  </td>\n</tr>\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"data-requirements\"> </a>Data Requirements</th>\n\n\n</tr>\n  \n  \n  \n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Patient\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: extension, url\n    <br/>\n   \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value, class\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value, class\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1285\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value, class\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value, class\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1012\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value, class\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1014\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.326\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.326\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-clinical-result\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, effective, value, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1333\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-clinical-result\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, effective, value, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1334\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Coverage\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observationcancelled\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, issued, issued.value, extension\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1333\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observationcancelled\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, issued, issued.value, extension\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1334\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n  \n  \n\n<tr>\n  <th colspan=\"2\" scope=\"row\" class=\"row-header\">Generated using version 0.4.8 of the sample-content-ig Liquid templates</th>\n</tr>\n\n    </tbody>\n  </table>\n</div>"
-  },
   "contained": [ {
     "resourceType": "Library",
     "id": "effective-data-requirements",
@@ -201,6 +197,21 @@
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
+        "valueString": "CMS143FHIRPOAGOpticNerveEval"
+      }, {
+        "url": "name",
+        "valueString": "Initial Population"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Initial Population\":\n  AgeInYearsAt(date from start of \"Measurement Period\") >= 18\n    and exists \"Primary Open Angle Glaucoma Encounter\""
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 11
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
         "valueString": "SupplementalDataElements"
       }, {
         "url": "name",
@@ -210,7 +221,7 @@
         "valueString": "define \"SDE Ethnicity\":\n  Patient.ethnicity E\n    return Tuple {\n      codes: { E.ombCategory } union E.detailed,\n      display: E.text\n    }"
       }, {
         "url": "displaySequence",
-        "valueInteger": 11
+        "valueInteger": 12
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -225,7 +236,7 @@
         "valueString": "define \"SDE Ethnicity\":\n  SDE.\"SDE Ethnicity\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 12
+        "valueInteger": 13
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -240,7 +251,7 @@
         "valueString": "define \"SDE Race\":\n  Patient.race R\n    return Tuple {\n      codes: R.ombCategory union R.detailed,\n      display: R.text\n    }"
       }, {
         "url": "displaySequence",
-        "valueInteger": 13
+        "valueInteger": 14
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -255,7 +266,7 @@
         "valueString": "define \"SDE Race\":\n  SDE.\"SDE Race\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 14
+        "valueInteger": 15
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -270,7 +281,7 @@
         "valueString": "define \"Medical Reason for Not Performing Cup to Disc Ratio\":\n  [\"ObservationCancelled\": \"Cup to Disc Ratio\"] CupToDiscExamNotPerformed\n    with \"Primary Open Angle Glaucoma Encounter\" EncounterWithPOAG\n      such that CupToDiscExamNotPerformed.issued during day of EncounterWithPOAG.period\n    where CupToDiscExamNotPerformed.notDoneReason in \"Medical Reason\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 15
+        "valueInteger": 16
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -285,7 +296,7 @@
         "valueString": "define \"Medical Reason for Not Performing Optic Disc Exam\":\n  [\"ObservationCancelled\": \"Optic Disc Exam for Structural Abnormalities\"] OpticDiscExamNotPerformed\n    with \"Primary Open Angle Glaucoma Encounter\" EncounterWithPOAG\n      such that OpticDiscExamNotPerformed.issued during day of EncounterWithPOAG.period\n    where OpticDiscExamNotPerformed.notDoneReason in \"Medical Reason\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 16
+        "valueInteger": 17
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -300,7 +311,7 @@
         "valueString": "define \"Denominator Exceptions\":\n  exists \"Medical Reason for Not Performing Cup to Disc Ratio\"\n    or exists \"Medical Reason for Not Performing Optic Disc Exam\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 17
+        "valueInteger": 18
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -315,7 +326,7 @@
         "valueString": "define function ToString(value uri): value.value"
       }, {
         "url": "displaySequence",
-        "valueInteger": 18
+        "valueInteger": 19
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -330,7 +341,7 @@
         "valueString": "/*\n@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)\nvalue to a CQL DateTime Interval\n@comment: If the start value of the given period is unspecified, the starting\nboundary of the resulting interval will be open (meaning the start of the interval\nis unknown, as opposed to interpreted as the beginning of time).\n*/\ndefine function ToInterval(period FHIR.Period):\n    if period is null then\n        null\n    else\n        if period.\"start\" is null then\n            Interval(period.\"start\".value, period.\"end\".value]\n        else\n            Interval[period.\"start\".value, period.\"end\".value]"
       }, {
         "url": "displaySequence",
-        "valueInteger": 19
+        "valueInteger": 20
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -345,7 +356,7 @@
         "valueString": "/*\n@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.\n*/\ndefine function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }"
       }, {
         "url": "displaySequence",
-        "valueInteger": 20
+        "valueInteger": 21
       } ]
     } ],
     "name": "EffectiveDataRequirements",
@@ -358,12 +369,12 @@
     },
     "relatedArtifact": [ {
       "type": "depends-on",
-      "display": "QICore model information",
-      "resource": "http://hl7.org/fhir/Library/QICore-ModelInfo"
-    }, {
-      "type": "depends-on",
       "display": "Library SDE",
       "resource": "https://madie.cms.gov/Library/SupplementalDataElements|5.1.000"
+    }, {
+      "type": "depends-on",
+      "display": "Library FHIRHelpers",
+      "resource": "https://madie.cms.gov/Library/FHIRHelpers|4.4.000"
     }, {
       "type": "depends-on",
       "display": "Library FHIRHelpers",
@@ -428,6 +439,12 @@
       "max": "1",
       "type": "Period"
     }, {
+      "name": "SDE Sex",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Coding"
+    }, {
       "name": "Numerator",
       "use": "out",
       "min": 0,
@@ -440,29 +457,17 @@
       "max": "1",
       "type": "boolean"
     }, {
-      "name": "Initial Population",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "boolean"
-    }, {
-      "name": "Denominator Exceptions",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "boolean"
-    }, {
-      "name": "SDE Sex",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "Coding"
-    }, {
       "name": "SDE Payer",
       "use": "out",
       "min": 0,
       "max": "*",
       "type": "Resource"
+    }, {
+      "name": "Initial Population",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
     }, {
       "name": "SDE Ethnicity",
       "use": "out",
@@ -475,15 +480,28 @@
       "min": 0,
       "max": "1",
       "type": "Resource"
+    }, {
+      "name": "Denominator Exceptions",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
     } ],
     "dataRequirement": [ {
       "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ]
+    }, {
+      "type": "Patient",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
-      "mustSupport": [ "extension", "url" ]
+      "mustSupport": [ "url", "value.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url", "value.value" ]
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period", "status", "status.value", "class" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1001"
@@ -491,7 +509,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period", "status", "status.value", "class" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1285"
@@ -499,7 +517,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period", "status", "status.value", "class" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1008"
@@ -507,7 +525,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period", "status", "status.value", "class" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1012"
@@ -515,7 +533,7 @@
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period", "status", "status.value", "class" ],
+      "mustSupport": [ "type" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1014"
@@ -553,6 +571,9 @@
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1334"
       } ]
     }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ]
+    }, {
       "type": "Coverage",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage" ],
       "mustSupport": [ "type", "period" ],
@@ -561,9 +582,25 @@
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
       } ]
     }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url", "extension" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url", "extension" ]
+    }, {
       "type": "Observation",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observationcancelled" ],
-      "mustSupport": [ "code", "issued", "issued.value", "extension" ],
+      "mustSupport": [ "code" ],
       "codeFilter": [ {
         "path": "code",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1333"
@@ -571,7 +608,7 @@
     }, {
       "type": "Observation",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observationcancelled" ],
-      "mustSupport": [ "code", "issued", "issued.value", "extension" ],
+      "mustSupport": [ "code" ],
       "codeFilter": [ {
         "path": "code",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1333"
@@ -579,7 +616,7 @@
     }, {
       "type": "Observation",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observationcancelled" ],
-      "mustSupport": [ "code", "issued", "issued.value", "extension" ],
+      "mustSupport": [ "code" ],
       "codeFilter": [ {
         "path": "code",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1334"
@@ -587,11 +624,27 @@
     }, {
       "type": "Observation",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observationcancelled" ],
-      "mustSupport": [ "code", "issued", "issued.value", "extension" ],
+      "mustSupport": [ "code" ],
       "codeFilter": [ {
         "path": "code",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1334"
       } ]
+    }, {
+      "type": "Coverage",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage" ],
+      "mustSupport": [ "type", "period" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
+      } ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url", "extension" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url", "extension" ]
     } ]
   } ],
   "extension": [ {
@@ -613,8 +666,11 @@
     } ]
   }, {
     "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueCanonical": "#effective-data-requirements"
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
     "valueReference": {
-      "reference": "#effective-data-requirements"
+      "reference": "Device/cqf-tooling"
     }
   } ],
   "url": "https://madie.cms.gov/Measure/CMS143FHIRPOAGOpticNerveEval",
@@ -685,7 +741,7 @@
   "title": "Primary Open-Angle Glaucoma (POAG): Optic Nerve EvaluationFHIR\n",
   "status": "active",
   "experimental": false,
-  "date": "2025-08-20T20:02:03+00:00",
+  "date": "2025-09-07T21:23:14+00:00",
   "publisher": "American Academy of Ophthalmology",
   "contact": [ {
     "telecom": [ {

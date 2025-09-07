@@ -4,10 +4,6 @@
   "meta": {
     "profile": [ "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/executable-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cql-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/elm-measure-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm" ]
   },
-  "text": {
-    "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" class=\"col-12\">\n  <table class=\"narrative-table\">\n    <tbody>\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Metadata</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Title</th>\n\n\n<td class=\"content-container\">Children Who Have Dental Decay or CavitiesFHIR</td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Version</th>\n\n\n<td class=\"content-container\">1.0.000</td>\n</tr>\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Short Name</th>\n\n\n<td class=\"content-container\">CMS75FHIR</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">GUID (Version Independent)</th>\n\n\n<td class=\"content-container\">urn:uuid:78ac4b65-61d7-45be-88c1-231c922ad656</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">GUID (Version Specific)</th>\n\n\n<td class=\"content-container\">urn:uuid:3e5eaf0c-becf-4d12-80e9-cfb2fd1fd830</td>\n</tr>\n\n\n\n  \n    \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">CMS Identifier</th>\n\n\n<td class=\"content-container\">75FHIR</td>\n</tr>\n\n  \n\n\n\n\n  \n    \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Effective Period</th>\n\n\n<td class=\"content-container\">2026-01-01 through 2026-12-31</td>\n</tr>\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Steward (Publisher)</th>\n\n\n<td class=\"content-container\">Centers for Medicare &amp; Medicaid Services (CMS)</td>\n</tr>\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Developer</th>\n\n\n<td class=\"content-container\">American Institutes for Research (AIR)</td>\n</tr>\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Description</th>\n\n\n<td class=\"content-container\">Percentage of children, 1-20 years of age at the start of the measurement period, who have had dental decay or cavities during the measurement period as determined by a dentist</td>\n</tr>\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Copyright</th>\n\n\n<td class=\"content-container\">This electronic clinical quality measure (Measure) and related data specifications are owned and stewarded by the Centers for Medicare &amp; Medicaid Services (CMS). CMS contracted (Contract # 75FCMC18D0027/ Task Order #: 75FCMC24F0144) with the American Institutes for Research (AIR) to develop this electronic measure. AIR is not responsible for any use of the Measure. AIR makes no representations, warranties, or endorsement about the quality of any organization or physician that uses or reports performance measures and AIR has no liability to anyone who relies on such measures or specifications. Limited proprietary coding is contained in the Measure specifications for user convenience. Users of proprietary code sets should obtain all necessary licenses from the owners of the code sets. AIR disclaims all liability for use or accuracy of any third-party codes contained in the specifications. CPT(R) codes, descriptions and other data are copyright 2024. American Medical Association. All rights reserved. CPT is a trademark of the American Medical Association. Fee schedules, relative value units, conversion factors and/or related components are not assigned by the AMA, are not part of CPT, and the AMA is not recommending their use. The AMA does not directly or indirectly practice medicine or dispense medical services. The AMA assumes no liability for data contained or not contained herein. Applicable FARS/DFARS restrictions apply to government use. The American Dental Association (“ADA”) holds a copyright to the Current Dental Terminology (“CDT”) codes contained in certain measure specifications. The CDT codes in the measure specifications are included with the permission of the ADA. All uses of the CDT codes require a license from the ADA. No alteration, amendments, or modifications of the CDT or any portion thereof is allowed. Resale, transmission, or distribution of copies of the CDT or other portions of the CDT is also not allowed. To inquire about licensing, contact CDT-SNODENT@ada.org. The measure specifications contain coding from LOINC(R) (http://loinc.org). The LOINC table, LOINC codes, LOINC panels and form file, LOINC linguistic variants file, LOINC/RSNA Radiology Playbook, and LOINC/IEEE Medical Device Code Mapping Table are copyright 2004-2024 Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee, and are available at no cost under the license at http://loinc.org/terms-of-use. This material contains SNOMED Clinical Terms(R) (SNOMED CT[R]) copyright 2004-2024 International Health Terminology Standards Development Organisation. ICD-10 copyright 2024 World Health Organization. All Rights Reserved. “HL7” is the registered trademark of Health Level Seven International.</td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Disclaimer</th>\n\n\n<td class=\"content-container\">The performance Measure is not a clinical guideline and does not establish a standard of medical care, and has not been tested for all potential applications. THE MEASURE AND SPECIFICATIONS ARE PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND. Due to technical limitations, registered trademarks are indicated by (R) or [R] and unregistered trademarks are indicated by (TM) or [TM].</td>\n</tr>\n\n\n\n\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Rationale</th>\n\n\n<td class=\"content-container\">Dental caries is the most chronic disease among youth aged 6-19 years. Data from the National Health and Nutrition Examination Survey from 2015-2016 showed that approximately 45.8 percent of children and youth aged 2-19 years had total caries (untreated and treated). Prevalence of total dental caries (untreated and treated) in primary or permanent teeth increases with age, going from 21.4 percent, 50.5 percent, and 53.8 percent among ages 2-5, 6-11, and 12-19, respectively. Total dental caries was highest in Hispanic youths aged 2-19 at 57.1 percent compared to 48.1 percent for non-Hispanic black, 44.6 percent for non-Asian, and 40.4 percent for non-Hispanic white youth. Monitoring prevalence of untreated and total caries is vital to preventing and controlling oral disease (Fleming &amp; Afful, 2018). Children who have dental decay or cavities are less likely to be in very good or excellent overall health than children without decay or cavities (Edelstein &amp; Chinn, 2009). Children with decay are also more likely to have other oral health problems such as toothaches, broken teeth, and bleeding gums (Data Resource Center for Child and Adolescent Health, 2007).</td>\n</tr>\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Clinical Recommendation Statement</th>\n\n\n<td class=\"content-container\">The American Academy of Pediatric Dentistry (AAPD) provides clinical recommendations for pediatric oral health assessments and preventative services (AAPD, 2022). The recommendation states that the first clinical oral examination should occur around 12 months of age. The clinical oral exam should be repeated every 6 months or as indicated by the child’s risk status or susceptibility to disease. Further, caries risk assessment must be repeated regularly and frequently to maximize effectiveness.</td>\n</tr>\n\n\n\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    <p>American Academy of Pediatric Dentistry. (2022). Periodicity of examination, preventive dental services, anticipatory guidance/ counseling, and oral treatment for infants, children, and adolescents. The Reference Manual of Pediatric Dentistry. Chicago, Ill.: American Academy of Pediatric Dentistry; 2024:293-305</p>\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    Data Resource Center for Child and Adolescent Health, Child and Adolescent Health Measurement Initiative. (2007). 2007 National Survey of Children’s Health. Baltimore, MD: Author.\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    Edelstein, B. L., &amp; Chinn, C. H. (2009). Update on Disparities in Oral Health and Access to Dental Care for America’s Children. Academic Pediatrics, 9(6), 415-419.\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n<tr>\n  \n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Citation</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    \n    \n    Fleming, E., &amp; Afful, J. (2018). Prevalence of Total and Untreated Dental Carries Among Youth: United States, 2015-2016. NCHS Data Brief No. 307. Hyattsville, MD: National Center for Health Statistics.\n    \n    \n    \n    \n    \n  </td>\n</tr>\n\n\n\n\n\n\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Guidance (Usage)</th>\n\n\n<td class=\"content-container\">This eCQM is a patient-based measure. Telehealth encounters are not eligible for this measure because the measure does not contain telehealth-eligible codes and requires a clinical action that cannot be conducted via telehealth. This FHIR-based measure has been derived from the QDM-based measure CMS75v14. Please refer to the HL7 QI-Core Implementation Guide (https://hl7.org/fhir/us/qicore/STU6/) for more information on QI-Core and mapping recommendations from QDM to QI-Core STU 6 (https://hl7.org/fhir/us/qicore/STU6/qdm-to-qicore.html).</td>\n</tr>\n\n\n\n  \n    \n    <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Group (Rate) (ID: Group_1)</th>\n\n\n</tr>\n  \n  \n  \n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Basis</th>\n\n\n<td class=\"content-container\">boolean</td>\n</tr>\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Scoring</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-scoring#proportion: 'Proportion']</td>\n</tr>\n\n\n\n\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Type</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-type#outcome: 'Outcome']</td>\n</tr>\n\n\n\n\n\n  \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Improvement Notation</th>\n\n\n<td class=\"content-container\">[http://terminology.hl7.org/CodeSystem/measure-improvement-notation#decrease: 'Decreased score indicates improvement']</td>\n</tr>\n\n\n  \n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Initial Population</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: InitialPopulation_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>Children, 1-20 years of age at the start of the measurement period, with a clinical oral evaluation by a dentist during the measurement period</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms75fhirchildrendentaldecay-initial-population\">Initial Population</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Denominator</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: Denominator_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>Equals Initial Population</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms75fhirchildrendentaldecay-denominator\">Denominator</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Denominator Exclusion</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: DenominatorExclusion_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>Exclude patients who are in hospice care or have a hospice care order documented during any part of the measurement period</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms75fhirchildrendentaldecay-denominator-exclusions\">Denominator Exclusions</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n    <tr>\n      \n        \n\n<th scope=\"row\" class=\"row-header\">Numerator</th>\n\n\n      \n      <td class=\"content-container\">\n        \n        <em>ID</em>: Numerator_1\n        <br/>\n        \n        \n          <em>Description</em>:\n          <p style=\"white-space: pre-line\" class=\"tab-one\"><p>Children who had a diagnosis of cavities or decayed teeth in any part of the measurement period</p></p>\n        \n        \n          \n            \n            <em>Logic Definition</em>: <a href=\"#primary-cms75fhirchildrendentaldecay-numerator\">Numerator</a> \n          \n        \n      </td>\n    </tr>\n  \n\n  \n\n\n  \n    \n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Guidance</th>\n\n\n<td class=\"content-container\">For every patient evaluated by this measure also identify payer, race, ethnicity and sex</td>\n</tr>\n\n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Supplemental Data Elements</th>\n\n\n</tr>\n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-ethnicity\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Ethnicity\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms75fhirchildrendentaldecay-sde-ethnicity\">SDE Ethnicity</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-payer\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Payer\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms75fhirchildrendentaldecay-sde-payer\">SDE Payer</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-race\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Race\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms75fhirchildrendentaldecay-sde-race\">SDE Race</a> \n      \n    \n  </td>\n</tr>\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Supplemental Data Element</th>\n\n\n  <td class=\"content-container\">\n    \n      <em>ID</em>: sde-sex\n      \n      <br/>\n      \n    \n    \n      \n        \n          <em>Usage Code</em>: [http://terminology.hl7.org/CodeSystem/measure-data-usage#supplemental-data]\n        \n        <br/>\n      \n    \n    \n      <em>Description</em>: SDE Sex\n    \n    \n      \n        <br/>\n        \n        <em>Logic Definition</em>: <a href=\"#cms75fhirchildrendentaldecay-sde-sex\">SDE Sex</a> \n      \n    \n  </td>\n</tr>\n\n\n<tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Logic</th>\n\n\n</tr>\n\n<tr>\n\n\n<th scope=\"row\" class=\"row-header\">Primary Library</th>\n\n\n<td class=\"content-container\">https://madie.cms.gov/Library/CMS75FHIRChildrenDentalDecay</td>\n</tr>\n\n\n\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Contents</th>\n  <td class=\"content-container\">\n    <em><a href=\"#population-criteria\">Population Criteria</a></em>\n    <br/>\n    <em><a href=\"#definitions\">Logic Definitions</a></em>\n    <br/>\n    <em><a href=\"#terminology\">Terminology</a></em>\n    <br/>\n    <em><a href=\"#dependencies\">Dependencies</a></em>\n    <br/>\n    <em><a href=\"#data-requirements\">Data Requirements</a></em>\n    <br/>\n  </td>\n</tr>\n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"population-criteria\"> </a>Population Criteria</th>\n\n\n</tr>\n  \n  \n  \n  \n    \n    <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\">Measure Group (Rate) (ID: Group_1)</th>\n\n\n</tr>\n  \n  \n  \n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms75fhirchildrendentaldecay-initial-population\"> </a>\n    \n    \n    Initial Population\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Initial Population&quot;:\n  AgeInYearsAt(date from start of &quot;Measurement Period&quot;) in Interval[1, 20]\n    and exists ( &quot;Qualifying Encounters&quot; )</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms75fhirchildrendentaldecay-denominator\"> </a>\n    \n    \n    Denominator\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator&quot;:\n  &quot;Initial Population&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n    \n      \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms75fhirchildrendentaldecay-denominator-exclusions\"> </a>\n    \n    \n    Denominator Exclusion\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator Exclusions&quot;:\n  Hospice.&quot;Has Hospice Services&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n    \n      \n        \n          \n        \n          \n        \n          \n            \n              \n            \n            <tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"primary-cms75fhirchildrendentaldecay-numerator\"> </a>\n    \n    \n    Numerator\n    \n  </th>\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Numerator&quot;:\n  exists ( [ConditionProblemsHealthConcerns: &quot;Dental Caries&quot;]\n    union [ConditionEncounterDiagnosis: &quot;Dental Caries&quot;] ) DentalCaries\n    where DentalCaries.prevalenceInterval ( ) overlaps day of &quot;Measurement Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n          \n        \n      \n    \n  \n\n  \n  \n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"definitions\"> </a>Logic Definitions</th>\n\n\n</tr>\n  \n  \n          \n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"hospice-has-hospice-services\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> Hospice</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Has Hospice Services&quot;:\n  exists ((([Encounter: &quot;Encounter Inpatient&quot;]).isEncounterPerformed()) InpatientEncounter\n      where (InpatientEncounter.hospitalization.dischargeDisposition ~ &quot;Discharge to home for hospice care (procedure)&quot;\n          or InpatientEncounter.hospitalization.dischargeDisposition ~ &quot;Discharge to healthcare facility for hospice care (procedure)&quot;\n      )\n        and InpatientEncounter.period ends during day of &quot;Measurement Period&quot;\n  )\n    or exists ((([Encounter: &quot;Hospice Encounter&quot;]).isEncounterPerformed()) HospiceEncounter\n        where HospiceEncounter.period overlaps day of &quot;Measurement Period&quot;\n    )\n    or exists ((([ObservationScreeningAssessment: &quot;Hospice care [Minimum Data Set]&quot;]).isAssessmentPerformed()) HospiceAssessment\n        where HospiceAssessment.value ~ &quot;Yes (qualifier value)&quot;\n          and HospiceAssessment.effective.toInterval() overlaps day of &quot;Measurement Period&quot;\n    )\n    or exists ((([ServiceRequest: &quot;Hospice Care Ambulatory&quot;]).isInterventionOrder()) HospiceOrder\n        where HospiceOrder.authoredOn during day of &quot;Measurement Period&quot;\n    )\n    or exists ((([Procedure: &quot;Hospice Care Ambulatory&quot;]).isInterventionPerformed()) HospicePerformed\n        where HospicePerformed.performed.toInterval() overlaps day of &quot;Measurement Period&quot;\n    )\n    or exists ((([ConditionProblemsHealthConcerns: &quot;Hospice Diagnosis&quot;]\n        union [ConditionEncounterDiagnosis: &quot;Hospice Diagnosis&quot;]).verified()) HospiceCareDiagnosis\n        where HospiceCareDiagnosis.prevalenceInterval() overlaps day of &quot;Measurement Period&quot;\n    )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n\n        \n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-sex\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Sex&quot;:\n  case\n    when Patient.sex = '248153007' then &quot;Male (finding)&quot;\n    when Patient.sex = '248152002' then &quot;Female (finding)&quot;\n    else null\n  end</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-payer\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Payer&quot;:\n  [Coverage: type in &quot;Payer Type&quot;] Payer\n    return {\n      code: Payer.type,\n      period: Payer.period\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-ethnicity\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Ethnicity&quot;:\n  Patient.ethnicity E\n    return Tuple {\n      codes: { E.ombCategory } union E.detailed,\n      display: E.text\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"supplementaldataelements-sde-race\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> SupplementalDataElements</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Race&quot;:\n  Patient.race R\n    return Tuple {\n      codes: R.ombCategory union R.detailed,\n      display: R.text\n    }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n\n        \n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms75fhirchildrendentaldecay-sde-sex\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS75FHIRChildrenDentalDecay</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Sex&quot;:\n  SDE.&quot;SDE Sex&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms75fhirchildrendentaldecay-numerator\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS75FHIRChildrenDentalDecay</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Numerator&quot;:\n  exists ( [ConditionProblemsHealthConcerns: &quot;Dental Caries&quot;]\n    union [ConditionEncounterDiagnosis: &quot;Dental Caries&quot;] ) DentalCaries\n    where DentalCaries.prevalenceInterval ( ) overlaps day of &quot;Measurement Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms75fhirchildrendentaldecay-qualifying-encounters\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS75FHIRChildrenDentalDecay</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Qualifying Encounters&quot;:\n  ( ( [Encounter: &quot;Clinical Oral Evaluation&quot;] ).isEncounterPerformed ( ) ) ValidEncounter\n    where ValidEncounter.period during day of &quot;Measurement Period&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms75fhirchildrendentaldecay-initial-population\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS75FHIRChildrenDentalDecay</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Initial Population&quot;:\n  AgeInYearsAt(date from start of &quot;Measurement Period&quot;) in Interval[1, 20]\n    and exists ( &quot;Qualifying Encounters&quot; )</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms75fhirchildrendentaldecay-denominator\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS75FHIRChildrenDentalDecay</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator&quot;:\n  &quot;Initial Population&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms75fhirchildrendentaldecay-sde-payer\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS75FHIRChildrenDentalDecay</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Payer&quot;:\n  SDE.&quot;SDE Payer&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms75fhirchildrendentaldecay-sde-ethnicity\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS75FHIRChildrenDentalDecay</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Ethnicity&quot;:\n  SDE.&quot;SDE Ethnicity&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms75fhirchildrendentaldecay-denominator-exclusions\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS75FHIRChildrenDentalDecay</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;Denominator Exclusions&quot;:\n  Hospice.&quot;Has Hospice Services&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"cms75fhirchildrendentaldecay-sde-race\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> CMS75FHIRChildrenDentalDecay</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define &quot;SDE Race&quot;:\n  SDE.&quot;SDE Race&quot;</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n\n        \n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tostring\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">define function ToString(value uri): value.value</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tointerval\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/*\n@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)\nvalue to a CQL DateTime Interval\n@comment: If the start value of the given period is unspecified, the starting\nboundary of the resulting interval will be open (meaning the start of the interval\nis unknown, as opposed to interpreted as the beginning of time).\n*/\ndefine function ToInterval(period FHIR.Period):\n    if period is null then\n        null\n    else\n        if period.&quot;start&quot; is null then\n            Interval(period.&quot;start&quot;.value, period.&quot;end&quot;.value]\n        else\n            Interval[period.&quot;start&quot;.value, period.&quot;end&quot;.value]</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"fhirhelpers-tocode\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> FHIRHelpers</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/*\n@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.\n*/\ndefine function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n\n        \n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"qicorecommon-tointerval\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> QICoreCommon</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">/*\n@description: Normalizes a value that is a choice of timing-valued types to an equivalent interval\n@comment: Normalizes a choice type of DateTime, Quanitty, Interval&lt;DateTime&gt;, or Interval&lt;Quantity&gt; types\nto an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible\nrepresentations for timing-valued elements in QICore, allowing this function to be used across any resource.\nThe input can be provided as a DateTime, Quantity, Interval&lt;DateTime&gt; or Interval&lt;Quantity&gt;.\nThe intent of this function is to provide a clear and concise mechanism to treat single\nelements that have multiple possible representations as intervals so that logic doesn't have to account\nfor the variability. More complex calculations (such as medication request period or dispense period\ncalculation) need specific guidance and consideration. That guidance may make use of this function, but\nthe focus of this function is on single element calculations where the semantics are unambiguous.\nIf the input is a DateTime, the result a DateTime Interval beginning and ending on that DateTime.\nIf the input is a Quantity, the quantity is expected to be a calendar-duration interpreted as an Age,\nand the result is a DateTime Interval beginning on the Date the patient turned that age and ending immediately before one year later.\nIf the input is a DateTime Interval, the result is the input.\nIf the input is a Quantity Interval, the quantities are expected to be calendar-durations interpreted as an Age, and the result\nis a DateTime Interval beginning on the date the patient turned the age given as the start of the quantity interval, and ending\nimmediately before one year later than the date the patient turned the age given as the end of the quantity interval.\nIf the input is a Timing, an error will be thrown indicating that Timing calculations are not implemented. Any other input will reslt in a null DateTime Interval\n*/\ndefine fluent function toInterval(choice Choice&lt;DateTime, Quantity, Interval&lt;DateTime&gt;, Interval&lt;Quantity&gt;, Timing&gt;):\n  case\n\t  when choice is DateTime then\n    \tInterval[choice as DateTime, choice as DateTime]\n\t\twhen choice is Interval&lt;DateTime&gt; then\n  \t\tchoice as Interval&lt;DateTime&gt;\n\t\twhen choice is Quantity then\n\t\t  Interval[Patient.birthDate + (choice as Quantity),\n\t\t\t  Patient.birthDate + (choice as Quantity) + 1 year)\n\t\twhen choice is Interval&lt;Quantity&gt; then\n\t\t  Interval[Patient.birthDate + (choice.low as Quantity),\n\t\t\t  Patient.birthDate + (choice.high as Quantity) + 1 year)\n\t\twhen choice is Timing then\n      Message(null, true, 'NOT_IMPLEMENTED', 'Error', 'Calculation of an interval from a Timing value is not supported') as Interval&lt;DateTime&gt;\n\t\telse\n\t\t\tnull as Interval&lt;DateTime&gt;\n\tend</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n\n        \n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"status-isencounterperformed\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> Status</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">//Encounter, Performed\n//General usage unless required otherwise by measure intent (e.g., follow-up encounters)\ndefine fluent function isEncounterPerformed(Enc List&lt;Encounter&gt;):\n  Enc E\n    where E.status = 'finished'</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"status-isassessmentperformed\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> Status</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">//Assessment, Performed\ndefine fluent function isAssessmentPerformed(Obs List&lt;ObservationScreeningAssessment&gt;):\n  Obs O\n    where O.status in { 'final', 'amended', 'corrected' }</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"status-isinterventionorder\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> Status</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">//Intervention, Order\ndefine fluent function isInterventionOrder(ServiceRequest List&lt;ServiceRequest&gt;):\n  ServiceRequest S\n    where S.status in { 'active', 'completed' }\n      and S.intent in {'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order'}</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"status-isinterventionperformed\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> Status</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">//Intervention, Performed\ndefine fluent function isInterventionPerformed(Proc List&lt;Procedure&gt;):\n  Proc P\n    where P.status ~ 'completed'</code></pre>\n  </td>\n\n</tr>\n\n\n\n        \n\n\n\n        \n\n\n<tr>\n  <th scope=\"row\" rowspan=\"2\" class=\"row-header\">\n    \n      \n      <a name=\"status-verified\"> </a>\n    \n    Logic Definition\n  </th>\n\n  <td class=\"content-container\"><em>Library Name:</em> Status</td>\n\n</tr>\n<tr>\n\n  <td>\n    <pre style=\"border: none;\" class=\"content-container highlight language-cql\"><code class=\"language-cql\">//This library contains functions used to constrain FHIR resource elements for measures authored by NCQA, based on QICore 6.0.0 resources including IG and authoring patterns. The functions may appear similar to some QICoreCommon functions but differ in that they have constraints that are relevant for measures authored by NCQA.\n\n//Condition\n//Returns conditions in the given list that either have no verification status or have a verification status of confirmed, unconfirmed, provisional, or differential\ndefine fluent function verified(conditions List&lt;Choice&lt;ConditionProblemsHealthConcerns, ConditionEncounterDiagnosis&gt;&gt;):\n  conditions C\n    where C.verificationStatus is not null implies\n      (C.verificationStatus ~ &quot;confirmed&quot;\n        or C.verificationStatus ~ &quot;unconfirmed&quot;\n        or C.verificationStatus ~ &quot;provisional&quot;\n        or C.verificationStatus ~ &quot;differential&quot;\n      )</code></pre>\n  </td>\n\n</tr>\n\n\n\n\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"terminology\"> </a>Terminology</th>\n\n\n</tr>\n  \n  \n  \n\n \n\n \n\n \n\n \n\n \n\n \n\n\n<tr>\n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Code System</th>\n\n\n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Code system SNOMEDCT\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://snomed.info/sct\n    <br/>\n    <em>Canonical URL</em>: <tt>http://snomed.info/sct</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Code System</th>\n\n\n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Code system LOINC\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://loinc.org\n    <br/>\n    <em>Canonical URL</em>: <tt>http://loinc.org</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n  \n\n<th scope=\"row\" class=\"row-header\">Code System</th>\n\n\n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Code system ConditionVerificationStatusCodes\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://terminology.hl7.org/CodeSystem/condition-ver-status\n    <br/>\n    <em>Canonical URL</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Dental Caries\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.125.12.1004\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.125.12.1004</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Clinical Oral Evaluation\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.125.12.1003\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.125.12.1003</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Payer Type\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Encounter Inpatient\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Hospice Encounter\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1003\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1003</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Hospice Care Ambulatory\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n  \n\n<th scope=\"row\" class=\"row-header\">Value Set</th>\n\n\n  \n  \n  <td class=\"content-container\">\n    \n    <em>Description</em>: Value set Hospice Diagnosis\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165\n    <br/>\n    <em>Canonical URL</em>: <tt>http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165</tt>\n    \n  </td>\n</tr>\n \n\n\n  \n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Male (finding)\n        <br/>\n      \n      <em>Code</em>: 248153007\n      <br/>\n      <em>System</em>: <tt>http://snomed.info/sct</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Female (finding)\n        <br/>\n      \n      <em>Code</em>: 248152002\n      <br/>\n      <em>System</em>: <tt>http://snomed.info/sct</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Discharge to home for hospice care (procedure)\n        <br/>\n      \n      <em>Code</em>: 428361000124107\n      <br/>\n      <em>System</em>: <tt>http://snomed.info/sct</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Discharge to healthcare facility for hospice care (procedure)\n        <br/>\n      \n      <em>Code</em>: 428371000124100\n      <br/>\n      <em>System</em>: <tt>http://snomed.info/sct</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Hospice care [Minimum Data Set]\n        <br/>\n      \n      <em>Code</em>: 45755-6\n      <br/>\n      <em>System</em>: <tt>http://loinc.org</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: Yes (qualifier value)\n        <br/>\n      \n      <em>Code</em>: 373066001\n      <br/>\n      <em>System</em>: <tt>http://snomed.info/sct</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: confirmed\n        <br/>\n      \n      <em>Code</em>: confirmed\n      <br/>\n      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: unconfirmed\n        <br/>\n      \n      <em>Code</em>: unconfirmed\n      <br/>\n      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: provisional\n        <br/>\n      \n      <em>Code</em>: provisional\n      <br/>\n      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    </td>\n  </tr>\n\n  <tr>\n    <th scope=\"row\" class=\"row-header\">Direct Reference Code</th>\n    <td class=\"content-container\">\n      \n        <em>Display</em>: differential\n        <br/>\n      \n      <em>Code</em>: differential\n      <br/>\n      <em>System</em>: <tt>http://terminology.hl7.org/CodeSystem/condition-ver-status</tt>\n    </td>\n  </tr>\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"dependencies\"> </a>Dependencies</th>\n\n\n</tr>\n  \n  \n  \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: QICore model information\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: http://hl7.org/fhir/Library/QICore-ModelInfo\n    <br/>\n    <em>Canonical URL</em>: <tt>http://hl7.org/fhir/Library/QICore-ModelInfo</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library SDE\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/SupplementalDataElements|5.1.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/SupplementalDataElements|5.1.000</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library FHIRHelpers\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/FHIRHelpers|4.4.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/FHIRHelpers|4.4.000</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library QICoreCommon\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/QICoreCommon|4.0.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/QICoreCommon|4.0.000</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library Status\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/Status|1.15.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/Status|1.15.000</tt>\n    \n  </td>\n</tr>\n \n\n\n<tr>\n  \n\n<th scope=\"row\" class=\"row-header\">Dependency</th>\n\n\n  <td class=\"content-container\">\n    \n    <em>Description</em>: Library Hospice\n    \n    <br/>\n    \n    \n    \n    \n    \n    \n    <em>Resource</em>: https://madie.cms.gov/Library/Hospice|6.18.000\n    <br/>\n    <em>Canonical URL</em>: <tt>https://madie.cms.gov/Library/Hospice|6.18.000</tt>\n    \n  </td>\n</tr>\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n \n\n\n  \n  \n\n\n  <tr>\n\n\n<th colspan=\"2\" scope=\"row\" class=\"row-header\"><a name=\"data-requirements\"> </a>Data Requirements</th>\n\n\n</tr>\n  \n  \n  \n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Patient\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: extension, url, birthDate, birthDate.value\n    <br/>\n   \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.125.12.1004\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.125.12.1004\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Condition\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.125.12.1003\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, hospitalization, hospitalization.dischargeDisposition, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Encounter\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1003\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Coverage\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: type, period\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: type</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Observation\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, value, effective, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n  \n    <span class=\"tab-one\"><em>Code(s)</em>: \n    \n      \n      http://loinc.org#45755-6: 'Hospice care [Minimum Data Set]'\n      \n    \n    </span>\n    <br/>\n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: ServiceRequest\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, authoredOn, authoredOn.value, status, status.value, intent, intent.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n<tr>\n  <th scope=\"row\" class=\"row-header\">Data Requirement</th>\n  <td class=\"content-container\">\n    <em>Type</em>: Procedure\n    <br/>\n  \n    <em>Profile(s)</em>: \n  \n    http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure\n    <br/>        \n  \n   \n   \n    <em>Must Support Elements</em>: code, performed, status, status.value\n    <br/>\n   \n  \n    <em>Code Filter(s)</em>: \n    <br/>\n  \n  \n    <span class=\"tab-one\"><em>Path</em>: code</span>\n    <br/>\n  \n  \n  \n    <span class=\"tab-one\"><em>ValueSet</em>:</span> http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584\n    <br/> \n  \n  \n  \n   \n  </td>\n</tr>\n\n  \n  \n\n<tr>\n  <th colspan=\"2\" scope=\"row\" class=\"row-header\">Generated using version 0.4.8 of the sample-content-ig Liquid templates</th>\n</tr>\n\n    </tbody>\n  </table>\n</div>"
-  },
   "contained": [ {
     "resourceType": "Library",
     "id": "effective-data-requirements",
@@ -205,6 +201,21 @@
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
       "extension": [ {
         "url": "libraryName",
+        "valueString": "CMS75FHIRChildrenDentalDecay"
+      }, {
+        "url": "name",
+        "valueString": "Initial Population"
+      }, {
+        "url": "statement",
+        "valueString": "define \"Initial Population\":\n  AgeInYearsAt(date from start of \"Measurement Period\") in Interval[1, 20]\n    and exists ( \"Qualifying Encounters\" )"
+      }, {
+        "url": "displaySequence",
+        "valueInteger": 8
+      } ]
+    }, {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
+      "extension": [ {
+        "url": "libraryName",
         "valueString": "SupplementalDataElements"
       }, {
         "url": "name",
@@ -214,7 +225,7 @@
         "valueString": "define \"SDE Ethnicity\":\n  Patient.ethnicity E\n    return Tuple {\n      codes: { E.ombCategory } union E.detailed,\n      display: E.text\n    }"
       }, {
         "url": "displaySequence",
-        "valueInteger": 8
+        "valueInteger": 9
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -229,7 +240,7 @@
         "valueString": "define \"SDE Ethnicity\":\n  SDE.\"SDE Ethnicity\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 9
+        "valueInteger": 10
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -244,7 +255,7 @@
         "valueString": "define \"Has Hospice Services\":\n  exists ((([Encounter: \"Encounter Inpatient\"]).isEncounterPerformed()) InpatientEncounter\n      where (InpatientEncounter.hospitalization.dischargeDisposition ~ \"Discharge to home for hospice care (procedure)\"\n          or InpatientEncounter.hospitalization.dischargeDisposition ~ \"Discharge to healthcare facility for hospice care (procedure)\"\n      )\n        and InpatientEncounter.period ends during day of \"Measurement Period\"\n  )\n    or exists ((([Encounter: \"Hospice Encounter\"]).isEncounterPerformed()) HospiceEncounter\n        where HospiceEncounter.period overlaps day of \"Measurement Period\"\n    )\n    or exists ((([ObservationScreeningAssessment: \"Hospice care [Minimum Data Set]\"]).isAssessmentPerformed()) HospiceAssessment\n        where HospiceAssessment.value ~ \"Yes (qualifier value)\"\n          and HospiceAssessment.effective.toInterval() overlaps day of \"Measurement Period\"\n    )\n    or exists ((([ServiceRequest: \"Hospice Care Ambulatory\"]).isInterventionOrder()) HospiceOrder\n        where HospiceOrder.authoredOn during day of \"Measurement Period\"\n    )\n    or exists ((([Procedure: \"Hospice Care Ambulatory\"]).isInterventionPerformed()) HospicePerformed\n        where HospicePerformed.performed.toInterval() overlaps day of \"Measurement Period\"\n    )\n    or exists ((([ConditionProblemsHealthConcerns: \"Hospice Diagnosis\"]\n        union [ConditionEncounterDiagnosis: \"Hospice Diagnosis\"]).verified()) HospiceCareDiagnosis\n        where HospiceCareDiagnosis.prevalenceInterval() overlaps day of \"Measurement Period\"\n    )"
       }, {
         "url": "displaySequence",
-        "valueInteger": 10
+        "valueInteger": 11
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -259,7 +270,7 @@
         "valueString": "define \"Denominator Exclusions\":\n  Hospice.\"Has Hospice Services\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 11
+        "valueInteger": 12
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -274,7 +285,7 @@
         "valueString": "define \"SDE Race\":\n  Patient.race R\n    return Tuple {\n      codes: R.ombCategory union R.detailed,\n      display: R.text\n    }"
       }, {
         "url": "displaySequence",
-        "valueInteger": 12
+        "valueInteger": 13
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -289,7 +300,7 @@
         "valueString": "define \"SDE Race\":\n  SDE.\"SDE Race\""
       }, {
         "url": "displaySequence",
-        "valueInteger": 13
+        "valueInteger": 14
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -304,7 +315,7 @@
         "valueString": "define function ToString(value uri): value.value"
       }, {
         "url": "displaySequence",
-        "valueInteger": 14
+        "valueInteger": 15
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -319,7 +330,7 @@
         "valueString": "//Encounter, Performed\n//General usage unless required otherwise by measure intent (e.g., follow-up encounters)\ndefine fluent function isEncounterPerformed(Enc List<Encounter>):\n  Enc E\n    where E.status = 'finished'"
       }, {
         "url": "displaySequence",
-        "valueInteger": 15
+        "valueInteger": 16
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -334,7 +345,7 @@
         "valueString": "/*\n@description: Converts the given [Period](https://hl7.org/fhir/datatypes.html#Period)\nvalue to a CQL DateTime Interval\n@comment: If the start value of the given period is unspecified, the starting\nboundary of the resulting interval will be open (meaning the start of the interval\nis unknown, as opposed to interpreted as the beginning of time).\n*/\ndefine function ToInterval(period FHIR.Period):\n    if period is null then\n        null\n    else\n        if period.\"start\" is null then\n            Interval(period.\"start\".value, period.\"end\".value]\n        else\n            Interval[period.\"start\".value, period.\"end\".value]"
       }, {
         "url": "displaySequence",
-        "valueInteger": 16
+        "valueInteger": 17
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -349,7 +360,7 @@
         "valueString": "/*\n@description: Converts the given FHIR [Coding](https://hl7.org/fhir/datatypes.html#Coding) value to a CQL Code.\n*/\ndefine function ToCode(coding FHIR.Coding):\n    if coding is null then\n        null\n    else\n        System.Code {\n          code: coding.code.value,\n          system: coding.system.value,\n          version: coding.version.value,\n          display: coding.display.value\n        }"
       }, {
         "url": "displaySequence",
-        "valueInteger": 17
+        "valueInteger": 18
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -364,7 +375,7 @@
         "valueString": "//Assessment, Performed\ndefine fluent function isAssessmentPerformed(Obs List<ObservationScreeningAssessment>):\n  Obs O\n    where O.status in { 'final', 'amended', 'corrected' }"
       }, {
         "url": "displaySequence",
-        "valueInteger": 18
+        "valueInteger": 19
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -379,7 +390,7 @@
         "valueString": "//Intervention, Order\ndefine fluent function isInterventionOrder(ServiceRequest List<ServiceRequest>):\n  ServiceRequest S\n    where S.status in { 'active', 'completed' }\n      and S.intent in {'order', 'original-order', 'reflex-order', 'filler-order', 'instance-order'}"
       }, {
         "url": "displaySequence",
-        "valueInteger": 19
+        "valueInteger": 20
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -394,7 +405,7 @@
         "valueString": "//Intervention, Performed\ndefine fluent function isInterventionPerformed(Proc List<Procedure>):\n  Proc P\n    where P.status ~ 'completed'"
       }, {
         "url": "displaySequence",
-        "valueInteger": 20
+        "valueInteger": 21
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -409,7 +420,7 @@
         "valueString": "/*\n@description: Normalizes a value that is a choice of timing-valued types to an equivalent interval\n@comment: Normalizes a choice type of DateTime, Quanitty, Interval<DateTime>, or Interval<Quantity> types\nto an equivalent interval. This selection of choice types is a superset of the majority of choice types that are used as possible\nrepresentations for timing-valued elements in QICore, allowing this function to be used across any resource.\nThe input can be provided as a DateTime, Quantity, Interval<DateTime> or Interval<Quantity>.\nThe intent of this function is to provide a clear and concise mechanism to treat single\nelements that have multiple possible representations as intervals so that logic doesn't have to account\nfor the variability. More complex calculations (such as medication request period or dispense period\ncalculation) need specific guidance and consideration. That guidance may make use of this function, but\nthe focus of this function is on single element calculations where the semantics are unambiguous.\nIf the input is a DateTime, the result a DateTime Interval beginning and ending on that DateTime.\nIf the input is a Quantity, the quantity is expected to be a calendar-duration interpreted as an Age,\nand the result is a DateTime Interval beginning on the Date the patient turned that age and ending immediately before one year later.\nIf the input is a DateTime Interval, the result is the input.\nIf the input is a Quantity Interval, the quantities are expected to be calendar-durations interpreted as an Age, and the result\nis a DateTime Interval beginning on the date the patient turned the age given as the start of the quantity interval, and ending\nimmediately before one year later than the date the patient turned the age given as the end of the quantity interval.\nIf the input is a Timing, an error will be thrown indicating that Timing calculations are not implemented. Any other input will reslt in a null DateTime Interval\n*/\ndefine fluent function toInterval(choice Choice<DateTime, Quantity, Interval<DateTime>, Interval<Quantity>, Timing>):\n  case\n\t  when choice is DateTime then\n    \tInterval[choice as DateTime, choice as DateTime]\n\t\twhen choice is Interval<DateTime> then\n  \t\tchoice as Interval<DateTime>\n\t\twhen choice is Quantity then\n\t\t  Interval[Patient.birthDate + (choice as Quantity),\n\t\t\t  Patient.birthDate + (choice as Quantity) + 1 year)\n\t\twhen choice is Interval<Quantity> then\n\t\t  Interval[Patient.birthDate + (choice.low as Quantity),\n\t\t\t  Patient.birthDate + (choice.high as Quantity) + 1 year)\n\t\twhen choice is Timing then\n      Message(null, true, 'NOT_IMPLEMENTED', 'Error', 'Calculation of an interval from a Timing value is not supported') as Interval<DateTime>\n\t\telse\n\t\t\tnull as Interval<DateTime>\n\tend"
       }, {
         "url": "displaySequence",
-        "valueInteger": 21
+        "valueInteger": 22
       } ]
     }, {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-logicDefinition",
@@ -424,7 +435,7 @@
         "valueString": "//This library contains functions used to constrain FHIR resource elements for measures authored by NCQA, based on QICore 6.0.0 resources including IG and authoring patterns. The functions may appear similar to some QICoreCommon functions but differ in that they have constraints that are relevant for measures authored by NCQA.\n\n//Condition\n//Returns conditions in the given list that either have no verification status or have a verification status of confirmed, unconfirmed, provisional, or differential\ndefine fluent function verified(conditions List<Choice<ConditionProblemsHealthConcerns, ConditionEncounterDiagnosis>>):\n  conditions C\n    where C.verificationStatus is not null implies\n      (C.verificationStatus ~ \"confirmed\"\n        or C.verificationStatus ~ \"unconfirmed\"\n        or C.verificationStatus ~ \"provisional\"\n        or C.verificationStatus ~ \"differential\"\n      )"
       }, {
         "url": "displaySequence",
-        "valueInteger": 22
+        "valueInteger": 23
       } ]
     } ],
     "name": "EffectiveDataRequirements",
@@ -436,10 +447,6 @@
       } ]
     },
     "relatedArtifact": [ {
-      "type": "depends-on",
-      "display": "QICore model information",
-      "resource": "http://hl7.org/fhir/Library/QICore-ModelInfo"
-    }, {
       "type": "depends-on",
       "display": "Library SDE",
       "resource": "https://madie.cms.gov/Library/SupplementalDataElements|5.1.000"
@@ -457,8 +464,32 @@
       "resource": "https://madie.cms.gov/Library/Status|1.15.000"
     }, {
       "type": "depends-on",
+      "display": "Library FHIRHelpers",
+      "resource": "https://madie.cms.gov/Library/FHIRHelpers|4.4.000"
+    }, {
+      "type": "depends-on",
       "display": "Library Hospice",
       "resource": "https://madie.cms.gov/Library/Hospice|6.18.000"
+    }, {
+      "type": "depends-on",
+      "display": "Library Status",
+      "resource": "https://madie.cms.gov/Library/Status|1.15.000"
+    }, {
+      "type": "depends-on",
+      "display": "Library FHIRHelpers",
+      "resource": "https://madie.cms.gov/Library/FHIRHelpers|4.4.000"
+    }, {
+      "type": "depends-on",
+      "display": "Library QICoreCommon",
+      "resource": "https://madie.cms.gov/Library/QICoreCommon|4.0.000"
+    }, {
+      "type": "depends-on",
+      "display": "Library FHIRHelpers",
+      "resource": "https://madie.cms.gov/Library/FHIRHelpers|4.4.000"
+    }, {
+      "type": "depends-on",
+      "display": "Code system SNOMEDCT",
+      "resource": "http://snomed.info/sct"
     }, {
       "type": "depends-on",
       "display": "Code system SNOMEDCT",
@@ -507,6 +538,12 @@
       "max": "1",
       "type": "Period"
     }, {
+      "name": "SDE Sex",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "Coding"
+    }, {
       "name": "Numerator",
       "use": "out",
       "min": 0,
@@ -519,35 +556,29 @@
       "max": "1",
       "type": "boolean"
     }, {
-      "name": "Initial Population",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "boolean"
-    }, {
-      "name": "Denominator Exclusions",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "boolean"
-    }, {
-      "name": "SDE Sex",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "type": "Coding"
-    }, {
       "name": "SDE Payer",
       "use": "out",
       "min": 0,
       "max": "*",
       "type": "Resource"
     }, {
+      "name": "Initial Population",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
+    }, {
       "name": "SDE Ethnicity",
       "use": "out",
       "min": 0,
       "max": "1",
       "type": "Resource"
+    }, {
+      "name": "Denominator Exclusions",
+      "use": "out",
+      "min": 0,
+      "max": "1",
+      "type": "boolean"
     }, {
       "name": "SDE Race",
       "use": "out",
@@ -557,27 +588,18 @@
     } ],
     "dataRequirement": [ {
       "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ]
+    }, {
+      "type": "Patient",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
-      "mustSupport": [ "extension", "url", "birthDate", "birthDate.value" ]
+      "mustSupport": [ "url", "value.value" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url", "value.value" ]
     }, {
       "type": "Condition",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns" ],
-      "mustSupport": [ "code" ],
-      "codeFilter": [ {
-        "path": "code",
-        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.125.12.1004"
-      } ]
-    }, {
-      "type": "Condition",
-      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns" ],
-      "mustSupport": [ "code" ],
-      "codeFilter": [ {
-        "path": "code",
-        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165"
-      } ]
-    }, {
-      "type": "Condition",
-      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis" ],
       "mustSupport": [ "code" ],
       "codeFilter": [ {
         "path": "code",
@@ -589,31 +611,18 @@
       "mustSupport": [ "code" ],
       "codeFilter": [ {
         "path": "code",
-        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165"
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.125.12.1004"
       } ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ]
     }, {
       "type": "Encounter",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period", "status", "status.value" ],
+      "mustSupport": [ "type", "period" ],
       "codeFilter": [ {
         "path": "type",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.125.12.1003"
-      } ]
-    }, {
-      "type": "Encounter",
-      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "hospitalization", "hospitalization.dischargeDisposition", "period", "status", "status.value" ],
-      "codeFilter": [ {
-        "path": "type",
-        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307"
-      } ]
-    }, {
-      "type": "Encounter",
-      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
-      "mustSupport": [ "type", "period", "status", "status.value" ],
-      "codeFilter": [ {
-        "path": "type",
-        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1003"
       } ]
     }, {
       "type": "Coverage",
@@ -624,9 +633,36 @@
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
       } ]
     }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url", "extension" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "hospitalization", "hospitalization.dischargeDisposition", "period" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307"
+      } ]
+    }, {
+      "type": "Encounter",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter" ],
+      "mustSupport": [ "type", "period" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1003"
+      } ]
+    }, {
       "type": "Observation",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-screening-assessment" ],
-      "mustSupport": [ "code", "value", "effective", "status", "status.value" ],
+      "mustSupport": [ "code", "value", "effective" ],
       "codeFilter": [ {
         "path": "code",
         "code": [ {
@@ -638,7 +674,7 @@
     }, {
       "type": "ServiceRequest",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest" ],
-      "mustSupport": [ "code", "authoredOn", "authoredOn.value", "status", "status.value", "intent", "intent.value" ],
+      "mustSupport": [ "code", "authoredOn", "authoredOn.value" ],
       "codeFilter": [ {
         "path": "code",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584"
@@ -646,11 +682,51 @@
     }, {
       "type": "Procedure",
       "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure" ],
-      "mustSupport": [ "code", "performed", "status", "status.value" ],
+      "mustSupport": [ "code", "performed" ],
       "codeFilter": [ {
         "path": "code",
         "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.526.3.1584"
       } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165"
+      } ]
+    }, {
+      "type": "Condition",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis" ],
+      "mustSupport": [ "code" ],
+      "codeFilter": [ {
+        "path": "code",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.1165"
+      } ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url", "extension" ]
+    }, {
+      "type": "Coverage",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage" ],
+      "mustSupport": [ "type", "period" ],
+      "codeFilter": [ {
+        "path": "type",
+        "valueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591"
+      } ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url", "extension" ]
+    }, {
+      "type": "Patient",
+      "profile": [ "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient" ],
+      "mustSupport": [ "url", "extension" ]
     } ]
   } ],
   "extension": [ {
@@ -672,8 +748,11 @@
     } ]
   }, {
     "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-effectiveDataRequirements",
+    "valueCanonical": "#effective-data-requirements"
+  }, {
+    "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-softwaresystem",
     "valueReference": {
-      "reference": "#effective-data-requirements"
+      "reference": "Device/cqf-tooling"
     }
   } ],
   "url": "https://madie.cms.gov/Measure/CMS75FHIRChildrenDentalDecay",
@@ -730,7 +809,7 @@
   "title": "Children Who Have Dental Decay or CavitiesFHIR\n",
   "status": "active",
   "experimental": false,
-  "date": "2025-08-20T20:34:28+00:00",
+  "date": "2025-09-07T21:23:15+00:00",
   "publisher": "Centers for Medicare &amp; Medicaid Services (CMS)",
   "contact": [ {
     "telecom": [ {
