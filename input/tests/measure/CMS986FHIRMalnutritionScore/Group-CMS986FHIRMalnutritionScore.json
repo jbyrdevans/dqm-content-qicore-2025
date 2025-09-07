@@ -1,0 +1,52 @@
+{
+  "resourceType": "Group",
+  "id": "CMS986FHIRMalnutritionScore",
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/artifact-testArtifact",
+    "valueCanonical": "http://ecqi.healthit.gov/ecqms/Measure/CMS986FHIRMalnutritionScore"
+  } ],
+  "active": true,
+  "type": "person",
+  "actual": true,
+  "member": [ {
+    "entity": {
+      "reference": "Patient/08bd110c-dfda-403c-91cd-34dfc9f16dc8",
+      "display": "2EncounterNotAtriskThenAtrisk"
+    }
+  }, {
+    "entity": {
+      "reference": "Patient/1d160b56-edd7-482f-a2e3-8acc26727f91",
+      "display": "18onEncounter"
+    }
+  }, {
+    "entity": {
+      "reference": "Patient/4d1811f1-f822-4e7c-9ab1-4752e5fafe79",
+      "display": "ScreMinAftEncounter"
+    }
+  }, {
+    "entity": {
+      "reference": "Patient/75d19c2d-5ae9-476e-93f5-e84e668512a8",
+      "display": "MultEncwithMultAsses"
+    }
+  }, {
+    "entity": {
+      "reference": "Patient/d5946dae-72bb-4b13-984d-ce4da0add583",
+      "display": "FirstMinMP"
+    }
+  }, {
+    "entity": {
+      "reference": "Patient/e5582d8a-91d9-4234-910d-db7a6fa68785",
+      "display": "ScreAtriNorefAsseModTHENNotMDxCp"
+    }
+  }, {
+    "entity": {
+      "reference": "Patient/e87069c9-7889-4954-858f-33d6ad24cd7a",
+      "display": "2EncounterBothNotAtrisk"
+    }
+  }, {
+    "entity": {
+      "reference": "Patient/fa4b9fb0-93e7-4f81-9a51-1cbc0814703c",
+      "display": "LastMinMP"
+    }
+  } ]
+}
