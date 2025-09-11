@@ -6,7 +6,7 @@ SET ig_ini_path=%~dp0ig.ini
 ECHO Checking internet connection...
 PING tx.fhir.org -n 1 -w 1000 | FINDSTR TTL && GOTO isonline
 ECHO We're offline...
-SET fsoption=
+SET fsoption=-fs=https://connectathon-fhir.lantanagroup.com/fhir/
 GOTO igpublish
 
 :isonline
@@ -27,4 +27,5 @@ IF EXIST "%input_cache_path%\%tooling_jar%" (
 	ECHO IG Refresh NOT FOUND in input-cache or parent folder.  Please run _updateCQFTooling.  Aborting...
 )
 
+REM Use `_refresh > _refresh.log 2>&1` to pipe the output to a file named _refresh.log
 REM PAUSE
