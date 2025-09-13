@@ -32,7 +32,7 @@ code "confirmed": 'confirmed' from ConditionVerificationStatusCodes display 'Con
 code "refuted": 'refuted' from ConditionVerificationStatusCodes display 'Refuted'
 code "entered-in-error": 'entered-in-error' from ConditionVerificationStatusCodes display 'Entered in Error'
 
-parameter "Measurement Period" Interval<DateTime>
+parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
 
 context Patient
 
