@@ -12,14 +12,21 @@ allowed_display_names = {
     "Initial Population",
     "Denominator",
     "Denominator Exclusion",
+    "Denominator Exclusions",
     "Denominator Exception",
+    "Denominator Exceptions",
     "Numerator",
     "Numerator Exclusion",
+    "Numerator Exclusions",
     "Numerator Excpetion",
+    "Numerator Excpetions",
     "Measure Observation",
+    "Measure Observations",
     "Measure Population",
     "Measure Population Observation",
+    "Measure Population Observations",
     "Measure Population Exclusion"
+    "Measure Population Exclusions"
 }
 
 def parse_count(result_value):
@@ -40,7 +47,8 @@ for file_name in os.listdir(results_dir):
         measure_name = os.path.splitext(file_name)[0]
         with open(file_path, "r") as f:
             content = f.read()
-        sections = re.split(r'-{5,}', content)
+        # Split sections by two line breaks instead of hyphens
+        sections = re.split(r'\n\s*\n', content)
         for section in sections:
             guid_match = re.search(r'Patient\s*=\s*Patient\(id=([a-f0-9\-]+)\)', section)
             guid = guid_match.group(1) if guid_match else ""
