@@ -2,7 +2,7 @@ import csv
 
 expected_file = "./input/tests/comparison/expected_results.csv"
 actual_file = "./input/tests/comparison/actual_results.csv"
-error_file = "./input/tests/comparison/error_results.csv"
+output_file = "./input/tests/comparison/output_results.csv"
 
 expected_rows = {}
 with open(expected_file, "r") as f:
@@ -18,15 +18,17 @@ with open(actual_file, "r") as f:
         key = (row["measure_name"], row["guid"], row["display_name"])
         actual_rows[key] = row["count"]
 
-header = ["measure_name", "guid", "display_name", "expected_result", "actual_result"]
-errors = []
+header = ["result", "measure_name", "guid", "display_name", "expected_result", "actual_result"]
+output = []
 
 for key, expected_result in expected_rows.items():
     actual_result = actual_rows.get(key)
     if actual_result is None or str(expected_result) != str(actual_result):
-        errors.append([key[0], key[1], key[2], expected_result, actual_result if actual_result is not None else "MISSING"])
+        output.append(["FAIL", key[0], key[1], key[2], expected_result, actual_result if actual_result is not None else "MISSING"])
+    else:
+        output.append(["PASS", key[0], key[1], key[2], expected_result, actual_result if actual_result is not None else "MISSING"])
 
-with open(error_file, "w", newline="") as f:
+with open(output_file, "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(header)
-    writer.writerows(errors)
+    writer.writerows(output)
