@@ -31,7 +31,7 @@ code "Hospice care [Minimum Data Set]": '45755-6' from "LOINC" display 'Hospice 
 code "Yes (qualifier value)": '373066001' from "SNOMEDCT" display 'Yes (qualifier value)'
 code "Functional Assessment of Chronic Illness Therapy - Palliative Care Questionnaire (FACIT-Pal)": '71007-9' from "LOINC" display 'Functional Assessment of Chronic Illness Therapy - Palliative Care Questionnaire (FACIT-Pal)'
 
-parameter "Measurement Period" Interval<DateTime>
+parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
 
 context Patient
 

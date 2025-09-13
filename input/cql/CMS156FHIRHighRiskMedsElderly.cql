@@ -73,7 +73,7 @@ code "doxepin 75 MG Oral Capsule": '1000097' from "RXNORM" display 'doxepin 75 M
 code "ergoloid mesylates, USP 1 MG Oral Tablet": '318179' from "RXNORM" display 'ergoloid mesylates, USP 1 MG Oral Tablet'
 code "Office or other outpatient visit for the evaluation and management of an established patient that may not require the presence of a physician or other qualified health care professional": '99211' from "CPT" display 'Office or other outpatient visit for the evaluation and management of an established patient that may not require the presence of a physician or other qualified health care professional'
 
-parameter "Measurement Period" Interval<DateTime>
+parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
 
 context Patient
 
