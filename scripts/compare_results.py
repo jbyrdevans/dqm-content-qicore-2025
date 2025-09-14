@@ -1,8 +1,8 @@
 import csv
 
-expected_file = "./input/tests/comparison/expected_results.csv"
-actual_file = "./input/tests/comparison/actual_results.csv"
-output_file = "./input/tests/comparison/output_results.csv"
+expected_file = "./scripts/comparison/expected_results.csv"
+actual_file = "./scripts/comparison/actual_results.csv"
+output_file = "./scripts/comparison/output_results.csv"
 
 expected_rows = {}
 with open(expected_file, "r") as f:

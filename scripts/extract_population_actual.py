@@ -3,7 +3,7 @@ import re
 import csv
 
 results_dir = "./input/tests/results"
-output_file = "./input/tests/comparison/actual_results.csv"
+output_file = "./scripts/comparison/actual_results.csv"
 
 header = ["measure_name", "guid", "display_name", "count"]
 rows = []
@@ -45,6 +45,7 @@ for file_name in os.listdir(results_dir):
     file_path = os.path.join(results_dir, file_name)
     if os.path.isfile(file_path):
         measure_name = os.path.splitext(file_name)[0]
+        print("Parsing Measure results:", measure_name)
         with open(file_path, "r") as f:
             content = f.read()
         # Split sections by two line breaks instead of hyphens

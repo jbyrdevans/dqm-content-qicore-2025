@@ -4,7 +4,7 @@ import csv
 
 base_dir = "./input/tests/measure"
 measure_resource_dir = "./input/resources/measure"
-output_file = "./input/tests/comparison/expected_results.csv"
+output_file = "./scripts/comparison/expected_results.csv"
 
 header = ["measure_name", "guid", "display_name", "count"]
 rows = []
@@ -14,6 +14,7 @@ measure_criteria_map = {}
 for measure_file in os.listdir(measure_resource_dir):
     if measure_file.endswith(".json"):
         measure_path = os.path.join(measure_resource_dir, measure_file)
+        print("Parsing Measure resource:", measure_path)
         with open(measure_path, "r") as f:
             measure_data = json.load(f)
             measure_name = os.path.splitext(measure_file)[0]
@@ -32,6 +33,7 @@ for measure_name in os.listdir(base_dir):
                 if file.startswith("MeasureReport-") and file.endswith(".json"):
                     guid = os.path.basename(root)
                     file_path = os.path.join(root, file)
+                    print("Parsing MeasureReport resource:", file_path)
                     with open(file_path, "r") as f:
                         data = json.load(f)
                         for group in data.get("group", []):
