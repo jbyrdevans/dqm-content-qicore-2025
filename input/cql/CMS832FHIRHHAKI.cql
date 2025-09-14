@@ -26,7 +26,7 @@ code "Heart rate": '8867-4' from "LOINC" display 'Heart rate'
 code "Respiratory rate": '9279-1' from "LOINC" display 'Respiratory rate'
 code "Systolic blood pressure": '8480-6' from "LOINC" display 'Systolic blood pressure'
 
-parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
+parameter "Measurement Period" Interval<DateTime>
 
 context Patient
 

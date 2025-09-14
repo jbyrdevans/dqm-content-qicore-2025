@@ -31,7 +31,7 @@ code "Medical nutrition therapy; initial assessment and intervention, individual
 code "Medical nutrition therapy; re-assessment and intervention, individual, face-to-face with the patient, each 15 minutes": '97803' from "CPT" display 'Medical nutrition therapy; re-assessment and intervention, individual, face-to-face with the patient, each 15 minutes'
 code "Medical nutrition therapy; reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition or treatment regimen (including additional hours needed for renal disease), individual, face to face with the patient, each 15 minutes": 'G0270' from "HCPCS" display 'Medical nutrition therapy; reassessment and subsequent intervention(s) following second referral in same year for change in diagnosis, medical condition or treatment regimen (including additional hours needed for renal disease), individual, face to face with the patient, each 15 minutes'
 
-parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
+parameter "Measurement Period" Interval<DateTime>
 
 context Patient
 

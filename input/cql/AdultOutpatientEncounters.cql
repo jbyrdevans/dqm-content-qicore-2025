@@ -14,7 +14,7 @@ valueset "Preventive Care Services Established Office Visit, 18 and Up": 'http:/
 valueset "Preventive Care Services Initial Office Visit, 18 and Up": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1023' 
 valueset "Telephone Visits": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.101.12.1080' 
 
-parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
+parameter "Measurement Period" Interval<DateTime>
 
 context Patient
 

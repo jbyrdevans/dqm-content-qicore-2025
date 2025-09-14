@@ -39,7 +39,7 @@ code "VR-12 Mental component summary (MCS) score - orthogonal method T-score": '
 code "VR-12 Physical component summary (PCS) score - oblique method T-score": '72025-0' from "LOINC" display 'VR-12 Physical component summary (PCS) score - oblique method T-score'
 code "VR-12 Physical component summary (PCS) score - orthogonal method T-score": '72027-6' from "LOINC" display 'VR-12 Physical component summary (PCS) score - orthogonal method T-score'
 
-parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
+parameter "Measurement Period" Interval<DateTime>
 
 context Patient
 

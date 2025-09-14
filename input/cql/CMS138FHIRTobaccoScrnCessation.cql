@@ -45,7 +45,7 @@ code "Tobacco abuse counseling": 'Z71.6' from "ICD10CM" display 'Tobacco abuse c
 code "Unlisted preventive medicine service": '99429' from "CPT" display 'Unlisted preventive medicine service'
 code "fulfill": 'fulfill' from "TaskCode" display 'Fulfill the focal request'
 
-parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
+parameter "Measurement Period" Interval<DateTime>
 
 context Patient
 

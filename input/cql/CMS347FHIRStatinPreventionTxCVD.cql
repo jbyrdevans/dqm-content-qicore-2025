@@ -50,7 +50,7 @@ code "Cardiovascular disease 10Y risk [Likelihood]": '99055-6' from "LOINC" disp
 code "Cardiovascular disease 10Y risk [Likelihood] ACC-AHA Pooled Cohort by Goff 2013": '79423-0' from "LOINC" display 'Cardiovascular disease 10Y risk [Likelihood] ACC-AHA Pooled Cohort by Goff 2013'
 code "Subsequent non-ST elevation (NSTEMI) myocardial infarction": 'I22.2' from "ICD10CM" display 'Subsequent non-ST elevation (NSTEMI) myocardial infarction'
 
-parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
+parameter "Measurement Period" Interval<DateTime>
 
 context Patient
 

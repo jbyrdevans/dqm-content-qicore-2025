@@ -33,7 +33,7 @@ valueset "Virtual Encounter": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.1
 
 code "Unlisted preventive medicine service": '99429' from "CPT" display 'Unlisted preventive medicine service'
 
-parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
+parameter "Measurement Period" Interval<DateTime>
 
 context Patient
 
