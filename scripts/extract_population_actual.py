@@ -70,3 +70,4 @@ os.makedirs(os.path.dirname(output_file), exist_ok=True)
 with open(output_file, "w", newline="") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(header)
+    writer.writerows(rows)
