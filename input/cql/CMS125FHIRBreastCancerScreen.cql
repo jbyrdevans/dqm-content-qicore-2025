@@ -39,6 +39,9 @@ define "Initial Population":
 define "Denominator":
   "Initial Population"
 
+// NOTE: VSCode CQL Engine Issue affects this expression ("Is Age 66..." expressions)
+// https://github.com/cqframework/clinical_quality_language/issues/1604
+// Affects test cases: 
 define "Denominator Exclusions":
   Hospice."Has Hospice Services"
     or ( ( exists ( "Right Mastectomy Diagnosis" )

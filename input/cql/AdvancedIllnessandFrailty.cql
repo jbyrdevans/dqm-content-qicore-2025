@@ -67,6 +67,9 @@ exists ((([ConditionProblemsHealthConcerns: "Advanced Illness"]
 union [ConditionEncounterDiagnosis: "Advanced Illness"]).verified()) AdvancedIllnessDiagnosis
 where AdvancedIllnessDiagnosis.prevalenceInterval() starts during day of Interval[start of "Measurement Period" - 1 year, end of "Measurement Period"])
 
+// NOTE: VSCode CQL Engine Issue affects this expression
+// https://github.com/cqframework/clinical_quality_language/issues/1604
+// Affects test cases: CMS165 45e01fed-56bb-483d-a860-af3d566bda11
 define "Has Dementia Medications in Year Before or During Measurement Period":
   exists (( ([MedicationRequest: "Dementia Medications"]).isMedicationActive()) DementiaMedication
       where DementiaMedication.medicationRequestPeriod() overlaps day of Interval[start of "Measurement Period" - 1 year, 
