@@ -25,7 +25,7 @@ allowed_display_names = {
     "Measure Population",
     "Measure Population Observation",
     "Measure Population Observations",
-    "Measure Population Exclusion"
+    "Measure Population Exclusion",
     "Measure Population Exclusions"
 }
 
@@ -42,6 +42,9 @@ def parse_count(result_value):
         return result_value  # fallback, could be a number or string
 
 for file_name in os.listdir(results_dir):
+    # Skip hidden/system files like .DS_Store
+    if file_name.startswith('.'):
+        continue
     file_path = os.path.join(results_dir, file_name)
     if os.path.isfile(file_path):
         measure_name = os.path.splitext(file_name)[0]
@@ -67,4 +70,3 @@ os.makedirs(os.path.dirname(output_file), exist_ok=True)
 with open(output_file, "w", newline="") as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(header)
-    writer.writerows(rows)
