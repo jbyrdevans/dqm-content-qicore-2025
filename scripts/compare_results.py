@@ -38,5 +38,6 @@ with open(output_file, "w", newline="") as f:
     writer.writerow(header)
     writer.writerows(output)
 
-print(f"PASS: {pass_count}")
-print(f"FAIL: {fail_count}")
+pass_pct = pass_count / (pass_count + fail_count) * 100
+print(f"PASS: {pass_count} ({pass_pct:.2f})%")
+print(f"FAIL: {fail_count} ({(100 - pass_pct):.2f})%")
