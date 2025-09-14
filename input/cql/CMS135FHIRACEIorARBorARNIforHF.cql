@@ -63,6 +63,9 @@ define "SDE Race":
 define "SDE Sex":
   SDE."SDE Sex"
 
+// NOTE: VSCode CQL Engine Issue affects this expression
+// https://github.com/cqframework/clinical_quality_language/issues/1604
+// Affects test cases: c095195c-8893-4bf1-aa7d-ad2bfd9bafa5, cba5a449-1c45-4e11-ae0b-ba3974b410f7, ec508dbb-76f6-4878-b8a2-114ea8e82297
 define "Has ACEI or ARB or ARNI Ordered":
   exists ( [MedicationRequest: medication in "ACE Inhibitor or ARB or ARNI"] ACEIOrARBOrARNIOrdered
       where ACEIOrARBOrARNIOrdered.isOrderedDuringHeartFailureOutpatientEncounter ( )
@@ -106,6 +109,9 @@ define "Has Diagnosis of Renal Failure Due to ACEI":
       where RenalFailureDueToACEI.overlapsHeartFailureOutpatientEncounter ( )
   )
 
+// NOTE: VSCode CQL Engine Issue affects this expression
+// https://github.com/cqframework/clinical_quality_language/issues/1604
+// Affects test cases: c095195c-8893-4bf1-aa7d-ad2bfd9bafa5, cba5a449-1c45-4e11-ae0b-ba3974b410f7, ec508dbb-76f6-4878-b8a2-114ea8e82297
 define "Has Medical or Patient Reason for Not Ordering ACEI or ARB or ARNI":
   exists ( [MedicationNotRequested: medication in "ACE Inhibitor or ARB or ARNI"] NoACEIOrARBOrARNIOrdered
       where NoACEIOrARBOrARNIOrdered.isMedicationNotRequestedOrderedDuringHeartFailureOutpatientEncounter ( )
@@ -115,6 +121,9 @@ define "Has Medical or Patient Reason for Not Ordering ACEI or ARB or ARNI":
         )
   )
 
+// NOTE: VSCode CQL Engine Issue affects this expression
+// https://github.com/cqframework/clinical_quality_language/issues/1604
+// Affects test cases: c095195c-8893-4bf1-aa7d-ad2bfd9bafa5, cba5a449-1c45-4e11-ae0b-ba3974b410f7, ec508dbb-76f6-4878-b8a2-114ea8e82297
 define "Is Currently Taking ACEI or ARB or ARNI":
   exists ( [MedicationRequest: medication in "ACE Inhibitor or ARB or ARNI"] ActiveACEIOrARBOrARNI
       where ActiveACEIOrARBOrARNI.overlapsAfterHeartFailureOutpatientEncounter ( )
