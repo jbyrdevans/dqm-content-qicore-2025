@@ -7167,6 +7167,9 @@ CMS347FHIRStatinPreventionTxCVD,69d0ced6-d120-482f-9d68-1c98ecea4f64,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,69e5da71-302a-4cbb-a1f1-3ce03551fdb9,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,69e5da71-302a-4cbb-a1f1-3ce03551fdb9,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,69e5da71-302a-4cbb-a1f1-3ce03551fdb9,Numerator,0
+CMS347FHIRStatinPreventionTxCVD,6da189af-7eb0-47b0-8c77-905944706aa1,Denominator Exceptions,0
+CMS347FHIRStatinPreventionTxCVD,6da189af-7eb0-47b0-8c77-905944706aa1,Denominator Exclusions,0
+CMS347FHIRStatinPreventionTxCVD,6da189af-7eb0-47b0-8c77-905944706aa1,Numerator,0
 CMS347FHIRStatinPreventionTxCVD,6fa4b970-49b2-478e-9406-e6ecc90fea22,Denominator Exceptions,1
 CMS347FHIRStatinPreventionTxCVD,6fa4b970-49b2-478e-9406-e6ecc90fea22,Denominator Exclusions,0
 CMS347FHIRStatinPreventionTxCVD,6fa4b970-49b2-478e-9406-e6ecc90fea22,Numerator,0
@@ -10626,6 +10629,11 @@ CMS871FHIRHHHyper,0a3e9a4e-05a6-4b3f-9e24-4e999291e944,Denominator Exclusions,1
 CMS871FHIRHHHyper,0a3e9a4e-05a6-4b3f-9e24-4e999291e944,Initial Population,1
 CMS871FHIRHHHyper,0a3e9a4e-05a6-4b3f-9e24-4e999291e944,Numerator,0
 CMS871FHIRHHHyper,0a3e9a4e-05a6-4b3f-9e24-4e999291e944,Numerator Exclusions,1
+CMS871FHIRHHHyper,113a6e72-7049-4a7f-90cf-5ec3435b0dee,Denominator,1
+CMS871FHIRHHHyper,113a6e72-7049-4a7f-90cf-5ec3435b0dee,Denominator Exclusions,0
+CMS871FHIRHHHyper,113a6e72-7049-4a7f-90cf-5ec3435b0dee,Initial Population,1
+CMS871FHIRHHHyper,113a6e72-7049-4a7f-90cf-5ec3435b0dee,Numerator,0
+CMS871FHIRHHHyper,113a6e72-7049-4a7f-90cf-5ec3435b0dee,Numerator Exclusions,0
 CMS871FHIRHHHyper,35719b1a-85bd-4072-b8d5-7218309358c6,Denominator,1
 CMS871FHIRHHHyper,35719b1a-85bd-4072-b8d5-7218309358c6,Denominator Exclusions,0
 CMS871FHIRHHHyper,35719b1a-85bd-4072-b8d5-7218309358c6,Initial Population,1
@@ -10676,6 +10684,11 @@ CMS871FHIRHHHyper,93c2a45f-f96e-4c48-a102-a35e38e8ec40,Denominator Exclusions,1
 CMS871FHIRHHHyper,93c2a45f-f96e-4c48-a102-a35e38e8ec40,Initial Population,1
 CMS871FHIRHHHyper,93c2a45f-f96e-4c48-a102-a35e38e8ec40,Numerator,0
 CMS871FHIRHHHyper,93c2a45f-f96e-4c48-a102-a35e38e8ec40,Numerator Exclusions,1
+CMS871FHIRHHHyper,98533ccd-24ee-41b3-aab2-ef6cbf89e00d,Denominator,1
+CMS871FHIRHHHyper,98533ccd-24ee-41b3-aab2-ef6cbf89e00d,Denominator Exclusions,1
+CMS871FHIRHHHyper,98533ccd-24ee-41b3-aab2-ef6cbf89e00d,Initial Population,1
+CMS871FHIRHHHyper,98533ccd-24ee-41b3-aab2-ef6cbf89e00d,Numerator,0
+CMS871FHIRHHHyper,98533ccd-24ee-41b3-aab2-ef6cbf89e00d,Numerator Exclusions,1
 CMS871FHIRHHHyper,a4b9ab0b-4503-4404-81e3-919f6f383948,Denominator,1
 CMS871FHIRHHHyper,a4b9ab0b-4503-4404-81e3-919f6f383948,Denominator Exclusions,1
 CMS871FHIRHHHyper,a4b9ab0b-4503-4404-81e3-919f6f383948,Initial Population,1
