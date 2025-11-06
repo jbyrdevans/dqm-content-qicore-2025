@@ -79,7 +79,7 @@ code "Systolic blood pressure": '8480-6' from "LOINC" display 'Systolic blood pr
 code "POA-Y": 'Y' from "Present On Admission Indicators"
 code "POA-1": '1' from "Present On Admission Indicators"
 
-parameter "Measurement Period" Interval<DateTime>
+parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
 
 context Patient
 

@@ -71,7 +71,7 @@ code "Anaphylaxis caused by vaccine product containing Streptococcus pneumoniae 
 code "Anaphylaxis caused by vaccine product containing human poliovirus antigen (disorder)": '471321000124106' from "SNOMEDCT" display 'Anaphylaxis caused by vaccine product containing human poliovirus antigen (disorder)'
 code "Anaphylaxis caused by vaccine containing Human alphaherpesvirus 3 antigen (disorder)": '471341000124104' from "SNOMEDCT" display 'Anaphylaxis caused by vaccine containing Human alphaherpesvirus 3 antigen (disorder)'
 
-parameter "Measurement Period" Interval<DateTime>
+parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
 
 context Patient
 

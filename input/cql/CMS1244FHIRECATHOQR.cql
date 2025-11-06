@@ -26,7 +26,7 @@ code "Patient left without being seen (finding)": '21541000119102' from "SNOMEDC
 code "Emergency room": 'ER' from "RoleCode" display 'Emergency room'
 code "Emergency trauma unit": 'ETU' from "RoleCode" display 'Emergency trauma unit'
 
-parameter "Measurement Period" Interval<DateTime>
+parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
 
 context Patient
 

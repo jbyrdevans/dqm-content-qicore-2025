@@ -55,7 +55,7 @@ code "Respiratory rate": '9279-1' from "LOINC" display 'Respiratory rate'
 code "Systolic blood pressure": '8480-6' from "LOINC" display 'Systolic blood pressure'
 code "ER": 'ER' from "LocationRoles" display 'Emergency room'
 
-parameter "Measurement Period" Interval<DateTime>
+parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
 
 context Patient
 

@@ -37,7 +37,7 @@ code "POA-W": 'W' from "Present On Admission Indicators" display 'POA-W'
 code "POA-1": '1' from "Present On Admission Indicators" display 'POA-1'
 code "POA-U": 'U' from "Present On Admission Indicators" display 'POA-U'
 
-parameter "Measurement Period" Interval<DateTime>
+parameter "Measurement Period" Interval<DateTime> default Interval[@2026-01-01, @2027-01-01)
 
 context Patient
 
