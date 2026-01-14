@@ -1,0 +1,28 @@
+{
+  "name": "execute-cql-all",
+  "publisher": "local",
+  "displayName": "Execute CQL All",
+  "description": "Finds .cql files in input/cql and invokes an installed CQL execution command for each file.",
+  "version": "0.0.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:executeCqlAll.run"
+  ],
+  "main": "extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "executeCqlAll.run",
+        "title": "Execute CQL: Run on input/cql files"
+      }
+    ]
+  },
+  "scripts": {},
+  "devDependencies": {},
+  "keywords": ["cql", "execute", "automation"]
+}
