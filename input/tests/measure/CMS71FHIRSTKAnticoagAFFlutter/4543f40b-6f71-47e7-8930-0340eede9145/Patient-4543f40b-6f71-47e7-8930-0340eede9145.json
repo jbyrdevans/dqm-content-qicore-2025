@@ -50,8 +50,8 @@
   "active": true,
   "name": [ {
     "use": "usual",
-    "family": "IPPFail ",
-    "given": [ "EncEndsAfterMP " ]
+    "family": "IPPFail",
+    "given": [ "EncEndsAfterMP" ]
   } ],
   "gender": "male",
   "birthDate": "1961-12-01"

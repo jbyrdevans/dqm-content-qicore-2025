@@ -3688,8 +3688,8 @@
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-          "code": "risk-adjustment-factor",
-          "display": "Risk Adjustment Factor"
+          "code": "supplemental-data",
+          "display": "Supplemental Data"
         } ],
         "text": "Risk Adjustment Variable Guidance"
       }
@@ -3771,7 +3771,7 @@
   "title": "Hospital Harm - Postoperative Respiratory FailureFHIR\n",
   "status": "active",
   "experimental": false,
-  "date": "2026-01-07T14:45:47+00:00",
+  "date": "2026-01-16T18:18:12+00:00",
   "publisher": "Centers for Medicare &amp; Medicaid Services (CMS)",
   "contact": [ {
     "telecom": [ {
@@ -4041,7 +4041,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable All Encounter Diagnoses With POA Indication\n",
@@ -4067,7 +4067,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable ASA Physical Status Class\n",
@@ -4093,7 +4093,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Body Mass Index (BMI)\n",
@@ -4119,7 +4119,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Encounter Procedures\n",
@@ -4145,7 +4145,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Albumin In Encounter\n",
@@ -4171,7 +4171,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Arterial pH In Encounter\n",
@@ -4197,7 +4197,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First AST In Encounter\n",
@@ -4223,7 +4223,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Bicarbonate In Encounter\n",
@@ -4249,7 +4249,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Bilirubin In Encounter\n",
@@ -4275,7 +4275,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Blood Urea Nitrogen In Encounter\n",
@@ -4301,7 +4301,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First BMI\n",
@@ -4327,7 +4327,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Body Temperature In Encounter\n",
@@ -4353,7 +4353,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Carbon Dioxide In Encounter\n",
@@ -4379,7 +4379,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Creatinine In Encounter\n",
@@ -4405,7 +4405,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Heart Rate In Encounter\n",
@@ -4431,7 +4431,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Hematocrit In Encounter\n",
@@ -4457,7 +4457,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Hemoglobin In Encounter\n",
@@ -4483,7 +4483,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Leukocyte Count In Encounter\n",
@@ -4509,7 +4509,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Oxygen In Encounter\n",
@@ -4535,7 +4535,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Platelet Count In Encounter\n",
@@ -4561,7 +4561,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Respiratory Rate In Encounter\n",
@@ -4587,7 +4587,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Sodium In Encounter\n",
@@ -4613,7 +4613,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Systolic Blood Pressure In Encounter\n",
@@ -4639,7 +4639,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First White Blood Cell Count In Encounter\n",
@@ -4665,7 +4665,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Principal Procedure\n",

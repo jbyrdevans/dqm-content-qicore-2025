@@ -50,7 +50,7 @@
   "active": true,
   "name": [ {
     "use": "usual",
-    "family": "IPPFail ",
+    "family": "IPPFail",
     "given": [ "EncPrinDx=Afib/Flutter Rank2" ]
   } ],
   "gender": "male",

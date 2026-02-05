@@ -2652,8 +2652,8 @@
       "valueCodeableConcept": {
         "coding": [ {
           "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-          "code": "risk-adjustment-factor",
-          "display": "Risk Adjustment Factor"
+          "code": "supplemental-data",
+          "display": "Supplemental Data"
         } ],
         "text": "Risk Adjustment Variable Guidance"
       }
@@ -2744,7 +2744,7 @@
   "title": "Severe Obstetric ComplicationsFHIR\n",
   "status": "active",
   "experimental": false,
-  "date": "2026-01-07T14:45:47+00:00",
+  "date": "2026-01-16T18:18:11+00:00",
   "publisher": "The Joint Commission",
   "contact": [ {
     "telecom": [ {
@@ -3251,7 +3251,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Anemia\n",
@@ -3277,7 +3277,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Asthma\n",
@@ -3303,7 +3303,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Autoimmune Disease\n",
@@ -3329,7 +3329,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Bariatric Surgery\n",
@@ -3355,7 +3355,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Bleeding Disorder\n",
@@ -3381,7 +3381,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Cardiac Disease\n",
@@ -3407,7 +3407,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Economic Housing Instability\n",
@@ -3433,7 +3433,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Gastrointestinal Disease\n",
@@ -3459,7 +3459,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Gestational Diabetes\n",
@@ -3485,7 +3485,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable HIV\n",
@@ -3511,7 +3511,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Hypertension\n",
@@ -3537,7 +3537,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Long Term Anticoagulant Use\n",
@@ -3563,7 +3563,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Maternal Age\n",
@@ -3589,7 +3589,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Mental Health Disorder\n",
@@ -3615,7 +3615,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Morbid Obesity\n",
@@ -3641,7 +3641,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Multiple Pregnancy\n",
@@ -3667,7 +3667,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Obstetrical VTE\n",
@@ -3693,7 +3693,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Other Preeclampsia\n",
@@ -3719,7 +3719,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Placenta Previa\n",
@@ -3745,7 +3745,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Placental Abruption\n",
@@ -3771,7 +3771,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Placental Accreta Spectrum\n",
@@ -3797,7 +3797,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Preexisting Diabetes\n",
@@ -3823,7 +3823,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Previous Cesarean\n",
@@ -3849,7 +3849,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Pulmonary Hypertension\n",
@@ -3875,7 +3875,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Renal Disease\n",
@@ -3901,7 +3901,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Severe Preeclampsia\n",
@@ -3927,7 +3927,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Substance Abuse\n",
@@ -3953,7 +3953,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Thyrotoxicosis\n",
@@ -3979,7 +3979,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Preterm Birth\n",
@@ -4005,7 +4005,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First Hematocrit Lab Test\n",
@@ -4031,7 +4031,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable First White Blood Cell Count Lab Test\n",
@@ -4057,7 +4057,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Heart Rate\n",
@@ -4083,7 +4083,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Systolic Blood Pressure\n",
@@ -4109,7 +4109,7 @@
     "usage": [ {
       "coding": [ {
         "system": "http://terminology.hl7.org/CodeSystem/measure-data-usage",
-        "code": "risk-adjustment-factor"
+        "code": "supplemental-data"
       } ]
     } ],
     "description": "Risk Variable Neuromuscular Disease\n",

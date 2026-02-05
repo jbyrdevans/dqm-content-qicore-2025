@@ -51,7 +51,7 @@
   "name": [ {
     "use": "usual",
     "family": "IPPFail",
-    "given": [ "EncDx=IschemicStroke " ]
+    "given": [ "EncDx=IschemicStroke" ]
   } ],
   "gender": "male",
   "birthDate": "1961-12-01"
